@@ -17,10 +17,13 @@
 
 ### Notas específicas de este mod
 
-- **No es un fork**: es un mod propio, scaffoldeado desde `codex-docs/mod_template/neoforge/26.2-26.2.0.32-beta`. No hay atribución que mantener.
+- **Es un port declarado**: de [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) por Shadows_of_Fire (NeoForge 26.1.2 → 26.2), con todos los identificadores renombrados a la convención propia. Roadmap completo por fases: `docs/ROADMAP_ASCENDANT_EQUIPMENT.md`.
 - **package**: `com.skd.ascendantequipment`
 - **Minecraft / NeoForge**: `26.2` / `26.2.0.32-beta` (heredado del esqueleto, no actualizar sin pedirlo explícitamente)
-- **Referencia de análisis en `lib_ext/`**: `Apotheosis-26.1.2-9.0.3.jar` (mod de equipamiento/afijos de Shadows_of_Fire, NeoForge 26.1.2). Se usa **solo como material de estudio de mecánicas** (compilado, sin fuente) — su licencia es `MIT (código) / All Rights Reserved (assets)`, por lo que **no se puede decompilar y reutilizar código ni assets tal cual** bajo este mod sin permiso explícito del autor. `lib_ext/` no se versiona (ver `.gitignore`).
+- **Referencia en `lib_ext/`**: `Apotheosis-26.1.2-9.0.3.jar` (compilado, sin fuente). Se decompila en Fase 0 a `temp/apotheosis-src/` (no versionado) como base de lectura para portar clase a clase. `lib_ext/` y `temp/` no se versionan (ver `.gitignore`).
+- **Atribución obligatoria** (licencia MIT del original): mantener "port of Apotheosis by Shadows_of_Fire" en `README.md`, `LICENSE`, `docs/curseforge/project_description.md` y `credits` de `neoforge.mods.toml` durante todo el desarrollo.
+- **Assets NO se copian**: el arte original es `All Rights Reserved`. Todo `assets/ascendant_equipment/` es propio (placeholder al principio, arte final después) — ver Fase 16 del roadmap.
+- **Dependencias externas de Apotheosis** (`placebo`, `apothic_attributes`, `apothic_spawners`, `apothic_enchanting`): decisión pendiente de confirmar en Fase 2 del roadmap (mantenerlas como dependencias reales vs. fusionar la parte usada). No asumir.
 
 ## Convenciones de nomenclatura
 

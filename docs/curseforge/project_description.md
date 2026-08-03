@@ -12,6 +12,8 @@
 
 <p>Ascendant Equipment is a Minecraft 26.2 (NeoForge) mod, currently in early scaffold stage (<code>0.0.0-beta.1</code>). No gameplay features are implemented yet — this description will be expanded as the mod's mechanics are designed and built.</p>
 
+<blockquote>This mod is a port of <a href="https://www.curseforge.com/minecraft/mc-mods/apotheosis"><strong>Apotheosis</strong></a> by <em>Shadows_of_Fire</em>, ported from NeoForge 26.1.2 to NeoForge 26.2. Not affiliated with or endorsed by the original author.</blockquote>
+
 <br>
 
 <h2>📋 Requirements</h2>

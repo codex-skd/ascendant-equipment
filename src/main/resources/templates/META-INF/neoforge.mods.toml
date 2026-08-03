@@ -33,7 +33,7 @@ displayName="${mod_name}" #mandatory
 logoFile="assets/${mod_id}/icon.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="Port of Apotheosis by Shadows_of_Fire (MIT)" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
 #authors=""
