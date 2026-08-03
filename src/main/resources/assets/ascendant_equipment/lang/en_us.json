@@ -1,0 +1,13 @@
+{
+  "itemGroup.ascendant_equipment": "Example Mod Tab",
+  "block.ascendant_equipment.example_block": "Example Block",
+  "item.ascendant_equipment.example_item": "Example Item",
+
+  "ascendant_equipment.configuration.title": "Ascendant Equipment Configs",
+  "ascendant_equipment.configuration.section.ascendant_equipment.common.toml": "Ascendant Equipment Configs",
+  "ascendant_equipment.configuration.section.ascendant_equipment.common.toml.title": "Ascendant Equipment Configs",
+  "ascendant_equipment.configuration.items": "Item List",
+  "ascendant_equipment.configuration.logDirtBlock": "Log Dirt Block",
+  "ascendant_equipment.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ascendant_equipment.configuration.magicNumber": "Magic Number"
+}
