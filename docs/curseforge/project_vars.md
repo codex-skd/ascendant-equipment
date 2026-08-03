@@ -4,7 +4,7 @@
 
 | Variable | Valor |
 |----------|-------|
-| `curseforge_project_id` | *(pendiente — rellenar tras crear el proyecto en CurseForge)* |
+| `curseforge_project_id` | `1638146` |
 | `mod_id` | `ascendant_equipment` |
 | `display_name` | `Ascendant Equipment` |
 
@@ -22,7 +22,7 @@ Autenticación Core: cabecera `x-api-key`
 
 ## Variables para script (lectura automática)
 
-project_id = *(pendiente)*
+project_id = 1638146
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 release_type = release
 game_versions = 9638, 9639, 16498, 10150
