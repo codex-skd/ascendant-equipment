@@ -59,12 +59,21 @@ Vellumli sustituye a Patchouli, pero Patchouli era **dependencia opcional** en e
 
 | Dependencia | Estado |
 |---|---|
-| Common Toolkit | Pendiente de activar (Fase 1) |
+| Common Toolkit | ✅ Activada (Fase 1) |
 | Vellumli | Pendiente de activar (Fase 15, libro de guía) |
-| Ascendant Attributes | Pendiente de activar (Fase 3+) |
-| Ascendant Spawners | Pendiente de activar (Fase 8) |
+| Ascendant Attributes | ✅ Activada (Fase 1, usada por `CommonTooltipUtil`/`EquipmentEvents`) |
+| Ascendant Spawners | ✅ Activada (Fase 1, usada por `PresetSpawnerStats`) |
 | Ascendant Enchanting | Pendiente de activar (Fase 8/15, enchantments) |
 
 ## Incidencias registradas
 
-_(vacío por ahora — se añade aquí cualquier símbolo sin equivalente, comportamiento distinto, o versión que deje de ser compatible, con fecha y fase en la que se detectó)_
+### Fase 1 (2026-08-04)
+
+Tras portar `util/`, `attachments/`, `event/`, `AdventureConfig`→`EquipmentConfig`, `AdventureEvents`→`EquipmentEvents`, el build quedó con 169 errores — **todos** trazables a paquetes de fases futuras (`affix`, `socket`, `loot`, `tiers`, `commands`, `net`, `mobs.util`, `AscEq`), como se esperaba. Se detectaron y corrigieron 3 problemas reales (no relacionados con fases futuras):
+
+1. **`CanSocketGemEvent.setCanceled` — artefacto del decompilador, no cambio de API.** El original decompilado tenía `super.setCanceled(canceled)`, pero `Event` no declara ese método — vive como default method en `ICancellableEvent`. Vineflower renderiza mal las llamadas explícitas `Interfaz.super.metodo()`, quitando el calificador de interfaz. Fix: `ICancellableEvent.super.setCanceled(canceled)`. **Vigilar este patrón en fases futuras** — cualquier clase que implemente una interfaz con default methods y llame a `super.metodo()` puede tener el mismo problema silencioso (compila si hay una superclase con ese nombre de método, o falla como aquí si no la hay).
+2. **`ApothMiscUtil` accedía a `PlayerAdvancements.progress` / `ClientAdvancements.progress` (campos privados de vanilla).** Faltaba portar el `META-INF/accesstransformer.cfg` del Apotheosis original — el scaffold del template no lo incluía. Se añadió el archivo completo (todas las entradas del original, incluidas las de fases futuras: SmithingRecipe, BaseSpawner, LevelRenderer, etc. — no rompen nada estando de más, se validan cuando toque su fase). NeoForge lo detecta automáticamente en esa ruta (sin declarar `[[accessTransformers]]` en el toml, confirmado por el propio comentario de la plantilla).
+3. **`AffixItemIngredient.items()` — `BuiltInRegistries.ITEM.listElements()` devuelve `Stream<Reference<Item>>`, no asignable a `Stream<Holder<Item>>` por invarianza de genéricos.** Confirmado como comportamiento real y actual de MC 26.2 (no un bug de nuestro port) revisando el propio código fuente de Minecraft (`Registry.java`, que hace el mismo cast explícito internamente). Fix: `.listElements().<Holder<Item>>map(i -> i).filter(...)`.
+4. **Falso positivo, sin fix**: `SizedUpgradeRecipe` marcaba `onCraft` como "no override" — es cascada de que `ReactiveSmithingRecipe` (paquete `socket`, Fase 5) todavía no existe, no un problema real. Se resolverá solo cuando llegue esa fase.
+
+**Añadido a `AscendantEquipment.java`** (no eran del alcance original de Fase 1, pero varios archivos de `util/` los necesitaban y son helpers propios de la clase principal, sin dependencias de fases futuras): `loc(String)`, `lang(String, String, Object...)`, `langKey(String, String)`, `sysMessageHeader()` — equivalentes directos de los que tenía `Apotheosis.java`, con el namespace/branding renombrados (`"Apoth"` → `"AscEq"` en el prefijo de chat).

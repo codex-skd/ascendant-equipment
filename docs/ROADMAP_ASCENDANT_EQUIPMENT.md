@@ -48,7 +48,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | Fase | Alcance | Paquetes origen (nº clases) | Depende de |
 |---|---|---|---|
 | **0** ✅ | Setup: decompilar jar a `temp/apotheosis-src/` (hecho), resolver dependencias externas (hecho, ver `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`), decompilar los 5 reemplazos a `temp/dependency-src/` (hecho) | — | — |
-| **1** | Núcleo: config, utilidades base, attachments, eventos comunes | `util` (32), `attachments` (1), `event` (3), raíz `AdventureConfig`/`AdventureEvents` (2) | Fase 0 |
+| **1** ✅ | Núcleo: config, utilidades base, attachments, eventos comunes | `util` (32), `attachments` (1), `event` (3), raíz `AdventureConfig`/`AdventureEvents` (2) | Fase 0 |
 | **2** | Registro base: items, bloques, tiles, tabs, stats, triggers (el "esqueleto" de contenido, sin lógica de afijos aún) | `item` (5), parte de raíz `Apoth`/`Apoth$Items`/`Apoth$Blocks`/`Apoth$Tiles`/`Apoth$Tabs`/`Apoth$Stats`/`Apoth$Triggers` (~10 de 36) | Fase 1 |
 | **3** | Sistema de rareza y afijos (núcleo del mod): tiers de rareza, framework de afijos, efectos de afijo | `tiers` (18), `affix` — subset base (parte de 93) | Fase 2 |
 | **4** | Reforging y salvaging | `affix/reforging`, `affix/salvaging` (parte de 93), `recipe/reforging`, `recipe/salvaging` (parte de 4) | Fase 3 |
@@ -75,4 +75,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 ## Estado
 
-**Fase 0 completada.** Próximo paso: **Fase 1** (núcleo: `util`, `attachments`, `event`, `AdventureConfig`/`AdventureEvents`).
+**Fases 0 y 1 completadas.** 29 archivos portados a `util/`, `attachments/`, `event/`, `EquipmentConfig`, `EquipmentEvents`. Build con 169 errores, todos trazables a paquetes de fases futuras (verificado). Detalle de incidencias reales encontradas y corregidas en esta fase: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`. También se añadió `META-INF/accesstransformer.cfg` (completo, portado del original) y los helpers `loc/lang/langKey/sysMessageHeader` en `AscendantEquipment.java`.
+
+Próximo paso: **Fase 2** (registro base: items, bloques, tiles, tabs, stats, triggers — el "esqueleto" de contenido, sin lógica de afijos).

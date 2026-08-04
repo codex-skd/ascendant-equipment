@@ -4,9 +4,12 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -113,5 +116,21 @@ public class AscendantEquipment {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    public static Identifier loc(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
+    }
+
+    public static MutableComponent lang(String type, String path, Object... args) {
+        return Component.translatable(langKey(type, path), args);
+    }
+
+    public static String langKey(String type, String path) {
+        return type + "." + MODID + "." + path;
+    }
+
+    public static MutableComponent sysMessageHeader() {
+        return Component.translatable("[%s] ", Component.literal("AscEq").withStyle(ChatFormatting.GOLD));
     }
 }
