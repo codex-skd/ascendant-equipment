@@ -25,16 +25,21 @@
 
 Regla general: cada subpaquete (`affix`, `socket`, `loot`, `mobs`...) se mantiene igual en minúsculas (son nombres de dominio, no de marca), solo cambia el paquete raíz y las clases que llevan el nombre del mod.
 
-## Dependencias externas — decisión pendiente
+## Dependencias externas — RESUELTO
 
-El `neoforge.mods.toml` original declara como **obligatorias**: `placebo`, `apothic_attributes`, `apothic_spawners`, `apothic_enchanting` (todas del mismo autor, mods separados) y como opcionales `gateways`, `patchouli`, más integración con `curios`/`jei`.
+El `neoforge.mods.toml` original declara como **obligatorias**: `placebo`, `apothic_attributes`, `apothic_spawners`, `apothic_enchanting` (todas del mismo autor, mods separados) y como opcional `patchouli` (libro de guía).
 
-**No están incluidas en este roadmap** — replicarlas también multiplicaría el alcance por 5. Asunción de trabajo (a confirmar antes de la Fase 2, que es donde empiezan a hacer falta):
+Ninguna tiene build para NeoForge 26.2 todavía. Se sustituyen por los ports propios del estudio (mismo patrón que este proyecto), ya disponibles en `lib_ext/`:
 
-- Opción recomendada: mantenerlas como **dependencias reales** (añadir sus JARs para NeoForge 26.2 a `libs/` si existen builds compatibles, o `optional`/soft-dependency si no).
-- Alternativa: fusionar solo las piezas de esos mods que Apotheosis usa directamente (ej. atributos custom de `apothic_attributes`) dentro de `ascendant_equipment`, eliminando la dependencia dura.
+| Original | Reemplazo |
+|---|---|
+| Placebo | Common Toolkit (`common_toolkit`) |
+| Patchouli | Vellumli (`vellumli`) |
+| Apothic Attributes | Ascendant Attributes (`ascendant_attributes`) |
+| Apothic Spawners | Ascendant Spawners (`ascendant_spawners`) |
+| Apothic Enchanting | Ascendant Enchanting (`ascendant_enchanting`) |
 
-Se pregunta al usuario en la Fase 2 con la herramienta `question` — no se asume.
+Detalle completo, mapa de símbolos y registro de incidencias: **`docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`**. Se activan como `compileOnly`/`localRuntime` desde `lib_ext/` (patrón de `equivalent_legacy` con Curios) fase a fase, no todas de golpe — ver tabla de activación en ese documento.
 
 ## Fases
 
@@ -42,7 +47,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 | Fase | Alcance | Paquetes origen (nº clases) | Depende de |
 |---|---|---|---|
-| **0** | Setup: decompilar jar a `temp/apotheosis-src/`, resolver dependencias externas (ver arriba), definir mapping de paquetes/clases en `docs/ASCENDANT_RENAME_MAP.md` | — | — |
+| **0** ✅ | Setup: decompilar jar a `temp/apotheosis-src/` (hecho), resolver dependencias externas (hecho, ver `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`), decompilar los 5 reemplazos a `temp/dependency-src/` (hecho) | — | — |
 | **1** | Núcleo: config, utilidades base, attachments, eventos comunes | `util` (32), `attachments` (1), `event` (3), raíz `AdventureConfig`/`AdventureEvents` (2) | Fase 0 |
 | **2** | Registro base: items, bloques, tiles, tabs, stats, triggers (el "esqueleto" de contenido, sin lógica de afijos aún) | `item` (5), parte de raíz `Apoth`/`Apoth$Items`/`Apoth$Blocks`/`Apoth$Tiles`/`Apoth$Tabs`/`Apoth$Stats`/`Apoth$Triggers` (~10 de 36) | Fase 1 |
 | **3** | Sistema de rareza y afijos (núcleo del mod): tiers de rareza, framework de afijos, efectos de afijo | `tiers` (18), `affix` — subset base (parte de 93) | Fase 2 |
@@ -70,4 +75,4 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 ## Estado
 
-Ninguna fase iniciada. Próximo paso: **Fase 0** (decompilar + resolver dependencias externas).
+**Fase 0 completada.** Próximo paso: **Fase 1** (núcleo: `util`, `attachments`, `event`, `AdventureConfig`/`AdventureEvents`).
