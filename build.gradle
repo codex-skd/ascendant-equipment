@@ -125,6 +125,10 @@ dependencies {
     compileOnly files("lib_ext/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
     localRuntime files("lib_ext/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
 
+    // Ascendant Enchanting (port of Apothic Enchanting) is required by Phase 2 (AscEq.Items uses GlowyItem).
+    compileOnly files("lib_ext/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
+    localRuntime files("lib_ext/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

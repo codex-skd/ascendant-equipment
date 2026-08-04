@@ -49,7 +49,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 |---|---|---|---|
 | **0** ✅ | Setup: decompilar jar a `temp/apotheosis-src/` (hecho), resolver dependencias externas (hecho, ver `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`), decompilar los 5 reemplazos a `temp/dependency-src/` (hecho) | — | — |
 | **1** ✅ | Núcleo: config, utilidades base, attachments, eventos comunes | `util` (32), `attachments` (1), `event` (3), raíz `AdventureConfig`/`AdventureEvents` (2) | Fase 0 |
-| **2** | Registro base: items, bloques, tiles, tabs, stats, triggers (el "esqueleto" de contenido, sin lógica de afijos aún) | `item` (5), parte de raíz `Apoth`/`Apoth$Items`/`Apoth$Blocks`/`Apoth$Tiles`/`Apoth$Tabs`/`Apoth$Stats`/`Apoth$Triggers` (~10 de 36) | Fase 1 |
+| **2** | Registro base. **Alcance ajustado** (2026-08-04): `Apoth.java` es una clase monolítica de 717 líneas con sus 29 subclases anidadas interdependientes entre sí vía el registrador `Apoth.R` — no se puede partir en un subconjunto limpio como se planteó originalmente. Se porta **completo** como `AscEq.java` | `item` (4), raíz `Apoth` completo (29 subclases anidadas) → `AscEq.java` | Fase 1 |
 | **3** | Sistema de rareza y afijos (núcleo del mod): tiers de rareza, framework de afijos, efectos de afijo | `tiers` (18), `affix` — subset base (parte de 93) | Fase 2 |
 | **4** | Reforging y salvaging | `affix/reforging`, `affix/salvaging` (parte de 93), `recipe/reforging`, `recipe/salvaging` (parte de 4) | Fase 3 |
 | **5** | Sockets y gemas | `socket` (86) | Fase 3 |
@@ -75,6 +75,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 ## Estado
 
-**Fases 0 y 1 completadas.** 29 archivos portados a `util/`, `attachments/`, `event/`, `EquipmentConfig`, `EquipmentEvents`. Build con 169 errores, todos trazables a paquetes de fases futuras (verificado). Detalle de incidencias reales encontradas y corregidas en esta fase: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`. También se añadió `META-INF/accesstransformer.cfg` (completo, portado del original) y los helpers `loc/lang/langKey/sysMessageHeader` en `AscendantEquipment.java`.
+**Fases 0, 1 y 2 completadas.** Fase 2: `item/` (4 clases) + `Apoth.java` completo → `AscEq.java` (29 subclases anidadas). Build con 377 errores, el 100% trazables a paquetes de fases futuras (verificado independientemente). `AscendantEquipment.java` deliberadamente sin wiring de `AscEq` todavía (los initializers estáticos de `AscEq.Items` etc. fallarían en runtime con `NoClassDefFoundError` hasta que existan sus dependencias — se conecta cuando el registro esté completo). Ascendant Enchanting activado como dependencia (antes prevista para Fase 8/15, pero `AscEq.Items` la necesita ya). 1 bug real de API de MC 26.2 corregido (`MobEffect.isInstantenous()` → `isInstantaneous()`), 1 diferencia de firma en Common Toolkit documentada para cuando llegue su fase, y 1 bug del propio Apotheosis original portado fielmente (`AscEq.Items.rarity(path)` ignora su parámetro) — anotado para revisar en QA (Fase 17), no corregido porque el mod debe comportarse igual que el original. Detalle completo: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 2** (registro base: items, bloques, tiles, tabs, stats, triggers — el "esqueleto" de contenido, sin lógica de afijos).
+Próximo paso: **Fase 3** (sistema de rareza y afijos: `tiers` + subset base de `affix`).
