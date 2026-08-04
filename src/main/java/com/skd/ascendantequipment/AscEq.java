@@ -141,7 +141,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -334,7 +333,7 @@ public class AscEq {
       public static final Holder<Feature<?>> BOSS_DUNGEON = AscEq.R.feature("boss_dungeon", BossDungeonFeature::new);
       public static final Holder<Feature<?>> BOSS_DUNGEON_2 = AscEq.R.feature("boss_dungeon_2", BossDungeonFeature2::new);
       public static final Holder<Feature<?>> ROGUE_SPAWNER = AscEq.R.feature("rogue_spawner", RogueSpawnerFeature::new);
-      public static final StructureProcessorType<ItemFrameGemsProcessor> ITEM_FRAME_GEMS = AscEq.R
+      public static final MapCodec<ItemFrameGemsProcessor> ITEM_FRAME_GEMS = AscEq.R
          .structureProcessor("item_frame_gems", ItemFrameGemsProcessor.CODEC);
 
       private static void bootstrap() {
