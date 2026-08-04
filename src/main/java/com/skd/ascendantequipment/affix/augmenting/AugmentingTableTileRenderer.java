@@ -31,7 +31,7 @@ public class AugmentingTableTileRenderer implements BlockEntityRenderer<Augmenti
    public void extractRenderState(
       AugmentingTableTile blockEntity, AugmentingTableTileRenderer.State state, float partialTicks, Vec3 cameraPosition, CrumblingOverlay breakProgress
    ) {
-      super.extractRenderState(blockEntity, state, partialTicks, cameraPosition, breakProgress);
+      BlockEntityRenderer.super.extractRenderState(blockEntity, state, partialTicks, cameraPosition, breakProgress);
       state.time = blockEntity.time;
       state.partialTicks = partialTicks;
       state.stage = blockEntity.stage;
@@ -71,7 +71,7 @@ public class AugmentingTableTileRenderer implements BlockEntityRenderer<Augmenti
             List<BlockStateModelPart> parts = new ArrayList<>();
             model.collectParts(RandomSource.create(), parts);
             submitNodeCollector.submitBlockModel(
-               poseStack, Sheets.translucentBlockSheet(), parts, new int[]{-1}, state.lightCoords, OverlayTexture.NO_OVERLAY, 0
+               poseStack, Sheets.translucentBlockItemSheet(), parts, new int[]{-1}, state.lightCoords, OverlayTexture.NO_OVERLAY, 0
             );
             poseStack.popPose();
          }
