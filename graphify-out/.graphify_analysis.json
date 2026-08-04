@@ -1,0 +1,134 @@
+{
+  "communities": {
+    "0": [
+      "block",
+      "blockitem",
+      "blocks",
+      "creativemodetab",
+      "deferredblock",
+      "deferredholder",
+      "deferreditem",
+      "deferredregister",
+      "items",
+      "logger",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_java_mod"
+    ],
+    "1": [
+      "booleanvalue",
+      "builder",
+      "configvalue",
+      "intvalue",
+      "item",
+      "modconfigspec",
+      "src_main_java_com_skd_ascendantequipment_config",
+      "src_main_java_com_skd_ascendantequipment_config_config",
+      "src_main_java_com_skd_ascendantequipment_config_config_validateitemname"
+    ],
+    "2": [
+      "eventbussubscriber",
+      "fmlclientsetupevent",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_ascendantequipmentclient",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_ascendantequipmentclient_ascendantequipmentclient",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_ascendantequipmentclient_onclientsetup",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_java_mod",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_java_modcontainer",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_java_subscribeevent"
+    ],
+    "3": [
+      "gradlew",
+      "gradlew__entry",
+      "gradlew_die",
+      "gradlew_warn"
+    ],
+    "4": [
+      "ieventbus",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment_ascendantequipment",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_java_modcontainer"
+    ],
+    "5": [
+      "serverstartingevent",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment_onserverstarting",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_java_subscribeevent"
+    ],
+    "6": [
+      "buildcreativemodetabcontentsevent",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment_addcreative"
+    ],
+    "7": [
+      "fmlcommonsetupevent",
+      "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment_commonsetup"
+    ],
+    "8": [
+      "build"
+    ],
+    "9": [
+      "image_1"
+    ],
+    "10": [
+      "settings"
+    ]
+  },
+  "cohesion": {
+    "0": 0.28205128205128205,
+    "1": 0.25,
+    "2": 0.3611111111111111,
+    "3": 0.8333333333333334,
+    "4": 0.6666666666666666,
+    "5": 0.6666666666666666,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_com_skd_ascendantequipment_ascendantequipment_ascendantequipment",
+      "label": "AscendantEquipment",
+      "degree": 17
+    },
+    {
+      "id": "src_main_java_com_skd_ascendantequipment_config_config",
+      "label": "Config",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_com_skd_ascendantequipment_ascendantequipmentclient_ascendantequipmentclient",
+      "label": "AscendantEquipmentClient",
+      "degree": 5
+    },
+    {
+      "id": "image_1",
+      "label": "Mod Icon",
+      "degree": 0
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AscendantEquipment",
+      "target": "Item",
+      "source_files": [
+        "src/main/java/com/skd/ascendantequipment/AscendantEquipment.java",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 0 → community 1"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AscendantEquipment` connect `Ascendant Equipment` to `Mod Configuration`, `Event Handling`, `Server Startup`, `Creative Mode Tab`, `Common Setup`?",
+      "why": "High betweenness centrality (0.261) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Mod Icon` to the rest of the system?",
+      "why": "1 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
