@@ -116,6 +116,15 @@ dependencies {
     compileOnly files("lib_ext/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
     localRuntime files("lib_ext/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
 
+    // Ascendant Attributes (port of Apothic Attributes) is required by Phase 1 utilities (CommonTooltipUtil,
+    // EquipmentEvents) and by later affix phases.
+    compileOnly files("lib_ext/ascendant_attributes-26.2-neoforge-0.0.0-beta.2.jar")
+    localRuntime files("lib_ext/ascendant_attributes-26.2-neoforge-0.0.0-beta.2.jar")
+
+    // Ascendant Spawners (port of Apothic Spawners) is required by Phase 1 utilities (PresetSpawnerStats).
+    compileOnly files("lib_ext/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
+    localRuntime files("lib_ext/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -178,6 +187,7 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.compilerArgs += ['-Xmaxerrs', '5000']
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.

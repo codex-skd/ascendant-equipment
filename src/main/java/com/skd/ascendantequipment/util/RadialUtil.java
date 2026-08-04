@@ -1,0 +1,209 @@
+package com.skd.ascendantequipment.util;
+
+import com.google.common.base.Predicate;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.skd.ascendantequipment.AscEq;
+import com.skd.ascendantequipment.AscendantEquipment;
+import com.skd.ascendantequipment.net.RadialStatePayload;
+import com.skd.commontoolkit.codec.CommonToolkitCodecs;
+
+import io.netty.buffer.ByteBuf;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.Vec3i;
+import net.minecraft.core.Direction.Axis;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.ByIdMap;
+import net.minecraft.util.ByIdMap.OutOfBoundsStrategy;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.level.ClipContext.Block;
+import net.minecraft.world.level.ClipContext.Fluid;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.HitResult.Type;
+import net.neoforged.neoforge.event.level.block.BreakBlockEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+import java.util.UUID;
+import java.util.function.IntFunction;
+
+public class RadialUtil {
+    private static ThreadLocal<Set<UUID>> breakers = ThreadLocal.withInitial(HashSet::new);
+
+    public static void toggleRadialState(Player player) {
+        RadialState state = RadialState.getState(player);
+        RadialState next = state.next();
+        RadialState.setState(player, next);
+        player.sendSystemMessage(AscendantEquipment.sysMessageHeader()
+            .append(AscendantEquipment.lang("misc", "radial_state_updated", next.toComponent(), state.toComponent()).withStyle(ChatFormatting.YELLOW)));
+        PacketDistributor.sendToPlayer((ServerPlayer) player, new RadialStatePayload(next), new CustomPacketPayload[0]);
+    }
+
+    public static void attemptRadialMining(BreakBlockEvent e, RadialData data) {
+        Player player = e.getPlayer();
+        if (RadialState.isRadialMiningEnabled(player) && !player.level().isClientSide()) {
+            breakExtraBlocks(player, e.getPos(), data);
+        }
+    }
+
+    public static void breakExtraBlocks(Player player, BlockPos pos, RadialData data) {
+        if (breakers.get().add(player.getUUID())) {
+            try {
+                breakBlockRadius(player, pos, data);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+            breakers.get().remove(player.getUUID());
+        }
+    }
+
+    public static List<BlockPos> getBrokenBlocks(Player player, Direction direction, BlockPos srcPos, RadialData data) {
+        Level level = player.level();
+        if (data.x < 2 && data.y < 2) {
+            return List.of();
+        }
+
+        int lowerY = (int) Math.ceil(-data.y / 2.0);
+        int upperY = (int) Math.round(data.y / 2.0);
+        int lowerX = (int) Math.ceil(-data.x / 2.0);
+        int upperX = (int) Math.round(data.x / 2.0);
+        List<BlockPos> broken = new ArrayList<>();
+        float srcDestroySpeed = level.getBlockState(srcPos).getDestroySpeed(level, srcPos);
+
+        for (int iy = lowerY; iy < upperY; iy++) {
+            for (int ix = lowerX; ix < upperX; ix++) {
+                BlockPos genPos = new BlockPos(srcPos.getX() + ix + data.xOff, srcPos.getY() + iy + data.yOff, srcPos.getZ());
+                if (player.getDirection().getAxis() == Axis.X) {
+                    genPos = new BlockPos(genPos.getX() - (ix + data.xOff), genPos.getY(), genPos.getZ() + ix + data.xOff);
+                }
+
+                if (direction.getAxis().isVertical()) {
+                    genPos = rotateDown(genPos, iy + data.yOff, player.getDirection());
+                }
+
+                if (!genPos.equals(srcPos)) {
+                    BlockState state = level.getBlockState(genPos);
+                    float stateDestroySpeed = state.getDestroySpeed(level, genPos);
+                    if (!state.isAir() && stateDestroySpeed != -1.0F && stateDestroySpeed <= srcDestroySpeed * 3.0F && isEffective(state, player, genPos)) {
+                        broken.add(genPos);
+                    }
+                }
+            }
+        }
+
+        return broken;
+    }
+
+    public static HitResult tracePlayerLook(Player player) {
+        Vec3 base = player.getEyePosition(0.0F);
+        Vec3 look = player.getLookAngle();
+        double reach = player.getAttributeValue(Attributes.BLOCK_INTERACTION_RANGE);
+        Vec3 target = base.add(look.x * reach, look.y * reach, look.z * reach);
+        Level level = player.level();
+        return level.clip(new ClipContext(base, target, Block.OUTLINE, Fluid.NONE, player));
+    }
+
+    public static void breakBlockRadius(Player player, BlockPos srcPos, RadialData data) {
+        HitResult trace = tracePlayerLook(player);
+        if (trace != null && trace.getType() == Type.BLOCK) {
+            BlockHitResult res = (BlockHitResult) trace;
+            Direction face = res.getDirection();
+
+            for (BlockPos pos : getBrokenBlocks(player, face, srcPos, data)) {
+                if (player instanceof ServerPlayer sp) {
+                    sp.gameMode.destroyBlock(pos);
+                }
+                else {
+                    ClientAccess.breakClientBlock(pos);
+                }
+            }
+        }
+    }
+
+    static BlockPos rotateDown(BlockPos pos, int y, Direction horizontal) {
+        Vec3i vec = horizontal.getUnitVec3i();
+        return new BlockPos(pos.getX() + vec.getX() * y, pos.getY() - y, pos.getZ() + vec.getZ() * y);
+    }
+
+    public static boolean isEffective(BlockState state, Player player, BlockPos pos) {
+        return player.hasCorrectToolForDrops(state, player.level(), pos);
+    }
+
+    private static class ClientAccess {
+        public static void breakClientBlock(BlockPos pos) {
+            Minecraft.getInstance().gameMode.destroyBlock(pos);
+        }
+    }
+
+    public record RadialData(int x, int y, int xOff, int yOff) {
+        public static Codec<RadialData> CODEC = RecordCodecBuilder.create(
+            inst -> inst.group(
+                Codec.INT.fieldOf("x").forGetter(RadialData::x),
+                Codec.INT.fieldOf("y").forGetter(RadialData::y),
+                Codec.INT.fieldOf("xOff").forGetter(RadialData::xOff),
+                Codec.INT.fieldOf("yOff").forGetter(RadialData::yOff)
+            )
+                .apply(inst, RadialData::new));
+    }
+
+    public enum RadialState {
+        REQUIRE_NOT_SNEAKING(p -> !p.isShiftKeyDown()),
+        REQUIRE_SNEAKING(Entity::isShiftKeyDown),
+        ENABLED(p -> true),
+        DISABLED(p -> false);
+
+        public static final IntFunction<RadialState> BY_ID = ByIdMap.continuous(Enum::ordinal, values(), OutOfBoundsStrategy.ZERO);
+        public static final Codec<RadialState> CODEC = CommonToolkitCodecs.enumCodec(RadialState.class);
+        public static final StreamCodec<ByteBuf, RadialState> STREAM_CODEC = ByteBufCodecs.idMapper(BY_ID, Enum::ordinal);
+
+        private Predicate<Player> condition;
+
+        RadialState(Predicate<Player> condition) {
+            this.condition = condition;
+        }
+
+        public static boolean isRadialMiningEnabled(Player input) {
+            return getState(input).condition.apply(input);
+        }
+
+        public RadialState next() {
+            return switch (this) {
+                case REQUIRE_NOT_SNEAKING -> REQUIRE_SNEAKING;
+                case REQUIRE_SNEAKING -> ENABLED;
+                case ENABLED -> DISABLED;
+                case DISABLED -> REQUIRE_NOT_SNEAKING;
+            };
+        }
+
+        public Component toComponent() {
+            return Component.translatable("misc.ascendant_equipment.radial_state." + this.name().toLowerCase(Locale.ROOT));
+        }
+
+        public static RadialState getState(Player player) {
+            return player.getData(AscEq.Attachments.RADIAL_MINING_MODE);
+        }
+
+        public static void setState(Player player, RadialState state) {
+            player.setData(AscEq.Attachments.RADIAL_MINING_MODE, state);
+        }
+    }
+}
