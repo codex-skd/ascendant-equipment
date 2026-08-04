@@ -111,6 +111,11 @@ configurations {
 }
 
 dependencies {
+    // Common Toolkit is a required dependency (port of Placebo, in-house replacement): compiled
+    // against it from lib_ext and placed on the dev runtime classpath via localRuntime (not bundled in the jar).
+    compileOnly files("lib_ext/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
+    localRuntime files("lib_ext/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
