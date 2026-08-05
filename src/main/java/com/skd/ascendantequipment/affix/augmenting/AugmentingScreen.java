@@ -31,6 +31,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.FormattedText;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Style;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.entity.player.Inventory;
@@ -105,7 +106,7 @@ public class AugmentingScreen extends AdventureContainerScreen<AugmentingMenu> {
          drawPanel(gfx, left + 42, top + 39, 117, 65, -267386864, -13220529);
 
          for (int i = 0; i < split.size(); i++) {
-            gfx.text(this.font, split.get(i), left + 43, top + 40 + i * 11, 0xFF000000 | ChatFormatting.YELLOW.getColor(), true);
+            gfx.text(this.font, split.get(i), left + 43, top + 40 + i * 11, 0xFF000000 | TextColor.YELLOW.getValue(), true);
          }
       } else {
          drawPanel(gfx, left + 42, top + 39, 117, 65, -1441787888, -1439283889);
@@ -270,7 +271,7 @@ public class AugmentingScreen extends AdventureContainerScreen<AugmentingMenu> {
    }
 
    public static void handleRerollResult(DynamicHolder<Affix> newAffix) {
-      if (Minecraft.getInstance().screen instanceof AugmentingScreen scn) {
+      if (Minecraft.getInstance().gui.screen() instanceof AugmentingScreen scn) {
          scn.updateCachedState();
 
          for (int i = 0; i < scn.currentItemAffixes.size(); i++) {
