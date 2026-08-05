@@ -1,0 +1,17 @@
+{
+    "name": "Bleeding",
+    "icon": "ascendant_attributes:textures/mob_effect/bleeding.png",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(c)Bleeding$() is a negative effect applied by $(l:ascendant_equipment:village/fletching#broadhead)Broadhead Arrows$().$(p)It causes you to take damage every two seconds."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "The damage increases with the level of $(c)Bleeding$().$(p)The damage from $(c)Bleeding$() bypasses armor."
+        }
+	]
+}

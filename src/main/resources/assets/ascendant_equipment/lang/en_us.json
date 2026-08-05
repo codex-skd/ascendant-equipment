@@ -1,4 +1,7 @@
 {
+  "book.ascendant_equipment.name": "Chronicle of Shadows",
+  "book.ascendant_equipment.subtitle": "Guide to Ascendant Equipment",
+  "book.ascendant_equipment.landing": "Welcome to the world of Ascendant Equipment.$(br2)Ascendant Equipment is organized into $(#8080FF)Modules$(), and so is the content of this book.$(br2)Disabled modules are hidden.",
   "itemGroup.ascendant_equipment": "Example Mod Tab",
   "block.ascendant_equipment.example_block": "Example Block",
   "item.ascendant_equipment.example_item": "Example Item",
