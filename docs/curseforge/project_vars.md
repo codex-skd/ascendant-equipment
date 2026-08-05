@@ -24,7 +24,7 @@ Autenticación Core: cabecera `x-api-key`
 
 project_id = 1638146
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
-release_type = release
+release_type = beta
 game_versions = 9638, 9639, 16498, 10150
 relations =
 
