@@ -1,5 +1,11 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.3
+
+- **Fix crítico**: `META-INF/neoforge.mods.toml` vivía en `src/main/resources/templates/` pero `generateModMetadata` en `build.gradle` lee de `src/main/templates/` (sin `resources/`) — el mismatch hacía que la tarea corriera siempre como `NO-SOURCE`, así que **ningún jar hasta ahora (ni beta.1 ni beta.2) llevaba un `mods.toml` real**, solo la plantilla sin expandir en la ruta equivocada. NeoForge rechazaba el jar como "not a valid mod file" — el mod nunca llegó a cargar en partida. Confirmado con log real del juego, corregido moviendo el archivo a la ruta correcta.
+- Rellenadas las relaciones de dependencia de CurseForge (`docs/curseforge/project_vars.md`) para que la app instale automáticamente las 5 dependencias requeridas (Common Toolkit, Ascendant Attributes, Ascendant Spawners, Ascendant Enchanting, Vellumli) y liste las 4 opcionales (JEI, Jade, Max Health Fix, Enchantment Descriptions) — no aplicaban en la subida de la beta.2.
+- Corregido `release_type` en `project_vars.md` (estaba en `release`, ahora `beta`).
+
 ## 0.0.0-beta.2
 
 - Port completo de todo el contenido data-driven de Apotheosis (Fases 0-15 del roadmap): items, afijos, gemas, rarezas, recetas, loot tables, tags, comercios de aldeanos, advancements, mixins, comandos, red, compat opcional.
