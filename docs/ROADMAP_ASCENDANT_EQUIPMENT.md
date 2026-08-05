@@ -54,7 +54,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **4** ✅ | Reforging y salvaging. **Alcance corregido** (2026-08-04): no existen subcarpetas `recipe/reforging`/`recipe/salvaging` — `ReforgingRecipe`/`SalvagingRecipe` ya viven dentro de `affix/reforging`/`affix/salvaging`. Se añade el paquete `recipe/` real (misceláneo, sin fase asignada) por no depender de nada específico de esta fase | `affix/reforging` (8), `affix/salvaging` (7), `recipe/` (4) — 19 archivos | Fase 3 |
 | **5** ✅ | Sockets y gemas | `socket` (48 archivos fuente) | Fase 3 |
 | **6** ✅ | Loot integration: condiciones, entradas, funciones y modifiers de loot table que aplican afijos/rareza a drops | `loot` (24 archivos fuente) | Fase 3, 4, 5 |
-| **7** | Comercio: trades de aldeanos con afijos | `affix/trades` (parte de 93) | Fase 3, 6 |
+| **7** ✅ | Comercio: trades de aldeanos con afijos | `affix/trades` (2 archivos) | Fase 3, 6 |
 | **8** | Spawners y mobs de élite/invasores | `spawner` (3), `mobs` (38) | Fase 3, 6 |
 | **9** | Gateways (portales de boss) y su compat | `compat/gateways`, `gen` (6) | Fase 6, 8 |
 | **10** | Generación de mundo (estructuras, features asociadas a loot de Apotheosis) | `data/gateways` y resto de `data` relacionado con worldgen (parte de 34) | Fase 9 |
@@ -85,4 +85,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 6 completada.** 24 archivos portados (`loot/` completo), **los 24 compilan con cero errores**. Build bajó de 833 a 380 errores — se resolvieron todas las cascadas pendientes por `LootRarity`/`LootCategory`/`RarityRegistry` desde la Fase 1 (incluidas 8 en archivos de fases 4-5). 1 bug real corregido: `LootPoolSingletonContainer.EntryConstructor` es `protected` en MC 26.2, se referencia por nombre simple heredado en vez de import calificado. Detalle completo: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 7** (comercio: `affix/trades`, trades de aldeanos con afijos).
+**Fase 7 completada.** 2 archivos portados (`affix/trades/`: `AffixTrade`, `AutomaticAffixTrade`), ambos compilan con cero errores. Build bajó de 379 a 376. Resuelta la referencia pendiente de Fase 6 (`AscEq.LootFunctions.AUTOMATIC_AFFIX_TRADE`/`TIER_GATED_COMPONENTS`). Único hallazgo: mapeo `PlaceboCodecs`→`CommonToolkitCodecs` aplicado proactivamente (ya establecido desde Fase 6). Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 8** (spawners y mobs de élite/invasores: `spawner`, `mobs`).

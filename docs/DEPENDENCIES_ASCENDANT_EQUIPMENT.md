@@ -170,3 +170,19 @@ Bugs reales encontrados y corregidos (verificados contra fuentes de MC 26.2 / Co
 - `compat` (Fase 13): `GameStagesCompat` (`GenContext`).
 
 **Otras decisiones**: `RarityRenderData` conserva las rutas de textura `ascendant_equipment:textures/rarity/*.png` (beam/glow/shadow) con el namespace renombrado (sin copiar assets, Fase 16). `AffixLootEntry.stackTemplate` (componente record) y su acceso `stack()` (crea `ItemStack` vía `ItemStackTemplate.create()`) se mantienen igual que el decompilado. No se han copiado assets.
+
+### Fase 7 (2026-08-05)
+
+Tras portar `affix/trades/` (2 archivos: `AffixTrade` — contenedor `final` vacío de utilidades, sin miembros todavía — y `AutomaticAffixTrade`), el build bajó de **379 a 376 errores**. **Ambos archivos compilan con cero errores** y se resolvió la referencia pendiente de la Fase 6: `AscEq.LootFunctions.AUTOMATIC_AFFIX_TRADE` (AscEq.java:527) y `TIER_GATED_COMPONENTS` (AscEq.java:529) ya resuelven (`TierGatedTrade` ya existía en `loot/functions` desde la Fase 6).
+
+Bugs reales encontrados y corregidos:
+
+1. **`PlaceboCodecs` y `DynamicHolder` de Placebo no existen en el proyecto.** El decompilado de `AutomaticAffixTrade` importaba `dev.shadowsoffire.placebo.codec.PlaceboCodecs` y `dev.shadowsoffire.placebo.dynreg.DynamicHolder`; Common Toolkit (sustituto in-house de Placebo, único dependency que sí está en `build.gradle` como `compileOnly`/`localRuntime` de `lib_ext`) los mapea a `com.skd.commontoolkit.codec.CommonToolkitCodecs` y `com.skd.commontoolkit.dynreg.DynamicHolder`. Verificado con `javap`: `CommonToolkitCodecs.setOf(Codec<T>)` (misma semántica `LinkedHashSet`) y `DynamicHolder` (misma API: `isBound()`, `get()`, `getId()`). Es el mapeo de paquete ya establecido en la Fase 6 (`dev.shadowsoffire.placebo.codec.*` → `com.skd.commontoolkit.codec.*`), no un cambio de firma. Aplicado proactivamente (no esperó a que fallara el build).
+
+2. **`AffixLootRegistry.INSTANCE.holderCodec()`** existe con la misma firma en 26.2 (usado también por `AffixDefinition` en Fase 3) — sin cambio.
+
+**Patrones aplicados, sin sorpresas**: los casts del decompilado (`(Entity)ctx.getOptionalParameter(...)`, `(AffixLootEntry)picked.get().value()`) se mantienen; `AffixLootEntry.rarities()` es acceso a componente record; `NameHelper.setItemName`, `LootController.createRandomLootItem`/`createLootItem`, `GenContext.forPlayer`, `TieredWeights.wrapFilter(gCtx)` y `AscEq.Components.FROM_TRADER` (definido en AscEq.java:278) existen todos con la misma firma en este port. `DataComponents.ADDITIONAL_TRADE_COST` intacto en MC 26.2. No hay `subtypedSynced(...)` encadenado en esta fase, ni `super.algo()` con `@Override` sospechoso.
+
+**Pendiente de wiring (fase de módulo, no esta fase)**: `AutomaticAffixTrade.CODEC` ya está registrado en `AscEq.LootFunctions.bootstrap()` desde una fase anterior; el `bootstrap()` se ejecuta cuando se porte la clase del módulo (Fase 11, igual que el resto de registros).
+
+**Desglose de los 376 errores restantes** (todos trazables a fases futuras; ningún símbolo apunta a código de fases pasadas ni a `affix/trades/`): los 4 errores "method does not override or implement a method from a supertype" (`AugmentingScreen` x3, `GemCaseScreen` x1) son cascadas de la jerarquía rota por la ausencia de `AdventureContainerScreen` (client, Fase 11); el resto son `cannot find symbol`/`package does not exist` en `net` (Fase 12), `commands` (Fase 12), `gen` (Fase 9), `mobs` (Fase 8), `client` (Fase 11), `mixin` (Fase 14), `particle` (Fase 11), `advancements` (Fase 15) y `compat` (Fase 13), todos ya documentados en el desglose de la Fase 6.
