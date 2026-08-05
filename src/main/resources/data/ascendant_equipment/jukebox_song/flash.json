@@ -1,0 +1,8 @@
+{
+    "comparator_output": 6,
+    "description": {
+        "translate": "jukebox_song.apotheosis.flash"
+    },
+    "length_in_seconds": 97.0,
+    "sound_event": "ascendant_equipment:music_disc_flash"
+}
