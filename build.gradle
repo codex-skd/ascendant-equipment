@@ -27,8 +27,17 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
+sourceSets.main.java {
+    // Gateways has no published NeoForge 26.2 build (verified against Modrinth/CurseForge, Phase 9/16
+    // finding). This soft-integration package is excluded from compilation until a real dependency
+    // exists; it is not wired as a mod dependency in neoforge.mods.toml either, same as upstream.
+    exclude("com/skd/ascendantequipment/compat/gateways/**")
+}
+
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
+    // JEI/Jade are compiled against local jars in lib_ext (see dependencies block) instead of remote
+    // Maven, same convention as the other soft/required dependencies of this project.
 }
 
 base {
@@ -129,12 +138,27 @@ dependencies {
     compileOnly files("lib_ext/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
     localRuntime files("lib_ext/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
 
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    // Vellumli (port of Patchouli, used by the guide book) is required by AscEq.java (Phase 2 forward-refs)
+    // and VellumliCompat.java (Phase 15e).
+    compileOnly files("lib_ext/vellumli-26.2-neoforge-0.0.0-beta.2.jar")
+    localRuntime files("lib_ext/vellumli-26.2-neoforge-0.0.0-beta.2.jar")
+
+    // JEI is a soft/optional integration, same as upstream Apotheosis: compiled against for compat/jei/,
+    // not declared in neoforge.mods.toml (ModList.isLoaded checks handle its absence at runtime).
+    compileOnly files("lib_ext/jei-26.2-neoforge-30.15.0.121.jar")
+    localRuntime files("lib_ext/jei-26.2-neoforge-30.15.0.121.jar")
+
+    // Jade is a soft/optional integration, same as upstream Apotheosis: compiled against for
+    // compat/AdventureHwylaPlugin.java etc., not declared in neoforge.mods.toml.
+    compileOnly files("lib_ext/Jade-mc26.2-NeoForge-26.2.8.jar")
+    localRuntime files("lib_ext/Jade-mc26.2-NeoForge-26.2.8.jar")
+
+    // MaxHealthFix and EnchantmentDescriptions are listed as optional companion mods on the upstream
+    // Apotheosis CurseForge page, but neither is referenced in code: MHFMixinLivingEntity is Apotheosis's
+    // own reimplementation of MaxHealthFix's fix (no import of the mod itself, "maxhealthfix$" is just a
+    // naming convention), and EnchantmentDescriptions has zero references anywhere in the decompiled
+    // source. No compile/runtime dependency needed here; they belong in the CurseForge "optional
+    // dependency" project relations when publishing, not in build.gradle.
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar

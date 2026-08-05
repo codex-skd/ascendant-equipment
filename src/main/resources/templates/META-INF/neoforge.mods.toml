@@ -36,11 +36,14 @@ logoFile="assets/${mod_id}/icon.png" #optional
 credits="Port of Apotheosis by Shadows_of_Fire (MIT)" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-#authors=""
+authors="Stalking Dragons"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Ascendant Equipment is a loot, affix and equipment progression mod for NeoForge 26.2.
+It is a port of Apotheosis by Shadows_of_Fire (MIT licensed), rebuilt with original
+identifiers on top of in-house replacements for Placebo, Apothic Attributes, Apothic
+Spawners and Apothic Enchanting. No original art or assets are included.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
@@ -80,6 +83,46 @@ config="${mod_id}.mixins.json"
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="${minecraft_version_range}"
     ordering="NONE"
+    side="BOTH"
+
+# Common Toolkit (in-house replacement for Placebo) is a required dependency.
+[[dependencies.${mod_id}]]
+    modId="common_toolkit"
+    type="required"
+    versionRange="[0.0.0-beta.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Ascendant Attributes (in-house replacement for Apothic Attributes) is a required dependency.
+[[dependencies.${mod_id}]]
+    modId="ascendant_attributes"
+    type="required"
+    versionRange="[0.0.0-beta.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Ascendant Spawners (in-house replacement for Apothic Spawners) is a required dependency.
+[[dependencies.${mod_id}]]
+    modId="ascendant_spawners"
+    type="required"
+    versionRange="[0.0.0-beta.5,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Ascendant Enchanting (in-house replacement for Apothic Enchanting) is a required dependency.
+[[dependencies.${mod_id}]]
+    modId="ascendant_enchanting"
+    type="required"
+    versionRange="[0.0.0-beta.3,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Vellumli (in-house replacement for Patchouli, powers the guide book) is a required dependency.
+[[dependencies.${mod_id}]]
+    modId="vellumli"
+    type="required"
+    versionRange="[0.0.0-beta.2,)"
+    ordering="AFTER"
     side="BOTH"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares

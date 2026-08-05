@@ -63,8 +63,9 @@ public class ApothSmithingCategory implements IRecipeCategory<SmithingRecipe> {
       return EXTENSIONS.containsKey(recipe.getClass());
    }
 
+   @SuppressWarnings("unchecked")
    public static <R extends SmithingRecipe> void registerExtension(Class<R> clazz, ApothSmithingCategory.Extension<R> ext) {
-      EXTENSIONS.put(clazz, ext);
+      EXTENSIONS.put(clazz, (ApothSmithingCategory.Extension<SmithingRecipe>)ext);
    }
 
    public interface Extension<R extends SmithingRecipe> extends IRecipeCategoryExtension<R> {
