@@ -1,0 +1,46 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "minecraft:max_health",
+    "categories": [
+        "ascendant_equipment:helmet",
+        "ascendant_equipment:chestplate",
+        "ascendant_equipment:leggings",
+        "ascendant_equipment:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 2.0,
+            "max": 4.0,
+            "step": 0.25
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 2.0,
+            "max": 5.0,
+            "step": 0.25
+        },
+        "ascendant_equipment:rare": {
+            "min": 3.0,
+            "max": 6.0,
+            "step": 0.25
+        },
+        "ascendant_equipment:epic": {
+            "min": 3.0,
+            "max": 8.0,
+            "step": 0.25
+        },
+        "ascendant_equipment:mythic": {
+            "min": 5.0,
+            "max": 8.0,
+            "step": 0.25
+        }
+    }
+}

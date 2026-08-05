@@ -1,0 +1,20 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:elytra_flight",
+    "categories": [
+        "ascendant_equipment:chestplate"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:epic": 1.0,
+        "ascendant_equipment:mythic": 1.0
+    }
+}

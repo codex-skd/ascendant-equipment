@@ -1,0 +1,23 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "neoforge:creative_flight",
+    "categories": [
+        "ascendant_equipment:chestplate"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "ascendant_equipment:armor/attribute/winged"
+        ],
+        "weights": {
+            "pinnacle": {
+                "quality": 0.2,
+                "weight": 1
+            }
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:mythic": 1.0
+    }
+}

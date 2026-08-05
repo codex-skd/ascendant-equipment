@@ -1,0 +1,73 @@
+{
+    "color": "#5555FF",
+    "invader_sound": "ascendant_equipment:invader_rare",
+    "material": "ascendant_equipment:luminous_crystal_shard",
+    "render_data": {
+        "beam_height": 2.5,
+        "beam_radius": 0.035,
+        "beam_texture": "ascendant_equipment:textures/rarity/beam.png",
+        "glow_radius": 0.0,
+        "glow_texture": "ascendant_equipment:textures/rarity/glow.png",
+        "shadow": {
+            "alpha": 255,
+            "frame_time": 1.5,
+            "frames": 20,
+            "size": 0.35,
+            "texture": "ascendant_equipment:textures/rarity/shadow_t2.png"
+        }
+    },
+    "rules": [
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "basic_effect"
+        },
+        {
+            "type": "ascendant_equipment:chanced",
+            "chance": 0.35,
+            "rule": {
+                "type": "ascendant_equipment:affix",
+                "affix_type": "basic_effect"
+            }
+        },
+        {
+            "type": "ascendant_equipment:socket",
+            "min": 0,
+            "max": 2
+        },
+        {
+            "type": "ascendant_equipment:durability",
+            "min": 0.1,
+            "max": 0.25
+        }
+    ],
+    "sort_index": 500,
+    "weights": {
+        "haven": {
+            "quality": 5.0,
+            "weight": 40
+        },
+        "frontier": {
+            "quality": 5.0,
+            "weight": 100
+        },
+        "ascent": {
+            "quality": 2.5,
+            "weight": 500
+        },
+        "summit": {
+            "quality": 2.5,
+            "weight": 290
+        },
+        "pinnacle": {
+            "weight": 100
+        }
+    }
+}

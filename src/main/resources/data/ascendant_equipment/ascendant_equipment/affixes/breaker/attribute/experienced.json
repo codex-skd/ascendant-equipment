@@ -1,0 +1,38 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:experience_gained",
+    "categories": [
+        "ascendant_equipment:breaker"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_multiplied_total",
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 0.25,
+            "max": 0.4
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 0.25,
+            "max": 0.4
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.35,
+            "max": 0.5
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.35,
+            "max": 0.6
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.55,
+            "max": 0.65
+        }
+    }
+}

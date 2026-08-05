@@ -307,3 +307,35 @@ Bugs reales encontrados y corregidos (verificados con `javap` sobre `minecraft-p
 2. **`EntitySubPredicate` perdió el método `codec()` y el registro cambió de tipo**: en 26.2 `EntitySubPredicate` solo tiene `matches(...)`/`and(...)` (ya no devuelve su propio codec), y `Registries.ENTITY_SUB_PREDICATE_TYPE` pasó de `Registry<MapCodec<? extends EntitySubPredicate>>` a `Registry<Codec<? extends EntitySubPredicate>>` (verificado: `EntitySubPredicates.bootstrap(Registry<Codec<? extends EntitySubPredicate>>)`). Fix: en `InvaderPredicate`/`MonsterPredicate` se eliminó el override `codec()` y `CODEC` pasó de `MapCodec.unit(INSTANCE)` a `MapCodec.unit(INSTANCE).codec()` (tipo `Codec<X>`, igual que `AffixItemPredicate.CODEC`); en `AscEq.java` los campos `EntitySubPredicates.IS_MONSTER`/`IS_INVADER` cambiaron de tipo `MapCodec<X>` a `Codec<X>` y se eliminó el cast `(MapCodec<X>)` (que además habría lanzado `ClassCastException` en runtime al asignar un `Codec` a un campo `MapCodec`).
 
 **Patrones conocidos aplicados, sin sorpresas**: `PlaceboCodecs.setOf` → `CommonToolkitCodecs.setOf` (Fase 6/7) en `PurityItemPredicate`/`RarityItemPredicate`; `DynamicHolder` → `com.skd.commontoolkit.dynreg.DynamicHolder`; `Apoth.Components.*`/`Apoth.DataComponentPredicates.*` → `AscEq.*`; NBT key `apoth.boss` literal en `InvaderPredicate` (política de Fase 4/8). `RarityRegistry.INSTANCE.holderCodec()` y el constructor de 3 args de `ItemPredicate` (`Optional<HolderSet<Item>>, MinMaxBounds.Ints, DataComponentMatchers`) verificados sin cambios con `javap`. No hay `subtypedSynced` ni `Interfaz.super.metodo()` en esta fase. No se copiaron assets ni se dejó basura.
+
+### Fase 15b (2026-08-05) — datos JSON: contenido propio, advancement/, tags/, gear_sets/
+
+Portados 4 bloques de datos JSON desde `temp/apotheosis-src/data/apotheosis/` a `src/main/resources/data/ascendant_equipment/`, con sustitución 1:1 de prefijo de namespace (paths literales intactos):
+
+| Bloque | Origen → Destino | Archivos |
+|---|---|---|
+| Contenido propio | `apotheosis/apotheosis/` → `ascendant_equipment/ascendant_equipment/` | 232 |
+| Advancements | `apotheosis/advancement/` → `ascendant_equipment/advancement/` | 11 |
+| Tags | `apotheosis/tags/` → `ascendant_equipment/tags/` | 23 |
+| Gear sets (placebo) | `apotheosis/placebo/gear_sets/` → `ascendant_equipment/common_toolkit/gear_sets/` | 27 |
+| **Total** | | **293** |
+
+Dentro de `tags/`, el subdirectorio `tags/placebo/gear_sets/` (10 archivos) se movió a `tags/common_toolkit/gear_sets/` (mismo mapeo de modid).
+
+**Mapeo de namespaces aplicado** (`sed -i` sobre los 293 `.json`, sin tocar `worldgen/` ni `gateways/` ya portados):
+
+| Origen | Destino |
+|---|---|
+| `apotheosis:` | `ascendant_equipment:` |
+| `apothic_attributes:` | `ascendant_attributes:` |
+| `apothic_enchanting:` | `ascendant_enchanting:` |
+| `apothic_spawners:` | `ascendant_spawners:` |
+| `placebo:` | `common_toolkit:` |
+
+**Verificación post-sustitución**: 0 referencias residuales a los 5 namespaces origen; `minecraft:`, `neoforge:`, `gateways:`, `c:` (common tags, e.g. `#c:is_cold/overworld`, `#c:ores/copper`) intactos y esperados. Ejemplos verificados: `apothic_attributes:overheal` → `ascendant_attributes:overheal`, `apotheosis:ascent/iron` → `ascendant_equipment:ascent/iron`.
+
+**Build**: `./gradlew.bat build --console=plain` → **falla en `compileJava`** por errores pre-existentes ajenos a este port: dependencias externas ausentes del classpath — Jade (`snownee.jade.api`, en `compat/Adventure*Provider`/`AdventureHwylaPlugin`, ~10 archivos) y Gateways (`dev.shadowsoffire.gateways`, en `compat/gateways/*`, ~198 referencias). Ambos grupos son código Java ya commiteado (Fase 9/13), sin relación con los datos JSON. El datapack NUNCA llegó a validarse: la validación vive en `runData`, que requiere compilar el mod primero.
+
+**Validación alternativa aplicada**: los 293 JSON se validaron sintácticamente con un parser JSON externo → **293/293 válidos, 0 inválidos** (sin daño por `sed`). Como comprobación cruzada, `AscEq` usa el namespace `ascendant_equipment` con paths literales idénticos al de origen, y los `gear_sets` tag-value apuntan a `ascendant_equipment:ascent/enchanted_gold` etc., coherente con los ids reales de los archivos copiados.
+
+**Hallazgos**: (1) El build no puede avanzar a la validación de datapack hasta resolver las deps externas de compat/ (Jade, Gateways) — pendiente de fases de integración de dependencias, no de este port; (2) `c:` (common tags) aparece 12 veces y se dejó intencionalmente sin mapear, es el namespace estándar de tags comunes de NeoForge y ya estaba así en origen; (3) no se dejó basura: los 293 archivos provienen todos de los 4 bloques especificados.

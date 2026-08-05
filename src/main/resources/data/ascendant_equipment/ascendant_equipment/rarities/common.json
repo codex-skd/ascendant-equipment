@@ -1,0 +1,44 @@
+{
+    "color": "#808080",
+    "invader_sound": "minecraft:intentionally_empty",
+    "material": "ascendant_equipment:mysterious_scrap_metal",
+    "render_data": {
+        "beam_height": 0.0,
+        "beam_radius": 0.035,
+        "beam_texture": "ascendant_equipment:textures/rarity/beam.png",
+        "glow_radius": 0.065,
+        "glow_texture": "ascendant_equipment:textures/rarity/glow.png"
+    },
+    "rules": [
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:chanced",
+            "chance": 0.25,
+            "rule": {
+                "type": "ascendant_equipment:affix",
+                "affix_type": "stat"
+            }
+        }
+    ],
+    "sort_index": 300,
+    "weights": {
+        "haven": {
+            "weight": 600
+        },
+        "frontier": {
+            "weight": 290
+        },
+        "ascent": {
+            "weight": 100
+        },
+        "summit": {
+            "weight": 0
+        },
+        "pinnacle": {
+            "weight": 0
+        }
+    }
+}

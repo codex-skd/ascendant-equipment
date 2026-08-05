@@ -1,0 +1,158 @@
+{
+    "constraints": {
+        "dimensions": [
+            "minecraft:overworld"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "frontier": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "ascent": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "ascendant_equipment:all_stats",
+            "attributes": [
+                "minecraft:max_health",
+                "minecraft:knockback_resistance",
+                "minecraft:movement_speed",
+                "minecraft:attack_damage",
+                "minecraft:attack_knockback",
+                "minecraft:attack_speed",
+                "minecraft:armor",
+                "minecraft:armor_toughness",
+                "minecraft:luck",
+                "minecraft:step_height",
+                "minecraft:block_interaction_range",
+                "minecraft:entity_interaction_range",
+                "ascendant_attributes:armor_pierce",
+                "ascendant_attributes:armor_shred",
+                "ascendant_attributes:arrow_damage",
+                "ascendant_attributes:arrow_velocity",
+                "ascendant_attributes:cold_damage",
+                "ascendant_attributes:crit_chance",
+                "ascendant_attributes:crit_damage",
+                "ascendant_attributes:current_hp_damage",
+                "ascendant_attributes:dodge_chance",
+                "ascendant_attributes:experience_gained",
+                "ascendant_attributes:fire_damage",
+                "ascendant_attributes:ghost_health",
+                "ascendant_attributes:healing_received",
+                "ascendant_attributes:life_steal",
+                "minecraft:block_break_speed",
+                "ascendant_attributes:overheal",
+                "ascendant_attributes:prot_pierce",
+                "ascendant_attributes:prot_shred",
+                "neoforge:swim_speed"
+            ],
+            "gem_class": "ascendant_equipment:helmet",
+            "operation": "add_multiplied_total",
+            "values": {
+                "flawed": 0.05,
+                "normal": 0.075,
+                "flawless": 0.1,
+                "perfect": 0.15
+            }
+        },
+        {
+            "type": "ascendant_equipment:drop_transform",
+            "conditions": [
+                {
+                    "condition": "ascendant_equipment:matches_block",
+                    "valid_blocks": "#c:ores/copper"
+                }
+            ],
+            "desc": "gem.ascendant_equipment:overworld/royalty.bonus.pickaxe",
+            "gem_class": "ascendant_equipment:breaker",
+            "inputs": "#c:raw_materials/copper",
+            "output": {
+                "id": "minecraft:raw_gold"
+            },
+            "values": {
+                "flawed": 0.15,
+                "normal": 0.2,
+                "flawless": 0.25,
+                "perfect": 0.4
+            }
+        },
+        {
+            "type": "ascendant_equipment:multi_attribute",
+            "desc": "bonus.ascendant_equipment:multi_attr.desc.and",
+            "gem_class": "ascendant_equipment:bow",
+            "modifiers": [
+                {
+                    "attribute": "ascendant_attributes:prot_shred",
+                    "operation": "add_value",
+                    "values": {
+                        "flawed": 0.25,
+                        "normal": 0.3,
+                        "flawless": 0.35,
+                        "perfect": 0.4
+                    }
+                },
+                {
+                    "attribute": "ascendant_attributes:draw_speed",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.35,
+                        "normal": -0.45,
+                        "flawless": -0.55,
+                        "perfect": -0.65
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ascendant_equipment:multi_attribute",
+            "desc": "bonus.ascendant_equipment:multi_attr.desc.and_but",
+            "gem_class": "ascendant_equipment:shield",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:armor",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "flawed": 0.15,
+                        "normal": 0.25,
+                        "flawless": 0.35,
+                        "perfect": 0.5
+                    }
+                },
+                {
+                    "attribute": "minecraft:armor_toughness",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "flawed": 0.075,
+                        "normal": 0.125,
+                        "flawless": 0.225,
+                        "perfect": 0.3
+                    }
+                },
+                {
+                    "attribute": "minecraft:movement_speed",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.25,
+                        "normal": -0.3,
+                        "flawless": -0.35,
+                        "perfect": -0.4
+                    }
+                }
+            ]
+        }
+    ]
+}

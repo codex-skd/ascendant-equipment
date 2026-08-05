@@ -1,0 +1,62 @@
+{
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "ascendant_equipment:attribute",
+            "attribute": "ascendant_attributes:arrow_velocity",
+            "gem_class": "ascendant_equipment:bow",
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.05,
+                "chipped": 0.15,
+                "flawed": 0.25,
+                "normal": 0.35,
+                "flawless": 0.425,
+                "perfect": 0.55
+            }
+        },
+        {
+            "type": "ascendant_equipment:attribute",
+            "attribute": "minecraft:block_break_speed",
+            "gem_class": {
+                "key": "tools",
+                "types": [
+                    "ascendant_equipment:breaker",
+                    "ascendant_equipment:shears"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.05,
+                "chipped": 0.15,
+                "flawed": 0.25,
+                "normal": 0.35,
+                "flawless": 0.425,
+                "perfect": 0.5
+            }
+        },
+        {
+            "type": "ascendant_equipment:attribute",
+            "attribute": "minecraft:movement_speed",
+            "gem_class": {
+                "key": "lower_armor",
+                "types": [
+                    "ascendant_equipment:leggings",
+                    "ascendant_equipment:boots"
+                ]
+            },
+            "operation": "add_multiplied_total",
+            "values": {
+                "cracked": 0.1,
+                "chipped": 0.225,
+                "flawed": 0.375,
+                "normal": 0.45,
+                "flawless": 0.55,
+                "perfect": 0.7
+            }
+        }
+    ]
+}

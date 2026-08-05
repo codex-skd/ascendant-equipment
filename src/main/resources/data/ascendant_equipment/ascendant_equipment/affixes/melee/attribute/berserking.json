@@ -1,0 +1,40 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:overheal",
+    "categories": [
+        "ascendant_equipment:melee_weapon"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "ascendant_equipment:melee/attribute/vampiric"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.15,
+            "max": 0.25
+        }
+    }
+}
