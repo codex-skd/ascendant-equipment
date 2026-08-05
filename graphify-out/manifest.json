@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1785938489.9091754,
-    "ast_hash": "1288da83a77b96af86c004bb65a81273",
+    "mtime": 1785942037.4800305,
+    "ast_hash": "3ad7195e5568aee8533ba957722b1764",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785940372.8676069,
-    "ast_hash": "89cd441662ef306af72e85b00801174b",
+    "mtime": 1785942234.1450386,
+    "ast_hash": "c56b48b854d0f2441af76b37cfed5d1a",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5635,7 +5635,7 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
-    "mtime": 1785794031.075699,
+    "mtime": 1785941015.447822,
     "ast_hash": "b7bd9fa309a1b79f7f2eaa35d9ec03d1",
     "semantic_hash": ""
   },
@@ -5667,6 +5667,821 @@
   "docs/curseforge/versions/0.0.0-beta.3.md": {
     "mtime": 1785940363.8229804,
     "ast_hash": "af4aa725c04e1c6eecb48d6c9f9050ed",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.4.md": {
+    "mtime": 1785942225.8380828,
+    "ast_hash": "57eb4313e00091172aa8321181a41dc7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/augmenting/bottom.png": {
+    "mtime": 1785807035.5916805,
+    "ast_hash": "11adebf3759b46b5e050f21c5ac5a71e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/augmenting/side.png": {
+    "mtime": 1785807036.038038,
+    "ast_hash": "0862b22a8be46901231d11cefa2448f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/augmenting/top.png": {
+    "mtime": 1785807035.8381712,
+    "ast_hash": "9eeaffeccfaad90a42e78205e1420305",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/augmenting/top_lit.png": {
+    "mtime": 1785807035.3672307,
+    "ast_hash": "da2815333d1b39ca4e0ccb64044258f6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/basic_gem_case.png": {
+    "mtime": 1785807035.771658,
+    "ast_hash": "ba053789545444305fdf6d389221589c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/boss_spawner.png": {
+    "mtime": 1785807035.6265156,
+    "ast_hash": "04f8537384f6739e0bbca975a1e4393f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/boss_spawner_top.png": {
+    "mtime": 1785807035.7375698,
+    "ast_hash": "205dcf8b94c4c0043ce34b004354bfd4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/ender_gem_case.png": {
+    "mtime": 1785807035.4376025,
+    "ast_hash": "207653b94f02df18ed7c3516047faf18",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/gem_case.png": {
+    "mtime": 1785807035.7731788,
+    "ast_hash": "c450adf5c31a69e98b61d15acee4abf8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/gem_cutting_table.png": {
+    "mtime": 1785807035.423239,
+    "ast_hash": "8a34cfebe7b73d9d24f02d95f9224b72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/simple_table_lit.png": {
+    "mtime": 1785807035.8219218,
+    "ast_hash": "6541454081cbed9ab836859c11c4b4f3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/simple_table_side.png": {
+    "mtime": 1785807035.684421,
+    "ast_hash": "20c5de8a3f9ffa7af0b9233be4b80fa3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/simple_table_top.png": {
+    "mtime": 1785807035.9666536,
+    "ast_hash": "1aa289c3a8a0697faf31513b8e8610af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/table_lit.png": {
+    "mtime": 1785807035.9829657,
+    "ast_hash": "25f2566eacdf1790e7bde87d9bb3e994",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/table_side.png": {
+    "mtime": 1785807035.848277,
+    "ast_hash": "6d39ab5a23d33d91652236e92269d62f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/reforging/table_top.png": {
+    "mtime": 1785807036.0618272,
+    "ast_hash": "dcf32f2bc66746e59c0854a460664ad3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/salvaging_table_bottom.png": {
+    "mtime": 1785807035.3410075,
+    "ast_hash": "6689837cdc44352c4619324940fcb79e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/salvaging_table_front.png": {
+    "mtime": 1785807035.5982654,
+    "ast_hash": "c3ab8fc86e0e7efbe1945bf8295690d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/salvaging_table_side.png": {
+    "mtime": 1785807035.534106,
+    "ast_hash": "696de395c12a532306a3a02ace7a0bc0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/blocks/salvaging_table_top.png": {
+    "mtime": 1785807036.127879,
+    "ast_hash": "a8689b1a98a29156f982485cb4e48347",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/advancements/backgrounds/apoth.png": {
+    "mtime": 1785807036.0827727,
+    "ast_hash": "5c49c4d6e0a9dfde62716f3c9020bd36",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/animations/ascent.png": {
+    "mtime": 1785807035.3763926,
+    "ast_hash": "5127b5fd9c751e2ca9cec8a94a195c63",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/animations/frontier.png": {
+    "mtime": 1785807036.1767566,
+    "ast_hash": "bc759142512d62f9f2f3e1493947528a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/animations/haven.png": {
+    "mtime": 1785807035.5916805,
+    "ast_hash": "3a878d1c07148ffa8abf7ed0a0e4494c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/animations/pinnacle.png": {
+    "mtime": 1785807035.585325,
+    "ast_hash": "7b855d065d8cfe239628202e7a8ee892",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/animations/summit.png": {
+    "mtime": 1785807035.5647576,
+    "ast_hash": "c22f818d8a0b0c800345e7e74affdc91",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/augmenting.png": {
+    "mtime": 1785807035.8675864,
+    "ast_hash": "1d0e61b1e1053f167f8ea1589ee7da3d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/ench_info_scn.png": {
+    "mtime": 1785807035.3395038,
+    "ast_hash": "2ed31989f323f7ba5899916053b591ff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/enchantments_window.png": {
+    "mtime": 1785807035.954934,
+    "ast_hash": "822b74b07d3161d34c5d07f9b34f0290",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/frontier_icon.png": {
+    "mtime": 1785807035.7131877,
+    "ast_hash": "c1242e6a7895bad7c7b033f22441bf70",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/haven_icon.png": {
+    "mtime": 1785807035.876707,
+    "ast_hash": "c59eaaa10f356c23640b1055bef7a44c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/power_slider.png": {
+    "mtime": 1785807035.6095753,
+    "ast_hash": "8f62ea28d8cbff3e71edd31c40699ca9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/question_mark.png": {
+    "mtime": 1785807035.6966023,
+    "ast_hash": "2ee8ec0e728e957d977115f4b792dc4d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/slot_selector.png": {
+    "mtime": 1785807036.1538455,
+    "ast_hash": "652932067c0c9676b843607bb115e141",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/summit_icon.png": {
+    "mtime": 1785807035.5647576,
+    "ast_hash": "77abe70cf2e369d510a9b1441cf078d9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/book/weights.png": {
+    "mtime": 1785807035.6935768,
+    "ast_hash": "a26bca7dfa1d41c8bcb03a3c9aba5652",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/buttons/ascent.png": {
+    "mtime": 1785807035.9239948,
+    "ast_hash": "6c5202ccc95ea760b452ddd2305c72e4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/buttons/frontier.png": {
+    "mtime": 1785807036.0303402,
+    "ast_hash": "ca38223dcc6b021cf4c921dd729cf920",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/buttons/haven.png": {
+    "mtime": 1785807035.5128574,
+    "ast_hash": "0461267aea6a446a03c9b23151ffdc97",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/buttons/pinnacle.png": {
+    "mtime": 1785807035.404853,
+    "ast_hash": "9e0aa00685a6497d0810b6361268e749",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/buttons/summit.png": {
+    "mtime": 1785807036.204736,
+    "ast_hash": "1f3a44d09fd0b560102e558f280a7578",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/detail_column.png": {
+    "mtime": 1785807035.7365716,
+    "ast_hash": "adb6b35117639961712b9bc90a771eba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/gem_case.png": {
+    "mtime": 1785807035.7829032,
+    "ast_hash": "f2f1fc77588d68cc3501f625916fe29e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/gem_cutting.png": {
+    "mtime": 1785807036.1991572,
+    "ast_hash": "3aad688c7ca47e34484886378202c775",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/gem_cutting_jei.png": {
+    "mtime": 1785807035.9930751,
+    "ast_hash": "f70bb29231d2fbb4838c84c79f8d3744",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/mountain.png": {
+    "mtime": 1785807035.5632265,
+    "ast_hash": "043d504dc1283efb9a507ab1cf48fef4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/reforge.png": {
+    "mtime": 1785807036.1035147,
+    "ast_hash": "4efb644d20eaaef2f016dfc46e3dc184",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/reforge_animation.png": {
+    "mtime": 1785807035.4833386,
+    "ast_hash": "cd02bd20612dd5506e00175c096c42b0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/salvage.png": {
+    "mtime": 1785807035.501148,
+    "ast_hash": "e5648b3018a4a83ca1c89262e84ed263",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/salvage_jei.png": {
+    "mtime": 1785807035.8280125,
+    "ast_hash": "ee993b91dadc9d77e10316e4bcbfda82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/separator_line.png": {
+    "mtime": 1785807036.1767566,
+    "ast_hash": "5b48cd3498c6efefb3e554c02483b836",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/socket.png": {
+    "mtime": 1785807035.4391172,
+    "ast_hash": "6924b85cee6d30c9649d04d655d274d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sprites/tooltip/compare_background.png": {
+    "mtime": 1785807035.6950922,
+    "ast_hash": "608d51102559bbaa44149316fc28a53d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sprites/tooltip/compare_frame.png": {
+    "mtime": 1785807036.2371943,
+    "ast_hash": "d8d04b412783ce3387bef02d6e5b9c6d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sprites/widget/button.png": {
+    "mtime": 1785807035.5422468,
+    "ast_hash": "f58d7ff73b35b67ccbbb5d436e10ecac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sprites/widget/button_disabled.png": {
+    "mtime": 1785807035.4594886,
+    "ast_hash": "70e56dbf179bb0c46c7ca13fa033ab96",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sprites/widget/button_highlighted.png": {
+    "mtime": 1785807035.429893,
+    "ast_hash": "4f3cac017374ce026605865a2d54f668",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sword_empty.png": {
+    "mtime": 1785807035.7365716,
+    "ast_hash": "ad6feefd8ab0fca2bdbbc5ef3fd670b3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/sword_full.png": {
+    "mtime": 1785807035.9865377,
+    "ast_hash": "4c0fbe0c57fc0df923b736dd3830b1bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/activate.png": {
+    "mtime": 1785807036.1070707,
+    "ast_hash": "ada763e8118444c58aa1ccb72f77e4c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/detailed_info.png": {
+    "mtime": 1785807035.560183,
+    "ast_hash": "93f03af03aa676f76b7b0b2220f5d02f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/introduction.png": {
+    "mtime": 1785807035.557141,
+    "ast_hash": "a6853f5996325d9bf9ffe2459f5da8c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/tier_difficulty.png": {
+    "mtime": 1785807036.124853,
+    "ast_hash": "5bf512ddd5ce7eb8f9dd0ca6d04fb876",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/tier_name.png": {
+    "mtime": 1785807035.8169801,
+    "ast_hash": "151b46f376f621288b9621cdcf2246d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/gui/tutorial/world_tiers.png": {
+    "mtime": 1785807036.1782606,
+    "ast_hash": "80dddd8b2ed82edb214d77d18127c4fa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/arcane_sands.png": {
+    "mtime": 1785807036.1431606,
+    "ast_hash": "8df2ba75fc7529064f59839d16238ff0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/book.png": {
+    "mtime": 1785807035.586833,
+    "ast_hash": "1a157f92b96898d73fa3f8692c584e20",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/boss_summoner.png": {
+    "mtime": 1785807035.6950922,
+    "ast_hash": "0c75e27843ce0dee745061c15cc0bea8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/diamond_upgrade_smithing_template.png": {
+    "mtime": 1785807036.1325383,
+    "ast_hash": "4be408bed23c6dd8dafcc1a8c2300ad0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/disks/flash.png": {
+    "mtime": 1785807035.7695298,
+    "ast_hash": "f6c144231742e017fb1e0695a92bb684",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/disks/glimmer.png": {
+    "mtime": 1785807035.8412051,
+    "ast_hash": "4ed4eb1ef3b9e97c693f9bf6fbc089a5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/disks/shimmer.png": {
+    "mtime": 1785807035.6679635,
+    "ast_hash": "a205a06f5d56b81ec99fc3b627f410d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gem_dust.png": {
+    "mtime": 1785807035.477254,
+    "ast_hash": "26b7a5ff17784843a364f5491fd32c5c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gem_fused_slate.png": {
+    "mtime": 1785807035.7405295,
+    "ast_hash": "a70ef138ebebdde27e0a486f1f3b79a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/10.png": {
+    "mtime": 1785807035.9239948,
+    "ast_hash": "978ab5b296f353b68d69f551d204d4a1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/16.png": {
+    "mtime": 1785807035.6095753,
+    "ast_hash": "48308cd0c3ea971d6270841b626db60d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/3.png": {
+    "mtime": 1785807035.8295426,
+    "ast_hash": "b8aa54cbf5a1b95391f0ceb2df1ad79b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/ballast.png": {
+    "mtime": 1785807035.8305435,
+    "ast_hash": "dccb96ccdc46aaa252cc288387ceca7e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/blood_lord.png": {
+    "mtime": 1785807036.1370926,
+    "ast_hash": "0d84dc4cc6e1eb086069eccab1ba0d66",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/brawlers.png": {
+    "mtime": 1785807035.3672307,
+    "ast_hash": "0b130118c55a1e4ccee0dbd2a337a7db",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/breach.png": {
+    "mtime": 1785807035.543773,
+    "ast_hash": "365a745c59e48d054099e5a91a05134e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/combatant.png": {
+    "mtime": 1785807035.4727042,
+    "ast_hash": "5ef5a8fc124e2af13d75e8be177cd106",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/default.png": {
+    "mtime": 1785807035.5325637,
+    "ast_hash": "0f2b86991a43ada9eca3c439a3c015d6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/earth.png": {
+    "mtime": 1785807035.7905679,
+    "ast_hash": "fd687e9b1a819f542e1baaad190ca2b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/endersurge.png": {
+    "mtime": 1785807035.4376025,
+    "ast_hash": "24415866e29499d9d1697c4ff27042eb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/forest.png": {
+    "mtime": 1785807035.7506614,
+    "ast_hash": "7423cd509b186ebbb385abbbfd0b1003",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/guardian.png": {
+    "mtime": 1785807035.4151268,
+    "ast_hash": "b41613d4602ff67003449aca1a09bab7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/inferno.png": {
+    "mtime": 1785807035.4493866,
+    "ast_hash": "f712bb0e0c4707b3eb58c9e28e1b9977",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/lightning.png": {
+    "mtime": 1785807036.2852936,
+    "ast_hash": "ca71553a31952133ffabfd192aa714ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/lunar.png": {
+    "mtime": 1785807035.9920647,
+    "ast_hash": "6f7fa1daec4fd03ddd238f4279b9d9d3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/mageslayer.png": {
+    "mtime": 1785807036.1883984,
+    "ast_hash": "ee97fc4f12340ba81d6534007c63842f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/molten_breach.png": {
+    "mtime": 1785807035.516451,
+    "ast_hash": "bcf2fe0ff94cfee3c388ad2714e75aa6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/queen.png": {
+    "mtime": 1785807036.2021985,
+    "ast_hash": "f5bd536f6e3a909d1b3790dff0a7cdb3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/royalty.png": {
+    "mtime": 1785807035.3824635,
+    "ast_hash": "0947f2282d166b810c51f786dbb24359",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/samurai.png": {
+    "mtime": 1785807035.9809313,
+    "ast_hash": "71a9fa6af65ab4466f190450d97792c8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/slipstream.png": {
+    "mtime": 1785807035.5677166,
+    "ast_hash": "95426d16dfa00e67dc556b1bce268b46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/solar.png": {
+    "mtime": 1785807035.8407013,
+    "ast_hash": "dd4f13aa567634c2a631f4ad6805e5d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/splendor.png": {
+    "mtime": 1785807035.3794053,
+    "ast_hash": "057eab6aab6c281ee842f8757dcb1498",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/tyrannical.png": {
+    "mtime": 1785807036.0874171,
+    "ast_hash": "81821787f3aff953806edd761e387204",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/verdant_ruin.png": {
+    "mtime": 1785807036.160422,
+    "ast_hash": "cfa31706dfdb4b0e219bf5a791769422",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gems/warlord.png": {
+    "mtime": 1785807036.2597475,
+    "ast_hash": "68b9e1caad065a35b39691442eb82097",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/godforged_pearl.png": {
+    "mtime": 1785807035.885403,
+    "ast_hash": "1d0d7996ffd5b4804ca35fa7af5b901d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/gold_upgrade_smithing_template.png": {
+    "mtime": 1785807035.9472737,
+    "ast_hash": "edc7e3318494d6e5da27268b2de3dc5d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/hammer.png": {
+    "mtime": 1785807035.4757528,
+    "ast_hash": "03284374a6524130e0692edaa488070c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/iron_upgrade_smithing_template.png": {
+    "mtime": 1785807035.7695298,
+    "ast_hash": "124102e9a66e2d2d96b195eca6e103a7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/luminous_crystal_shard.png": {
+    "mtime": 1785807035.3925557,
+    "ast_hash": "289215a3e8dc5ce7d261ff6b6792641f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/mysterious_scrap_metal.png": {
+    "mtime": 1785807036.2315657,
+    "ast_hash": "2b03580fae83fb60c4fed4a2d10dfe6c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/potion_charm.png": {
+    "mtime": 1785807035.9743645,
+    "ast_hash": "47c4a4a838378be8f90a7fefd1742dd5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/potion_charm_glow.png": {
+    "mtime": 1785807035.9386837,
+    "ast_hash": "07a5c8b4c2b651966a9b1cd98f790baf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/potion_charm_static.png": {
+    "mtime": 1785807036.2822292,
+    "ast_hash": "164458b83cd64762c32a4d8061e1f4b3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/enhancement.png": {
+    "mtime": 1785807035.9467714,
+    "ast_hash": "4e8a346696d6bb479a4b83d592d18253",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/malice.png": {
+    "mtime": 1785807035.8068528,
+    "ast_hash": "2069058f6f1932fe27439541a5ac05c2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/rebirth.png": {
+    "mtime": 1785807035.6117418,
+    "ast_hash": "28419f2943cbb69479ff57215b98525f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/socketing.png": {
+    "mtime": 1785807036.2822292,
+    "ast_hash": "8a7470b6e12e3346a40c5d106dfbd79b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/superior_socketing.png": {
+    "mtime": 1785807035.586833,
+    "ast_hash": "960f73fcf08f4fc01f2d5497f70da5c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/supremacy.png": {
+    "mtime": 1785807035.9457717,
+    "ast_hash": "adece5a376b44ed7a42ecbe5cc7ee26d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/unnaming.png": {
+    "mtime": 1785807035.9681816,
+    "ast_hash": "523a3b83262d4dc3533cd90f900953d5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/sigils/withdrawal.png": {
+    "mtime": 1785807035.771658,
+    "ast_hash": "a14a39bbffb1dfc7e589b457c8c16aad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/ascent_spawner_upgrade_rune.png": {
+    "mtime": 1785807035.674778,
+    "ast_hash": "15643cbf7e09fca65c4f6e9dc16685dd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/burning_spawner_rune.png": {
+    "mtime": 1785807035.5275967,
+    "ast_hash": "a1035e6c8d6d04d50bae6f4050d28d0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/echoing_spawner_rune.png": {
+    "mtime": 1785807036.0534692,
+    "ast_hash": "1d4075e9be1fb91b5388a42b7f2dcf36",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/frontier_spawner_upgrade_rune.png": {
+    "mtime": 1785807035.4401371,
+    "ast_hash": "8f4d34d88aee9934cf76fa3d754760a3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/ignore_conditions_spawner_rune.png": {
+    "mtime": 1785807035.9168952,
+    "ast_hash": "cd506fdae4367d29b6a7cde30a1ece76",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/ignore_light_spawner_rune.png": {
+    "mtime": 1785807035.7667785,
+    "ast_hash": "28b0f7e127af7f3a26a6885fa93975ea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/ignore_players_spawner_rune.png": {
+    "mtime": 1785807035.6270194,
+    "ast_hash": "bdda0e8fe6ca95b7e14b882bb17c7f42",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/infused_spawner_rune.png": {
+    "mtime": 1785807035.548347,
+    "ast_hash": "d72cf99b2002a9f15193d48c1f98d614",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/initial_health_spawner_rune.png": {
+    "mtime": 1785807035.7695298,
+    "ast_hash": "dc978d15d777c314b6560b25227e6bcb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/no_ai_spawner_rune.png": {
+    "mtime": 1785807035.5189536,
+    "ast_hash": "c9aa3a78454e05e1e5f5cf04dbf55ecd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/pinnacle_spawner_upgrade_rune.png": {
+    "mtime": 1785807036.0736794,
+    "ast_hash": "8fdfd40f5a48f40dc3ff3e40267847cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/redstone_control_spawner_rune.png": {
+    "mtime": 1785807035.8381712,
+    "ast_hash": "baf8b17f1f60acf72a4352c5acd7e0c5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/silent_spawner_rune.png": {
+    "mtime": 1785807036.2433863,
+    "ast_hash": "759eb236e730beb056f0d444c325d42b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/spawn_range_spawner_rune.png": {
+    "mtime": 1785807035.5452986,
+    "ast_hash": "bde4cde8a4f302ab2af6060093cd402f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/spawner_chain.png": {
+    "mtime": 1785807035.673251,
+    "ast_hash": "b28d93e5b1aff6902dd3496839cf4a1d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/spawner_rune.png": {
+    "mtime": 1785807035.6285284,
+    "ast_hash": "d72cf99b2002a9f15193d48c1f98d614",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/summit_spawner_upgrade_rune.png": {
+    "mtime": 1785807035.7567885,
+    "ast_hash": "165080e4bcdc0f2bdaa12cfe89871766",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/spawner_runes/youthful_spawner_rune.png": {
+    "mtime": 1785807035.6239927,
+    "ast_hash": "08935a76ac48c9a443196e6d7e0b4618",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/star_cube.png": {
+    "mtime": 1785807036.1050432,
+    "ast_hash": "dba6a7b63c18c6495a4aad4d546e9794",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/star_cube_lit.png": {
+    "mtime": 1785807036.273074,
+    "ast_hash": "9b7a60470d446b96f7a02290a0c2c7e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/items/timeworn_fabric.png": {
+    "mtime": 1785807036.263369,
+    "ast_hash": "f7bc881e68c842ea751f2b6e24a8b3a0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/painting/craig.png": {
+    "mtime": 1785807035.6224656,
+    "ast_hash": "240f8f3eaf1fb823c4d3edd26a916f8b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/painting/enchanting_table.png": {
+    "mtime": 1785807035.3925557,
+    "ast_hash": "ad5d2fde11b4ff8531ad80dac78f7c7e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/painting/gems.png": {
+    "mtime": 1785807036.1019783,
+    "ast_hash": "0ca0d1beab1e19c7424429173b45d07f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/painting/tower.png": {
+    "mtime": 1785807036.1946175,
+    "ast_hash": "4aa17bed59d633cef01c90ef145eba26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/painting/window.png": {
+    "mtime": 1785807036.1168094,
+    "ast_hash": "7dce50db210d21f73e9601523453b32b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/particle/rarity_glow.png": {
+    "mtime": 1785807035.7583106,
+    "ast_hash": "08f3d350fd04a925a7c21d9cf22a2878",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/beam.png": {
+    "mtime": 1785807036.273074,
+    "ast_hash": "af4790206c328bc1a909161d675cac33",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/glow.png": {
+    "mtime": 1785807035.6007795,
+    "ast_hash": "af4790206c328bc1a909161d675cac33",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/shadow.png": {
+    "mtime": 1785807035.4848592,
+    "ast_hash": "b3a4665932fff8727a102a33aea63222",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/shadow_t1.png": {
+    "mtime": 1785807035.673251,
+    "ast_hash": "e1374b0d0014805ec8a5faf45398e816",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/shadow_t2.png": {
+    "mtime": 1785807036.0706115,
+    "ast_hash": "e668946c1129cc6c0eeef0d2242fe383",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/shadow_t3.png": {
+    "mtime": 1785807035.6255145,
+    "ast_hash": "4ed5fb549b684044075eb26e4b83c802",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/textures/rarity/shadow_t4.png": {
+    "mtime": 1785807036.2111857,
+    "ast_hash": "72ed4fb1e1fc515e712c288ecf2c8c7b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/invader_epic.ogg": {
+    "mtime": 1785807035.4431677,
+    "ast_hash": "6f93d701dd9411b413c43f844b31885f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/invader_mythic.ogg": {
+    "mtime": 1785807035.3784015,
+    "ast_hash": "0e0282d63d4076308d4b1295f584fa29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/invader_rare.ogg": {
+    "mtime": 1785807035.4120626,
+    "ast_hash": "00c574f12890d75d15ce0c3a42a5e4f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/invader_uncommon.ogg": {
+    "mtime": 1785807035.7198539,
+    "ast_hash": "d29401ab0ff242d420cfd19e63e19edf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/malice.ogg": {
+    "mtime": 1785807035.8154771,
+    "ast_hash": "6d10cd7e6195847f3ab69a056e5793d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/music/flash.ogg": {
+    "mtime": 1785807035.802271,
+    "ast_hash": "1dc5d5fc9f836c8dbc1974526cf5080c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/music/glimmer.ogg": {
+    "mtime": 1785807036.027303,
+    "ast_hash": "b1484700ed5dfec386d279d57e8ebb4e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/music/shimmer.ogg": {
+    "mtime": 1785807035.7083266,
+    "ast_hash": "0a80276df2468f3f0cb8873e96987b51",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/reforge_item_placed.ogg": {
+    "mtime": 1785807035.3702939,
+    "ast_hash": "3bb0a380bff40e9d6df5de273424986c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/sounds/reforge_item_reforged.ogg": {
+    "mtime": 1785807035.7777238,
+    "ast_hash": "8d4cf1f966cc9cffdc2bc3b63c82f0a8",
     "semantic_hash": ""
   }
 }
