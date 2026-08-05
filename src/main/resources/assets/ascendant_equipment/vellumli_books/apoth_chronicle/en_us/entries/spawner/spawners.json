@@ -1,0 +1,17 @@
+{
+    "name": "Mob Spawners",
+    "icon": "minecraft:spawner",
+    "category": "ascendant_equipment:spawner/spawner",
+	"flag": "ascendant_equipment:spawner",
+	"sortnum": -1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "A $(9)Mob Spawner$() is a magical block that can funnel in entities from the void.$(p)But you knew that already, so let's get on to the new stuff.$(p)In Apotheosis, spawners can be picked up with $(9)Silk Touch$()."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "Harvesting a spawner in that way will incur an additional durability cost.$(p)Mob spawners have a series of $(l:ascendant_equipment:spawner/stats)Spawner Stats$() which control their functionality.$(p)These stats can be changed using $(l:ascendant_equipment:spawner/modifiers)Spawner Modifiers$()."
+        }
+	]
+}

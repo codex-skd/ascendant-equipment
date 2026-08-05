@@ -1,0 +1,31 @@
+{
+    "name": "Gem Case",
+    "icon": "ascendant_equipment:gem_case",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 6,
+    "pages": [
+        {
+            "type": "vellumli:crafting",
+			"recipe": "ascendant_equipment:gem_case",
+			"text": "The $(9)Gem Case$() is a storage device for $(l:ascendant_equipment:adventure/gems/gems)Gems$().$(p)It can hold up to thirty two thousand gems of each type and purity, and can be upgraded to hold more."
+		},
+        {
+            "title": "Filtering",
+            "type": "vellumli:text",
+            "text": "The Gem Case has two filters: a name filter and an item filter.$(p)The name filter allows you to search for a gem by name, while the item filter allows you to search for gems that fit in a specific item."
+        },
+		{
+			"title": "Gem Cutting",
+            "type": "vellumli:text",
+            "text": "The Gem Case also has six auxiliary slots that can be used to hold upgrade materials.$(p)If enough materials and gems are present, following the purity upgrade recipes, you can upgrade Gems directly in the case.$(p)This effectively obsoletes the $(l:ascendant_equipment:adventure/gems/gem_cutting)Gem Cutting Table$()."
+        },
+        {
+            "type": "vellumli:spotlight",
+            "item": "ascendant_equipment:ender_gem_case",
+            "title": "A Supreme Gem Case",
+            "link_recipe": true,
+            "text": "The $(9)Gem Case of House Fabergé$() has a $(6)Storage Capacity$() of two billion.$(p)It cannot be crafted directly, and must be created using $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$()."
+        }
+	]
+}
