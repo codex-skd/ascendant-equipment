@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785939567.5230145,
-    "ast_hash": "0219923e989644e5f298b4936c0f5bfa",
+    "mtime": 1785940372.8676069,
+    "ast_hash": "89cd441662ef306af72e85b00801174b",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5645,8 +5645,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1785939643.2317657,
-    "ast_hash": "3843d2cc51c83a709ebc67f9a9d06a69",
+    "mtime": 1785940230.9919503,
+    "ast_hash": "a3bab527b1f2300ae88585e16d65ddd3",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -5662,6 +5662,11 @@
   "src/main/resources/assets/ascendant_equipment/icon.png": {
     "mtime": 1785784233.965631,
     "ast_hash": "aa9a1d4ba043b118a2790d61fb20d742",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.3.md": {
+    "mtime": 1785940363.8229804,
+    "ast_hash": "af4aa725c04e1c6eecb48d6c9f9050ed",
     "semantic_hash": ""
   }
 }
