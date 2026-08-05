@@ -53,7 +53,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **3** ✅ | Sistema de rareza y afijos (núcleo del mod): tiers de rareza, framework de afijos, efectos de afijo. **Alcance ajustado** (2026-08-04): se añade `affix/augmenting/` (mesa de aumentos), que el roadmap original no asignaba a ninguna fase — usa directamente `tiers/augments`, ya incluido aquí | `tiers` (9 archivos), `affix` raíz (11), `affix/effect` (16), `affix/augmenting` (5) — 41 archivos | Fase 2 |
 | **4** ✅ | Reforging y salvaging. **Alcance corregido** (2026-08-04): no existen subcarpetas `recipe/reforging`/`recipe/salvaging` — `ReforgingRecipe`/`SalvagingRecipe` ya viven dentro de `affix/reforging`/`affix/salvaging`. Se añade el paquete `recipe/` real (misceláneo, sin fase asignada) por no depender de nada específico de esta fase | `affix/reforging` (8), `affix/salvaging` (7), `recipe/` (4) — 19 archivos | Fase 3 |
 | **5** ✅ | Sockets y gemas | `socket` (48 archivos fuente) | Fase 3 |
-| **6** | Loot integration: condiciones, entradas, funciones y modifiers de loot table que aplican afijos/rareza a drops | `loot` (43) | Fase 3, 4, 5 |
+| **6** ✅ | Loot integration: condiciones, entradas, funciones y modifiers de loot table que aplican afijos/rareza a drops | `loot` (24 archivos fuente) | Fase 3, 4, 5 |
 | **7** | Comercio: trades de aldeanos con afijos | `affix/trades` (parte de 93) | Fase 3, 6 |
 | **8** | Spawners y mobs de élite/invasores | `spawner` (3), `mobs` (38) | Fase 3, 6 |
 | **9** | Gateways (portales de boss) y su compat | `compat/gateways`, `gen` (6) | Fase 6, 8 |
@@ -83,4 +83,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 5 completada.** 48 archivos portados (`socket/` completo: raíz, `gem/`, `gem/bonus/`, `gem/bonus/special/`, `gem/cutting/`, `gem/storage/`). Build con 833 errores (789 en Fase 4), 37 de los 48 archivos compilan con cero errores. Se resolvieron las cascadas de `ReactiveSmithingRecipe` pendientes desde Fase 1 (`SizedUpgradeRecipe`, `MaliceRecipe`, `SupremacyRecipe` ya no marcan "does not override"). 2 renames vanilla reales de MC 26.1.2→26.2 corregidos y verificados con `javap`/fuente real: `advancements.criterion.ContextAwarePredicate` → `advancements.predicates.ContextAwarePredicate`, y `Minecraft.screen` → `Minecraft.gui.screen()`. Patrones ya conocidos (Interfaz.super, UpdatingSlot de 5 args) aplicados proactivamente y verificados, sin sorpresas. Detalle completo: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 6** (integración de loot: condiciones, entradas, funciones y modifiers — `loot` completo, 43 clases).
+**Fase 6 completada.** 24 archivos portados (`loot/` completo), **los 24 compilan con cero errores**. Build bajó de 833 a 380 errores — se resolvieron todas las cascadas pendientes por `LootRarity`/`LootCategory`/`RarityRegistry` desde la Fase 1 (incluidas 8 en archivos de fases 4-5). 1 bug real corregido: `LootPoolSingletonContainer.EntryConstructor` es `protected` en MC 26.2, se referencia por nombre simple heredado en vez de import calificado. Detalle completo: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 7** (comercio: `affix/trades`, trades de aldeanos con afijos).
