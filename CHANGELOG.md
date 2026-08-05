@@ -9,7 +9,6 @@
 - **Graphify actualizado**: Conocimiento de fase post-release integrado (5219 nodos, 12892 edges).
 - **Build reproducible**: Todas las dependencias versionadas en `libs/`, compilación limpia desde checkout fresco.
 - Subido a CurseForge vía `curseforge-upload.ps1` (file ID `8584096`).
-- Pendiente: Fase 16 (arte propio, paralelo), Fase 17 (QA).
 
 ## 0.0.0-beta.5
 
