@@ -1,5 +1,10 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.5
+
+- **Traducciones completas en 4 idiomas**: generadas y completadas íntegramente las traducciones para `en_us.json`, `es_es.json`, `fr_fr.json` y `de_de.json`. Cobertura de 389 claves por idioma incluyendo affixes, gemas, items, bloques, UI, tooltips, advancements, y modificadores. Mejora de 17% a 100% de cobertura de traducción.
+- **Auditoría de integridad**: verificación exhaustiva del mod confirmó compilación limpia, estructura correcta, assets completos (1737 archivos), mixins bien definidos, dependencias correctas, y conformidad con workflow.
+
 ## 0.0.0-beta.4
 
 - **Assets binarios completos**: texturas (169) de bloques, ítems, GUI, rarezas, partículas y pinturas; sonidos (10) incluyendo los 3 discos de música; y las 5 estructuras NBT de jefe/torre que el worldgen referenciaba. Ahora el JAR empaqueta todo lo que los models/blockstates/sounds.json ya declaraban.
