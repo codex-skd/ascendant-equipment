@@ -1,0 +1,12 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "modifier": {
+        "attribute": "ascendant_attributes:prot_pierce",
+        "modifier_id": "ascendant_equipment:pinnacle/prot_pierce",
+        "operation": "add_value",
+        "value": 20.0
+    },
+    "sort_index": 300,
+    "target": "monsters",
+    "tier": "pinnacle"
+}

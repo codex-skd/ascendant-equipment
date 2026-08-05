@@ -1,0 +1,61 @@
+{
+    "color": "#33FF33",
+    "invader_sound": "ascendant_equipment:invader_uncommon",
+    "material": "ascendant_equipment:timeworn_fabric",
+    "render_data": {
+        "beam_height": 0.0,
+        "beam_radius": 0.035,
+        "beam_texture": "ascendant_equipment:textures/rarity/beam.png",
+        "glow_radius": 0.065,
+        "glow_texture": "ascendant_equipment:textures/rarity/glow.png",
+        "shadow": {
+            "alpha": 175,
+            "frame_time": 1.5,
+            "frames": 20,
+            "size": 0.35,
+            "texture": "ascendant_equipment:textures/rarity/shadow_t1.png"
+        }
+    },
+    "rules": [
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:chanced",
+            "chance": 0.5,
+            "rule": {
+                "type": "ascendant_equipment:affix",
+                "affix_type": "basic_effect"
+            }
+        },
+        {
+            "type": "ascendant_equipment:socket",
+            "min": 0,
+            "max": 1
+        }
+    ],
+    "sort_index": 400,
+    "weights": {
+        "haven": {
+            "quality": 2.5,
+            "weight": 360
+        },
+        "frontier": {
+            "weight": 600
+        },
+        "ascent": {
+            "weight": 300
+        },
+        "summit": {
+            "weight": 120
+        },
+        "pinnacle": {
+            "weight": 0
+        }
+    }
+}

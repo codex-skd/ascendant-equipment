@@ -1,0 +1,40 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:crit_chance",
+    "categories": [
+        "ascendant_equipment:melee_weapon",
+        "ascendant_equipment:trident",
+        "ascendant_equipment:bow"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.1,
+            "max": 0.25
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.15,
+            "max": 0.35
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.25,
+            "max": 0.55
+        }
+    }
+}

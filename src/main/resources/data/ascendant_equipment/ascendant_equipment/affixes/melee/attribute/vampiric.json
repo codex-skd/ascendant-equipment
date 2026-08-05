@@ -1,0 +1,41 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:life_steal",
+    "categories": [
+        "ascendant_equipment:melee_weapon",
+        "ascendant_equipment:trident"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "ascendant_equipment:melee/attribute/berserking"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 0.05,
+            "max": 0.08
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 0.05,
+            "max": 0.08
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.08,
+            "max": 0.13
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.1,
+            "max": 0.15
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "ascendant_equipment:stoneforming",
+    "candidates": "#ascendant_equipment:stoneforming_candidates",
+    "categories": [
+        "ascendant_equipment:breaker"
+    ],
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [
+            "ascendant_equipment:breaker/ability/sandforming"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    }
+}

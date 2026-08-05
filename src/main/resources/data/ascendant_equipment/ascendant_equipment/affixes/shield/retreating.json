@@ -1,0 +1,15 @@
+{
+    "type": "ascendant_equipment:retreating",
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "rarities": [
+        "ascendant_equipment:epic",
+        "ascendant_equipment:mythic"
+    ]
+}

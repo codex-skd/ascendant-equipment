@@ -1,0 +1,91 @@
+{
+    "type": "ascendant_equipment:radial",
+    "categories": [
+        "ascendant_equipment:breaker",
+        "ascendant_equipment:shears"
+    ],
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 5.0,
+            "weight": 25
+        }
+    },
+    "values": {
+        "ascendant_equipment:uncommon": [
+            {
+                "x": 1,
+                "xOff": 0,
+                "y": 2,
+                "yOff": 1
+            },
+            {
+                "x": 1,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            },
+            {
+                "x": 3,
+                "xOff": 0,
+                "y": 2,
+                "yOff": 1
+            }
+        ],
+        "ascendant_equipment:rare": [
+            {
+                "x": 1,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            },
+            {
+                "x": 3,
+                "xOff": 0,
+                "y": 2,
+                "yOff": 1
+            }
+        ],
+        "ascendant_equipment:epic": [
+            {
+                "x": 3,
+                "xOff": 0,
+                "y": 2,
+                "yOff": 1
+            },
+            {
+                "x": 3,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            },
+            {
+                "x": 5,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            }
+        ],
+        "ascendant_equipment:mythic": [
+            {
+                "x": 3,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            },
+            {
+                "x": 5,
+                "xOff": 0,
+                "y": 3,
+                "yOff": 0
+            },
+            {
+                "x": 5,
+                "xOff": 0,
+                "y": 5,
+                "yOff": 0
+            }
+        ]
+    }
+}

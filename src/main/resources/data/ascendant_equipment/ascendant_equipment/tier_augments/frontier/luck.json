@@ -1,0 +1,12 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "modifier": {
+        "attribute": "minecraft:luck",
+        "modifier_id": "ascendant_equipment:frontier/luck",
+        "operation": "add_multiplied_total",
+        "value": 0.2
+    },
+    "sort_index": 200,
+    "target": "players",
+    "tier": "frontier"
+}

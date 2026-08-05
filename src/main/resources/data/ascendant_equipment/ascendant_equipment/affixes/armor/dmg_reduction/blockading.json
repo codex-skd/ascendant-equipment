@@ -1,0 +1,38 @@
+{
+    "type": "ascendant_equipment:damage_reduction",
+    "categories": [
+        "ascendant_equipment:chestplate",
+        "ascendant_equipment:leggings"
+    ],
+    "damage_type": "physical",
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "values": {
+        "ascendant_equipment:common": {
+            "min": 0.01,
+            "max": 0.05
+        },
+        "ascendant_equipment:uncommon": {
+            "min": 0.01,
+            "max": 0.05
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.05,
+            "max": 0.15
+        }
+    }
+}

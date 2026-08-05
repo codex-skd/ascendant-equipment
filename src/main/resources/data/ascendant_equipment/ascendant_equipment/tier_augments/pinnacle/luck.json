@@ -1,0 +1,12 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "modifier": {
+        "attribute": "minecraft:luck",
+        "modifier_id": "ascendant_equipment:pinnacle/luck",
+        "operation": "add_multiplied_total",
+        "value": 1.0
+    },
+    "sort_index": 200,
+    "target": "players",
+    "tier": "pinnacle"
+}
