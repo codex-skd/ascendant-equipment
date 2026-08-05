@@ -57,7 +57,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **7** ✅ | Comercio: trades de aldeanos con afijos | `affix/trades` (2 archivos) | Fase 3, 6 |
 | **8** ✅ | Spawners y mobs de élite/invasores | `spawner` (2 archivos), `mobs` (16 archivos) | Fase 3, 6 |
 | **9** ✅ | Gateways (portales de boss) y su compat | `compat/gateways` (13 archivos), `gen` (6) | Fase 6, 8 |
-| **10** | Generación de mundo (estructuras, features asociadas a loot de Apotheosis) | `data/gateways` y resto de `data` relacionado con worldgen (parte de 34) | Fase 9 |
+| **10** ✅ | Generación de mundo (datos, no código): `data/apotheosis/worldgen/` + `data/apotheosis/gateways/` | 24 archivos JSON | Fase 9 |
 | **11** | Cliente y render: pantallas, HUD, partículas, shaders | `client` (30), `particle` (1) | Fases 2–9 según feature |
 | **12** | Comandos y red | `commands` (10), `net` (13) | Fase 1 |
 | **13** | Compat opcional: Curios, JEI, Patchouli | `compat/curios`, `compat/jei`, resto de `compat` (parte de 44) | Fases 4–11 |
@@ -91,4 +91,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 9 completada.** 19 archivos portados (`gen/` completo ×6, `compat/gateways/` completo ×13). `gen/` compila con cero errores propios. Build subió a 558 errores — aumento esperado, no regresión: `compat/gateways/` es integración con el mod de terceros **Gateways**, que no tenemos disponible ni sustituido (nuevo caso, distinto a "fase futura nuestra" — documentado en la tabla de dependencias). 1 bug real corregido y verificado con `javap`: `StructureProcessor` pasó de clase abstracta a interfaz en MC 26.2 (`ItemFrameGemsProcessor`), resolviendo el pendiente anotado en la Fase 2. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 10** (datos de worldgen: estructuras/features asociadas a loot).
+**Fase 10 completada.** 24 archivos JSON portados (worldgen + gateways), hecho directamente sin delegar (sustitución de namespace, no código Java). **No se copiaron los `.nbt`** de estructura (torres + mazmorra de jefe) — contenido creativo, política de assets — así que el worldgen de torres/mazmorra no generará nada real hasta la Fase 16. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 11** (cliente y render: pantallas, HUD, partículas, shaders — resuelve la mayor cascada de errores pendiente).
