@@ -26,7 +26,7 @@ project_id = 1638146
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 release_type = beta
 game_versions = 9638, 9639, 16498, 10150
-relations =
+relations = common-toolkit:requiredDependency,vellumli:requiredDependency,ascendant-attributes:requiredDependency,ascendant-spawners:requiredDependency,ascendant-enchanting:requiredDependency,jei:optionalDependency,jade:optionalDependency,max-health-fix:optionalDependency,enchantment-descriptions:optionalDependency
 
 El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mod_id`, `mod_name`, `minecraft_version`, `mod_version` de `gradle.properties`. Sube automáticamente el JAR desde `build/libs/` con el changelog de `docs/curseforge/versions/<version>.md`.
 
