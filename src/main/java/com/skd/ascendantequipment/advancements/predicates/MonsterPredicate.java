@@ -1,0 +1,18 @@
+package com.skd.ascendantequipment.advancements.predicates;
+
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
+import net.minecraft.advancements.predicates.entity.EntitySubPredicate;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.phys.Vec3;
+
+public class MonsterPredicate implements EntitySubPredicate {
+   public static final MonsterPredicate INSTANCE = new MonsterPredicate();
+   public static final Codec<MonsterPredicate> CODEC = MapCodec.unit(INSTANCE).codec();
+
+   public boolean matches(Entity entity, ServerLevel level, Vec3 position) {
+      return entity instanceof Monster;
+   }
+}

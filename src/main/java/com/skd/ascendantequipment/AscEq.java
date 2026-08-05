@@ -320,9 +320,9 @@ public class AscEq {
    }
 
    public static final class EntitySubPredicates {
-      public static final MapCodec<MonsterPredicate> IS_MONSTER = (MapCodec<MonsterPredicate>)AscEq.R
+      public static final Codec<MonsterPredicate> IS_MONSTER = AscEq.R
          .custom("is_monster", Registries.ENTITY_SUB_PREDICATE_TYPE, MonsterPredicate.CODEC);
-      public static final MapCodec<InvaderPredicate> IS_INVADER = (MapCodec<InvaderPredicate>)AscEq.R
+      public static final Codec<InvaderPredicate> IS_INVADER = AscEq.R
          .custom("is_invader", Registries.ENTITY_SUB_PREDICATE_TYPE, InvaderPredicate.CODEC);
 
       private static void bootstrap() {
