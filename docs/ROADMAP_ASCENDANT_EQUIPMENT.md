@@ -55,7 +55,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **5** ✅ | Sockets y gemas | `socket` (48 archivos fuente) | Fase 3 |
 | **6** ✅ | Loot integration: condiciones, entradas, funciones y modifiers de loot table que aplican afijos/rareza a drops | `loot` (24 archivos fuente) | Fase 3, 4, 5 |
 | **7** ✅ | Comercio: trades de aldeanos con afijos | `affix/trades` (2 archivos) | Fase 3, 6 |
-| **8** | Spawners y mobs de élite/invasores | `spawner` (3), `mobs` (38) | Fase 3, 6 |
+| **8** ✅ | Spawners y mobs de élite/invasores | `spawner` (2 archivos), `mobs` (16 archivos) | Fase 3, 6 |
 | **9** | Gateways (portales de boss) y su compat | `compat/gateways`, `gen` (6) | Fase 6, 8 |
 | **10** | Generación de mundo (estructuras, features asociadas a loot de Apotheosis) | `data/gateways` y resto de `data` relacionado con worldgen (parte de 34) | Fase 9 |
 | **11** | Cliente y render: pantallas, HUD, partículas, shaders | `client` (30), `particle` (1) | Fases 2–9 según feature |
@@ -87,4 +87,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 7 completada.** 2 archivos portados (`affix/trades/`: `AffixTrade`, `AutomaticAffixTrade`), ambos compilan con cero errores. Build bajó de 379 a 376. Resuelta la referencia pendiente de Fase 6 (`AscEq.LootFunctions.AUTOMATIC_AFFIX_TRADE`/`TIER_GATED_COMPONENTS`). Único hallazgo: mapeo `PlaceboCodecs`→`CommonToolkitCodecs` aplicado proactivamente (ya establecido desde Fase 6). Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 8** (spawners y mobs de élite/invasores: `spawner`, `mobs`).
+**Fase 8 completada.** 18 archivos portados (`spawner/` ×2, `mobs/` completo ×16, incluida `ApothMobEvents`→`AscEqMobEvents`). Build bajó de 376 a 370 errores; resueltas las forward-refs de `BossStats`/`Invader`/`InvaderRegistry`/`InvaderSpawnRules`/`BossSpawnerBlock` pendientes desde Fase 6 (43 errores de `AscEq.java`). 3 bugs reales corregidos y verificados con `javap` contra el bytecode real de MC 26.2: `EntityType.PLAYER`→`EntityTypes.PLAYER` (rename), `loadEntityRecursive(CompoundTag,...)` ahora toma `EntitySpawnRequest` en vez de `EntitySpawnReason` (adición de NeoForge), y un fallo de inferencia de genéricos en `RecordCodecBuilder.create` (variante del patrón de la Fase 3) resuelto con type witness en el lambda. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 9** (generación de mundo: gateways y estructuras — `gen`, `data/gateways`).
