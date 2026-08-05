@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1785942037.4800305,
-    "ast_hash": "3ad7195e5568aee8533ba957722b1764",
+    "mtime": 1785953145.8005543,
+    "ast_hash": "997fd50a2da655dde21a913459d36311",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipment.java": {
-    "mtime": 1785924336.9844234,
-    "ast_hash": "5280a39b926e99075d34fad1ff34e48e",
+    "mtime": 1785953037.4130898,
+    "ast_hash": "03cc1cefd4d7b2f75665354aa63a2d85",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipmentClient.java": {
@@ -30,8 +30,8 @@
     "semantic_hash": "1b840cab6c097143438c396fa218e3af"
   },
   "src/main/resources/assets/ascendant_equipment/lang/en_us.json": {
-    "mtime": 1785932262.7434282,
-    "ast_hash": "870cb1b67dbe74208aa67d5358445d40",
+    "mtime": 1785946290.9019885,
+    "ast_hash": "ae86c3eb1723be2fe9ca849dce12da5a",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscEq.java": {
@@ -2065,8 +2065,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/godforged_pearl.json": {
-    "mtime": 1785933059.2298832,
-    "ast_hash": "65e3748c10613acb0bef90acb3bf2a83",
+    "mtime": 1785953002.2453728,
+    "ast_hash": "c738291069698a84d72e17c4a62491da",
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/gold_upgrade_smithing_template.json": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785942234.1450386,
-    "ast_hash": "c56b48b854d0f2441af76b37cfed5d1a",
+    "mtime": 1785953203.2936924,
+    "ast_hash": "183fc1935aa329ae179890fed884902a",
     "semantic_hash": ""
   },
   "README.md": {
@@ -6482,6 +6482,31 @@
   "src/main/resources/assets/ascendant_equipment/sounds/reforge_item_reforged.ogg": {
     "mtime": 1785807035.7777238,
     "ast_hash": "8d4cf1f966cc9cffdc2bc3b63c82f0a8",
+    "semantic_hash": ""
+  },
+  "scripts/curseforge-upload.ps1": {
+    "mtime": 1785953503.235276,
+    "ast_hash": "0added90848e5386d98a1d5f146008e3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/lang/de_de.json": {
+    "mtime": 1785952686.2062886,
+    "ast_hash": "8e741ea64d694d578d1842c859284c7e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/lang/es_es.json": {
+    "mtime": 1785952526.5315006,
+    "ast_hash": "45964ec669ae56e4f543338b7d863faa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/lang/fr_fr.json": {
+    "mtime": 1785952605.5624754,
+    "ast_hash": "c1cf5136d09a0352be37ec658e0c8e92",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.5.md": {
+    "mtime": 1785953163.3047497,
+    "ast_hash": "bc408049050f52b1b4c3728a3f52caba",
     "semantic_hash": ""
   }
 }
