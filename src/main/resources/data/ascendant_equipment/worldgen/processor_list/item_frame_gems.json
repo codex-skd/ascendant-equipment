@@ -1,0 +1,8 @@
+{
+    "processors": [{
+        "processor_type": "ascendant_equipment:item_frame_gems",
+        "purities": [
+            "chipped", "flawed", "normal", "flawless", "perfect"
+        ]
+    }]
+}

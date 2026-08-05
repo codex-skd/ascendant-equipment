@@ -1,0 +1,290 @@
+{
+    "type": "ascendant_equipment:tiered",
+    "settings": {
+        "soundtrack": "ascendant_equipment:music_disc_shimmer",
+        "tier": "frontier",
+        "size": "small",
+        "color": "#33FF33"
+    },
+    "waves": [
+        {
+            "max_wave_time": 2400,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "desc": "wave_entity.apotheosis.affixed_armored_zombie",
+                    "entity": "minecraft:zombie",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/iron"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        },
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "desc": "wave_entity.apotheosis.affixed_armored_skeleton",
+                    "entity": "minecraft:skeleton",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/ranged/chain"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        },
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 2400,
+            "setup_time": 160,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "desc": "wave_entity.apotheosis.affixed_armored_zombie",
+                    "entity": "minecraft:zombie",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/iron"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "desc": "wave_entity.apotheosis.affixed_armored_skeleton",
+                    "entity": "minecraft:skeleton",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/ranged/chain"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        }
+                    ]
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:empty"
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:armor",
+                    "operation": "add_value",
+                    "value": 2.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 350,
+                    "orb_size": 25
+                }
+            ]
+        },
+        {
+            "max_wave_time": 3200,
+            "setup_time": 160,
+            "entities": [
+                {
+                    "type": "ascendant_equipment:invader",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "desc": "wave_entity.apotheosis.affixed_armored_zombie",
+                    "entity": "minecraft:zombie",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/iron"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "desc": "wave_entity.apotheosis.affixed_armored_skeleton",
+                    "entity": "minecraft:skeleton",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "ascendant_equipment:frontier/ranged/chain"
+                        },
+                        {
+                            "type": "ascendant_equipment:affix",
+                            "affix_chance": 1.0
+                        }
+                    ]
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:empty"
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:armor",
+                    "operation": "add_value",
+                    "value": 3.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 650,
+                    "orb_size": 25
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:counted",
+            "count": 3,
+            "reward": {
+                "type": "ascendant_equipment:affix_item",
+                "rarities": [
+                    "ascendant_equipment:uncommon",
+                    "ascendant_equipment:rare"
+                ]
+            }
+        },
+        {
+            "type": "gateways:counted",
+            "count": 5,
+            "reward": {
+                "type": "ascendant_equipment:gem",
+                "purities": [
+                    "chipped",
+                    "flawed"
+                ]
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 16,
+                "id": "ascendant_equipment:gem_dust"
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 8,
+                "id": "ascendant_equipment:timeworn_fabric"
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 2,
+                "id": "ascendant_equipment:sigil_of_socketing"
+            }
+        }
+    ],
+    "rules": {
+        "lives": 3,
+        "requires_nearby_player": true
+    }
+}
