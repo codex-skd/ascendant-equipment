@@ -75,6 +75,11 @@ public class AscendantEquipment {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public AscendantEquipment(IEventBus modEventBus, ModContainer modContainer) {
+        // Wire the ported AscEq content (registry stages, biome modifier serializers, datamaps,
+        // etc.). Without this the whole ported module is never registered (the class above is the
+        // scaffolded shell) and any data referencing its registries fails to load.
+        AscEq.bootstrap(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

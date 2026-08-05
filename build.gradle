@@ -122,27 +122,27 @@ configurations {
 dependencies {
     // Common Toolkit is a required dependency (port of Placebo, in-house replacement): compiled
     // against it from libs and placed on the dev runtime classpath via localRuntime (not bundled in the jar).
-    compileOnly files("libs/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
-    localRuntime files("libs/common_toolkit-26.2-neoforge-0.0.0-beta.1.jar")
+    compileOnly files("libs/common_toolkit-26.2-neoforge-0.0.0-beta.2.jar")
+    localRuntime files("libs/common_toolkit-26.2-neoforge-0.0.0-beta.2.jar")
 
     // Ascendant Attributes (port of Apothic Attributes) is required by Phase 1 utilities (CommonTooltipUtil,
     // EquipmentEvents) and by later affix phases.
-    compileOnly files("libs/ascendant_attributes-26.2-neoforge-0.0.0-beta.2.jar")
-    localRuntime files("libs/ascendant_attributes-26.2-neoforge-0.0.0-beta.2.jar")
+    compileOnly files("libs/ascendant_attributes-26.2-neoforge-0.0.0-beta.3.jar")
+    localRuntime files("libs/ascendant_attributes-26.2-neoforge-0.0.0-beta.3.jar")
 
     // Ascendant Spawners (port of Apothic Spawners) is required by Phase 1 utilities (PresetSpawnerStats).
     // beta.7 fixes the mutual ordering="AFTER" cycle that failed mod sorting at startup (beta.5/6 broken).
-    compileOnly files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.7.jar")
-    localRuntime files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.7.jar")
+    compileOnly files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.8.jar")
+    localRuntime files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.8.jar")
 
     // Ascendant Enchanting (port of Apothic Enchanting) is required by Phase 2 (AscEq.Items uses GlowyItem).
-    compileOnly files("libs/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
-    localRuntime files("libs/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
+    compileOnly files("libs/ascendant_enchanting-26.2-neoforge-0.0.0-beta.7.jar")
+    localRuntime files("libs/ascendant_enchanting-26.2-neoforge-0.0.0-beta.7.jar")
 
     // Vellumli (port of Patchouli, used by the guide book) is required by AscEq.java (Phase 2 forward-refs)
     // and VellumliCompat.java (Phase 15e).
-    compileOnly files("libs/vellumli-26.2-neoforge-0.0.0-beta.2.jar")
-    localRuntime files("libs/vellumli-26.2-neoforge-0.0.0-beta.2.jar")
+    compileOnly files("libs/vellumli-26.2-neoforge-0.0.0-beta.3.jar")
+    localRuntime files("libs/vellumli-26.2-neoforge-0.0.0-beta.3.jar")
 
     // JEI is a soft/optional integration, same as upstream Apotheosis: compiled against for compat/jei/,
     // not declared in neoforge.mods.toml (ModList.isLoaded checks handle its absence at runtime).
