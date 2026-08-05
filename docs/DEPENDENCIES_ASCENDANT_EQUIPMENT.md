@@ -256,3 +256,9 @@ Portado `client/` completo (20 archivos: `AdventureContainerScreen`, `AdventureK
 - **`compat/gateways` (mod externo, Fase 9)**: ~200 errores — sin cambios, sigue documentado como dependencia externa no disponible.
 
 **Otras decisiones**: `HAMMER_MODEL`/`STAR_CUBE_MODEL` (StandaloneModelKey) usan `"ascendant_equipment:hammer"`/`"ascendant_equipment:star_cube"`; los shaders `core/ghost`/`core/gray` y `core/ghost` define `APOTH_GHOST_ALPHA` (la definición de shader conserva el literal `APOTH_*` del original, igual que las NBT keys). No se han copiado assets.
+
+### Fase 12 (2026-08-05) — commands/ y net/ (15 archivos)
+
+Portados `commands/` (9) y `net/` (6 payloads). Renombres: `Apoth`→`AscEq`, `Apotheosis.LOGGER`/`Apotheosis.lang`→`AscendantEquipment.*`, `ApothicAttributes`→`AscendantAttributes`, `AttributeHelper`→`com.skd.ascendantattributes.api.AttributeHelper`, `AdventureConfig`→`EquipmentConfig` (`enableItemLinking`, `enableManualWorldTierChanges`), `ApothMobEvents`→`AscEqMobEvents`, `PayloadProvider`→`com.skd.commontoolkit.network.PayloadProvider`, `DynamicHolder`→`com.skd.commontoolkit.dynreg.DynamicHolder`, ids de payloads `apotheosis:`→`ascendant_equipment:`. Los mensajes `/apoth ...` se conservan literales. No se tocó la registración de providers (mismo patrón que `EquipmentConfig.ConfigPayload.Provider`, descubierto por CommonToolkit).
+
+Build bajó de **287 a 243 errores**; ninguno de los 15 archivos nuevos aparece en la lista, y quedan resueltos todos los forward-refs de `net`/`commands` de fases 1-11. Los 243 restantes son los ya documentados: `mixin` (F14), `advancements` (F15, en `AscEq`), `compat/GameStagesCompat` (`GenContext`, F13) y el mod externo Gateways (~200 en `compat/gateways/`, Fase 9). No se copiaron assets ni se dejó basura.

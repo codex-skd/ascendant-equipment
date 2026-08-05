@@ -59,7 +59,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **9** ✅ | Gateways (portales de boss) y su compat | `compat/gateways` (13 archivos), `gen` (6) | Fase 6, 8 |
 | **10** ✅ | Generación de mundo (datos, no código): `data/apotheosis/worldgen/` + `data/apotheosis/gateways/` | 24 archivos JSON | Fase 9 |
 | **11** ✅ | Cliente y render: pantallas, HUD, partículas, shaders | `client` (20 archivos), `particle` (1) | Fases 2–9 según feature |
-| **12** | Comandos y red | `commands` (10), `net` (13) | Fase 1 |
+| **12** ✅ | Comandos y red | `commands` (9 archivos), `net` (6 archivos) | Fase 1 |
 | **13** | Compat opcional: Curios, JEI, Patchouli | `compat/curios`, `compat/jei`, resto de `compat` (parte de 44) | Fases 4–11 |
 | **14** | Mixins (se hacen al final: tocan clases vanilla y son lo más frágil de portar entre versiones de Minecraft) | `mixin` (25) | Todas las anteriores relevantes |
 | **15** | Contenido data-driven: recetas, tags, advancements, loot tables JSON (equivalentes propios, no copiados) | `advancements` (11) + JSONs de `data/` no cubiertos antes | Fases 3–14 |
@@ -95,4 +95,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 11 completada.** 21 archivos portados (`client/` completo ×20 + `particle/RarityParticleData.java`). Build bajó de 558 a **287 errores** — la mayor caída hasta ahora. Se resolvieron todas las cascadas masivas de client de las fases 3-9 (`AugmentingScreen`, `ReforgingScreen`, `SalvagingScreen`, `GemCuttingScreen`, `GemCaseScreen`, `GemCaseSelectButton`, los 3 tile renderers) con cero errores propios. 3 bugs reales de API de MC 26.2 corregidos y verificados con `javap`: `submitBreakingBlockModel` cambió de firma, `I18n.exists()` eliminado (→ `Language.getInstance().has()`), y gestión de pantallas movida de `Minecraft` a `Minecraft.gui` (`setScreen`/`pushScreenLayer`/`popScreenLayer`/`screen()`, extensión del rename ya visto en Fase 5) — este último se descubrió al desbloquear la cascada de `AugmentingScreen` (Fase 3), que también reveló `ChatFormatting.getColor()` eliminado (→ `TextColor.getValue()`). Detalle completo: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 12** (comandos y red: `commands`, `net`).
+**Fase 12 completada.** 15 archivos portados (`commands/` ×9, `net/` ×6), los 15 con cero errores propios. Build bajó de 287 a 244; resueltos todos los forward-refs a `commands`/`net` pendientes desde fases 1-11. Sin bugs reales esta vez — fase limpia. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 13** (compat opcional: Curios, JEI — resto de `compat/`).
