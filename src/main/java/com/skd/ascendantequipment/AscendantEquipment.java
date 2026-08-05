@@ -41,6 +41,7 @@ public class AscendantEquipment {
     public static final String MODID = "ascendant_equipment";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static final boolean DEBUG_MOBS = "on".equalsIgnoreCase(System.getenv("APOTH_DEBUG_MOBS"));
     // Create a Deferred Register to hold Blocks which will all be registered under the "ascendant_equipment" namespace
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     // Create a Deferred Register to hold Items which will all be registered under the "ascendant_equipment" namespace
