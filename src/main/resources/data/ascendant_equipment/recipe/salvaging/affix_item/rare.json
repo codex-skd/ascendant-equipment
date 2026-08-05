@@ -1,0 +1,16 @@
+{
+    "type": "ascendant_equipment:salvaging",
+    "input": {
+        "neoforge:ingredient_type": "ascendant_equipment:affix",
+        "rarity": "ascendant_equipment:rare"
+    },
+    "outputs": [
+        {
+            "max_count": 4,
+            "min_count": 1,
+            "stack": {
+                "id": "ascendant_equipment:luminous_crystal_shard"
+            }
+        }
+    ]
+}

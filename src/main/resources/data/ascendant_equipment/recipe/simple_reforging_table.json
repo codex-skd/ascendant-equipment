@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "E": "minecraft:enchanting_table",
+        "G": "ascendant_equipment:gem_dust",
+        "I": "#c:ingots/iron",
+        "S": "minecraft:smooth_stone"
+    },
+    "pattern": [
+        " I ",
+        "GEG",
+        "SSS"
+    ],
+    "result": {
+        "id": "ascendant_equipment:simple_reforging_table"
+    }
+}

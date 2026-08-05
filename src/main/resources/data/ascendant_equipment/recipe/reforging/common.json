@@ -1,0 +1,11 @@
+{
+    "type": "ascendant_equipment:reforging",
+    "level_cost": 2,
+    "material_cost": 1,
+    "rarity": "ascendant_equipment:common",
+    "sigil_cost": 0,
+    "tables": [
+        "ascendant_equipment:simple_reforging_table",
+        "ascendant_equipment:reforging_table"
+    ]
+}

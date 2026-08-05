@@ -1,0 +1,8 @@
+{
+    "type": "ascendant_equipment:reforging",
+    "level_cost": 50,
+    "material_cost": 3,
+    "rarity": "ascendant_equipment:mythic",
+    "sigil_cost": 5,
+    "tables": "ascendant_equipment:reforging_table"
+}

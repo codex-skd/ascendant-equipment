@@ -1,0 +1,28 @@
+{
+    "type": "ascendant_equipment:purity_upgrade",
+    "left": [
+        {
+            "count": 7,
+            "ingredient": "ascendant_equipment:gem_dust"
+        }
+    ],
+    "purity": "normal",
+    "right": [
+        {
+            "count": 27,
+            "ingredient": "ascendant_equipment:timeworn_fabric"
+        },
+        {
+            "count": 9,
+            "ingredient": "ascendant_equipment:luminous_crystal_shard"
+        },
+        {
+            "count": 3,
+            "ingredient": "ascendant_equipment:arcane_sands"
+        },
+        {
+            "count": 1,
+            "ingredient": "ascendant_equipment:godforged_pearl"
+        }
+    ]
+}

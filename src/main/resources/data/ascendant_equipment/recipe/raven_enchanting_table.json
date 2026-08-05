@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "A": "ascendant_enchanting:apothic_enchanting_table",
+        "B": "#c:obsidians",
+        "G": {
+            "neoforge:ingredient_type": "ascendant_equipment:gem",
+            "gems": [
+                "ascendant_equipment:overworld/royalty"
+            ],
+            "purity": "perfect"
+        },
+        "O": "ascendant_equipment:god_fused_pearl"
+    },
+    "pattern": [
+        " G ",
+        "OAO",
+        "BBB"
+    ],
+    "result": {
+        "id": "ascendant_enchanting:raven_enchanting_table"
+    }
+}

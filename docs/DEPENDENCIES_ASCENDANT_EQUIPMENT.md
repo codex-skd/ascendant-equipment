@@ -339,3 +339,43 @@ Dentro de `tags/`, el subdirectorio `tags/placebo/gear_sets/` (10 archivos) se m
 **Validación alternativa aplicada**: los 293 JSON se validaron sintácticamente con un parser JSON externo → **293/293 válidos, 0 inválidos** (sin daño por `sed`). Como comprobación cruzada, `AscEq` usa el namespace `ascendant_equipment` con paths literales idénticos al de origen, y los `gear_sets` tag-value apuntan a `ascendant_equipment:ascent/enchanted_gold` etc., coherente con los ids reales de los archivos copiados.
 
 **Hallazgos**: (1) El build no puede avanzar a la validación de datapack hasta resolver las deps externas de compat/ (Jade, Gateways) — pendiente de fases de integración de dependencias, no de este port; (2) `c:` (common tags) aparece 12 veces y se dejó intencionalmente sin mapear, es el namespace estándar de tags comunes de NeoForge y ya estaba así en origen; (3) no se dejó basura: los 293 archivos provienen todos de los 4 bloques especificados.
+
+### Fase 15c (2026-08-05) — recipe/ (149 archivos)
+
+Portado `data/apotheosis/recipe/` completo → `data/ascendant_equipment/recipe/` (mismo subpath, sin reestructurar): 42 archivos sueltos en la raíz (runas de spawner, sigilos, mesas de reforging/gem cutting/salvaging/augmenting, smithing templates, `malice.json`, `supremacy.json`, `unnaming.json`, `widthdrawal.json`, `socketing.json`), `gateways/` 4, `gem_cutting/` 5, `infusion/` 2, `reforging/` 5, `salvaging/` 38 (`affix_item/` 5, `gem/` 6, `other/` 27), `smithing/` 27, `spawner_modifiers/` 26 (`tier/` 4, `_inverse/` 10, resto raíz). Mismo mapeo de namespace que la Fase 15b (`apotheosis:`→`ascendant_equipment:`, `apothic_attributes:`→`ascendant_attributes:`, `apothic_enchanting:`→`ascendant_enchanting:`, `apothic_spawners:`→`ascendant_spawners:`, `placebo:`→`common_toolkit:`), aplicado con `sed -i` sobre los 149 archivos.
+
+**Verificación**: 149/149 archivos copiados (confirmado con `find`), 0 referencias residuales a los 5 namespaces origen, 149/149 JSON sintácticamente válidos (parser externo). No se ejecutó `./gradlew.bat build` completo — ya sabido desde la Fase 15b que `compileJava` falla antes por `compat/` (Jade, Gateways), ajeno a los datos. No se hizo commit/push en la sesión delegada (verificado y completado directamente).
+
+**Hallazgo de nomenclatura, sin acción requerida**: el nombre de archivo `widthdrawal.json` (typo del original de Apotheosis, debería ser "withdrawal") se conservó literal — es un error del mod original, no de este port, y cambiarlo rompería la referencia interna sin ganancia real (no se usa el nombre de archivo como id visible al jugador). No se copió basura ni se tocó código Java.
+
+### Fase 15c (2026-08-05) — recipe/ (149 archivos)
+
+Portado `apotheosis/recipe/` → `ascendant_equipment/recipe/` (subpath completo literal), con sustitución 1:1 de prefijo de namespace. No se tocó `minecraft:`, `neoforge:`, `gateways:`, `curios:` ni `c:`.
+
+| Subcarpeta | Archivos |
+|---|---|
+| Raíz de `recipe/` | 42 |
+| `gateways/` (`tiered/`) | 4 |
+| `gem_cutting/` | 5 |
+| `infusion/` | 2 |
+| `reforging/` | 5 |
+| `salvaging/` (`affix_item/` 5, `gem/` 6, `other/` 27) | 38 |
+| `smithing/` | 27 |
+| `spawner_modifiers/` (`_inverse/` 11, `tier/` 4, raíz 11) | 26 |
+| **Total** | **149** |
+
+**Sustitución de namespace aplicada** (`sed -i` sobre los 149 `.json`):
+
+| Origen | Destino | Ocurrencias en destino |
+|---|---|---|
+| `apotheosis:` | `ascendant_equipment:` | 301 |
+| `apothic_attributes:` | `ascendant_attributes:` | 1 |
+| `apothic_enchanting:` | `ascendant_enchanting:` | 9 |
+| `apothic_spawners:` | `ascendant_spawners:` | 68 |
+| `placebo:` | `common_toolkit:` | 0 (no aparecía en `recipe/`) |
+
+**Verificación post-sustitución**: 0 referencias residuales a los 5 namespaces origen. Namespaces intocables conservados: `minecraft:` 262, `neoforge:` 114, `c:` 41, `gateways:` 8, `curios:` 0 (no presente en `recipe/`).
+
+**Validación JSON**: 149/149 válidos, 0 inválidos (parser externo; sin daño por `sed`). No se intentó `./gradlew.bat build` (regla de Fase 15b: `compileJava` falla por deps externas de `compat/`, Jade/Gateways, ajenas a los datos).
+
+**Hallazgos**: (1) 43 archivos de `spawner_modifiers/` y runas conservan `"modid": "apothic_spawners"` en condiciones `neoforge:mod_loaded` — la sustitución es 1:1 de prefijo con `:` y no toca valores de string sin namespace; mismo criterio que el `"modid": "gateways"` ya conservado en Fase 15b (5 ocurrencias) y que los externos `"modid": "patchouli"` (1) y `"modid": "pneumaticcraft"` (1). Si el mod de runas del spawner va a llamarse distinto, ese valor debería ajustarse en una fase de integración, no en este port literal. (2) Referencias externas legítimas no mapeadas (no estaban en la lista): `patchouli:guide_book`/`patchouli:book` en `book.json` y `pneumaticcraft:*` (armadura de hierro comprimido + `ingot_iron_compressed`) en `salvaging/other/compressed_iron_armor.json`. (3) Paths literales intactos por diseño, p. ej. el id `ascendant_enchanting:apothic_enchanting_table` conserva el path `apothic_enchanting_table` (mismo criterio de Fase 15b). No se dejó basura: los 149 archivos provienen todos de `apotheosis/recipe/`.
