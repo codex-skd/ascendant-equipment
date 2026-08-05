@@ -10,9 +10,25 @@
 
 <h2>✨ Overview</h2>
 
-<p>Ascendant Equipment is a Minecraft 26.2 (NeoForge) mod, currently in early scaffold stage (<code>0.0.0-beta.1</code>). No gameplay features are implemented yet — this description will be expanded as the mod's mechanics are designed and built.</p>
+<p>Ascendant Equipment is a loot, affix and equipment progression mod for Minecraft 26.2 (NeoForge). It adds randomized affixes on gear, socketable gems, item rarities, reforging/salvaging/augmenting workstations, an in-game guide book, boss-tier "rogue spawners", world tiers and a large library of enchantments and attributes — all with fully original identifiers.</p>
 
-<blockquote>This mod is a port of <a href="https://www.curseforge.com/minecraft/mc-mods/apotheosis"><strong>Apotheosis</strong></a> by <em>Shadows_of_Fire</em>, ported from NeoForge 26.1.2 to NeoForge 26.2. Not affiliated with or endorsed by the original author.</blockquote>
+<blockquote>This mod is a port of <a href="https://www.curseforge.com/minecraft/mc-mods/apotheosis"><strong>Apotheosis</strong></a> by <em>Shadows_of_Fire</em> (MIT licensed), ported from NeoForge 26.1.2 to NeoForge 26.2 with every class, package and identifier renamed. Not affiliated with or endorsed by the original author. No original art or assets from Apotheosis are included — visuals are original work, added progressively.</blockquote>
+
+<h2>🧩 Required Dependencies</h2>
+
+<p>All of the following are in-house replacements for Apotheosis's original dependencies (Placebo, Apothic Attributes, Apothic Spawners, Apothic Enchanting and Patchouli), published separately:</p>
+
+<ul>
+<li><strong>Common Toolkit</strong> — registry/utility library.</li>
+<li><strong>Ascendant Attributes</strong> — extra attributes, potions and damage types.</li>
+<li><strong>Ascendant Spawners</strong> — spawner utilities and "rogue spawner" support.</li>
+<li><strong>Ascendant Enchanting</strong> — enchantment infrastructure.</li>
+<li><strong>Vellumli</strong> — in-game guide book library (powers this mod's guide book).</li>
+</ul>
+
+<h2>🔌 Optional Integrations</h2>
+
+<p>JEI and Jade are supported when installed. Gateways integration is not available for NeoForge 26.2 yet.</p>
 
 <br>
 
