@@ -56,7 +56,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **6** ✅ | Loot integration: condiciones, entradas, funciones y modifiers de loot table que aplican afijos/rareza a drops | `loot` (24 archivos fuente) | Fase 3, 4, 5 |
 | **7** ✅ | Comercio: trades de aldeanos con afijos | `affix/trades` (2 archivos) | Fase 3, 6 |
 | **8** ✅ | Spawners y mobs de élite/invasores | `spawner` (2 archivos), `mobs` (16 archivos) | Fase 3, 6 |
-| **9** | Gateways (portales de boss) y su compat | `compat/gateways`, `gen` (6) | Fase 6, 8 |
+| **9** ✅ | Gateways (portales de boss) y su compat | `compat/gateways` (13 archivos), `gen` (6) | Fase 6, 8 |
 | **10** | Generación de mundo (estructuras, features asociadas a loot de Apotheosis) | `data/gateways` y resto de `data` relacionado con worldgen (parte de 34) | Fase 9 |
 | **11** | Cliente y render: pantallas, HUD, partículas, shaders | `client` (30), `particle` (1) | Fases 2–9 según feature |
 | **12** | Comandos y red | `commands` (10), `net` (13) | Fase 1 |
@@ -89,4 +89,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 8 completada.** 18 archivos portados (`spawner/` ×2, `mobs/` completo ×16, incluida `ApothMobEvents`→`AscEqMobEvents`). Build bajó de 376 a 370 errores; resueltas las forward-refs de `BossStats`/`Invader`/`InvaderRegistry`/`InvaderSpawnRules`/`BossSpawnerBlock` pendientes desde Fase 6 (43 errores de `AscEq.java`). 3 bugs reales corregidos y verificados con `javap` contra el bytecode real de MC 26.2: `EntityType.PLAYER`→`EntityTypes.PLAYER` (rename), `loadEntityRecursive(CompoundTag,...)` ahora toma `EntitySpawnRequest` en vez de `EntitySpawnReason` (adición de NeoForge), y un fallo de inferencia de genéricos en `RecordCodecBuilder.create` (variante del patrón de la Fase 3) resuelto con type witness en el lambda. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 9** (generación de mundo: gateways y estructuras — `gen`, `data/gateways`).
+**Fase 9 completada.** 19 archivos portados (`gen/` completo ×6, `compat/gateways/` completo ×13). `gen/` compila con cero errores propios. Build subió a 558 errores — aumento esperado, no regresión: `compat/gateways/` es integración con el mod de terceros **Gateways**, que no tenemos disponible ni sustituido (nuevo caso, distinto a "fase futura nuestra" — documentado en la tabla de dependencias). 1 bug real corregido y verificado con `javap`: `StructureProcessor` pasó de clase abstracta a interfaz en MC 26.2 (`ItemFrameGemsProcessor`), resolviendo el pendiente anotado en la Fase 2. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 10** (datos de worldgen: estructuras/features asociadas a loot).

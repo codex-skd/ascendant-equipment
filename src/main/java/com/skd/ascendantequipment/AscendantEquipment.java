@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -42,6 +43,7 @@ public class AscendantEquipment {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final boolean DEBUG_MOBS = "on".equalsIgnoreCase(System.getenv("APOTH_DEBUG_MOBS"));
+    public static final boolean DEBUG_WORLDGEN = "on".equalsIgnoreCase(System.getenv("APOTH_DEBUG_WORLDGEN"));
     // Create a Deferred Register to hold Blocks which will all be registered under the "ascendant_equipment" namespace
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     // Create a Deferred Register to hold Items which will all be registered under the "ascendant_equipment" namespace
@@ -133,5 +135,11 @@ public class AscendantEquipment {
 
     public static MutableComponent sysMessageHeader() {
         return Component.translatable("[%s] ", Component.literal("AscEq").withStyle(ChatFormatting.GOLD));
+    }
+
+    public static void debugLog(BlockPos pos, String name) {
+        if (DEBUG_WORLDGEN) {
+            LOGGER.info("Generated a {} at {} {} {}", name, pos.getX(), pos.getY(), pos.getZ());
+        }
     }
 }
