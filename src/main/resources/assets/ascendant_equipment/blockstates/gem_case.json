@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ascendant_equipment:block/gem_case",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ascendant_equipment:block/gem_case",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "ascendant_equipment:block/gem_case",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ascendant_equipment:block/gem_case",
+      "y": 270
+    }
+  }
+}
