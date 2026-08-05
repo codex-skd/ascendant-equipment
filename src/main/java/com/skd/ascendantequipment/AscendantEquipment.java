@@ -3,6 +3,7 @@ package com.skd.ascendantequipment;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
+import com.skd.ascendantequipment.compat.VellumliCompat;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -107,6 +108,8 @@ public class AscendantEquipment {
         LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
+
+        VellumliCompat.register();
     }
 
     // Add the example block item to the building blocks tab
