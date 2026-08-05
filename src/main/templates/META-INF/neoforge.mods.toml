@@ -102,10 +102,12 @@ config="${mod_id}.mixins.json"
     side="BOTH"
 
 # Ascendant Spawners (in-house replacement for Apothic Spawners) is a required dependency.
+# Floor pinned to beta.7: earlier betas (0.0.0-beta.5/6) declared a reciprocal ordering="AFTER"
+# on this mod, forming a mutual ordering cycle that failed mod sorting at startup.
 [[dependencies.${mod_id}]]
     modId="ascendant_spawners"
     type="required"
-    versionRange="[0.0.0-beta.5,)"
+    versionRange="[0.0.0-beta.7,)"
     ordering="AFTER"
     side="BOTH"
 

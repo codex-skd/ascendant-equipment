@@ -4,6 +4,7 @@
 
 - **Traducciones completas en 4 idiomas**: generadas y completadas íntegramente las traducciones para `en_us.json`, `es_es.json`, `fr_fr.json` y `de_de.json`. Cobertura de 389 claves por idioma incluyendo affixes, gemas, items, bloques, UI, tooltips, advancements, y modificadores. Mejora de 17% a 100% de cobertura de traducción.
 - **Auditoría de integridad**: verificación exhaustiva del mod confirmó compilación limpia, estructura correcta, assets completos (1737 archivos), mixins bien definidos, dependencias correctas, y conformidad con workflow.
+- **Fix ciclo de carga (crash de arranque)**: floor de `ascendant_spawners` subido a `[0.0.0-beta.7,)` — las betas 0.0.0-beta.5/6 de Ascendant Spawners declaraban un `ordering="AFTER"` recíproco hacia este mod, formando un ciclo mutuo que NeoForge no podía ordenar (`Mod Sorting failed. Detected Cycles`) e impedía arrancar el cliente. Dependencia de compilación en `libs/` actualizada a beta.7.
 
 ## 0.0.0-beta.4
 
