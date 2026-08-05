@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "ascendant_equipment:item/diamond_upgrade_smithing_template"
+    }
+}
