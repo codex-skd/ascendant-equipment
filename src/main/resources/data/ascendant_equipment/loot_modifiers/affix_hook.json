@@ -1,0 +1,5 @@
+{
+    "type": "ascendant_equipment:code_hook",
+    "conditions": [],
+    "priority": 900
+}

@@ -1,0 +1,6 @@
+{
+    "values": {
+        "minecraft:iron_sword": "ascendant_equipment:melee_weapon",
+        "minecraft:shulker_shell": "ascendant_equipment:none"
+    }
+}

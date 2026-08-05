@@ -348,6 +348,14 @@ Portado `data/apotheosis/recipe/` completo → `data/ascendant_equipment/recipe/
 
 **Hallazgo de nomenclatura, sin acción requerida**: el nombre de archivo `widthdrawal.json` (typo del original de Apotheosis, debería ser "withdrawal") se conservó literal — es un error del mod original, no de este port, y cambiarlo rompería la referencia interna sin ganancia real (no se usa el nombre de archivo como id visible al jugador). No se copió basura ni se tocó código Java.
 
+### Fase 15d (2026-08-05) — loot_table/, loot_modifiers/, villager_trade/ y menores (75 archivos)
+
+Portados 9 directorios completos, mismo subpath (`data/apotheosis/<dir>/` → `data/ascendant_equipment/<dir>/`): `loot_table/` 14 (`blocks/` 7, `chests/` 4, `entity/` 3), `loot_modifiers/` 6, `villager_trade/` 36 (`affix/` 10, `rare_gear/` 10, resto raíz), `damage_type/` 2, `data_maps/` 2, `jukebox_song/` 3, `neoforge/` 6 (`biome_modifier/`), `painting_variant/` 5, `curios/` 1. Mismo mapeo de namespace que las Fases 15b/15c. Hecho directamente (no delegado — dos intentos consecutivos de OpenCode murieron justo antes del paso de copia, tras investigar exhaustivamente el alcance sin escribir nada; con el patrón de sustitución ya verificado dos veces en fases previas, completar 75 archivos mecánicamente fue más rápido que un tercer intento de delegación).
+
+**Caso especial `curios/entities/player_charm.json`**: es config pura de Curios (slot `charm` para el charm de jugador), sin contenido bajo namespace `apotheosis:`/`apothic_*` — namespaces `neoforge:` y `curios:` (tag `#curios:player_like`) se dejaron intactos, ninguna sustitución aplicable.
+
+**Verificación**: 75/75 archivos copiados (confirmado con `find`), 0 referencias residuales a los 5 namespaces origen, 75/75 JSON sintácticamente válidos. No se hizo commit/push en esta subfase hasta verificar y documentar. Sin bugs reales — sustitución mecánica limpia, coherente con Fases 15b/15c.
+
 ### Fase 15c (2026-08-05) — recipe/ (149 archivos)
 
 Portado `apotheosis/recipe/` → `ascendant_equipment/recipe/` (subpath completo literal), con sustitución 1:1 de prefijo de namespace. No se tocó `minecraft:`, `neoforge:`, `gateways:`, `curios:` ni `c:`.
@@ -379,3 +387,23 @@ Portado `apotheosis/recipe/` → `ascendant_equipment/recipe/` (subpath completo
 **Validación JSON**: 149/149 válidos, 0 inválidos (parser externo; sin daño por `sed`). No se intentó `./gradlew.bat build` (regla de Fase 15b: `compileJava` falla por deps externas de `compat/`, Jade/Gateways, ajenas a los datos).
 
 **Hallazgos**: (1) 43 archivos de `spawner_modifiers/` y runas conservan `"modid": "apothic_spawners"` en condiciones `neoforge:mod_loaded` — la sustitución es 1:1 de prefijo con `:` y no toca valores de string sin namespace; mismo criterio que el `"modid": "gateways"` ya conservado en Fase 15b (5 ocurrencias) y que los externos `"modid": "patchouli"` (1) y `"modid": "pneumaticcraft"` (1). Si el mod de runas del spawner va a llamarse distinto, ese valor debería ajustarse en una fase de integración, no en este port literal. (2) Referencias externas legítimas no mapeadas (no estaban en la lista): `patchouli:guide_book`/`patchouli:book` en `book.json` y `pneumaticcraft:*` (armadura de hierro comprimido + `ingot_iron_compressed`) en `salvaging/other/compressed_iron_armor.json`. (3) Paths literales intactos por diseño, p. ej. el id `ascendant_enchanting:apothic_enchanting_table` conserva el path `apothic_enchanting_table` (mismo criterio de Fase 15b). No se dejó basura: los 149 archivos provienen todos de `apotheosis/recipe/`.
+
+### Fase 15d (2026-08-05) — loot_table/, loot_modifiers/, villager_trade/ y menores (75 archivos)
+
+Portado `data/apotheosis/` → `data/ascendant_equipment/` (mismo subpath, sin reestructurar) de 9 directorios menores: `loot_table/` 14, `loot_modifiers/` 6, `villager_trade/` 36, `damage_type/` 2, `data_maps/` 2, `jukebox_song/` 3, `neoforge/` 6 (`biome_modifier/`), `painting_variant/` 5, `curios/` 1. Total 75 archivos, confirmado con `find` (0 faltantes).
+
+**Sustitución de namespace aplicada** (`sed -i` sobre los 75 `.json`):
+
+| Origen | Destino | Ocurrencias en destino |
+|---|---|---|
+| `apotheosis:` | `ascendant_equipment:` | 97 |
+| `apothic_attributes:` | `ascendant_attributes:` | 6 |
+| `apothic_enchanting:` | `ascendant_enchanting:` | 8 |
+| `apothic_spawners:` | `ascendant_spawners:` | 2 |
+| `placebo:` | `common_toolkit:` | 0 (no aparecía en estos 9 bloques) |
+
+**Verificación post-sustitución**: 0 referencias residuales a los 5 namespaces origen. Namespaces intocables conservados: `minecraft:` 617, `neoforge:` 4, `curios:` 1 (en `curios/entities/player_charm.json`), `gateways:` 0, `c:` 0 (no presentes en estos bloques).
+
+**Validación JSON**: 75/75 válidos, 0 inválidos (parser externo; sin daño por `sed`). No se intentó `./gradlew.bat build` (regla de Fase 15b: `compileJava` falla por deps externas de `compat/`, Jade/Gateways, ajenas a los datos).
+
+**Hallazgos**: (1) `curios/entities/player_charm.json` es pura config de la dependencia externa Curios (`neoforge:conditions` con `"modid": "curios"`, `#curios:player_like`, slots `charm`) — no contiene referencias a namespace propio de Apotheosis, por lo que la sustitución no alteró nada en él (0 ocurrencias de `apotheosis:`). Se copió y conservó literal. (2) Referencias externas legítimas no mapeadas (no estaban en la lista): `"domain": "twilightforest"` en `loot_modifiers/affix_loot_injection.json` y `loot_modifiers/gem_loot_injection.json`, y `twilightforest:twilight_forest_type` + `"modid": "twilightforest"` en `data_maps/dimension_type/invader_spawn_rules.json` (condición `neoforge:mod_loaded`). (3) `villager_trade/rare_gear/*` referencian encantamientos sustituidos correctamente, p. ej. `ascendant_enchanting:scavenger`, `ascendant_enchanting:life_mending`, `ascendant_spawners:capturing`. Paths literales intactos por diseño. No se dejó basura: los 75 archivos provienen todos de los 9 bloques especificados.
