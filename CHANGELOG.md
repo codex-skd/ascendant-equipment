@@ -1,5 +1,15 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.6
+
+- **Fases 14-15 completas**: Mixins (25 archivos) + Data-driven JSON (11 advancements, 542 archivos).
+- **Fase 14 — Mixins**: Port completo de 25 archivos mixins (AbstractSkeleton, ItemStack, LivingEntity, client renderers, etc.) adaptados a NeoForge 26.2.
+- **Fase 15 — Data-driven**: 11 advancements + 542 JSONs (affixes, gemas, rarezas, recetas, loot, tags, worldgen, villager trades).
+- **JEI/Jade como optional**: Declaradas como dependencias opcionales en neoforge.mods.toml (compat code ya portado en Fase 13).
+- **Graphify actualizado**: Conocimiento de fase post-release integrado (5219 nodos, 12892 edges).
+- **Build reproducible**: Todas las dependencias versionadas en `libs/`, compilación limpia desde checkout fresco.
+- Subido a CurseForge vía `curseforge-upload.ps1` (file ID `8584229`).
+
 ## 0.0.0-beta.5
 
 - **Traducciones completas en 4 idiomas**: generadas y completadas íntegramente las traducciones para `en_us.json`, `es_es.json`, `fr_fr.json` y `de_de.json`. Cobertura de 389 claves por idioma incluyendo affixes, gemas, items, bloques, UI, tooltips, advancements, y modificadores. Mejora de 17% a 100% de cobertura de traducción.
