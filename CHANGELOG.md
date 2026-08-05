@@ -1,5 +1,10 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.4
+
+- **Assets binarios completos**: texturas (169) de bloques, ítems, GUI, rarezas, partículas y pinturas; sonidos (10) incluyendo los 3 discos de música; y las 5 estructuras NBT de jefe/torre que el worldgen referenciaba. Ahora el JAR empaqueta todo lo que los models/blockstates/sounds.json ya declaraban.
+- **Build reproducible en clones limpios**: las dependencias de compilación/runtime se movieron de `lib_ext/` (ignorado por git) a `libs/` (versionado). Los JARs de Common Toolkit, Ascendant Attributes, Ascendant Spawners, Ascendant Enchanting, Vellumli, JEI y Jade quedan commiteados — un checkout limpio compila sin restaurar jars manualmente.
+
 ## 0.0.0-beta.3
 
 - **Fix crítico**: `META-INF/neoforge.mods.toml` vivía en `src/main/resources/templates/` pero `generateModMetadata` en `build.gradle` lee de `src/main/templates/` (sin `resources/`) — el mismatch hacía que la tarea corriera siempre como `NO-SOURCE`, así que **ningún jar hasta ahora (ni beta.1 ni beta.2) llevaba un `mods.toml` real**, solo la plantilla sin expandir en la ruta equivocada. NeoForge rechazaba el jar como "not a valid mod file" — el mod nunca llegó a cargar en partida. Confirmado con log real del juego, corregido moviendo el archivo a la ruta correcta.
