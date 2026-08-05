@@ -131,8 +131,9 @@ dependencies {
     localRuntime files("libs/ascendant_attributes-26.2-neoforge-0.0.0-beta.2.jar")
 
     // Ascendant Spawners (port of Apothic Spawners) is required by Phase 1 utilities (PresetSpawnerStats).
-    compileOnly files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
-    localRuntime files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.5.jar")
+    // beta.7 fixes the mutual ordering="AFTER" cycle that failed mod sorting at startup (beta.5/6 broken).
+    compileOnly files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.7.jar")
+    localRuntime files("libs/ascendant_spawners-26.2-neoforge-0.0.0-beta.7.jar")
 
     // Ascendant Enchanting (port of Apothic Enchanting) is required by Phase 2 (AscEq.Items uses GlowyItem).
     compileOnly files("libs/ascendant_enchanting-26.2-neoforge-0.0.0-beta.3.jar")
