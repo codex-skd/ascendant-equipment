@@ -1,0 +1,17 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        }
+    ],
+    "type": "ascendant_spawners:spawner_modifier",
+    "mainhand": "ascendant_equipment:echoing_spawner_rune",
+    "stat_changes": [
+        {
+            "type": "ascendant_spawners:echoing",
+            "max": 3,
+            "value": 1
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "G": "ascendant_equipment:gem_fused_slate",
+        "S": "minecraft:stone",
+        "T": "ascendant_equipment:timeworn_fabric"
+    },
+    "pattern": [
+        " T ",
+        "SGS",
+        "SGS"
+    ],
+    "result": {
+        "count": 2,
+        "id": "ascendant_equipment:gold_upgrade_smithing_template"
+    }
+}

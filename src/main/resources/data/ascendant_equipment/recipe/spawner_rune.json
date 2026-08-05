@@ -1,0 +1,25 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "E": "ascendant_equipment:gem_fused_slate",
+        "G": "ascendant_equipment:gem_dust",
+        "S": "ascendant_equipment:spawner_chain"
+    },
+    "pattern": [
+        "GEG",
+        "SES",
+        "SSS"
+    ],
+    "result": {
+        "count": 2,
+        "id": "ascendant_equipment:spawner_rune"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "S": "ascendant_equipment:spawner_rune",
+        "W": "#minecraft:wool"
+    },
+    "pattern": [
+        " W ",
+        "WSW",
+        " W "
+    ],
+    "result": {
+        "id": "ascendant_equipment:silent_spawner_rune"
+    }
+}

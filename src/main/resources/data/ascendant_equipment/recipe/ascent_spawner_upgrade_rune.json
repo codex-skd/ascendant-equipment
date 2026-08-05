@@ -1,0 +1,28 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "C": {
+            "neoforge:ingredient_type": "ascendant_equipment:spawn_egg"
+        },
+        "G": "#c:gems/quartz",
+        "I": "ascendant_equipment:sigil_of_socketing",
+        "L": "ascendant_equipment:luminous_crystal_shard",
+        "S": "ascendant_equipment:spawner_rune"
+    },
+    "pattern": [
+        "LCL",
+        "GSG",
+        "LIL"
+    ],
+    "result": {
+        "id": "ascendant_equipment:ascent_spawner_upgrade_rune"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "ascendant_equipment:salvaging",
+    "input": {
+        "neoforge:ingredient_type": "ascendant_equipment:gem",
+        "purity": "perfect"
+    },
+    "outputs": [
+        {
+            "max_count": 10,
+            "min_count": 5,
+            "stack": {
+                "id": "ascendant_equipment:gem_dust"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "ascendant_enchanting:infusion",
+    "input": "ascendant_equipment:godforged_pearl",
+    "max_requirements": {
+        "arcana": 60.0,
+        "eterna": 100.0,
+        "quanta": 11.0
+    },
+    "requirements": {
+        "arcana": 58.75,
+        "eterna": 100.0,
+        "quanta": 9.65
+    },
+    "result": {
+        "id": "ascendant_equipment:god_fused_pearl"
+    }
+}

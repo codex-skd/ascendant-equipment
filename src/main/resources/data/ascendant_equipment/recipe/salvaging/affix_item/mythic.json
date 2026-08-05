@@ -1,0 +1,16 @@
+{
+    "type": "ascendant_equipment:salvaging",
+    "input": {
+        "neoforge:ingredient_type": "ascendant_equipment:affix",
+        "rarity": "ascendant_equipment:mythic"
+    },
+    "outputs": [
+        {
+            "max_count": 4,
+            "min_count": 1,
+            "stack": {
+                "id": "ascendant_equipment:godforged_pearl"
+            }
+        }
+    ]
+}

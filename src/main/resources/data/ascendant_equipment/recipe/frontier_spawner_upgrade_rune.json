@@ -1,0 +1,25 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "C": "minecraft:clock",
+        "F": "minecraft:flint",
+        "S": "ascendant_equipment:spawner_rune",
+        "T": "ascendant_equipment:timeworn_fabric"
+    },
+    "pattern": [
+        "TCT",
+        "FSF",
+        "TCT"
+    ],
+    "result": {
+        "id": "ascendant_equipment:frontier_spawner_upgrade_rune"
+    }
+}

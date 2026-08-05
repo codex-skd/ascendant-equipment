@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "E": "ascendant_equipment:gem_dust",
+        "G": "ascendant_equipment:gem_fused_slate"
+    },
+    "pattern": [
+        "GGG",
+        "EEE",
+        "GGG"
+    ],
+    "result": {
+        "count": 6,
+        "id": "ascendant_equipment:sigil_of_rebirth"
+    }
+}

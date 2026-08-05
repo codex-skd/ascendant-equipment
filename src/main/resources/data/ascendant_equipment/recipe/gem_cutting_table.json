@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "G": "ascendant_equipment:gem_dust",
+        "H": "minecraft:shears",
+        "P": "#minecraft:planks",
+        "S": "minecraft:smooth_stone"
+    },
+    "pattern": [
+        "SHS",
+        "PGP",
+        "P P"
+    ],
+    "result": {
+        "id": "ascendant_equipment:gem_cutting_table"
+    }
+}
