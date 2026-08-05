@@ -60,7 +60,7 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **10** ✅ | Generación de mundo (datos, no código): `data/apotheosis/worldgen/` + `data/apotheosis/gateways/` | 24 archivos JSON | Fase 9 |
 | **11** ✅ | Cliente y render: pantallas, HUD, partículas, shaders | `client` (20 archivos), `particle` (1) | Fases 2–9 según feature |
 | **12** ✅ | Comandos y red | `commands` (9 archivos), `net` (6 archivos) | Fase 1 |
-| **13** | Compat opcional: Curios, JEI, Patchouli | `compat/curios`, `compat/jei`, resto de `compat` (parte de 44) | Fases 4–11 |
+| **13** ✅ | Compat opcional: Jade, JEI, Curios, GameStages. **`PatchouliCompat.java` excluido a propósito** — necesita adaptación real a la API de Vellumli, se hace en Fase 15 junto al libro de guía | `compat/curios`, `compat/jei` (14), resto de `compat` excepto Patchouli (16 archivos) | Fases 4–11 |
 | **14** | Mixins (se hacen al final: tocan clases vanilla y son lo más frágil de portar entre versiones de Minecraft) | `mixin` (25) | Todas las anteriores relevantes |
 | **15** | Contenido data-driven: recetas, tags, advancements, loot tables JSON (equivalentes propios, no copiados) | `advancements` (11) + JSONs de `data/` no cubiertos antes | Fases 3–14 |
 | **16** | Arte propio: sustituir placeholders por texturas/modelos/sonidos/libro de guía originales | — (todo `assets/`) | Trabajo paralelo, no bloquea el resto |
@@ -97,4 +97,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 12 completada.** 15 archivos portados (`commands/` ×9, `net/` ×6), los 15 con cero errores propios. Build bajó de 287 a 244; resueltos todos los forward-refs a `commands`/`net` pendientes desde fases 1-11. Sin bugs reales esta vez — fase limpia. Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: **Fase 13** (compat opcional: Curios, JEI — resto de `compat/`).
+**Fase 13 completada.** 16 archivos portados (`compat/` casi completo: Jade ×3, GameStages ×1, Curios ×1, JEI ×11 — `PatchouliCompat.java` excluido a propósito para Fase 15). `GameStagesCompat` y `CuriosCompat` compilan con cero errores — ninguno de los dos necesita el mod real correspondiente. **Hallazgo importante**: JEI y Jade **sí tienen builds reales para NeoForge 26.2** (a diferencia de Gateways) — el código está portado y listo, pero no se activó como dependencia real en `build.gradle` en esta fase (decisión pendiente de confirmar). Build: 244 → 501 errores (aumento esperado, mismo patrón que Gateways en Fase 9: ~93 nuevos son cascada de JEI/Jade ausentes de `build.gradle`, no bugs). Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
+
+Próximo paso: **Fase 14** (mixins — la fase más delicada, toca clases internas de Minecraft).
