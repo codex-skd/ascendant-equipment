@@ -59,7 +59,7 @@ public class PotionCharmExtension implements ICraftingCategoryExtension<PotionCh
          .potion()
          .orElse(Potions.WATER);
       ContextMap ctx = SlotDisplayContext.fromLevel(Minecraft.getInstance().level);
-      List<List<ItemStack>> recipeInputs = ((PotionCharmRecipe)recipeHolder.value())
+      List<List<ItemStack>> recipeInputs = (List<List<ItemStack>>)(List<?>)((PotionCharmRecipe)recipeHolder.value())
          .getIngredients()
          .stream()
          .map(optIng -> optIng.<List>map(ing -> ing.display().resolveForStacks(ctx)).orElse(List.of()))
