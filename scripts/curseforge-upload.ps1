@@ -15,6 +15,10 @@
 #   - docs/curseforge/project_vars.md with: project_id, api_token, game_versions
 #   - gradle.properties with: mod_id, mod_name, minecraft_version, mod_version
 #   - docs/curseforge/versions/<version>.md with release notes in HTML
+#
+# game_versions MUST include BOTH the 'Client' and 'Server' game version IDs (plus the MC and
+# NeoForge IDs). CurseForge derives the file environment from these, so the agent/script sets
+# "Client & Server" automatically on upload — no manual step is required afterwards.
 
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $modPath = if ($env:MOD_PROJECT_PATH) { $env:MOD_PROJECT_PATH } else { Resolve-Path "$scriptPath/../.." }
@@ -136,11 +140,10 @@ try {
         Write-Host ""
         Write-Host "✓ Upload successful!" -ForegroundColor Green
         Write-Host ""
-        Write-Host "⚠ IMPORTANT: Manual step required:" -ForegroundColor Yellow
-        Write-Host "  1. Go to CurseForge: https://www.curseforge.com/minecraft/mods/$projectId/files" -ForegroundColor Yellow
-        Write-Host "  2. Edit the newly uploaded file (v$modVersion)" -ForegroundColor Yellow
-        Write-Host "  3. Mark the environment as 'Client & Server'" -ForegroundColor Yellow
-        Write-Host "  (The API does not expose this field, so it must be set manually.)" -ForegroundColor Yellow
+        Write-Host "Environment 'Client & Server': NO manual step needed." -ForegroundColor Cyan
+        Write-Host "  CurseForge derives the file environment from the game versions sent. Keep BOTH the" -ForegroundColor Cyan
+        Write-Host "  'Client' and 'Server' game version IDs in game_versions (project_vars.md) so the" -ForegroundColor Cyan
+        Write-Host "  file is published as Client & Server automatically." -ForegroundColor Cyan
     } else {
         Write-Host "Status: $([int]$response.StatusCode)" -ForegroundColor Red
         Write-Host "Body: $responseBody"
