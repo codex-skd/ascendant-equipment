@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1785953145.8005543,
-    "ast_hash": "997fd50a2da655dde21a913459d36311",
+    "mtime": 1785972286.0657523,
+    "ast_hash": "82d2b4bd146f86bab05d77e325b7248d",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipment.java": {
-    "mtime": 1785953037.4130898,
-    "ast_hash": "03cc1cefd4d7b2f75665354aa63a2d85",
+    "mtime": 1785972112.5772913,
+    "ast_hash": "210aeaab4a68adb7bcf63f3dbc464343",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipmentClient.java": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785953203.2936924,
-    "ast_hash": "183fc1935aa329ae179890fed884902a",
+    "mtime": 1785972327.5136974,
+    "ast_hash": "e1f003d427ae6cda911948a722057a57",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5630,8 +5630,8 @@
     "semantic_hash": ""
   },
   "docs/ROADMAP_ASCENDANT_EQUIPMENT.md": {
-    "mtime": 1785933121.3895519,
-    "ast_hash": "79433607b21b91c03c01a64e9f4106b1",
+    "mtime": 1785957001.987466,
+    "ast_hash": "e47f68fda7f28bcdac5209c909c2684a",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
@@ -6507,6 +6507,16 @@
   "docs/curseforge/versions/0.0.0-beta.5.md": {
     "mtime": 1785953163.3047497,
     "ast_hash": "bc408049050f52b1b4c3728a3f52caba",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.6.md": {
+    "mtime": 1785956981.6840074,
+    "ast_hash": "6d4dcc760a58524c009ffa53aacef615",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.7.md": {
+    "mtime": 1785972327.5146897,
+    "ast_hash": "273839b5ec6498026b060342e5001ccf",
     "semantic_hash": ""
   }
 }
