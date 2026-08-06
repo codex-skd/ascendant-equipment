@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "ascendant_equipment:blocks/gem_cutting_table",
+		"0": "apotheosis:blocks/gem_cutting_table",
 		"particle": "block/spruce_planks"
 	},
 	"render_type": "cutout",

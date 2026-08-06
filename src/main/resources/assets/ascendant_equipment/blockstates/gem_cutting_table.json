@@ -1,19 +1,19 @@
 {
   "variants": {
     "facing=east": {
-      "model": "ascendant_equipment:block/gem_cutting_table",
+      "model": "apotheosis:block/gem_cutting_table",
       "y": 180
     },
     "facing=north": {
-      "model": "ascendant_equipment:block/gem_cutting_table",
+      "model": "apotheosis:block/gem_cutting_table",
       "y": 90
     },
     "facing=south": {
-      "model": "ascendant_equipment:block/gem_cutting_table",
+      "model": "apotheosis:block/gem_cutting_table",
       "y": 270
     },
     "facing=west": {
-      "model": "ascendant_equipment:block/gem_cutting_table",
+      "model": "apotheosis:block/gem_cutting_table",
       "y": 0
     }
   }
