@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "ascendant_equipment:items/hammer",
-		"particle": "ascendant_equipment:items/hammer"
+		"0": "apotheosis:items/hammer",
+		"particle": "apotheosis:items/hammer"
 	},
 	"elements": [
 		{

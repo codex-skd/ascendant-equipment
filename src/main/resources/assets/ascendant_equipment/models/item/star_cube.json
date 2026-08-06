@@ -1,8 +1,8 @@
 {
 	"textures": {
-		"main": "ascendant_equipment:items/star_cube",
-		"main_lit": "ascendant_equipment:items/star_cube_lit",
-		"particle": "ascendant_equipment:items/star_cube"
+		"main": "apotheosis:items/star_cube",
+		"main_lit": "apotheosis:items/star_cube_lit",
+		"particle": "apotheosis:items/star_cube"
 	},
 	"elements": [
 		{

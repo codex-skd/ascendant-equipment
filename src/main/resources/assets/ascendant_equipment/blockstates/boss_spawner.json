@@ -1,5 +1,5 @@
 {
     "variants": {
-		"": { "model": "ascendant_equipment:block/boss_spawner" }
+		"": { "model": "apotheosis:block/boss_spawner" }
     }
 }
