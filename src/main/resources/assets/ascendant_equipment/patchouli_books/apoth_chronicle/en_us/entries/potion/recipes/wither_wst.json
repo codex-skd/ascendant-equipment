@@ -1,7 +1,7 @@
 {
     "name": "Wither",
     "icon": "minecraft:textures/mob_effect/wither.png",
-    "category": "apotheosis:potion/recipes",
+    "category": "ascendant_equipment:potion/recipes",
 	"flag": "&apotheosis:potion,apotheosis:wstloaded",
 	"sortnum": 0,
     "pages": [

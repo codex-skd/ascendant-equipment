@@ -2,6 +2,6 @@
     "name": "Attributes",
     "description": "In addition to the vanilla attributes, Apotheosis adds a breadth of new ones.$(p)This section details all of them.",
     "icon": "minecraft:diamond_chestplate",
-	"flag": "apotheosis:adventure",
-	"parent": "apotheosis:adventure/adventure"
+	"flag": "ascendant_equipment:adventure",
+	"parent": "ascendant_equipment:adventure/adventure"
 }

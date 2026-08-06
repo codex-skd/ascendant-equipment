@@ -2,7 +2,7 @@
     "name": "Стіл зачарування",
     "description": "У цьому розділі розглядаються зміни, внесені до стола зачарування.",
     "icon": "minecraft:enchanting_table",
-	"flag": "apotheosis:enchanting",
-	"parent": "apotheosis:enchanting/enchanting",
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting",
 	"sortnum": -2
 }

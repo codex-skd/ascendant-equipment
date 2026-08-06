@@ -1,8 +1,8 @@
 {
     "name": "Sangramento",
     "icon": "apothic_attributes:textures/mob_effect/bleeding.png",
-    "category": "apotheosis:potion/effects",
-	"flag": "apotheosis:potion",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 1,
     "pages": [
         {

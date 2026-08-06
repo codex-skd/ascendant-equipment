@@ -1,8 +1,8 @@
 {
     "name": "O menu de informações",
-    "icon": "apotheosis:textures/gui/book/question_mark.png",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:textures/gui/book/question_mark.png",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -16,7 +16,7 @@
             "type": "patchouli:image",
 			"title": "O seletor de encaixe",
 			"images": [
-				"apotheosis:textures/gui/book/slot_selector.png"
+				"ascendant_equipment:textures/gui/book/slot_selector.png"
 			],
 			"text": "Isso permite que você selecione qual encaixe de encantamento inspecionar."
         },
@@ -28,7 +28,7 @@
             "type": "patchouli:image",
 			"title": "Janela de encantamentos",
 			"images": [
-				"apotheosis:textures/gui/book/enchantments_window.png"
+				"ascendant_equipment:textures/gui/book/enchantments_window.png"
 			],
 			"text": "Isso mostra quais encantamentos estão disponíveis."
         },
@@ -40,7 +40,7 @@
             "type": "patchouli:image",
 			"title": "O controle deslizante de poder",
 			"images": [
-				"apotheosis:textures/gui/book/power_slider.png"
+				"ascendant_equipment:textures/gui/book/power_slider.png"
 			],
 			"text": "Isso permite alterar o nível de poder simulado."
         },
@@ -52,7 +52,7 @@
             "type": "patchouli:image",
 			"title": "Pesos de raridade",
 			"images": [
-				"apotheosis:textures/gui/book/weights.png"
+				"ascendant_equipment:textures/gui/book/weights.png"
 			],
 			"text": "Isso mostra o peso de cada raridade."
         },

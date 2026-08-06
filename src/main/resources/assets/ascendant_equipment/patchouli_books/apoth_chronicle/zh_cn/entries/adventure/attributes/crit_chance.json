@@ -1,8 +1,8 @@
 {
     "name": "暴击率",
     "icon": "minecraft:netherite_sword",
-    "category": "apotheosis:adventure/attributes",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

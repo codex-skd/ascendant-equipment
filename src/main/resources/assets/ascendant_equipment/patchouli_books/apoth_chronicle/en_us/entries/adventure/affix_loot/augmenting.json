@@ -1,8 +1,8 @@
 {
     "name": "Augmenting",
-    "icon": "apotheosis:augmenting_table",
-    "category": "apotheosis:adventure/affix_loot",
-    "flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:augmenting_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+    "flag": "ascendant_equipment:adventure",
     "sortnum": 5,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:augmenting_table",
+            "recipe": "ascendant_equipment:augmenting_table",
             "text": "Creating an Augmenting Table requires focusing the energy of a $(9)Nether Star$() through two $(9)Godforged Pearls$(), using an $(9)Enchanting Table$() as the base."
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_enhancement",
+            "recipe": "ascendant_equipment:sigil_of_enhancement",
             "title": "Input Slots",
             "text": "The lower slot holds $(9)Sigils of Enhancement$(), the fuel item used for Augmenting.$(p)Finally, you'll need to select the desired affix from the drop-down menu."
         },

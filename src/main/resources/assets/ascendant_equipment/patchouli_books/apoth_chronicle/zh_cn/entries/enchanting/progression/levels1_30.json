@@ -1,8 +1,8 @@
 {
     "name": "1-30级",
     "icon": "minecraft:bookshelf",
-    "category": "apotheosis:enchanting/progression",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
 		{
             "type": "patchouli:crafting",

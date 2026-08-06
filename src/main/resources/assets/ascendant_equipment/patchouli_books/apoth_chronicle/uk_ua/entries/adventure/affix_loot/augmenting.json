@@ -1,8 +1,8 @@
 {
     "name": "Доповнювання",
-    "icon": "apotheosis:augmenting_table",
-    "category": "apotheosis:adventure/affix_loot",
-    "flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:augmenting_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+    "flag": "ascendant_equipment:adventure",
     "sortnum": 5,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:augmenting_table",
+            "recipe": "ascendant_equipment:augmenting_table",
             "text": "Створення стола доповнення потребує фокусування енергії $(9)зірки Незеру$() двома $(9)боготвореними перлами$() в $(9)столі зачарувань$() у якості основи."
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_enhancement",
+            "recipe": "ascendant_equipment:sigil_of_enhancement",
             "title": "Слоти складників",
             "text": "У нижньому слоті зберігаються $(9)сигіли вдосконалення$() - паливо, необхідне для доповнення.$(p)Нарешті, вам потрібно буде вибрати бажаний афікс із випадаючого меню."
         },

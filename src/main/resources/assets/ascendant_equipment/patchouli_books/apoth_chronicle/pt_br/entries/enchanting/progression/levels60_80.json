@@ -1,13 +1,13 @@
 {
     "name": "Níveis 60 - 80",
-    "icon": "apotheosis:dormant_deepshelf",
-    "category": "apotheosis:enchanting/progression",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:dormant_deepshelf",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
 		{
             "type": "patchouli:crafting",
 			"title": "Alcançando o nível 70",
-			"recipe": "apotheosis:dormant_deepshelf",
+			"recipe": "ascendant_equipment:dormant_deepshelf",
 			"text": "Alcançar o nível 70 requer uma mesa de encantamentos de nível 60 e acesso a ardósia."
 		},
 		{
@@ -23,8 +23,8 @@
 		{
             "type": "patchouli:crafting",
 			"title": "Alcançando o nível 75",
-			"recipe": "apotheosis:echoing_deepshelf",
-			"recipe2": "apotheosis:soul_touched_deepshelf"
+			"recipe": "ascendant_equipment:echoing_deepshelf",
+			"recipe2": "ascendant_equipment:soul_touched_deepshelf"
 		},
 		{
             "type": "patchouli:entity",
@@ -36,8 +36,8 @@
 		{
             "type": "patchouli:crafting",
 			"title": "Alcançando o nível 80",
-			"recipe": "apotheosis:echoing_sculkshelf",
-			"recipe2": "apotheosis:soul_touched_sculkshelf"
+			"recipe": "ascendant_equipment:echoing_sculkshelf",
+			"recipe2": "ascendant_equipment:soul_touched_sculkshelf"
 		}
 	]
 }

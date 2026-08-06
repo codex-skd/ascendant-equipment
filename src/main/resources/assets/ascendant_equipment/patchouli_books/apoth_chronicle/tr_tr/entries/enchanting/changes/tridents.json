@@ -1,8 +1,8 @@
 {
     "name": "Üçlü Mızraklar",
     "icon": "minecraft:trident",
-    "category": "apotheosis:enchanting/changes",
-    "flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/changes",
+    "flag": "ascendant_equipment:enchanting",
     "sortnum": 1,
     "pages": [
         {

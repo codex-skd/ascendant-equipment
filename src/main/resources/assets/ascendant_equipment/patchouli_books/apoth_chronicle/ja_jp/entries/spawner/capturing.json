@@ -1,8 +1,8 @@
 {
     "name": "捕獲",
     "icon": "minecraft:enchanted_book",
-    "category": "apotheosis:spawner/spawner",
-	"flag": "apotheosis:spawner",
+    "category": "ascendant_equipment:spawner/spawner",
+	"flag": "ascendant_equipment:spawner",
 	"sortnum": 2,
     "pages": [
         {

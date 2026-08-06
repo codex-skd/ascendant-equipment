@@ -1,8 +1,8 @@
 {
     "name": "Filtração de encantamento",
-    "icon": "apotheosis:filtering_shelf",
-    "category": "apotheosis:enchanting/utility",
-    "flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:filtering_shelf",
+    "category": "ascendant_equipment:enchanting/utility",
+    "flag": "ascendant_equipment:enchanting",
     "sortnum": 0,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:filtering_shelf",
+            "recipe": "ascendant_equipment:filtering_shelf",
             "title": "Filtração aquática",
             "text": "A estante permite inserir até seis livros de encantamento único, evitando que esses encantamentos apareçam."
         },

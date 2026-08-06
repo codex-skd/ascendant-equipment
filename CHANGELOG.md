@@ -1,5 +1,10 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.10
+
+- **Item model namespace fix**: Fixed all 77 item model JSON files and blockstate JSONs to reference textures from `ascendant_equipment:` namespace instead of `apotheosis:`. Items are now visible in-game with correct textures. This fixes a critical issue where items registered in code were missing their model definitions, causing them to fail to load visually.
+- **Asset namespace migration complete**: All model definitions, blockstates, and block models now correctly reference assets from the ascendant_equipment namespace, enabling proper rendering of all items and blocks.
+
 ## 0.0.0-beta.9
 
 - **Gem Loot Modifiers syntax fix**: Corrected NeoForge 26.2 entity predicate syntax in `gem_entity_drops.json` and `gem_entity_drops_from_real_players.json`. Replaced invalid `type_specific` wrapper with `sub_predicate` to properly reference the `is_monster` entity sub-predicate. The old Apotheosis 26.1.2 syntax was incompatible with NeoForge 26.2 predicate parsing.

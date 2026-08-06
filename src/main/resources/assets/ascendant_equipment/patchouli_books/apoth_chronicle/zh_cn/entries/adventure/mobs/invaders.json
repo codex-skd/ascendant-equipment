@@ -1,8 +1,8 @@
 {
     "name": "神化入侵者",
     "icon": "minecraft:beacon",
-    "category": "apotheosis:adventure/mobs",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/mobs",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

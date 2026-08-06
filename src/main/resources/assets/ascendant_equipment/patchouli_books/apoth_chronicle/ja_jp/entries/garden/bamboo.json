@@ -1,8 +1,8 @@
 {
     "name": "Bamboo",
     "icon": "minecraft:bamboo",
-    "category": "apotheosis:garden/garden",
-	"flag": "apotheosis:garden",
+    "category": "ascendant_equipment:garden/garden",
+	"flag": "ascendant_equipment:garden",
 	"sortnum": 0,
     "pages": [
         {

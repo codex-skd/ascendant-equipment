@@ -1,8 +1,8 @@
 {
     "name": "ゴミあさり",
     "icon": "minecraft:enchanted_book",
-    "category": "apotheosis:enchanting/enchantments",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 1,
     "pages": [
         {

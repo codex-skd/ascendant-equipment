@@ -1,7 +1,7 @@
 {
     "name": "Amuletos inquebráveis",
     "icon": "minecraft:enchanting_table",
-    "category": "apotheosis:potion/charms",
+    "category": "ascendant_equipment:potion/charms",
 	"flag": "&apotheosis:potion,apotheosis:enchanting",
 	"sortnum": -1,
     "pages": [

@@ -1,8 +1,8 @@
 {
     "name": "Tomos",
     "icon": "apothic_enchanting:other_tome",
-    "category": "apotheosis:enchanting/utility",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -10,31 +10,31 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:other_tome",
+			"recipe": "ascendant_equipment:other_tome",
 			"text": "Depois de encantar um tomo, ele se transformará em um livro encantado."
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:helmet_tome",
-			"recipe2": "apotheosis:chestplate_tome",
+			"recipe": "ascendant_equipment:helmet_tome",
+			"recipe2": "ascendant_equipment:chestplate_tome",
 			"text": ""
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:leggings_tome",
-			"recipe2": "apotheosis:boots_tome",
+			"recipe": "ascendant_equipment:leggings_tome",
+			"recipe2": "ascendant_equipment:boots_tome",
 			"text": ""
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:weapon_tome",
-			"recipe2": "apotheosis:pickaxe_tome",
+			"recipe": "ascendant_equipment:weapon_tome",
+			"recipe2": "ascendant_equipment:pickaxe_tome",
 			"text": ""
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:fishing_tome",
-			"recipe2": "apotheosis:bow_tome",
+			"recipe": "ascendant_equipment:fishing_tome",
+			"recipe2": "ascendant_equipment:bow_tome",
 			"text": ""
 		}
 	]

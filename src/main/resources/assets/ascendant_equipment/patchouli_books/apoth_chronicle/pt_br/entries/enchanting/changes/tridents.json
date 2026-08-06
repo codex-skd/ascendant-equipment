@@ -1,8 +1,8 @@
 {
     "name": "Tridentes",
     "icon": "minecraft:trident",
-    "category": "apotheosis:enchanting/changes",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 1,
     "pages": [
         {
@@ -12,7 +12,7 @@
 		{
             "type": "patchouli:spotlight",
 			"title": "Making Tridents",
-			"item": "apotheosis:inert_trident",
+			"item": "ascendant_equipment:inert_trident",
 			"link_recipe": true,
             "text": "O Apotheosis também adiciona um método de criar tridentes.$(p)Basta criar um $(9)tridente inerte$() e melhora-lo por meio de $(l:apotheosis:enchanting/table/infusion)encantamento de infusão$()."
         }

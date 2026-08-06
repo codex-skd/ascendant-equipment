@@ -1,8 +1,8 @@
 {
     "name": "Encantamento de infusão",
-    "icon": "apotheosis:infused_hellshelf",
+    "icon": "ascendant_equipment:infused_hellshelf",
     "category": "apothic_enchanting:infused_hellshelf",
-	"flag": "apotheosis:enchanting",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",

@@ -1,8 +1,8 @@
 {
     "name": "60-80级",
     "icon": "apothic_enchanting:dormant_deepshelf",
-    "category": "apotheosis:enchanting/progression",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
 		{
             "type": "patchouli:crafting",

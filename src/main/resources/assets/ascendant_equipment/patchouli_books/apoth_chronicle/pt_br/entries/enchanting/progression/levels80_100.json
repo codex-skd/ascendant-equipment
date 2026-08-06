@@ -1,20 +1,20 @@
 {
     "name": "Levels 80 - 100",
-    "icon": "apotheosis:endshelf",
-    "category": "apotheosis:enchanting/progression",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:endshelf",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
 		{
             "type": "patchouli:spotlight",
 			"title": "Alcançando o nível 90",
-			"item": "apotheosis:infused_breath",
+			"item": "ascendant_equipment:infused_breath",
 			"text": "Alcançar o penúltimo nível requer uma mesa de nível 80 e acesso a $(9)bafo do dragão$().$(p)Com isso, você pode criar $(9)bafo do dragão infundido$(), um componente principal de $(9)estante do End$()."
 		},
 		{
             "type": "patchouli:crafting",
 			"title": "Alcançando o nível 90",
-			"recipe": "apotheosis:endshelf",
-			"recipe2": "apotheosis:pearl_endshelf"
+			"recipe": "ascendant_equipment:endshelf",
+			"recipe2": "ascendant_equipment:pearl_endshelf"
 		},
 		{
             "type": "patchouli:spotlight",
@@ -25,7 +25,7 @@
 		{
             "type": "patchouli:crafting",
 			"title": "Alcançando o nível 100",
-			"recipe": "apotheosis:draconic_endshelf",
+			"recipe": "ascendant_equipment:draconic_endshelf",
 			"text": "Uma única $(9)estante do End dracônica$() fornece força bruta suficiente para impulsionar uma mesa do nível 90 para o nível 100.$(p)No entanto, não fornece outros bônus de status."
 		}
 	]

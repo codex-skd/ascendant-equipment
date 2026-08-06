@@ -1,8 +1,8 @@
 {
     "name": "クモの巣",
     "icon": "apothic_enchanting:prismatic_web",
-    "category": "apotheosis:enchanting/utility",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 5,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:prismatic_web"
+			"recipe": "ascendant_equipment:prismatic_web"
 		}
 	]
 }

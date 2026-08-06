@@ -1,8 +1,8 @@
 {
     "name": "ポーションチャーム",
-    "icon": "apotheosis:potion_charm",
-    "category": "apotheosis:potion/charms",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": -1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:potion_charm",
+			"recipe": "ascendant_equipment:potion_charm",
 			"title": "ポーションチャームの作り方",
             "text": "チャームいには同じ種類のポーション3つと、いくつかのブレイズパウダーが必要だ。$(p)チャーム1つで効果を得られる時間は、ポーション3つの時間よりも長い。"
         },

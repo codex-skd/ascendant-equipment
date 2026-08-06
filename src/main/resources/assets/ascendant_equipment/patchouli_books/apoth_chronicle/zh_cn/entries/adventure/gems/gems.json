@@ -1,8 +1,8 @@
 {
     "name": "宝石",
-    "icon": "apotheosis:gem",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {
@@ -31,7 +31,7 @@
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:sigil_of_withdrawal",
+			"recipe": "ascendant_equipment:sigil_of_withdrawal",
 			"title": "摘除符石",
 			"text": "在锻造台中，将一个镶过的物品与一个$(9)摘除符石$()结合以从物品中取出镶嵌的宝石，该物品和所有宝石都将被返还。"
 		}

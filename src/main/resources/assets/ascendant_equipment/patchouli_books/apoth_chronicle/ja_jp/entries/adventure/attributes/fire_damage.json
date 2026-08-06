@@ -1,8 +1,8 @@
 {
     "name": "火属性ダメージ",
     "icon": "minecraft:blaze_powder",
-    "category": "apotheosis:adventure/attributes",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

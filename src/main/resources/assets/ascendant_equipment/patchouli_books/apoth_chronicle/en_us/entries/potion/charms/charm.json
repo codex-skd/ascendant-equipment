@@ -1,8 +1,8 @@
 {
     "name": "Potion Charms",
-    "icon": "apotheosis:potion_charm",
-    "category": "apotheosis:potion/charms",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": -1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:potion_charm",
+			"recipe": "ascendant_equipment:potion_charm",
 			"title": "Potion Charm Crafting",
             "text": "A charm is made out of three potions of the same type, and some blaze powder.$(p)A single charm lasts longer than the three potions combined."
         },

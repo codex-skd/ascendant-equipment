@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "apotheosis:items/spawner_runes/infused_spawner_rune"
+        "layer0": "ascendant_equipment:items/spawner_runes/infused_spawner_rune"
     }
 }

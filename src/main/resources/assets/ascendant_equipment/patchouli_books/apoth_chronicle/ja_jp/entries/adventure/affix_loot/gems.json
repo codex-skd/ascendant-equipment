@@ -1,8 +1,8 @@
 {
     "name": "ジェム",
-    "icon": "apotheosis:gem",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {
@@ -31,7 +31,7 @@
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:sigil_of_withdrawal",
+			"recipe": "ascendant_equipment:sigil_of_withdrawal",
 			"title": "撤回の紋章",
 			"text": "鍛冶台の上でジェム取り付け済みのアイテムと$(9)撤回の紋章$()を組み合わせると、アイテムからジェムを取り除くことができる。元のアイテムと外したジェムはすべて破損せずに返却される。"
 		}

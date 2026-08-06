@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "apotheosis:items/potion_charm_static",
-        "layer1": "apotheosis:items/potion_charm"
+        "layer0": "ascendant_equipment:items/potion_charm_static",
+        "layer1": "ascendant_equipment:items/potion_charm"
     }
 }

@@ -1,8 +1,8 @@
 {
     "name": "Aprimoramento",
-    "icon": "apotheosis:augmenting_table",
-    "category": "apotheosis:adventure/affix_loot",
-    "flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:augmenting_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+    "flag": "ascendant_equipment:adventure",
     "sortnum": 5,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:augmenting_table",
+            "recipe": "ascendant_equipment:augmenting_table",
             "text": "Criar uma bancada de aprimoramento requer focar a energia de uma $(9)estrela do nether$() através de duas $(9)pérolas forjadas por deuses$(), usando uma $(9)bancada de encantamentos$() como base."
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_enhancement",
+            "recipe": "ascendant_equipment:sigil_of_enhancement",
             "title": "Encaixes de entrada",
             "text": "O encaixe inferior contém $(9)amuletos de aprimoramento$(), o item combustível usado para aprimorar.$(p)Por fim, você precisará selecionar o afixo desejado no menu."
         },

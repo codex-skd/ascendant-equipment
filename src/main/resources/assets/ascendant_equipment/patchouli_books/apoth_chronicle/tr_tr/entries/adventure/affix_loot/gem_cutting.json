@@ -1,13 +1,13 @@
 {
     "name": "Değerli Taş Kesme",
-    "icon": "apotheosis:gem_cutting_table",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem_cutting_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 6,
     "pages": [
         {
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:gem_cutting_table",
+			"recipe": "ascendant_equipment:gem_cutting_table",
 			"text": "$(9)Değerli Taş Kesim Masası$(), $(l:apotheosis:adventure/affix_loot/gems)Değerli Taşları$() yükseltmek için kullanılır.$(p)Bir değerli taşı yükseltmek $(9)Değerli Taş Tozu$(), $(9)Nadirlik Malzemeleri$() ve aynı nadirlikte ikinci bir Değerli Taş gerektirir."
         },
 		{

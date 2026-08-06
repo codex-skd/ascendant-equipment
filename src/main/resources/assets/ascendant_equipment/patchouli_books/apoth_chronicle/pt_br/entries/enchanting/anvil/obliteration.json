@@ -1,8 +1,8 @@
 {
     "name": "Obliteração",
     "icon": "minecraft:enchanted_book",
-    "category": "apotheosis:enchanting/anvil",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/anvil",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 0,
     "pages": [
         {
