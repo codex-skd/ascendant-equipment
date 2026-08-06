@@ -30,6 +30,13 @@ relations = common-toolkit:requiredDependency,vellumli:requiredDependency,ascend
 
 El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mod_id`, `mod_name`, `minecraft_version`, `mod_version` de `gradle.properties`. Sube automáticamente el JAR desde `build/libs/` con el changelog de `docs/curseforge/versions/<version>.md`.
 
+## Historial de subidas
+
+| Versión | File ID | Fecha |
+|---------|---------|-------|
+| 0.0.0-beta.9 | 8589911 | 2026-08-06 |
+| 0.0.0-beta.8 | 8586830 | 2026-08-04 |
+
 ## Nota
 
 La **primera subida a CurseForge se hace manual** (proyecto recién creado, sin archivos previos que verificar por API). A partir de la segunda subida se puede usar el script `codex-docs/scripts/curseforge-upload.ps1`.
