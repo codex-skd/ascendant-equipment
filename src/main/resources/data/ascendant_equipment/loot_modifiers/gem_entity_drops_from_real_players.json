@@ -5,7 +5,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "type_specific": {
+                "sub_predicate": {
                     "type": "ascendant_equipment:is_monster"
                 }
             }

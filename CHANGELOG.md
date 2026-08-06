@@ -1,5 +1,15 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.9
+
+- **Gem Loot Modifiers syntax fix**: Corrected NeoForge 26.2 entity predicate syntax in `gem_entity_drops.json` and `gem_entity_drops_from_real_players.json`. Replaced invalid `type_specific` wrapper with `sub_predicate` to properly reference the `is_monster` entity sub-predicate. The old Apotheosis 26.1.2 syntax was incompatible with NeoForge 26.2 predicate parsing.
+- **Loot modifiers now parse correctly** without data file errors on server startup, enabling proper gem drops from mobs.
+
+## 0.0.0-beta.8
+
+- **Recompiled against NeoForge `26.2.0.37-beta`**: bump of `neo_version` in `gradle.properties` (`26.2.0.32-beta` -> `26.2.0.37-beta`). Verified with `runServer` (startup without errors).
+- **Wired the ported AscEq content into the mod entrypoint**: `AscEq.bootstrap()` now properly initializes all ported content registries.
+
 ## 0.0.0-beta.6
 
 - **Fases 14-15 completas**: Mixins (25 archivos) + Data-driven JSON (11 advancements, 542 archivos).
