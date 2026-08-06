@@ -34,6 +34,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 
 | Versión | File ID | Fecha |
 |---------|---------|-------|
+| 0.0.0-beta.10 | 8591145 | 2026-08-07 |
 | 0.0.0-beta.9 | 8589911 | 2026-08-06 |
 | 0.0.0-beta.8 | 8586830 | 2026-08-04 |
 
