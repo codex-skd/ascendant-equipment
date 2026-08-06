@@ -83,7 +83,7 @@
       "label": "Get-VarFromMd()",
       "file_type": "code",
       "source_file": "scripts/curseforge-upload.ps1",
-      "source_location": "L31",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "scripts_curseforge_upload_get_varfrommd",
       "community": 261,
@@ -1086,7 +1086,7 @@
       "source_location": "L689",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_asceq_tiles",
-      "community": 209,
+      "community": 23,
       "norm_label": "tiles"
     },
     {
@@ -1096,7 +1096,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_asceq_java_blockentitytype",
-      "community": 209,
+      "community": 23,
       "norm_label": "blockentitytype"
     },
     {
@@ -1106,7 +1106,7 @@
       "source_location": "L705",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_asceq_tiles_bootstrap",
-      "community": 209,
+      "community": 23,
       "norm_label": ".bootstrap()"
     },
     {
@@ -1986,7 +1986,7 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_equipmentevents_equipmentevents_impact",
-      "community": 164,
+      "community": 17,
       "norm_label": ".impact()"
     },
     {
@@ -1996,7 +1996,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "projectileimpactevent",
-      "community": 164,
+      "community": 17,
       "norm_label": "projectileimpactevent"
     },
     {
@@ -9836,7 +9836,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix",
-      "community": 101,
+      "community": 6,
       "norm_label": "omneticaffix.java"
     },
     {
@@ -9846,7 +9846,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix",
-      "community": 101,
+      "community": 6,
       "norm_label": "omneticaffix"
     },
     {
@@ -9856,7 +9856,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_codec",
-      "community": 101,
+      "community": 6,
       "norm_label": "codec"
     },
     {
@@ -9866,7 +9866,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix_omneticaffix",
-      "community": 101,
+      "community": 6,
       "norm_label": ".omneticaffix()"
     },
     {
@@ -9876,7 +9876,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix_canapplyto",
-      "community": 101,
+      "community": 6,
       "norm_label": ".canapplyto()"
     },
     {
@@ -9886,7 +9886,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_itemstack",
-      "community": 101,
+      "community": 6,
       "norm_label": "itemstack"
     },
     {
@@ -9896,7 +9896,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_override",
-      "community": 101,
+      "community": 6,
       "norm_label": "override"
     },
     {
@@ -9906,7 +9906,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix_getdescription",
-      "community": 101,
+      "community": 6,
       "norm_label": ".getdescription()"
     },
     {
@@ -9916,7 +9916,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_attributetooltipcontext",
-      "community": 101,
+      "community": 6,
       "norm_label": "attributetooltipcontext"
     },
     {
@@ -9926,7 +9926,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_mutablecomponent",
-      "community": 101,
+      "community": 6,
       "norm_label": "mutablecomponent"
     },
     {
@@ -9946,7 +9946,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_java_harvestcheck",
-      "community": 101,
+      "community": 6,
       "norm_label": "harvestcheck"
     },
     {
@@ -9976,7 +9976,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix_getcodec",
-      "community": 101,
+      "community": 6,
       "norm_label": ".getcodec()"
     },
     {
@@ -9986,7 +9986,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_omneticaffix_islevelindependent",
-      "community": 101,
+      "community": 6,
       "norm_label": ".islevelindependent()"
     },
     {
@@ -9996,7 +9996,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_builder",
-      "community": 101,
+      "community": 6,
       "norm_label": "builder"
     },
     {
@@ -10006,7 +10006,7 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_builder_categories",
-      "community": 101,
+      "community": 6,
       "norm_label": ".categories()"
     },
     {
@@ -10016,7 +10016,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_builder_value",
-      "community": 101,
+      "community": 6,
       "norm_label": ".value()"
     },
     {
@@ -10026,7 +10026,7 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_affix_effect_omneticaffix_builder_build",
-      "community": 101,
+      "community": 6,
       "norm_label": ".build()"
     },
     {
@@ -24776,7 +24776,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory",
-      "community": 101,
+      "community": 53,
       "norm_label": "lootcategory"
     },
     {
@@ -24816,7 +24816,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_java_itemstack",
-      "community": 101,
+      "community": 53,
       "norm_label": "itemstack"
     },
     {
@@ -24826,7 +24826,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_java_entityslotgroup",
-      "community": 101,
+      "community": 53,
       "norm_label": "entityslotgroup"
     },
     {
@@ -24836,7 +24836,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_lootcategory",
-      "community": 101,
+      "community": 53,
       "norm_label": ".lootcategory()"
     },
     {
@@ -24846,7 +24846,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_getdescid",
-      "community": 101,
+      "community": 53,
       "norm_label": ".getdescid()"
     },
     {
@@ -24856,7 +24856,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_getdescidplural",
-      "community": 101,
+      "community": 53,
       "norm_label": ".getdescidplural()"
     },
     {
@@ -24866,7 +24866,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_getkey",
-      "community": 101,
+      "community": 53,
       "norm_label": ".getkey()"
     },
     {
@@ -24886,7 +24886,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_priority",
-      "community": 101,
+      "community": 53,
       "norm_label": ".priority()"
     },
     {
@@ -24906,7 +24906,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_isvalid",
-      "community": 101,
+      "community": 53,
       "norm_label": ".isvalid()"
     },
     {
@@ -24916,7 +24916,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_isarmor",
-      "community": 101,
+      "community": 53,
       "norm_label": ".isarmor()"
     },
     {
@@ -24926,7 +24926,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_java_deprecated",
-      "community": 101,
+      "community": 53,
       "norm_label": "deprecated"
     },
     {
@@ -24956,7 +24956,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_isdefensive",
-      "community": 101,
+      "community": 53,
       "norm_label": ".isdefensive()"
     },
     {
@@ -24966,7 +24966,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_ismelee",
-      "community": 101,
+      "community": 53,
       "norm_label": ".ismelee()"
     },
     {
@@ -24976,7 +24976,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_ismeleeorshield",
-      "community": 101,
+      "community": 53,
       "norm_label": ".ismeleeorshield()"
     },
     {
@@ -24996,7 +24996,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_tostring",
-      "community": 101,
+      "community": 53,
       "norm_label": ".tostring()"
     },
     {
@@ -25006,7 +25006,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_java_override",
-      "community": 101,
+      "community": 53,
       "norm_label": "override"
     },
     {
@@ -25016,7 +25016,7 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_loot_lootcategory_lootcategory_getorcreatedescriptionid",
-      "community": 101,
+      "community": 53,
       "norm_label": ".getorcreatedescriptionid()"
     },
     {
@@ -37496,7 +37496,7 @@
       "source_location": "L215",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder",
-      "community": 29,
+      "community": 91,
       "norm_label": "builder"
     },
     {
@@ -37506,7 +37506,7 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder_builder",
-      "community": 29,
+      "community": 91,
       "norm_label": ".builder()"
     },
     {
@@ -37516,7 +37516,7 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder_contstraints",
-      "community": 29,
+      "community": 91,
       "norm_label": ".contstraints()"
     },
     {
@@ -37526,7 +37526,7 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder_minpurity",
-      "community": 29,
+      "community": 91,
       "norm_label": ".minpurity()"
     },
     {
@@ -37536,7 +37536,7 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder_bonus",
-      "community": 29,
+      "community": 91,
       "norm_label": ".bonus()"
     },
     {
@@ -37546,7 +37546,7 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_gem_builder_unique",
-      "community": 29,
+      "community": 91,
       "norm_label": ".unique()"
     },
     {
@@ -38086,7 +38086,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_geminstance_geminstance_getbonus",
-      "community": 29,
+      "community": 50,
       "norm_label": ".getbonus()"
     },
     {
@@ -38096,7 +38096,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "src_main_java_com_skd_ascendantequipment_socket_gem_geminstance_geminstance_map",
-      "community": 29,
+      "community": 50,
       "norm_label": ".map()"
     },
     {
@@ -52386,7 +52386,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/curseforge-upload.ps1",
-      "source_location": "L31",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "scripts_curseforge_upload",
       "target": "scripts_curseforge_upload_get_varfrommd",
@@ -191407,5 +191407,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2a805ea7421ad345be73c7eb27f27db6a0a90a89"
+  "built_at_commit": "1c31c30d23b582f97639b0c9b31afdc1cdf7bbba"
 }

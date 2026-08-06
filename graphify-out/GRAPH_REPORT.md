@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-06)
 
 ## Corpus Check
-- 1140 files · ~191,636 words
+- 1868 files · ~257,028 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5231 nodes · 12903 edges · 244 communities (239 shown, 5 thin omitted)
+- 5231 nodes · 12903 edges · 243 communities (238 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 338 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2a805ea7`
+- Built from commit: `1c31c30d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -114,7 +114,6 @@
 - GemCuttingMenu
 - AbstractSkeletonMixin.java
 - TieredDynamicRegistry
-- TelepathicAffix.java
 - RadialProgressTracker.java
 - LootController.java
 - Elite
@@ -276,7 +275,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (244 total, 5 thin omitted)
+## Communities (243 total, 5 thin omitted)
 
 ### Community 0 - "Ascendant Equipment"
 Cohesion: 0.12
@@ -303,8 +302,8 @@ Cohesion: 0.05
 Nodes (41): ILuckyWeighted, Pattern, SpawnerStat, SpawnerTile, GemLootModifier, GemTableEntry, Codec, DynamicHolder (+33 more)
 
 ### Community 6 - "Creative Mode Tab"
-Cohesion: 0.21
-Nodes (8): AffixBuilder, CategorizedAffixBuilder, Builder, StepFunction, SimpleAffixBuilder, ValuedAffixBuilder, AffixDefinition, TriFunction
+Cohesion: 0.11
+Nodes (16): AffixBuilder, CategorizedAffixBuilder, Builder, StepFunction, SimpleAffixBuilder, ValuedAffixBuilder, AffixDefinition, Builder (+8 more)
 
 ### Community 7 - "Common Setup"
 Cohesion: 0.16
@@ -335,8 +334,8 @@ Cohesion: 0.05
 Nodes (33): Object2FloatOpenHashMap, ObjectSet, Affix, App, AttributeTooltipContext, BlockPos, BlockState, Component (+25 more)
 
 ### Community 17 - "EquipmentEvents.java"
-Cohesion: 0.08
-Nodes (23): AnvilLandEvent, Clone, ItemStackedOnOtherEvent, LivingEquipmentChangeEvent, LivingIncomingDamageEvent, LivingShieldBlockEvent, MobDespawnEvent, OnDatapackSyncEvent (+15 more)
+Cohesion: 0.07
+Nodes (24): AnvilLandEvent, Clone, ItemStackedOnOtherEvent, LivingEquipmentChangeEvent, LivingIncomingDamageEvent, LivingShieldBlockEvent, MobDespawnEvent, OnDatapackSyncEvent (+16 more)
 
 ### Community 18 - "AffixItemIngredient.java"
 Cohesion: 0.19
@@ -359,8 +358,8 @@ Cohesion: 0.09
 Nodes (25): AddAttributeTooltipsEvent, GatherComponents, GatherSkippedAttributeTooltipsEvent, LoggingIn, RegisterClientTooltipComponentFactoriesEvent, RegisterItemModelsEvent, RegisterKeyMappingsEvent, RegisterMenuScreensEvent (+17 more)
 
 ### Community 23 - "ReforgingTableTile"
-Cohesion: 0.15
-Nodes (13): BlockEntity, BlockPos, BlockState, InternalItemHandler, ItemResource, ItemStack, Level, Nullable (+5 more)
+Cohesion: 0.13
+Nodes (15): BlockEntity, BlockPos, BlockState, InternalItemHandler, ItemResource, ItemStack, Level, Nullable (+7 more)
 
 ### Community 24 - "MobEffectBonus.java"
 Cohesion: 0.11
@@ -383,8 +382,8 @@ Cohesion: 0.11
 Nodes (22): InteractionHand, ItemTooltipEvent, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, Enchantment, Entity, EquipmentSlot (+14 more)
 
 ### Community 29 - "GemBonus.java"
-Cohesion: 0.05
-Nodes (27): Builder, GemBonus, App, AttributeTooltipContext, BlockPos, BlockState, Codec, Component (+19 more)
+Cohesion: 0.06
+Nodes (26): Builder, GemBonus, App, AttributeTooltipContext, BlockPos, BlockState, Codec, Component (+18 more)
 
 ### Community 30 - "GemCaseScreen"
 Cohesion: 0.11
@@ -479,8 +478,8 @@ Cohesion: 0.08
 Nodes (23): DataComponentPredicate, SingleComponentItemPredicate, AffixItemPredicate, Codec, DataComponentType, Override, Type, Codec (+15 more)
 
 ### Community 53 - ".fmt"
-Cohesion: 0.16
-Nodes (12): Builder, FestiveAffix, FestiveData, AttributeTooltipContext, Codec, Component, ItemStack, LivingDeathEvent (+4 more)
+Cohesion: 0.09
+Nodes (17): Builder, FestiveAffix, FestiveData, AttributeTooltipContext, Codec, Component, ItemStack, LivingDeathEvent (+9 more)
 
 ### Community 54 - "BossDungeonFeature2.java"
 Cohesion: 0.13
@@ -631,8 +630,8 @@ Cohesion: 0.16
 Nodes (10): ModifierSource, ModifierSourceType, Font, GuiGraphicsExtractor, TierAugmentModifierSource, AttributeTooltipContext, Component, LivingEntity (+2 more)
 
 ### Community 91 - "Constraints"
-Cohesion: 0.17
-Nodes (11): RegistryLookup, Builder, Constrained, Constraints, Biome, Codec, HolderSet, Level (+3 more)
+Cohesion: 0.13
+Nodes (12): RegistryLookup, Builder, Builder, Constrained, Constraints, Biome, Codec, HolderSet (+4 more)
 
 ### Community 92 - "ApothSmithingRecipe"
 Cohesion: 0.19
@@ -669,10 +668,6 @@ Nodes (16): LootPoolSingletonContainer, ContextualLootPoolEntry, ItemStack, Loot
 ### Community 100 - "TieredDynamicRegistry"
 Cohesion: 0.24
 Nodes (5): Codec, EntityInvulnerabilityCheckEvent, ItemStack, Override, MagicalArrowAffix
-
-### Community 101 - "TelepathicAffix.java"
-Cohesion: 0.10
-Nodes (13): Builder, AttributeTooltipContext, Codec, HarvestCheck, ItemStack, MutableComponent, Override, OmneticAffix (+5 more)
 
 ### Community 102 - "RadialProgressTracker.java"
 Cohesion: 0.15
@@ -911,8 +906,8 @@ Cohesion: 0.34
 Nodes (10): EnchantmentHelperMixin, CallbackInfo, CallbackInfoReturnable, DamageSource, Entity, Inject, ItemStack, LivingEntity (+2 more)
 
 ### Community 164 - ".getGems"
-Cohesion: 0.28
-Nodes (5): ProjectileImpactEvent, Identifier, ItemStack, Projectile, SocketHelper
+Cohesion: 0.34
+Nodes (4): Identifier, ItemStack, Projectile, SocketHelper
 
 ### Community 166 - "SmithingMenuMixin.java"
 Cohesion: 0.25
@@ -1055,8 +1050,8 @@ Cohesion: 0.33
 Nodes (4): ItemStack, RecipeHolder, RecipeMap, SalvagingRecipeCache
 
 ### Community 209 - "BossCommand.java"
-Cohesion: 0.12
-Nodes (16): AnimationStage, FALLING, HIDING, RISING, SPINNING, AugmentingTableTile, BlockPos, BlockState (+8 more)
+Cohesion: 0.15
+Nodes (14): AnimationStage, FALLING, HIDING, RISING, SPINNING, AugmentingTableTile, BlockPos, BlockState (+6 more)
 
 ### Community 210 - "AbstractSkeletonRendererMixin.java"
 Cohesion: 0.39
@@ -1198,11 +1193,11 @@ Nodes (10): AbstractArrow, AttributeTooltipContext, BlockDropsEvent, Codec, Item
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `LootRarity` connect `LootController.java` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `AffixData`, `Event Handling`, `.drops`, `Creative Mode Tab`, `AscEq.java`, `.getRarity`, `Affix`, `AffixItemReward.java`, `AffixItemIngredient.java`, `Builder`, `AffixLootModifier.java`, `AdventureModuleClient.java`, `ReforgingTableTile`, `MultiAttrAffix.java`, `AugmentingTableTileRenderer.java`, `GemInstance`, `AffixConvertLootModifier.java`, `SpectralShotAffix.java`, `ReforgingTableBlockItem.java`, `TrueRandomGemReward.java`, `AffixHelper.java`, `CatalyzingAffix.java`, `LootRule.java`, `RarityRegistry.java`, `AscEqMobEvents.java`, `AffixItemPredicate`, `.fmt`, `WorldTierDetailScreen.java`, `SpawnEggSlotDisplay`, `ReforgingRecipe`, `SpawnCondition`, `ReforgingMenu`, `AttributeAffix`, `EnchantmentAffix.java`, `RadialAffix.java`, `SalvageItem.java`, `CleavingAffix.java`, `Invader.java`, `ApothMiscUtil.java`, `StoneformingAffix`, `AffixLootEntry`, `TieredWeights`, `BossSpawnPayload.java`, `TieredDynamicRegistry`, `TelepathicAffix.java`, `Elite`, `AffixData`, `BossStats.java`, `ExecutingAffix.java`?**
+- **Why does `LootRarity` connect `LootController.java` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `AffixData`, `Event Handling`, `.drops`, `Creative Mode Tab`, `AscEq.java`, `.getRarity`, `Affix`, `AffixItemReward.java`, `AffixItemIngredient.java`, `Builder`, `AffixLootModifier.java`, `AdventureModuleClient.java`, `ReforgingTableTile`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `GemInstance`, `AffixConvertLootModifier.java`, `SpectralShotAffix.java`, `ReforgingTableBlockItem.java`, `TrueRandomGemReward.java`, `AffixHelper.java`, `CatalyzingAffix.java`, `LootRule.java`, `RarityRegistry.java`, `AscEqMobEvents.java`, `AffixItemPredicate`, `.fmt`, `WorldTierDetailScreen.java`, `SpawnEggSlotDisplay`, `ReforgingRecipe`, `SpawnCondition`, `ReforgingMenu`, `AttributeAffix`, `EnchantmentAffix.java`, `RadialAffix.java`, `SalvageItem.java`, `CleavingAffix.java`, `Invader.java`, `ApothMiscUtil.java`, `StoneformingAffix`, `AffixLootEntry`, `TieredWeights`, `BossSpawnPayload.java`, `TieredDynamicRegistry`, `Elite`, `AffixData`, `BossStats.java`, `ExecutingAffix.java`?**
   _High betweenness centrality (0.120) - this node is a cross-community bridge._
-- **Why does `Purity` connect `GemLootPoolEntry.java` to `GemUpgradeMatch.java`, `Server Startup`, `AscEq.java`, `GemItem.java`, `ItemFrameGemsProcessor.java`, `EquippedItemTrigger.java`, `MobEffectBonus.java`, `FrozenDropsBonus.java`, `GemCaseTile`, `GemCaseTileRenderer.java`, `GemBonus.java`, `GemCaseScreen`, `GemView`, `ItemAffixes`, `EntityModifier.java`, `OmneticBonus.java`, `TierAugmentRegistry.java`, `SocketedGems.java`, `AffixItemPredicate`, `RetreatingAffix.java`, `BloodyArrowBonus.java`, `AllStatsBonus.java`, `GemCaseMenu`, `GemRegistry.java`, `DropTransformBonus.java`, `TieredWeights`, `EnchantmentBonus`, `Builder`, `RadialBonus.java`, `GemCuttingMenu`, `AbstractSkeletonMixin.java`, `GemCaseSlot`, `PurityUpgradeRecipe`, `.loc`?**
+- **Why does `Purity` connect `GemLootPoolEntry.java` to `GemUpgradeMatch.java`, `Server Startup`, `AscEq.java`, `GemItem.java`, `ItemFrameGemsProcessor.java`, `EquippedItemTrigger.java`, `MobEffectBonus.java`, `FrozenDropsBonus.java`, `GemCaseTile`, `GemCaseTileRenderer.java`, `GemBonus.java`, `GemCaseScreen`, `GemView`, `ItemAffixes`, `EntityModifier.java`, `OmneticBonus.java`, `TierAugmentRegistry.java`, `SocketedGems.java`, `AffixItemPredicate`, `RetreatingAffix.java`, `BloodyArrowBonus.java`, `AllStatsBonus.java`, `GemCaseMenu`, `GemRegistry.java`, `DropTransformBonus.java`, `TieredWeights`, `EnchantmentBonus`, `Builder`, `Constraints`, `RadialBonus.java`, `GemCuttingMenu`, `AbstractSkeletonMixin.java`, `GemCaseSlot`, `PurityUpgradeRecipe`, `.loc`?**
   _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **Why does `LootCategory` connect `TelepathicAffix.java` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `Event Handling`, `.drops`, `Creative Mode Tab`, `AscEq.java`, `GemItem.java`, `.getRarity`, `Affix`, `GemCaseTile`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `GemBonus.java`, `GenContext`, `GemInstance`, `Purity`, `SpectralShotAffix.java`, `ReforgingTableBlockItem.java`, `LootRule.java`, `CatalyzingAffix.java`, `SocketedGems.java`, `.fmt`, `AttributeAffix`, `EnchantmentAffix.java`, `RadialAffix.java`, `CleavingAffix.java`, `CuriosCompat.java`, `DropTransformBonus.java`, `ApothMiscUtil.java`, `LootCategories`, `TieredDynamicRegistry`, `RadialProgressTracker.java`, `LootController.java`, `ExecutingAffix.java`?**
+- **Why does `LootCategory` connect `.fmt` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `Event Handling`, `.drops`, `Creative Mode Tab`, `AscEq.java`, `GemItem.java`, `.getRarity`, `Affix`, `GemCaseTile`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `GenContext`, `GemInstance`, `Purity`, `SpectralShotAffix.java`, `ReforgingTableBlockItem.java`, `LootRule.java`, `CatalyzingAffix.java`, `SocketedGems.java`, `AttributeAffix`, `EnchantmentAffix.java`, `RadialAffix.java`, `CleavingAffix.java`, `CuriosCompat.java`, `DropTransformBonus.java`, `ApothMiscUtil.java`, `LootCategories`, `Constraints`, `TieredDynamicRegistry`, `RadialProgressTracker.java`, `LootController.java`, `ExecutingAffix.java`?**
   _High betweenness centrality (0.059) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `AffixInstance` (e.g. with `.applyAffix()` and `.listAlternatives()`) actually correct?**
   _`AffixInstance` has 2 INFERRED edges - model-reasoned connections that need verification._
