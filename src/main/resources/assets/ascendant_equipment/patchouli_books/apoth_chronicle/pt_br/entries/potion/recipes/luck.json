@@ -1,8 +1,8 @@
 {
     "name": "Sorte",
     "icon": "minecraft:textures/mob_effect/luck.png",
-    "category": "apotheosis:potion/recipes",
-	"flag": "apotheosis:potion",
+    "category": "ascendant_equipment:potion/recipes",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 0,
     "pages": [
         {
@@ -12,7 +12,7 @@
 		{
             "type": "patchouli:spotlight",
 			"title": "Receita de fabricação de poção",
-			"item": "apotheosis:lucky_foot",
+			"item": "ascendant_equipment:lucky_foot",
 			"link_recipe": true,
             "text": "Esta poção pode ser criada com uma poção estranha e um pé de coelho da sorte.$(p)O Pé de coelho da sorte raramente é derrubado por coelhos."
         }

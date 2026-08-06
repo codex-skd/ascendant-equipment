@@ -1,8 +1,8 @@
 {
     "name": "Зіллєві амулети",
-	"parent": "apotheosis:potion/potion",
+	"parent": "ascendant_equipment:potion/potion",
     "description": "У цьому розділі детально описані $(9)зіллєві амулети$() та всі їхні застосування і нюанси.$(p)Якщо інші модулі вимкнені або деякі моди не встановлені, цей розділ може бути трохи порожнім.",
-    "icon": "apotheosis:potion_charm",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 1
 }

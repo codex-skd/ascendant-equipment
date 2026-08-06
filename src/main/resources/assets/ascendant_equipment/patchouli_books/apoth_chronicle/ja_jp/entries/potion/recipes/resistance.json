@@ -1,8 +1,8 @@
 {
     "name": "耐性",
     "icon": "minecraft:textures/mob_effect/resistance.png",
-    "category": "apotheosis:potion/recipes",
-	"flag": "apotheosis:potion",
+    "category": "ascendant_equipment:potion/recipes",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 0,
     "pages": [
         {

@@ -2,5 +2,5 @@
     "name": "Модуль породжувачів",
     "description": "Модуль породжувачів відкриває можливості переміщення та модифікації $(9)породжувачів мобів$().",
     "icon": "minecraft:spawner",
-	"flag": "apotheosis:spawner"
+	"flag": "ascendant_equipment:spawner"
 }

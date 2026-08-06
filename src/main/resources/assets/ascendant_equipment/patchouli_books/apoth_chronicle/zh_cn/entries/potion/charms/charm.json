@@ -1,8 +1,8 @@
 {
     "name": "药水护符",
-    "icon": "apotheosis:potion_charm",
-    "category": "apotheosis:potion/charms",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": -1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:potion_charm",
+			"recipe": "ascendant_equipment:potion_charm",
 			"title": "药水护符合成",
             "text": "护符由三瓶同样的药水和一些烈焰粉组成。$(p)单个护符的持续时间比三瓶药水加起来还要长。"
         },

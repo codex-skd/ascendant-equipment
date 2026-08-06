@@ -1,8 +1,8 @@
 {
     "name": "崩壊",
     "icon": "attributeslib:textures/mob_effect/sundering.png",
-    "category": "apotheosis:potion/effects",
-	"flag": "apotheosis:potion",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 0,
     "pages": [
         {

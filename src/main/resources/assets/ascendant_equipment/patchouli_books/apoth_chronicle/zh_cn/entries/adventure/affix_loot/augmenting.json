@@ -1,8 +1,8 @@
 {
     "name": "强化",
-    "icon": "apotheosis:augmenting_table",
-    "category": "apotheosis:adventure/affix_loot",
-    "flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:augmenting_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+    "flag": "ascendant_equipment:adventure",
     "sortnum": 5,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:augmenting_table",
+            "recipe": "ascendant_equipment:augmenting_table",
             "text": "制作强化台需要通过两个$(9)神铸珍珠$()汇聚一个$(9)下界之星$()的能量，并使用$(9)附魔台$()作为基础。"
         },
         {
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_enhancement",
+            "recipe": "ascendant_equipment:sigil_of_enhancement",
             "title": "输入格",
             "text": "下面一格放置$(9)强化符石$()，用于强化的燃料物品。$(p)最后，你需要从下拉菜单中选择所需的词缀。"
         },

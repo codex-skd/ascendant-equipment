@@ -1,8 +1,8 @@
 {
     "name": "Зіллєві амулети",
-    "icon": "apotheosis:potion_charm",
-    "category": "apotheosis:potion/charms",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": -1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:potion_charm",
+			"recipe": "ascendant_equipment:potion_charm",
 			"title": "Створення зіллєвих амулетів",
             "text": "Амулет створюється з трьох зілль одного типу та невеликої кількості пороху пломеня.$(p)Один амулет діє довше, ніж три зілля разом узяті."
         },

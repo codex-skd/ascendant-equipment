@@ -1,8 +1,8 @@
 {
     "name": "Reforging",
-    "icon": "apotheosis:reforging_table",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:reforging_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 4,
     "pages": [
 		{
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:simple_reforging_table",
+			"recipe": "ascendant_equipment:simple_reforging_table",
 			"text": "To begin reforging, craft a $(#5555FF)Simple Reforging Table$(), which allows you to reforge items up to $(#5555FF)Rare$() rarity."
 		},
 		{
@@ -21,7 +21,7 @@
         },
 		{
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_rebirth",
+            "recipe": "ascendant_equipment:sigil_of_rebirth",
 			"title": "Input Slots",
 			"text": "The bottom-right slot holds $(9)Sigils of Rebirth$(), a unique fuel item used during the Reforging process."
         },
@@ -37,7 +37,7 @@
 		},
         {
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:reforging_table",
+			"recipe": "ascendant_equipment:reforging_table",
 			"text": "To reforge items of $(#BB00BB)Epic$() rarity or higher, you'll need to upgrade your $(#5555FF)Simple Reforging Table$() into a $(#BB00BB)Reforging Table$()."
 		},
 		{

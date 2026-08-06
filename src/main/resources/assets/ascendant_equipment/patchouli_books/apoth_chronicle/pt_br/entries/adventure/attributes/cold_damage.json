@@ -1,8 +1,8 @@
 {
     "name": "Dano gélido",
     "icon": "minecraft:blue_ice",
-    "category": "apotheosis:adventure/attributes",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

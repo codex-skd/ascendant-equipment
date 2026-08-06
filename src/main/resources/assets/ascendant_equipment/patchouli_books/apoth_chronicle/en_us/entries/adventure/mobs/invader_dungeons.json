@@ -1,8 +1,8 @@
 {
     "name": "Invader Dungeons",
     "icon": "minecraft:spawner",
-    "category": "apotheosis:adventure/mobs",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/mobs",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {

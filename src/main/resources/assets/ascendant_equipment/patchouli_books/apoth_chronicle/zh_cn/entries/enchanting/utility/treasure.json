@@ -1,8 +1,8 @@
 {
     "name": "宝藏型魔咒",
     "icon": "apothic_enchanting:treasure_shelf",
-    "category": "apotheosis:enchanting/utility",
-    "flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+    "flag": "ascendant_equipment:enchanting",
     "sortnum": 0,
     "pages": [
         {

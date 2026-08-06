@@ -1,5 +1,5 @@
 {
     "variants": {
-		"": { "model": "apotheosis:block/salvaging_table" }
+		"": { "model": "ascendant_equipment:block/salvaging_table" }
     }
 }

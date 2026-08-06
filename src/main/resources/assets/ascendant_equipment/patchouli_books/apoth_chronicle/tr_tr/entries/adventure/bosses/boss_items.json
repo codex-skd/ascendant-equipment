@@ -1,8 +1,8 @@
 {
     "name": "Boss Eşyaları",
     "icon": "minecraft:ender_chest",
-    "category": "apotheosis:adventure/bosses",
-    "flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/bosses",
+    "flag": "ascendant_equipment:adventure",
     "sortnum": 0,
     "pages": [
         {

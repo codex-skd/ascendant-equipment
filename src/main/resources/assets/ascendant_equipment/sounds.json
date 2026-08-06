@@ -1,21 +1,21 @@
 {
 	"reforge_item_placed": {
 		"subtitle": "apotheosis.subtitle.reforge_item_placed",
-		"sounds": ["apotheosis:reforge_item_placed"]
+		"sounds": ["ascendant_equipment:reforge_item_placed"]
 	},
     "reforge_item_reforged": {
         "subtitle": "apotheosis.subtitle.reforge_item_reforged",
-        "sounds": ["apotheosis:reforge_item_reforged"]
+        "sounds": ["ascendant_equipment:reforge_item_reforged"]
     },
     "malice": {
         "subtitle": "apotheosis.subtitle.malice",
-        "sounds": ["apotheosis:malice"]
+        "sounds": ["ascendant_equipment:malice"]
     },
     "music_disc_flash": {
         "subtitle": "subtitle.apotheosis.music_disc.flash",
         "sounds": [
             {
-                "name": "apotheosis:music/flash",
+                "name": "ascendant_equipment:music/flash",
                 "stream": true
             }
         ]
@@ -24,7 +24,7 @@
         "subtitle": "subtitle.apotheosis.music_disc.glimmer",
         "sounds": [
             {
-                "name": "apotheosis:music/glimmer",
+                "name": "ascendant_equipment:music/glimmer",
                 "stream": true
             }
         ]
@@ -33,25 +33,25 @@
         "subtitle": "subtitle.apotheosis.music_disc.shimmer",
         "sounds": [
             {
-                "name": "apotheosis:music/shimmer",
+                "name": "ascendant_equipment:music/shimmer",
                 "stream": true
             }
         ]
     },
     "invader_uncommon": {
         "subtitle": "apotheosis.subtitle.invader_uncommon",
-        "sounds": ["apotheosis:invader_uncommon"]
+        "sounds": ["ascendant_equipment:invader_uncommon"]
     },
     "invader_rare": {
         "subtitle": "apotheosis.subtitle.invader_rare",
-        "sounds": ["apotheosis:invader_rare"]
+        "sounds": ["ascendant_equipment:invader_rare"]
     },
     "invader_epic": {
         "subtitle": "apotheosis.subtitle.invader_epic",
-        "sounds": ["apotheosis:invader_epic"]
+        "sounds": ["ascendant_equipment:invader_epic"]
     },
     "invader_mythic": {
         "subtitle": "apotheosis.subtitle.invader_mythic",
-        "sounds": ["apotheosis:invader_mythic"]
+        "sounds": ["ascendant_equipment:invader_mythic"]
     }
 }

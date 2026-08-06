@@ -1,7 +1,7 @@
 {
     "name": "饰品",
     "icon": "curios:textures/slot/empty_charm_slot.png",
-    "category": "apotheosis:potion/charms",
+    "category": "ascendant_equipment:potion/charms",
 	"flag": "&apotheosis:potion,apotheosis:curiosloaded",
 	"sortnum": 1,
     "pages": [

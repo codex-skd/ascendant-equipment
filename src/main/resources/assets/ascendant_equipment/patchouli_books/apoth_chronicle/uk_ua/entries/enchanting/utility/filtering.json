@@ -1,8 +1,8 @@
 {
     "name": "Фільтрування чар",
     "icon": "apothic_enchanting:filtering_shelf",
-    "category": "apotheosis:enchanting/utility",
-    "flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+    "flag": "ascendant_equipment:enchanting",
     "sortnum": 0,
     "pages": [
         {

@@ -1,8 +1,8 @@
 {
     "name": "経験値コスト",
     "icon": "minecraft:experience_bottle",
-    "category": "apotheosis:enchanting/changes",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 1,
     "pages": [
         {

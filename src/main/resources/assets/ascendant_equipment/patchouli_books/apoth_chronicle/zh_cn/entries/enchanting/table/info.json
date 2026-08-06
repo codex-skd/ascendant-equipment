@@ -1,8 +1,8 @@
 {
     "name": "信息菜单",
-    "icon": "apotheosis:textures/gui/book/question_mark.png",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:textures/gui/book/question_mark.png",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -16,7 +16,7 @@
             "type": "patchouli:image",
 			"title": "栏位选择",
 			"images": [
-				"apotheosis:textures/gui/book/slot_selector.png"
+				"ascendant_equipment:textures/gui/book/slot_selector.png"
 			],
 			"text": "这可以让你选择查看哪个附魔选项。"
         },
@@ -28,7 +28,7 @@
             "type": "patchouli:image",
 			"title": "魔咒窗口",
 			"images": [
-				"apotheosis:textures/gui/book/enchantments_window.png"
+				"ascendant_equipment:textures/gui/book/enchantments_window.png"
 			],
 			"text": "这将为你显示有哪些魔咒可用。"
         },
@@ -40,7 +40,7 @@
             "type": "patchouli:image",
 			"title": "附魔威力滑块",
 			"images": [
-				"apotheosis:textures/gui/book/power_slider.png"
+				"ascendant_equipment:textures/gui/book/power_slider.png"
 			],
 			"text": "这可以让你改变模拟的附魔能力。"
         },
@@ -52,7 +52,7 @@
             "type": "patchouli:image",
 			"title": "稀有度权重",
 			"images": [
-				"apotheosis:textures/gui/book/weights.png"
+				"ascendant_equipment:textures/gui/book/weights.png"
 			],
 			"text": "这显示了每种稀有度的权重。"
         },

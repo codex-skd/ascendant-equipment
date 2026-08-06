@@ -1,8 +1,8 @@
 {
     "name": "刷怪笼调节",
     "icon": "minecraft:clock",
-    "category": "apotheosis:spawner/spawner",
-	"flag": "apotheosis:spawner",
+    "category": "ascendant_equipment:spawner/spawner",
+	"flag": "ascendant_equipment:spawner",
 	"sortnum": 1,
     "pages": [
         {

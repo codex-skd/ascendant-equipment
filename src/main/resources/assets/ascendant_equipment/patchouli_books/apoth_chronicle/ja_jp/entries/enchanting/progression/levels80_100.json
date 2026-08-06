@@ -1,8 +1,8 @@
 {
     "name": "レベル80～100",
     "icon": "apothic_enchanting:endshelf",
-    "category": "apotheosis:enchanting/progression",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
 		{
             "type": "patchouli:spotlight",

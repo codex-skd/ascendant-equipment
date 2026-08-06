@@ -1,8 +1,8 @@
 {
     "name": "Amuletos de poção",
-    "icon": "apotheosis:potion_charm",
-    "category": "apotheosis:potion/charms",
-	"flag": "apotheosis:potion",
+    "icon": "ascendant_equipment:potion_charm",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": -1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:potion_charm",
+			"recipe": "ascendant_equipment:potion_charm",
 			"title": "Criação de amuletos de poção",
             "text": "Um amuleto é feito de três poções do mesmo tipo e um pouco de pó de chama.$(p)Um único amuleto dura mais do que as três poções combinadas."
         },

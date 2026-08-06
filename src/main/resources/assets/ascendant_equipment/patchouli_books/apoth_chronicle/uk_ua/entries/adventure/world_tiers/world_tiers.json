@@ -1,7 +1,7 @@
 {
     "name": "Світові рівні",
-    "icon": "apotheosis:textures/gui/book/summit_icon.png",
-    "category": "apotheosis:adventure/world_tiers",
+    "icon": "ascendant_equipment:textures/gui/book/summit_icon.png",
+    "category": "ascendant_equipment:adventure/world_tiers",
     "sortnum": 0,
     "pages": [
         {

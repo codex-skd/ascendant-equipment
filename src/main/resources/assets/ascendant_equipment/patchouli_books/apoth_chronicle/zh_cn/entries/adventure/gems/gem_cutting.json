@@ -1,13 +1,13 @@
 {
     "name": "宝石切割",
-    "icon": "apotheosis:gem_cutting_table",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem_cutting_table",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 5,
     "pages": [
         {
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:gem_cutting_table",
+			"recipe": "ascendant_equipment:gem_cutting_table",
 			"text": "$(9)宝石切割台$()用于升级$(l:apotheosis:adventure/gems/gems)宝石$()。升级宝石通常需要$(9)宝石粉$()、$(9)珍宝材料$()和第二个相同纯度的宝石。"
 		},
 		{

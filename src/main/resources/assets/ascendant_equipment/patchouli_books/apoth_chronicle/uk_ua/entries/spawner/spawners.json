@@ -1,8 +1,8 @@
 {
     "name": "Породжувачі",
     "icon": "minecraft:spawner",
-    "category": "apotheosis:spawner/spawner",
-	"flag": "apotheosis:spawner",
+    "category": "ascendant_equipment:spawner/spawner",
+	"flag": "ascendant_equipment:spawner",
 	"sortnum": -1,
     "pages": [
         {

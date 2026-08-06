@@ -2,6 +2,6 @@
     "name": "Афіксний лут",
     "description": "Під час пригод ви можете натрапити на предмети із різноманітними посиленнями.$(p)Це афіксні предмети - реліквії минулих часів з різним ступенем потужності.",
     "icon": "minecraft:chest",
-	"flag": "apotheosis:adventure",
-	"parent": "apotheosis:adventure/adventure"
+	"flag": "ascendant_equipment:adventure",
+	"parent": "ascendant_equipment:adventure/adventure"
 }

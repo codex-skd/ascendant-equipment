@@ -1,7 +1,7 @@
 {
     "name": "Unlocking Tiers",
-    "icon": "apotheosis:textures/gui/book/frontier_icon.png",
-    "category": "apotheosis:adventure/world_tiers",
+    "icon": "ascendant_equipment:textures/gui/book/frontier_icon.png",
+    "category": "ascendant_equipment:adventure/world_tiers",
     "sortnum": 1,
     "pages": [
         {

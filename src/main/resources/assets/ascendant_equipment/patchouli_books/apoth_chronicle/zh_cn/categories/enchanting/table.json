@@ -2,7 +2,7 @@
     "name": "附魔台",
     "description": "本章节介绍了对附魔台的改动。",
     "icon": "minecraft:enchanting_table",
-	"flag": "apotheosis:enchanting",
-	"parent": "apotheosis:enchanting/enchanting",
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting",
 	"sortnum": -2
 }

@@ -1,8 +1,8 @@
 {
     "name": "Rarities",
     "icon": "minecraft:nether_star",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

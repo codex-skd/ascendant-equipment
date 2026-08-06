@@ -1,8 +1,8 @@
 {
     "name": "Laço do ender",
-    "icon": "apotheosis:ender_lead",
-    "category": "apotheosis:garden/garden",
-	"flag": "apotheosis:garden",
+    "icon": "ascendant_equipment:ender_lead",
+    "category": "ascendant_equipment:garden/garden",
+	"flag": "ascendant_equipment:garden",
 	"sortnum": 1,
     "pages": [
         {
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:ender_lead",
+			"recipe": "ascendant_equipment:ender_lead",
 			"text": ""
 		}
 	]

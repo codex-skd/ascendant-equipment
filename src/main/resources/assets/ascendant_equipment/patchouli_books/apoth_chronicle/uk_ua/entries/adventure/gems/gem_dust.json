@@ -1,19 +1,19 @@
 {
     "name": "Пил самоцвіту",
-    "icon": "apotheosis:gem_dust",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem_dust",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 2,
     "pages": [
 		{
             "type": "patchouli:spotlight",
-			"item": "apotheosis:gem_dust",
+			"item": "ascendant_equipment:gem_dust",
 			"link_recipe": true,
             "text": "Усі апофеотчині самоцвіти можна роздрібнити на $(br)$(9)пил самоцвітів$().$(p)Початковий спосіб - це розчавлення їх падучим ковадлом."
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:salvaging_table",
+			"recipe": "ascendant_equipment:salvaging_table",
 			"title": "Перероблення самоцвітів",
             "text": "Роздрібнивши кілька самоцвітів ковадлом, для подальшого перероблення ви можете створити $(9)стіл перероблення$()."
         }

@@ -1,8 +1,8 @@
 {
     "name": "Enchantment Library",
     "icon": "apothic_enchanting:library",
-    "category": "apotheosis:enchanting/utility",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 1,
     "pages": [
         {

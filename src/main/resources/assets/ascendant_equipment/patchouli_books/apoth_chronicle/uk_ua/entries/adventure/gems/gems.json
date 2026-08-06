@@ -1,8 +1,8 @@
 {
     "name": "Самоцвіти",
-    "icon": "apotheosis:gem",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {
@@ -31,7 +31,7 @@
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:sigil_of_withdrawal",
+			"recipe": "ascendant_equipment:sigil_of_withdrawal",
 			"title": "Сигіл зняття",
 			"text": "Поєднання предмета з інкрустацією разом із $(9)сигілом зняття$() на ковальському столі вилучить самоцвіти з предмета. При цьому збережуться і предмет, і самоцвіти."
 		}

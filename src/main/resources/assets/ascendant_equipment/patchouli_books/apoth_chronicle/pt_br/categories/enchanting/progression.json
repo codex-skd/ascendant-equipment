@@ -1,8 +1,8 @@
 {
     "name": "Progressão de nível",
     "description": "Esta seção oferece uma visão geral de como melhorar sua mesa de encantamentos.",
-    "icon": "apotheosis:dormant_deepshelf",
-    "flag": "apotheosis:enchanting",
-    "parent": "apotheosis:enchanting/enchanting",
+    "icon": "ascendant_equipment:dormant_deepshelf",
+    "flag": "ascendant_equipment:enchanting",
+    "parent": "ascendant_equipment:enchanting/enchanting",
     "sortnum": -1
 }

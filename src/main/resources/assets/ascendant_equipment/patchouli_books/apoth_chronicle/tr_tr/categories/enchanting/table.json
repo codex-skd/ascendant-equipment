@@ -2,7 +2,7 @@
     "name": "Büyü Masası",
     "description": "Bu bölüm, Büyü Masası'ndaki değişiklikleri kapsar.",
     "icon": "minecraft:enchanting_table",
-	"flag": "apotheosis:enchanting",
-	"parent": "apotheosis:enchanting/enchanting",
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting",
 	"sortnum": -2
 }

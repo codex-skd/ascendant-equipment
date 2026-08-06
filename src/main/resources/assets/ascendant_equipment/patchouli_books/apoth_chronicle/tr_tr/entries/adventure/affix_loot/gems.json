@@ -1,8 +1,8 @@
 {
     "name": "Değerli Taşlar",
-    "icon": "apotheosis:gem",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {
@@ -31,7 +31,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:sigil_of_withdrawal",
+			"recipe": "ascendant_equipment:sigil_of_withdrawal",
 			"title": "Çıkarma Mührü",
 			"text": "Bir yuvalı eşyayı bir $(9)Çıkarma Mührü$() ile birleştirerek değerli taşları eşyadan çıkar. Eşya ve tüm değerli taşlar geri dönecektir."
         }

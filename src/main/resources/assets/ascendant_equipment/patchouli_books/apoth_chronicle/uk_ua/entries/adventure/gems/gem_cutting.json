@@ -1,13 +1,13 @@
 {
     "name": "Огранування самоцвітів",
-    "icon": "apotheosis:gem_cutting_table",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem_cutting_table",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 6,
     "pages": [
         {
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:gem_cutting_table",
+			"recipe": "ascendant_equipment:gem_cutting_table",
 			"text": "$(9)Стіл огранування самоцвітів$() використовується для вдосконалення $(l:apotheosis:adventure/gems/gems)Самоцвітів$().$(p)Вдосконалення самоцвіту зазвичай вимагає $(9)пил самоцвіту$(), $(9)матеріали рідкості$() та другий самоцвіт тієї ж чистоти."
 		},
 		{

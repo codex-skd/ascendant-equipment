@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "particle": "apotheosis:blocks/salvaging_table_front",
-    "north": "apotheosis:blocks/salvaging_table_front",
-    "south": "apotheosis:blocks/salvaging_table_front",
-    "east": "apotheosis:blocks/salvaging_table_side",
-    "west": "apotheosis:blocks/salvaging_table_side",
-    "up": "apotheosis:blocks/salvaging_table_top",
-    "down": "apotheosis:blocks/salvaging_table_bottom"
+    "particle": "ascendant_equipment:blocks/salvaging_table_front",
+    "north": "ascendant_equipment:blocks/salvaging_table_front",
+    "south": "ascendant_equipment:blocks/salvaging_table_front",
+    "east": "ascendant_equipment:blocks/salvaging_table_side",
+    "west": "ascendant_equipment:blocks/salvaging_table_side",
+    "up": "ascendant_equipment:blocks/salvaging_table_top",
+    "down": "ascendant_equipment:blocks/salvaging_table_bottom"
   }
 }

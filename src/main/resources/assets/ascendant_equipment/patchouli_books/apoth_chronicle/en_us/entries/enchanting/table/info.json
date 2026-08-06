@@ -1,8 +1,8 @@
 {
     "name": "The Info Menu",
-    "icon": "apotheosis:textures/gui/book/question_mark.png",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:textures/gui/book/question_mark.png",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -16,7 +16,7 @@
             "type": "patchouli:image",
 			"title": "The Slot Selector",
 			"images": [
-				"apotheosis:textures/gui/book/slot_selector.png"
+				"ascendant_equipment:textures/gui/book/slot_selector.png"
 			],
 			"text": "This lets you select which enchanting slot to inspect."
         },
@@ -28,7 +28,7 @@
             "type": "patchouli:image",
 			"title": "Enchantments Window",
 			"images": [
-				"apotheosis:textures/gui/book/enchantments_window.png"
+				"ascendant_equipment:textures/gui/book/enchantments_window.png"
 			],
 			"text": "This shows you what enchantments are available."
         },
@@ -40,7 +40,7 @@
             "type": "patchouli:image",
 			"title": "The Power Slider",
 			"images": [
-				"apotheosis:textures/gui/book/power_slider.png"
+				"ascendant_equipment:textures/gui/book/power_slider.png"
 			],
 			"text": "This lets you change the simulated power level."
         },
@@ -52,7 +52,7 @@
             "type": "patchouli:image",
 			"title": "Rarity Weights",
 			"images": [
-				"apotheosis:textures/gui/book/weights.png"
+				"ascendant_equipment:textures/gui/book/weights.png"
 			],
 			"text": "This shows the weight of each rarity."
         },

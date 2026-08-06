@@ -1,8 +1,8 @@
 {
     "name": "Просякнення чарами",
     "icon": "apothic_enchanting:infused_hellshelf",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",

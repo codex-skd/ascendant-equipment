@@ -1,8 +1,8 @@
 {
     "name": "Меню інформації",
-    "icon": "apotheosis:textures/gui/book/question_mark.png",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "icon": "ascendant_equipment:textures/gui/book/question_mark.png",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -16,7 +16,7 @@
             "type": "patchouli:image",
 			"title": "Обирач слотів",
 			"images": [
-				"apotheosis:textures/gui/book/slot_selector.png"
+				"ascendant_equipment:textures/gui/book/slot_selector.png"
 			],
 			"text": "Дозволяє вибрати, який слот для зачарування оглянути."
         },
@@ -28,7 +28,7 @@
             "type": "patchouli:image",
 			"title": "Вікно зачарувань",
 			"images": [
-				"apotheosis:textures/gui/book/enchantments_window.png"
+				"ascendant_equipment:textures/gui/book/enchantments_window.png"
 			],
 			"text": "Показує доступні чари."
         },
@@ -40,7 +40,7 @@
             "type": "patchouli:image",
 			"title": "Повзунок потужности",
 			"images": [
-				"apotheosis:textures/gui/book/power_slider.png"
+				"ascendant_equipment:textures/gui/book/power_slider.png"
 			],
 			"text": "Це дозволяє змінювати імітований рівень потужности."
         },
@@ -52,7 +52,7 @@
             "type": "patchouli:image",
 			"title": "Ваги рідкості",
 			"images": [
-				"apotheosis:textures/gui/book/weights.png"
+				"ascendant_equipment:textures/gui/book/weights.png"
 			],
 			"text": "Показує вагу кожної рідкості."
         },

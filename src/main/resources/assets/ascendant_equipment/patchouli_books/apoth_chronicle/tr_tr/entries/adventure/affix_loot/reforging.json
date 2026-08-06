@@ -1,8 +1,8 @@
 {
     "name": "Yeniden Şekillendirme",
-    "icon": "apotheosis:reforging_table",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:reforging_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 4,
     "pages": [
 		{
@@ -11,7 +11,7 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:simple_reforging_table",
+			"recipe": "ascendant_equipment:simple_reforging_table",
 			"text": "$(#5555FF)Basit Yeniden Şekillendirme Masası$() yaparak başla, bu masa $(#5555FF)Nadir$() nadirliğe kadar olan eşyaları yeniden şekillendirmenize olanak tanır."
         },
 		{
@@ -21,7 +21,7 @@
         },
 		{
             "type": "patchouli:crafting",
-            "recipe": "apotheosis:sigil_of_rebirth",
+            "recipe": "ascendant_equipment:sigil_of_rebirth",
 			"title": "Giriş Yuvaları",
 			"text": "Sağ alt yuva, Yeniden Şekillendirme işlemi sırasında kullanılan benzersiz bir yakıt eşyası olan $(9)Yeniden Doğuş Mühürleri$() tutar."
         },
@@ -37,7 +37,7 @@
         },
         {
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:reforging_table",
+			"recipe": "ascendant_equipment:reforging_table",
 			"text": "$(#BB00BB)Destansı$() veya daha yüksek nadirlikteki eşyaları yeniden şekillendirmek için, $(#5555FF)Basit Yeniden Şekillendirme Masası$()'nı $(#BB00BB)Yeniden Şekillendirme Masası$()'na yükseltmeniz gerekir."
         },
 		{

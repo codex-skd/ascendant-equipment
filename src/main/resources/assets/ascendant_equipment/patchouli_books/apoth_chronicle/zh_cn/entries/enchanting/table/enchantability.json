@@ -1,8 +1,8 @@
 {
     "name": "物品附魔能力",
     "icon": "minecraft:golden_sword",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",

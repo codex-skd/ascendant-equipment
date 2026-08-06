@@ -1,5 +1,5 @@
 {
     "variants": {
-		"": { "model": "apotheosis:block/simple_reforging_table" }
+		"": { "model": "ascendant_equipment:block/simple_reforging_table" }
     }
 }

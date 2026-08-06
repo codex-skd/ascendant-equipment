@@ -1,8 +1,8 @@
 {
     "name": "Enchanting Seed",
     "icon": "minecraft:wheat_seeds",
-    "category": "apotheosis:enchanting/table",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",

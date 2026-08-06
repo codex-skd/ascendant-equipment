@@ -1,8 +1,8 @@
 {
     "name": "Gems",
-    "icon": "apotheosis:gem",
-    "category": "apotheosis:adventure/gems",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:gem",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 1,
     "pages": [
         {
@@ -31,7 +31,7 @@
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:sigil_of_withdrawal",
+			"recipe": "ascendant_equipment:sigil_of_withdrawal",
 			"title": "Sigil of Withdrawal",
 			"text": "Combine a socketed item with a $(9)Sigil of Withdrawal$() in a smithing table to remove the socketed gems from an item. The item and all gems will be returned."
 		}

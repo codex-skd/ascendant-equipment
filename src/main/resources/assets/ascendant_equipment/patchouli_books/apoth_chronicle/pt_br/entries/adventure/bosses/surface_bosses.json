@@ -1,8 +1,8 @@
 {
     "name": "Chefes invasores",
     "icon": "minecraft:beacon",
-    "category": "apotheosis:adventure/bosses",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/bosses",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

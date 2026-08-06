@@ -1,8 +1,8 @@
 {
     "name": "Brutal Spawners",
     "icon": "minecraft:zombie_head",
-    "category": "apotheosis:adventure/rogue_spawners",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/rogue_spawners",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 0,
     "pages": [
         {

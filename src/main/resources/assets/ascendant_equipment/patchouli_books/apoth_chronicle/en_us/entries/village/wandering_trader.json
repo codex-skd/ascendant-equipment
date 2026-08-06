@@ -1,8 +1,8 @@
 {
     "name": "Wandering Trader",
     "icon": "minecraft:emerald",
-    "category": "apotheosis:village/village",
-	"flag": "apotheosis:village",
+    "category": "ascendant_equipment:village/village",
+	"flag": "ascendant_equipment:village",
 	"sortnum": 0,
     "pages": [
         {

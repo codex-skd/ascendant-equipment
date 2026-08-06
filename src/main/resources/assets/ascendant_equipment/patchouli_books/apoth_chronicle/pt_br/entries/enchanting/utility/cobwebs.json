@@ -1,8 +1,8 @@
 {
     "name": "Teias de aranha",
     "icon": "apothic_enchanting:prismatic_web",
-    "category": "apotheosis:enchanting/utility",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
     "pages": [
         {
             "type": "patchouli:text",
@@ -10,8 +10,8 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:cobweb",
-			"recipe2": "apotheosis:prismatic_web"
+			"recipe": "ascendant_equipment:cobweb",
+			"recipe2": "ascendant_equipment:prismatic_web"
 		}
 	]
 }

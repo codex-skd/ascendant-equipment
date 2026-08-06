@@ -1,8 +1,8 @@
 {
     "name": "Reforja",
-    "icon": "apotheosis:reforging_table",
-    "category": "apotheosis:adventure/affix_loot",
-	"flag": "apotheosis:adventure",
+    "icon": "ascendant_equipment:reforging_table",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 4,
     "pages": [
 		{
@@ -11,14 +11,14 @@
         },
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:simple_reforging_table",
+			"recipe": "ascendant_equipment:simple_reforging_table",
 			"text": "Para começar a reforjar, construa uma $(#5555FF)bancada simples de reforjação$(), que permite que você reforge até a raridade $(#5555FF)raro$()."
 		},
 		{
             "type": "patchouli:image",
 			"title": "Slots de entrada",
 			"images": [
-				"apotheosis:textures/gui/book/reforge_slots.png"
+				"ascendant_equipment:textures/gui/book/reforge_slots.png"
 			],
 			"text": "A bancada de reforjação tem três slots de entrada."
         },
@@ -31,7 +31,7 @@
             "type": "patchouli:image",
 			"title": "Reforjação",
 			"images": [
-				"apotheosis:textures/gui/book/reforge_menu.png"
+				"ascendant_equipment:textures/gui/book/reforge_menu.png"
 			],
 			"text": "Semelhante a uma mesa de encantamentos, você tem três escolhas."
         },
@@ -42,7 +42,7 @@
 		},
 		{
             "type": "patchouli:crafting",
-			"recipe": "apotheosis:reforging_table",
+			"recipe": "ascendant_equipment:reforging_table",
 			"text": "Para reforjar itens de raridade $(#BB00BB)épica$() ou maior, você precisará melhorar sua $(#5555FF)bancada simples de reforjação$() em uma $(#BB00BB)bancada de reforjação$()."
 		},
 		{

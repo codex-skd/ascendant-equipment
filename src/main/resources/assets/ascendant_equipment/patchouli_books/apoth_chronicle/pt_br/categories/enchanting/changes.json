@@ -2,6 +2,6 @@
     "name": "Mudanças do vanilla",
     "description": "Esta seção fala sobre os novos itens encantáveis e mudanças mecânicas.$(p)Se ocorrerem pequenas alterações de conteúdo, elas serão mostradas aqui.",
     "icon": "minecraft:trident",
-	"flag": "apotheosis:enchanting",
-	"parent": "apotheosis:enchanting/enchanting"
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting"
 }

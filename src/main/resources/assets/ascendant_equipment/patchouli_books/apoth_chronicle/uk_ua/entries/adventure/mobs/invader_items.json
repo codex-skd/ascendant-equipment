@@ -1,8 +1,8 @@
 {
     "name": "Предмети загарбників",
     "icon": "minecraft:ender_chest",
-    "category": "apotheosis:adventure/mobs",
-	"flag": "apotheosis:adventure",
+    "category": "ascendant_equipment:adventure/mobs",
+	"flag": "ascendant_equipment:adventure",
 	"sortnum": 2,
     "pages": [
         {

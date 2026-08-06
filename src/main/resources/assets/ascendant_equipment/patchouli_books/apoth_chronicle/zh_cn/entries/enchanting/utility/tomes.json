@@ -1,8 +1,8 @@
 {
     "name": "宝典",
     "icon": "apothic_enchanting:other_tome",
-    "category": "apotheosis:enchanting/utility",
-	"flag": "apotheosis:enchanting",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
 	"sortnum": 3,
     "pages": [
         {

@@ -2,6 +2,6 @@
     "name": "Зловісні породжувачі",
     "description": "У печерах рідко зустрічаються поодинокі породжувачі, увінчані міцним блоком, під яким ховається скриня.$(p)Оскільки їх походження, призначення та власник невідомі, ми називаємо їх $(9)зловісними породжувачами$().",
     "icon": "minecraft:spawner",
-	"flag": "apotheosis:adventure",
-	"parent": "apotheosis:adventure/adventure"
+	"flag": "ascendant_equipment:adventure",
+	"parent": "ascendant_equipment:adventure/adventure"
 }

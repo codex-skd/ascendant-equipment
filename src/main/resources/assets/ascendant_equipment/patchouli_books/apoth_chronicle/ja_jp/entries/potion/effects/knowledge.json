@@ -1,8 +1,8 @@
 {
     "name": "古の知識",
     "icon": "minecraft:experience_bottle",
-    "category": "apotheosis:potion/effects",
-	"flag": "apotheosis:potion",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
 	"sortnum": 0,
     "pages": [
         {
