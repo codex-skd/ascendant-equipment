@@ -8,9 +8,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "sub_predicate": {
-                                "type": "ascendant_equipment:is_invader"
-                            }
+                            "ascendant_equipment:is_invader": {}
                         }
                     }
                 ]

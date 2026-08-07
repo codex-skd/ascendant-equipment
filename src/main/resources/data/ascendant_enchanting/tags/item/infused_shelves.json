@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "ascendant_enchanting:infused_hellshelf"
+        },
+        {
+            "id": "ascendant_enchanting:infused_seashelf"
+        },
+        {
+            "id": "ascendant_enchanting:deepshelf"
+        }
+    ]
+}

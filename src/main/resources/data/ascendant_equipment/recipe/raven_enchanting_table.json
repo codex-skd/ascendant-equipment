@@ -3,7 +3,7 @@
     "category": "misc",
     "group": "apotheosis",
     "key": {
-        "A": "ascendant_enchanting:apothic_enchanting_table",
+        "A": "ascendant_enchanting:ascendant_enchanting_table",
         "B": "#c:obsidians",
         "G": {
             "neoforge:ingredient_type": "ascendant_equipment:gem",
