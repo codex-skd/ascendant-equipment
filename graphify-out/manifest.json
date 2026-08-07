@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1785972286.0657523,
-    "ast_hash": "82d2b4bd146f86bab05d77e325b7248d",
+    "mtime": 1786141813.9873643,
+    "ast_hash": "081d50653d13862f422d2f9e894acc14",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -10182,6 +10182,11 @@
   "docs/curseforge/versions/0.0.0-beta.9.md": {
     "mtime": 1786038194.627605,
     "ast_hash": "6a48e00c2c284cbd459fc4f8efb02fd1",
+    "semantic_hash": ""
+  },
+  "assets/ascendant_equipment/textures/items/mysterious_scrap_metal.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "2b03580fae83fb60c4fed4a2d10dfe6c",
     "semantic_hash": ""
   }
 }
