@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.0-beta.14] - 2026-08-08
+
+### Fixed
+- **Critical**: Item textures failed to load due to missing `src/main/resources` in Gradle build configuration
+- Updated sourceSets.main.resources to explicitly include manual asset sources alongside generated resources
+- All item textures now render correctly (gem_dust, materials, sigils, runes, etc.)
+- Proper asset pipeline processing for models, textures, and blockstates
+
 ## [0.0.0-beta.13] - 2026-08-07
 
 ### Fixed
