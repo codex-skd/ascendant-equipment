@@ -1,5 +1,10 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.12
+
+- **Data file predicate syntax fix**: Corrected NeoForge 26.2 entity predicate syntax in advancement JSON files (`ascent.json`, `summit.json`, `pinnacle.json`). Replaced invalid `type_specific` and `type` wrappers with `sub_predicate` to properly reference entity predicates. The old Apotheosis 26.1.2 syntax was incompatible with NeoForge 26.2 predicate parsing.
+- **Advancements now parse correctly** without data file parse errors on startup, enabling proper progression tracking and item classification by rarity.
+
 ## 0.0.0-beta.11
 
 - **Critical fix — Item registration conflict**: Fixed game-breaking issue where no items loaded due to conflicting registration systems in `AscendantEquipment.java`. Removed scaffolding `DeferredRegister` instances (BLOCKS, ITEMS, CREATIVE_MODE_TABS) that were competing with the primary `AscEq.R` (DeferredHelper) registration system. Now uses only `AscEq.R` via `AscEq.bootstrap()`, matching Apotheosis original pattern exactly.
