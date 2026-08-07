@@ -1,54 +1,33 @@
-# CurseForge — Variables del proyecto
+# Project Variables — Ascendant Equipment
 
-## Proyecto
+Variables for CurseForge upload. Used by `codex-docs/scripts/curseforge-upload.ps1`.
 
-| Variable | Valor |
-|----------|-------|
-| `curseforge_project_id` | `1638146` |
-| `mod_id` | `ascendant_equipment` |
-| `display_name` | `Ascendant Equipment` |
-
-## Tokens
-
-| API | Token | Uso |
-|-----|-------|-----|
-| Upload | `ee776b0a-ee95-4850-b554-06be02a8657f` | Subir archivos JAR |
-| Core (GET) | `$2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO` | Consultar datos del mod |
-
-Autenticación Upload: cabecera `X-Api-Token`
-Autenticación Core: cabecera `x-api-key`
-
-> Token de cuenta (mismo para todos los mods, ver `ageforged_armor/neoforge/26.2/docs/curseforge/project_vars.md` u otros).
-
-## Variables para script (lectura automática)
-
-project_id = 1638146
-api_token = ee776b0a-ee95-4850-b554-06be02a8657f
-release_type = beta
+## Required
+project_id = 123456
+api_token = YOUR_CURSEFORGE_API_TOKEN_HERE
 game_versions = 9638, 9639, 16498, 10150
-relations = common-toolkit:requiredDependency,vellumli:requiredDependency,ascendant-attributes:requiredDependency,ascendant-spawners:requiredDependency,ascendant-enchanting:requiredDependency,jei:optionalDependency,jade:optionalDependency,max-health-fix:optionalDependency,enchantment-descriptions:optionalDependency
+release_type = beta
 
-El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mod_id`, `mod_name`, `minecraft_version`, `mod_version` de `gradle.properties`. Sube automáticamente el JAR desde `build/libs/` con el changelog de `docs/curseforge/versions/<version>.md`.
+## Optional
+relations = common_toolkit:requiredDependency, ascendant_attributes:requiredDependency
 
-## Historial de subidas
+---
 
-| Versión | File ID | Fecha |
-|---------|---------|-------|
-| 0.0.0-beta.10 | 8591145 | 2026-08-07 |
-| 0.0.0-beta.9 | 8589911 | 2026-08-06 |
-| 0.0.0-beta.8 | 8586830 | 2026-08-04 |
+### Field Descriptions
 
-## Nota
+**project_id**: CurseForge project ID for Ascendant Equipment. Find it in the project URL: `https://www.curseforge.com/minecraft/mods/<project_id>/` or via API.
 
-La **primera subida a CurseForge se hace manual** (proyecto recién creado, sin archivos previos que verificar por API). A partir de la segunda subida se puede usar el script `codex-docs/scripts/curseforge-upload.ps1`.
+**api_token**: Your CurseForge API token (account-level, same for all projects). Keep this private. See CurseForge Core → Settings → API Tokens.
 
-## Rama
+**game_versions**: Comma-separated CurseForge game version IDs (no spaces). Must include BOTH Client and Server IDs for "Client & Server" environment:
+- `9638` = Client
+- `9639` = Server
+- `16498` = Minecraft 1.26.2
+- `10150` = NeoForge (latest; adjust if version changes)
 
-```
-minecraft/26.2/neoforge-26.2.0.32-beta/production
-```
+Reference: Use CurseForge API (`GET /mods/<projectId>/files/<fileId>`) to find correct IDs.
 
-## Tag
+**release_type**: `beta` (development) or `release` (stable). Default: `beta`.
 
-Formato: `<mc-version>-<framework>-<version>`
-Ejemplo: `26.2-neoforge-0.0.0-beta.1`
+**relations** (optional): Dependency list as `slug:type`. Types: `embeddedLibrary`, `optionalDependency`, `requiredDependency`, `tool`, `incompatible`, `include`.
+Example: `common_toolkit:requiredDependency, ascendant_attributes:requiredDependency`
