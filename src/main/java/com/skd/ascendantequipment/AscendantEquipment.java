@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 import com.skd.ascendantequipment.compat.VellumliCompat;
+import com.skd.commontoolkit.tabs.TabFillingRegistry;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -11,6 +12,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -40,6 +43,70 @@ public class AscendantEquipment {
         // etc.). Without this the whole ported module is never registered (the class above is the
         // scaffolded shell) and any data referencing its registries fails to load.
         AscEq.bootstrap(modEventBus);
+
+        // Fill the ADVENTURE creative tab with every AscEq item (all registered as simple fillers).
+        ResourceKey<CreativeModeTab> adventureTab = AscEq.Tabs.ADVENTURE.getKey();
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.MYSTERIOUS_SCRAP_METAL,
+            AscEq.Items.TIMEWORN_FABRIC,
+            AscEq.Items.LUMINOUS_CRYSTAL_SHARD,
+            AscEq.Items.ARCANE_SANDS,
+            AscEq.Items.GODFORGED_PEARL,
+            AscEq.Items.GOD_FUSED_PEARL,
+            AscEq.Items.GEM_DUST,
+            AscEq.Items.GEM_FUSED_SLATE);
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.SIGIL_OF_SOCKETING,
+            AscEq.Items.SIGIL_OF_WITHDRAWAL,
+            AscEq.Items.SIGIL_OF_REBIRTH,
+            AscEq.Items.SIGIL_OF_ENHANCEMENT,
+            AscEq.Items.SIGIL_OF_UNNAMING,
+            AscEq.Items.SIGIL_OF_MALICE,
+            AscEq.Items.SIGIL_OF_SUPREMACY);
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.BOSS_SUMMONER,
+            AscEq.Items.SIMPLE_REFORGING_TABLE,
+            AscEq.Items.REFORGING_TABLE,
+            AscEq.Items.SALVAGING_TABLE,
+            AscEq.Items.GEM_CUTTING_TABLE,
+            AscEq.Items.AUGMENTING_TABLE,
+            AscEq.Items.GEM_CASE,
+            AscEq.Items.ENDER_GEM_CASE,
+            AscEq.Items.GEM,
+            AscEq.Items.POTION_CHARM);
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.IRON_UPGRADE_SMITHING_TEMPLATE,
+            AscEq.Items.GOLD_UPGRADE_SMITHING_TEMPLATE,
+            AscEq.Items.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.MUSIC_DISC_FLASH,
+            AscEq.Items.MUSIC_DISC_GLIMMER,
+            AscEq.Items.MUSIC_DISC_SHIMMER);
+        TabFillingRegistry.register(
+            adventureTab,
+            AscEq.Items.SPAWNER_CHAIN,
+            AscEq.Items.SPAWNER_RUNE,
+            AscEq.Items.INFUSED_SPAWNER_RUNE,
+            AscEq.Items.FRONTIER_SPAWNER_UPGRADE_RUNE,
+            AscEq.Items.ASCENT_SPAWNER_UPGRADE_RUNE,
+            AscEq.Items.SUMMIT_SPAWNER_UPGRADE_RUNE,
+            AscEq.Items.PINNACLE_SPAWNER_UPGRADE_RUNE,
+            AscEq.Items.SPAWN_RANGE_SPAWNER_RUNE,
+            AscEq.Items.REDSTONE_CONTROL_SPAWNER_RUNE,
+            AscEq.Items.IGNORE_LIGHT_SPAWNER_RUNE,
+            AscEq.Items.INITIAL_HEALTH_SPAWNER_RUNE,
+            AscEq.Items.SILENT_SPAWNER_RUNE,
+            AscEq.Items.YOUTHFUL_SPAWNER_RUNE,
+            AscEq.Items.BURNING_SPAWNER_RUNE,
+            AscEq.Items.NO_AI_SPAWNER_RUNE,
+            AscEq.Items.IGNORE_CONDITIONS_SPAWNER_RUNE,
+            AscEq.Items.IGNORE_PLAYERS_SPAWNER_RUNE,
+            AscEq.Items.ECHOING_SPAWNER_RUNE);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
