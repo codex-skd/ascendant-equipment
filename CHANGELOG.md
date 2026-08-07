@@ -1,5 +1,10 @@
 # Changelog — Ascendant Equipment
 
+## 0.0.0-beta.11
+
+- **Critical fix — Item registration conflict**: Fixed game-breaking issue where no items loaded due to conflicting registration systems in `AscendantEquipment.java`. Removed scaffolding `DeferredRegister` instances (BLOCKS, ITEMS, CREATIVE_MODE_TABS) that were competing with the primary `AscEq.R` (DeferredHelper) registration system. Now uses only `AscEq.R` via `AscEq.bootstrap()`, matching Apotheosis original pattern exactly.
+- **Registry system simplified**: Constructor now only manages `AscEq.bootstrap()`, `commonSetup`, event bus registration, and mod config — identical to upstream Apotheosis initialization.
+
 ## 0.0.0-beta.10
 
 - **Item model namespace fix**: Fixed all 77 item model JSON files and blockstate JSONs to reference textures from `ascendant_equipment:` namespace instead of `apotheosis:`. Items are now visible in-game with correct textures. This fixes a critical issue where items registered in code were missing their model definitions, causing them to fail to load visually.
