@@ -4,7 +4,7 @@ Variables for CurseForge upload. Used by `codex-docs/scripts/curseforge-upload.p
 
 ## Required
 project_id = 123456
-api_token = YOUR_CURSEFORGE_API_TOKEN_HERE
+api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 16498, 10150
 release_type = beta
 
