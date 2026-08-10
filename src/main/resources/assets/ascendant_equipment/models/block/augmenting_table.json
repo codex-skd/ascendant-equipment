@@ -3,10 +3,10 @@
 	"render_type": "cutout",
     "textures": {
         "particle": "minecraft:block/polished_blackstone",
-        "bottom": "ascendant_equipment:blocks/augmenting/bottom",
-        "top": "ascendant_equipment:blocks/augmenting/top",
-        "top_lit": "ascendant_equipment:blocks/augmenting/top_lit",
-        "side": "ascendant_equipment:blocks/augmenting/side"
+        "bottom": "ascendant_equipment:block/augmenting/bottom",
+        "top": "ascendant_equipment:block/augmenting/top",
+        "top_lit": "ascendant_equipment:block/augmenting/top_lit",
+        "side": "ascendant_equipment:block/augmenting/side"
     },
     "elements": [
         {

@@ -1,8 +1,8 @@
 {
 	"textures": {
-		"main": "ascendant_equipment:items/star_cube",
-		"main_lit": "ascendant_equipment:items/star_cube_lit",
-		"particle": "ascendant_equipment:items/star_cube"
+		"main": "ascendant_equipment:block/star_cube",
+		"main_lit": "ascendant_equipment:block/star_cube_lit",
+		"particle": "ascendant_equipment:block/star_cube"
 	},
 	"elements": [
 		{

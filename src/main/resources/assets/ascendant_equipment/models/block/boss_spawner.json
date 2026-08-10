@@ -2,7 +2,7 @@
     "parent": "block/cube_column",
 	"render_type": "cutout",
     "textures": {
-        "end": "ascendant_equipment:blocks/boss_spawner_top",
-        "side": "ascendant_equipment:blocks/boss_spawner"
+        "end": "ascendant_equipment:block/boss_spawner_top",
+        "side": "ascendant_equipment:block/boss_spawner"
     }
 }
