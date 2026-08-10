@@ -3,7 +3,31 @@ package com.skd.ascendantequipment;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
+import com.skd.ascendantequipment.affix.AffixRegistry;
 import com.skd.ascendantequipment.compat.VellumliCompat;
+import com.skd.ascendantequipment.loot.AffixLootRegistry;
+import com.skd.ascendantequipment.loot.LootRule;
+import com.skd.ascendantequipment.loot.RarityOverrideRegistry;
+import com.skd.ascendantequipment.loot.RarityRegistry;
+import com.skd.ascendantequipment.mobs.AscEqMobEvents;
+import com.skd.ascendantequipment.mobs.registries.AugmentRegistry;
+import com.skd.ascendantequipment.mobs.registries.EliteRegistry;
+import com.skd.ascendantequipment.mobs.registries.InvaderRegistry;
+import com.skd.ascendantequipment.mobs.util.EntityModifier;
+import com.skd.ascendantequipment.mobs.util.SpawnCondition;
+import com.skd.ascendantequipment.net.BossSpawnPayload;
+import com.skd.ascendantequipment.net.GemCaseSelectPayload;
+import com.skd.ascendantequipment.net.LinkItemToChatPayload;
+import com.skd.ascendantequipment.net.RadialStatePayload;
+import com.skd.ascendantequipment.net.RerollResultPayload;
+import com.skd.ascendantequipment.net.WorldTierPayload;
+import com.skd.ascendantequipment.socket.gem.ExtraGemBonusRegistry;
+import com.skd.ascendantequipment.socket.gem.GemRegistry;
+import com.skd.ascendantequipment.socket.gem.PurityWeightsRegistry;
+import com.skd.ascendantequipment.socket.gem.bonus.GemBonus;
+import com.skd.ascendantequipment.spawner.RogueSpawnerRegistry;
+import com.skd.ascendantequipment.tiers.augments.TierAugmentRegistry;
+import com.skd.commontoolkit.network.PayloadHelper;
 import com.skd.commontoolkit.tabs.TabFillingRegistry;
 
 import net.minecraft.ChatFormatting;
@@ -15,7 +39,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
@@ -43,6 +66,13 @@ public class AscendantEquipment {
         // etc.). Without this the whole ported module is never registered (the class above is the
         // scaffolded shell) and any data referencing its registries fails to load.
         AscEq.bootstrap(modEventBus);
+
+        // Initialize codec dispatchers (LootRule/SpawnCondition/EntityModifier/GemBonus types)
+        // Must happen BEFORE any data loading otherwise dynamic registries fail to parse.
+        LootRule.initCodecs();
+        SpawnCondition.initCodecs();
+        EntityModifier.initCodecs();
+        GemBonus.initCodecs();
 
         // Fill the ADVENTURE creative tab with every AscEq item (all registered as simple fillers).
         ResourceKey<CreativeModeTab> adventureTab = AscEq.Tabs.ADVENTURE.getKey();
@@ -121,18 +151,43 @@ public class AscendantEquipment {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
+        event.enqueueWork(() -> {
+            LOGGER.info("HELLO FROM COMMON SETUP");
 
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
+            if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
+                LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
+            }
 
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
+            LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
+            Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
 
-        VellumliCompat.register();
+            VellumliCompat.register();
+        });
+
+        PayloadHelper.registerPayload(new BossSpawnPayload.Provider());
+        PayloadHelper.registerPayload(new RerollResultPayload.Provider());
+        PayloadHelper.registerPayload(new RadialStatePayload.Provider());
+        PayloadHelper.registerPayload(new WorldTierPayload.Provider());
+        PayloadHelper.registerPayload(new LinkItemToChatPayload.Provider());
+        PayloadHelper.registerPayload(new GemCaseSelectPayload.Provider());
+        PayloadHelper.registerPayload(new EquipmentConfig.ConfigPayload.Provider());
+
+        NeoForge.EVENT_BUS.register(new EquipmentEvents());
+        NeoForge.EVENT_BUS.register(new AscEqMobEvents());
+
+        RarityRegistry.INSTANCE.registerToBus();
+        RarityOverrideRegistry.INSTANCE.registerToBus();
+        AffixRegistry.INSTANCE.registerToBus();
+        ExtraGemBonusRegistry.INSTANCE.registerToBus();
+        GemRegistry.INSTANCE.registerToBus();
+        AffixLootRegistry.INSTANCE.registerToBus();
+        InvaderRegistry.INSTANCE.registerToBus();
+        RogueSpawnerRegistry.INSTANCE.registerToBus();
+        EliteRegistry.INSTANCE.registerToBus();
+        PurityWeightsRegistry.INSTANCE.registerToBus();
+        AugmentRegistry.INSTANCE.registerToBus();
+        TierAugmentRegistry.INSTANCE.registerToBus();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.142'
+    id 'com.diffplug.eclipse.apt' version '3.42.2'
     id 'idea'
 }
 
@@ -26,7 +27,7 @@ sourceSets.main.resources {
 
     // Exclude common development only resources from finalized outputs
     exclude("**/*.bbmodel") // BlockBench project files
-
+    exclude("**/nul") // Windows reserved device name artifact
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
@@ -127,6 +128,11 @@ configurations {
 }
 
 dependencies {
+    // Mixin annotation processor for refmap generation
+    if (project.hasProperty('mixin') && project.mixin.toBoolean()) {
+        annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
+    }
+
     // Common Toolkit is a required dependency (port of Placebo, in-house replacement): compiled
     // against it from libs and placed on the dev runtime classpath via localRuntime (not bundled in the jar).
     compileOnly files("libs/common_toolkit-26.2-neoforge-0.0.0-beta.2.jar")

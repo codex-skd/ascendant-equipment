@@ -43,9 +43,13 @@ public class MaliceExtension implements ISmithingCategoryExtension<MaliceRecipe>
       acc.addItemStacks(outputs);
    }
 
-   private Stream<ItemStack> getDummyItems() {
-      RandomSource rand = new LegacyRandomSource(0L);
-      LootRarity rarity = RarityRegistry.getSortedRarities().getLast();
+    private Stream<ItemStack> getDummyItems() {
+       List<LootRarity> sorted = RarityRegistry.getSortedRarities();
+       if (sorted.isEmpty()) {
+          return Stream.empty();
+       }
+       RandomSource rand = new LegacyRandomSource(0L);
+       LootRarity rarity = sorted.getLast();
       return DUMMY_ITEMS.stream().<ItemStack>map(ItemStack::new).map(stack -> {
          LootController.createLootItem(stack, rarity, GenContext.dummy(rand));
          AffixHelper.setName(stack, AscendantEquipment.lang("text", "any_affix_item").withStyle(Style.EMPTY.withColor(rarity.color()).withItalic(false)));
