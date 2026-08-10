@@ -9,7 +9,7 @@ game_versions = 9638, 9639, 16498, 10150
 release_type = release
 
 ## Optional
-relations = common_toolkit:requiredDependency, ascendant_attributes:requiredDependency
+relations = common-toolkit:requiredDependency, ascendant-attributes:requiredDependency
 
 ---
 
