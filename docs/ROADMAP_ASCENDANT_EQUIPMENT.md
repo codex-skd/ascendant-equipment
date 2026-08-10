@@ -62,9 +62,9 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 | **12** ✅ | Comandos y red | `commands` (9 archivos), `net` (6 archivos) | Fase 1 |
 | **13** ✅ | Compat opcional: Jade, JEI, Curios, GameStages. **`PatchouliCompat.java` excluido a propósito** — necesita adaptación real a la API de Vellumli, se hace en Fase 15 junto al libro de guía | `compat/curios`, `compat/jei` (14), resto de `compat` excepto Patchouli (16 archivos) | Fases 4–11 |
 | **14** ✅ | Mixins (se hacen al final: tocan clases vanilla y son lo más frágil de portar entre versiones de Minecraft) | `mixin` (25 archivos) | Todas las anteriores relevantes |
-| **15** | Contenido data-driven: recetas, tags, advancements, loot tables JSON (equivalentes propios, no copiados) | `advancements` (11) + JSONs de `data/` no cubiertos antes | Fases 3–14 |
-| **16** | Arte propio: sustituir placeholders por texturas/modelos/sonidos/libro de guía originales | — (todo `assets/`) | Trabajo paralelo, no bloquea el resto |
-| **17** | QA de paridad funcional: probar que el comportamiento replica el original fase por fase | — | Todas |
+| **15** ✅ | Contenido data-driven: recetas, tags, advancements, loot tables JSON (equivalentes propios, no copiados) | `advancements` (11) + JSONs de `data/` no cubiertos antes | Fases 3–14 |
+| **16** ❌ descartada | Arte propio: sustituir placeholders por texturas/modelos/sonidos/libro de guía originales | — (todo `assets/`) | Trabajo paralelo, no bloquea el resto |
+| **17** ❌ descartada | QA de paridad funcional: probar que el comportamiento replica el original fase por fase | — | Todas |
 
 ## Cómo se alimenta a OpenCode
 
@@ -115,4 +115,6 @@ Cada fase = un encargo a OpenCode. Orden pensado por dependencia técnica (lo qu
 
 **Fase 16, parte 1 completada**: metadata de assets portada (149 archivos: `blockstates/` 8, `items/` 50, `models/` 87, `particles/` 1, `sounds.json` 1, `shaders/core/` 2 — estos últimos son código GLSL real, no arte, completan el pipeline fantasma/gris de la Fase 14). Mismo mapeo de namespace que la Fase 15. Hallazgo: gap de lang file más amplio de lo detectado en Fase 15e (varias claves `subtitle.*`/`item.*` sin consolidar en `en_us.json`, pendiente de una fase dedicada antes de considerar el mod jugable). Detalle: `docs/DEPENDENCIES_ASCENDANT_EQUIPMENT.md`.
 
-Próximo paso: resto de la **Fase 16** — arte propio real (169 texturas, sonidos `.ogg`, 5 estructuras `.nbt`), pendiente de dirección artística del usuario; y consolidación del lang file (`en_us.json`) antes de la **Fase 17** (QA de paridad funcional, trabajo del usuario).
+**Fases 16 (resto) y 17 descartadas — decisión explícita del usuario (2026-08-10)**: se publica con los placeholders de arte actuales (metadata de la Fase 16 parte 1 ya portada) y sin una fase de QA de paridad dedicada. Consolidación del lang file (`en_us.json`/`es_es.json`) hecha ad-hoc esa misma sesión (nombres de gema, `gem_class.*`, `loot_category.*`, descripciones de bonus de gema, Amuleto de Poción) — cubre los huecos detectados en juego, no una auditoría completa de las 12 lenguas.
+
+**Roadmap cerrado. Release estable v1.0.0.**
