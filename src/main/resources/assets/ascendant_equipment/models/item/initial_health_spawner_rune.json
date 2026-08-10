@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ascendant_equipment:items/spawner_runes/initial_health_spawner_rune"
+        "layer0": "ascendant_equipment:item/spawner_runes/initial_health_spawner_rune"
     }
 }

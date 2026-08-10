@@ -45,9 +45,13 @@ public class UnnamingExtension implements ISmithingCategoryExtension<UnnamingRec
       acc.addItemStacks(outputs);
    }
 
-   private Stream<ItemStack> getDummyItems() {
-      RandomSource rand = new LegacyRandomSource(0L);
-      LootRarity rarity = RarityRegistry.getSortedRarities().getLast();
+    private Stream<ItemStack> getDummyItems() {
+       List<LootRarity> sorted = RarityRegistry.getSortedRarities();
+       if (sorted.isEmpty()) {
+          return Stream.empty();
+       }
+       RandomSource rand = new LegacyRandomSource(0L);
+       LootRarity rarity = sorted.getLast();
       return DUMMY_ITEMS.stream().<ItemStack>map(ItemStack::new).map(stack -> {
          LootController.createLootItem(stack, rarity, GenContext.dummy(rand));
          return (ItemStack)stack;

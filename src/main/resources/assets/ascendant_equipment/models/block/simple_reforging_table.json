@@ -4,9 +4,9 @@
     "textures": {
         "particle": "minecraft:block/smooth_stone",
         "bottom": "minecraft:block/smooth_stone",
-        "top": "ascendant_equipment:blocks/reforging/simple_table_top",
-        "side": "ascendant_equipment:blocks/reforging/simple_table_side",
-        "lit": "ascendant_equipment:blocks/reforging/simple_table_lit"
+        "top": "ascendant_equipment:block/reforging/simple_table_top",
+        "side": "ascendant_equipment:block/reforging/simple_table_side",
+        "lit": "ascendant_equipment:block/reforging/simple_table_lit"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],
