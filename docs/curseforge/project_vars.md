@@ -3,10 +3,10 @@
 Variables for CurseForge upload. Used by `codex-docs/scripts/curseforge-upload.ps1`.
 
 ## Required
-project_id = 123456
+project_id = 1638146
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 game_versions = 9638, 9639, 16498, 10150
-release_type = beta
+release_type = release
 
 ## Optional
 relations = common_toolkit:requiredDependency, ascendant_attributes:requiredDependency
