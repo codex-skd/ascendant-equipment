@@ -17,7 +17,7 @@
     "display": {
         "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
         "description": {
-            "translate": "advancements.apotheosis.challenge_gates.frontier.desc"
+            "translate": "advancements.ascendant_equipment.challenge_gates.frontier.desc"
         },
         "icon": {
             "components": {
@@ -26,7 +26,7 @@
             "id": "gateways:gate_pearl"
         },
         "title": {
-            "translate": "advancements.apotheosis.challenge_gates.frontier.title"
+            "translate": "advancements.ascendant_equipment.challenge_gates.frontier.title"
         }
     },
     "requirements": [
