@@ -21,14 +21,14 @@
     "display": {
         "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
         "description": {
-            "translate": "advancements.apotheosis.challenge_gates.sigil_of_supremacy.desc"
+            "translate": "advancements.ascendant_equipment.challenge_gates.sigil_of_supremacy.desc"
         },
         "frame": "challenge",
         "icon": {
             "id": "ascendant_equipment:sigil_of_supremacy"
         },
         "title": {
-            "translate": "advancements.apotheosis.challenge_gates.sigil_of_supremacy.title"
+            "translate": "advancements.ascendant_equipment.challenge_gates.sigil_of_supremacy.title"
         }
     },
     "requirements": [

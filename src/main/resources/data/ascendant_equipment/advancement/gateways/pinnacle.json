@@ -17,7 +17,7 @@
     "display": {
         "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
         "description": {
-            "translate": "advancements.apotheosis.challenge_gates.pinnacle.desc"
+            "translate": "advancements.ascendant_equipment.challenge_gates.pinnacle.desc"
         },
         "frame": "goal",
         "icon": {
@@ -27,7 +27,7 @@
             "id": "gateways:gate_pearl"
         },
         "title": {
-            "translate": "advancements.apotheosis.challenge_gates.pinnacle.title"
+            "translate": "advancements.ascendant_equipment.challenge_gates.pinnacle.title"
         }
     },
     "requirements": [
