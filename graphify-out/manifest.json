@@ -30,8 +30,8 @@
     "semantic_hash": "1b840cab6c097143438c396fa218e3af"
   },
   "src/main/resources/assets/ascendant_equipment/lang/en_us.json": {
-    "mtime": 1786376722.9312713,
-    "ast_hash": "b6da987226807f2f791e04d9e2015329",
+    "mtime": 1786471679.9438436,
+    "ast_hash": "318b521fed556cc423bdc9310a27b9ef",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscEq.java": {
@@ -2895,58 +2895,58 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/gateways/ascent.json": {
-    "mtime": 1786146339.4312823,
-    "ast_hash": "d03f21119e6a012d88e99bdb5b8fe477",
+    "mtime": 1786471582.9137223,
+    "ast_hash": "5921e94920ea159d3170220fc8bff442",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/gateways/frontier.json": {
-    "mtime": 1786146339.4317787,
-    "ast_hash": "c6c72c581033e97f78737b8a2279d1f8",
+    "mtime": 1786471583.980982,
+    "ast_hash": "9a902e950ed2e0849f874be33c79644a",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/gateways/pinnacle.json": {
-    "mtime": 1786146339.4322755,
-    "ast_hash": "4585e1b986200bfbae6e3eb780de954b",
+    "mtime": 1786471586.7134247,
+    "ast_hash": "aefdc1708257679e9089a0fd09bf1201",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/gateways/sigil_of_supremacy.json": {
-    "mtime": 1786146339.432772,
-    "ast_hash": "de684dbb36f782719ace13af6e47f28d",
+    "mtime": 1786471587.6689434,
+    "ast_hash": "ce6920b6f8c703cfb30af0a4f78d5347",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/gateways/summit.json": {
-    "mtime": 1786146339.432772,
-    "ast_hash": "54964574e70587e881ca378a0ade987e",
+    "mtime": 1786471585.0711043,
+    "ast_hash": "aea99b002e8f84958d96a75f61441b5f",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/ascent.json": {
-    "mtime": 1786146345.6047125,
-    "ast_hash": "e6582c3ec33255932017d26aa736c7d4",
+    "mtime": 1786471579.171339,
+    "ast_hash": "3b58b1aed38d263ec9fa28bdc292a3c5",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/frontier.json": {
-    "mtime": 1786146339.434798,
-    "ast_hash": "04d61552fce2658763a702bf6ed36b40",
+    "mtime": 1786471577.9835098,
+    "ast_hash": "3874d17e354e4c72764932eb9e6cd5a3",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/haven.json": {
-    "mtime": 1786146339.4352953,
-    "ast_hash": "9f0785d951e097a10d0df87492cee07f",
+    "mtime": 1786471576.3475916,
+    "ast_hash": "d0b1c1212401c7ba841e2395115efab2",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/pinnacle.json": {
-    "mtime": 1786146345.6047125,
-    "ast_hash": "c7a1502eac1b16ab9d36602b42a549d7",
+    "mtime": 1786471581.2629495,
+    "ast_hash": "b2a2e630a57763c168ae26a89b1df574",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/root.json": {
-    "mtime": 1786146339.435791,
-    "ast_hash": "1988029baf45ee05e4abf6936c255d0a",
+    "mtime": 1786471575.2612846,
+    "ast_hash": "9f4d8f56a55ca40cf4509ddeec54f59e",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/advancement/progression/summit.json": {
-    "mtime": 1786146345.6062338,
-    "ast_hash": "8ec0b1e104ab7d21f636e9bf17cb41a1",
+    "mtime": 1786471580.199008,
+    "ast_hash": "2d420133043ad7915a640406e17a7d2d",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/ascendant_equipment/affix_loot_entries/bow.json": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786377522.6332605,
-    "ast_hash": "67ddb6c0b3d9fd345543790d875bff0f",
+    "mtime": 1786472076.0233731,
+    "ast_hash": "782228f0f99b241b09235f3c42391ecf",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5635,8 +5635,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
-    "mtime": 1786146349.7252462,
-    "ast_hash": "027f5faa728b51c51d01fee63e65408d",
+    "mtime": 1786471620.9707537,
+    "ast_hash": "41d5a40874a1ee34fed7820e4b96e4cb",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -6014,19 +6014,9 @@
     "ast_hash": "8d4cf1f966cc9cffdc2bc3b63c82f0a8",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/ascendant_equipment/lang/de_de.json": {
-    "mtime": 1786354202.8335814,
-    "ast_hash": "23ea3f6d8a31d2cd0095bc1ab5fb7f63",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/ascendant_equipment/lang/es_es.json": {
-    "mtime": 1786376726.7691824,
-    "ast_hash": "3b8d40b215976f9065857cd53a17dad6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/fr_fr.json": {
-    "mtime": 1786354202.9125848,
-    "ast_hash": "d430d15628dcdb9e38a6086bea6b982e",
+    "mtime": 1786471711.6156125,
+    "ast_hash": "5355b444de9be086b6d65f339548706d",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.5.md": {
@@ -6042,46 +6032,6 @@
   "docs/curseforge/versions/0.0.0-beta.7.md": {
     "mtime": 1786146349.7375083,
     "ast_hash": "273839b5ec6498026b060342e5001ccf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/ja_jp.json": {
-    "mtime": 1786354202.9135838,
-    "ast_hash": "d54589f324e5da0a6623233ba31a1a1f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/ko_kr.json": {
-    "mtime": 1786354202.9145827,
-    "ast_hash": "12b085dc1055472910a0bac6a9871749",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/lzh.json": {
-    "mtime": 1786354202.916084,
-    "ast_hash": "7efcf4bf803ae52791096812fce61713",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/pl_pl.json": {
-    "mtime": 1786354202.9180863,
-    "ast_hash": "d0caaf0a7605169289c22c247135f33c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/pt_br.json": {
-    "mtime": 1786354202.919257,
-    "ast_hash": "ac62e06d52da2e24856f664f06aadfc3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/tr_tr.json": {
-    "mtime": 1786354202.9214861,
-    "ast_hash": "9ea8fa5edea6808503db913572f1f059",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/uk_ua.json": {
-    "mtime": 1786354202.9234984,
-    "ast_hash": "b3078fa9a4199e60be53c42e8a960b9e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/ascendant_equipment/lang/zh_cn.json": {
-    "mtime": 1786354202.925096,
-    "ast_hash": "8898ea1a25cc8a8a311e39f0e13599c3",
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/patchouli_books/apoth_chronicle/en_us/categories/adventure/adventure.json": {
@@ -10202,6 +10152,11 @@
   "src/main/resources/assets/ascendant_equipment/textures/item/timeworn_fabric.png": {
     "mtime": 1786146339.3016934,
     "ast_hash": "f7bc881e68c842ea751f2b6e24a8b3a0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.1.md": {
+    "mtime": 1786472070.6215851,
+    "ast_hash": "f0b62920612194e756f2eb6de9625251",
     "semantic_hash": ""
   }
 }
