@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-08-11
+
+### Fixed
+- Advancement `translate` keys (progression + challenge gates: Haven, Frontier, Ascent, Summit, Pinnacle and their gateways) pointed at the origin mod's namespace instead of `ascendant_equipment`, falling back to raw untranslated text
+- Added the missing title/desc/criteria text for all 6 progression advancements and 5 challenge gates — these keys had never been written, not just misnamed
+- Added the missing world tier name/description keys (`text.ascendant_equipment.world_tier.<tier>[.desc]`) and the 6 World Tier tutorial stage title/desc keys, previously showing raw lang keys on screen
+
+### Project
+- Reduced shipped locales to en_us and es_es; the other 10 never had the keys above translated either and are deferred to a future localization pass
+
 ## [1.0.0] - 2026-08-10
 
 First stable release.
