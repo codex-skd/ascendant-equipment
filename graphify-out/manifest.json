@@ -30,8 +30,8 @@
     "semantic_hash": "1b840cab6c097143438c396fa218e3af"
   },
   "src/main/resources/assets/ascendant_equipment/lang/en_us.json": {
-    "mtime": 1786471679.9438436,
-    "ast_hash": "318b521fed556cc423bdc9310a27b9ef",
+    "mtime": 1786494237.6062584,
+    "ast_hash": "f231f8489da68605e50e960c4526bb71",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscEq.java": {
@@ -750,8 +750,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/loot/LootRarity.java": {
-    "mtime": 1786146338.419978,
-    "ast_hash": "4aa1a714bb5df9830fc60c71ff868c3d",
+    "mtime": 1786487665.4952924,
+    "ast_hash": "fad3c0765d6cf1b2b73386b179c5cedf",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/loot/LootRule.java": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786472076.0233731,
-    "ast_hash": "782228f0f99b241b09235f3c42391ecf",
+    "mtime": 1786494674.7778752,
+    "ast_hash": "2d94b8706fe21be3ed9fa140c056a800",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5635,8 +5635,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
-    "mtime": 1786471620.9707537,
-    "ast_hash": "41d5a40874a1ee34fed7820e4b96e4cb",
+    "mtime": 1786494612.1659575,
+    "ast_hash": "8e7db0ed5bdc0fe41db9f5afe89613d4",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -6015,8 +6015,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/lang/es_es.json": {
-    "mtime": 1786471711.6156125,
-    "ast_hash": "5355b444de9be086b6d65f339548706d",
+    "mtime": 1786494240.6855557,
+    "ast_hash": "0d0ddc44e4c38828e1145b4c1c64bf6c",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.5.md": {
@@ -10157,6 +10157,11 @@
   "docs/curseforge/versions/1.0.1.md": {
     "mtime": 1786472070.6215851,
     "ast_hash": "f0b62920612194e756f2eb6de9625251",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.2.md": {
+    "mtime": 1786494682.8364408,
+    "ast_hash": "f6aedd961604e0b92b9c6bc42f829e02",
     "semantic_hash": ""
   }
 }
