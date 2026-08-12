@@ -13,13 +13,13 @@
 | Clase principal | `AscendantEquipment` |
 | Display name (Title Case) | `Ascendant Equipment` |
 | Versiones de Minecraft | `26.2` |
-| Rama | `minecraft/26.2/neoforge-26.2.0.32-beta/production` |
+| Rama | `minecraft/26.2/neoforge-26.2.0.37-beta/production` |
 
 ### Notas específicas de este mod
 
 - **Es un port declarado**: de [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) por Shadows_of_Fire (NeoForge 26.1.2 → 26.2), con todos los identificadores renombrados a la convención propia. Roadmap completo por fases: `docs/ROADMAP_ASCENDANT_EQUIPMENT.md`.
 - **package**: `com.skd.ascendantequipment`
-- **Minecraft / NeoForge**: `26.2` / `26.2.0.32-beta` (heredado del esqueleto, no actualizar sin pedirlo explícitamente)
+- **Minecraft / NeoForge**: `26.2` / `26.2.0.37-beta` (no actualizar sin pedirlo explícitamente)
 - **Referencia en `lib_ext/`**: `Apotheosis-26.1.2-9.0.3.jar` (compilado, sin fuente). Se decompila en Fase 0 a `temp/apotheosis-src/` (no versionado) como base de lectura para portar clase a clase. `lib_ext/` y `temp/` no se versionan (ver `.gitignore`).
 - **Atribución obligatoria** (licencia MIT del original): mantener "port of Apotheosis by Shadows_of_Fire" en `README.md`, `LICENSE`, `docs/curseforge/project_description.md` y `credits` de `neoforge.mods.toml` durante todo el desarrollo.
 - **Assets**: Ahora **COMPLETOS**. Se incluyen: modelos, texturas, blockstates, Patchouli books (apoth_chronicle), particles, shaders. Idiomas reducidos deliberadamente a en_us y es_es (2026-08-11); los otros 10 (fr_fr, ja_jp, ko_kr, lzh, pl_pl, pt_br, tr_tr, uk_ua, zh_cn, de_de) se retiraron para simplificar el mantenimiento de claves y se reincorporarán en una pasada de traducción futura. Ver auditoría de completitud: `docs/AUDITORÍA_EQUIVALENCIA.md`.
@@ -64,7 +64,7 @@ Cada subida a CurseForge crea tag: beta `<mc>-neoforge-beta.X` · release `<mc>-
 **1. Desarrollo**
 
 ```bash
-git checkout minecraft/26.2/neoforge-26.2.0.32-beta/production
+git checkout minecraft/26.2/neoforge-26.2.0.37-beta/production
 ./gradlew.bat build
 git add -A
 git commit -m "feat: <descripción>
