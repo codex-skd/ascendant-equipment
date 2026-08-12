@@ -3,6 +3,7 @@ package com.skd.ascendantequipment.loot;
 import com.google.common.base.Preconditions;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.skd.ascendantequipment.AscendantEquipment;
 import com.skd.ascendantequipment.tiers.GenContext;
 import com.skd.ascendantequipment.tiers.TieredWeights;
 import com.skd.commontoolkit.dynreg.DynamicHolder;
@@ -51,7 +52,7 @@ public record LootRarity(
    }
 
    public MutableComponent toComponent() {
-      return Component.translatable("rarity." + RarityRegistry.INSTANCE.getKey(this)).withStyle(Style.EMPTY.withColor(this.color));
+      return AscendantEquipment.lang("rarity", RarityRegistry.INSTANCE.getKey(this).getPath()).withStyle(Style.EMPTY.withColor(this.color));
    }
 
    @Override

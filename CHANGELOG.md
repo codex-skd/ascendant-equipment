@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-08-12
+
+### Fixed
+- **Attribute modifier tooltips (regression, all items)**: `neoforge.modifier.plus`/`neoforge.modifier.take` were overridden with a one-argument `"+%d"`/`"-%d"` template, but NeoForge's `IAttributeExtension#toComponent()` calls these keys with two arguments (value, attribute name) to build every attribute-modifier tooltip line in the game. The broken override silently dropped the attribute name from every affixed item's stat lines, leaving only an icon and a bracketed value. Restored NeoForge's own `"+%s %s"` / `"%s %s"` templates
+- `LootRarity#toComponent` built its translation key with a colon instead of a dot, never matching any lang entry and leaking the raw truncated key (`_equipment:common: 60%`) into drop-probability tooltips
+- Added the missing `rarity.ascendant_equipment.*` (common/uncommon/rare/epic/mythic) and `purity.ascendant_equipment.*` (cracked/chipped/flawed/normal/flawless/perfect) keys — existed in code, never in lang
+- Added `button.ascendant_equipment.haven`, missing unlike every other world tier button key
+- Added the 5 missing damage-type labels (fire/fall/explosion/projectile/lightning) used by damage-reduction affix descriptions; only physical/magic existed, so e.g. fall-damage-reduction gear showed the raw key `misc.ascendant_equipment.fall`
+- Dropped the unsubstituted `%s` from the World Tier difficulty label (never received an argument; difficulty is shown via the sword icons instead)
+- es_es: fixed the typo "Raridad" → "Rareza"
+
 ## [1.0.1] - 2026-08-11
 
 ### Fixed
