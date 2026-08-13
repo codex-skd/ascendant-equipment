@@ -70,43 +70,56 @@ public class WorldTierSelectScreen extends Screen {
       super(AscendantEquipment.lang("title", "select_world_tier"));
    }
 
-   protected void init() {
+   @Override
+   public void init() {
+      super.init();
       this.leftPos = Math.max(0, (this.width - 480) / 2);
       this.topPos = Math.max(0, (this.height - 270) / 2);
-      this.addTierButton(WorldTier.HAVEN, b -> b.pos(this.leftPos + 100, this.topPos + 215));
-      this.addTierButton(WorldTier.FRONTIER, b -> b.pos(this.leftPos + 210, this.topPos + 205));
-      this.addTierButton(WorldTier.ASCENT, b -> b.pos(this.leftPos + 230, this.topPos + 115));
-      this.addTierButton(WorldTier.SUMMIT, b -> b.pos(this.leftPos + 315, this.topPos + 60));
-      this.addTierButton(WorldTier.PINNACLE, b -> b.pos(this.leftPos + 395, this.topPos));
-      this.activateButton = (SimpleTexButton)this.addRenderableWidget(
-         SimpleTexButton.builder()
-            .size(60, 24)
-            .pos(this.leftPos + 198, this.topPos + 15)
-            .texture(SimpleTexButton.ASC_EQ_SPRITES)
-            .action(this.activateSelectedTier())
-            .buttonText(AscendantEquipment.lang("button", "activate_tier"))
-            .build()
-      );
-      this.detailButton = (SimpleTexButton)this.addRenderableWidget(
-         SimpleTexButton.builder()
-            .size(80, 20)
-            .pos(this.leftPos + 178, this.topPos + 75)
-            .texture(SimpleTexButton.ASC_EQ_SPRITES)
-            .action(this.openDetailedInfoScreen())
-            .buttonText(AscendantEquipment.lang("button", "show_detailed_info"))
-            .message(AscendantEquipment.lang("button", "show_detailed_info.desc"))
-            .build()
-      );
-      this.tutorialButton = (SimpleTexButton)this.addRenderableWidget(
-         SimpleTexButton.builder()
-            .size(12, 15)
-            .pos(this.leftPos + 480 - 14, this.topPos + 270 - 17)
-            .texture(SimpleTexButton.ASC_EQ_SPRITES)
-            .action(btn -> this.minecraft.gui.pushScreenLayer(new WorldTierTutorialScreen(this, AscendantEquipment.lang("title", "world_tier_tutorial"))))
-            .buttonText(Component.literal("?"))
-            .message(AscendantEquipment.lang("button", "open_world_tier_tutorial"))
-            .build()
-      );
+      if (this.tierButtons.isEmpty()) {
+         this.addTierButton(WorldTier.HAVEN, b -> b.pos(this.leftPos + 100, this.topPos + 215));
+         this.addTierButton(WorldTier.FRONTIER, b -> b.pos(this.leftPos + 210, this.topPos + 205));
+         this.addTierButton(WorldTier.ASCENT, b -> b.pos(this.leftPos + 230, this.topPos + 115));
+         this.addTierButton(WorldTier.SUMMIT, b -> b.pos(this.leftPos + 315, this.topPos + 60));
+         this.addTierButton(WorldTier.PINNACLE, b -> b.pos(this.leftPos + 395, this.topPos));
+         this.activateButton = (SimpleTexButton)this.addRenderableWidget(
+            SimpleTexButton.builder()
+               .size(60, 24)
+               .pos(this.leftPos + 198, this.topPos + 15)
+               .texture(SimpleTexButton.ASC_EQ_SPRITES)
+               .action(this.activateSelectedTier())
+               .buttonText(AscendantEquipment.lang("button", "activate_tier"))
+               .build()
+         );
+         this.detailButton = (SimpleTexButton)this.addRenderableWidget(
+            SimpleTexButton.builder()
+               .size(80, 20)
+               .pos(this.leftPos + 178, this.topPos + 75)
+               .texture(SimpleTexButton.ASC_EQ_SPRITES)
+               .action(this.openDetailedInfoScreen())
+               .buttonText(AscendantEquipment.lang("button", "show_detailed_info"))
+               .message(AscendantEquipment.lang("button", "show_detailed_info.desc"))
+               .build()
+         );
+         this.tutorialButton = (SimpleTexButton)this.addRenderableWidget(
+            SimpleTexButton.builder()
+               .size(12, 15)
+               .pos(this.leftPos + 480 - 14, this.topPos + 270 - 17)
+               .texture(SimpleTexButton.ASC_EQ_SPRITES)
+               .action(btn -> this.minecraft.gui.pushScreenLayer(new WorldTierTutorialScreen(this, AscendantEquipment.lang("title", "world_tier_tutorial"))))
+               .buttonText(Component.literal("?"))
+               .message(AscendantEquipment.lang("button", "open_world_tier_tutorial"))
+               .build()
+         );
+      } else {
+         this.tierButtons.get(WorldTier.HAVEN).setPosition(this.leftPos + 100, this.topPos + 215);
+         this.tierButtons.get(WorldTier.FRONTIER).setPosition(this.leftPos + 210, this.topPos + 205);
+         this.tierButtons.get(WorldTier.ASCENT).setPosition(this.leftPos + 230, this.topPos + 115);
+         this.tierButtons.get(WorldTier.SUMMIT).setPosition(this.leftPos + 315, this.topPos + 60);
+         this.tierButtons.get(WorldTier.PINNACLE).setPosition(this.leftPos + 395, this.topPos);
+         this.activateButton.setPosition(this.leftPos + 198, this.topPos + 15);
+         this.detailButton.setPosition(this.leftPos + 178, this.topPos + 75);
+         this.tutorialButton.setPosition(this.leftPos + 480 - 14, this.topPos + 270 - 17);
+      }
       this.updateButtonStatus();
       if (this.minecraft.gui.screen() == this && WorldTier.isTutorialActive(this.minecraft.player) && WorldTier.isUnlocked(this.minecraft.player, WorldTier.HAVEN)) {
          this.minecraft.gui.pushScreenLayer(new WorldTierTutorialScreen(this, AscendantEquipment.lang("title", "world_tier_tutorial")));
@@ -145,6 +158,12 @@ public class WorldTierSelectScreen extends Screen {
 
    public void extractRenderState(GuiGraphicsExtractor gfx, int mouseX, int mouseY, float partialTick) {
       super.extractRenderState(gfx, mouseX, mouseY, partialTick);
+      for (WorldTier tier : WorldTier.values()) {
+         SimpleTexButton button = this.tierButtons.get(tier);
+         if (button.isHovered()) {
+            button.renderToolTip(gfx, mouseX, mouseY);
+         }
+      }
       Matrix3x2fStack pose = gfx.pose();
       pose.pushMatrix();
       float scale = 3.0F;

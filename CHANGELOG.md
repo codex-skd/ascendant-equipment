@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2026-08-13
+
+### Fixed
+- World Tier map: hovering a tier icon (Haven, Frontier, Ascent, Summit, Pinnacle) never showed its tooltip. `init()` recreated all buttons on every call instead of only the first time, leaving stale/duplicate widgets after a resize; and the tooltip queue for the tier buttons wasn't being honored by the screen's split render pipeline (`extractBackground`/`extractRenderState`/`extractContents`)
+
 ## [1.0.2] - 2026-08-12
 
 ### Fixed
