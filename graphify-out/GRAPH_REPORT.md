@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-14)
 
 ## Corpus Check
-- 1872 files · ~240,364 words
+- 1873 files · ~240,477 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5243 nodes · 12885 edges · 262 communities (254 shown, 8 thin omitted)
+- 5246 nodes · 12887 edges · 258 communities (252 shown, 6 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 343 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `45922052`
+- Built from commit: `3193850b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -235,7 +235,6 @@
 - LivingEntityMixin.java
 - EnderDragonFightMixin.java
 - ReforgingTableTileRenderer.java
-- EntityInvoker.java
 - .isValid
 - INBTSensitiveFallingBlock.java
 - GuiMixin.java
@@ -245,14 +244,10 @@
 - CLAUDE.md — ascendant_equipment (26.2)
 - LivingEntityInvoker.java
 - AffixTrade
-- GemCaseAnimationState
-- TierAugmentRegistry.java
 - TierCondition.java
-- SocketItemPredicate
 - GemUpgradeMatch.java
 - ReforgingRecipeCache
 - RarityCommand.java
-- WorldTierCommand.java
 
 ## God Nodes (most connected - your core abstractions)
 1. `LootRarity` - 227 edges
@@ -281,11 +276,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (262 total, 8 thin omitted)
+## Communities (258 total, 6 thin omitted)
 
 ### Community 0 - "Ascendant Equipment"
-Cohesion: 0.15
-Nodes (10): FMLCommonSetupEvent, ServerStartingEvent, AscendantEquipment, Identifier, IEventBus, Logger, Mod, ModContainer (+2 more)
+Cohesion: 0.16
+Nodes (11): FMLCommonSetupEvent, ServerStartingEvent, AscendantEquipment, BlockPos, IEventBus, Logger, Mod, ModContainer (+3 more)
 
 ### Community 1 - "Mod Configuration"
 Cohesion: 0.29
@@ -300,32 +295,32 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 4 - "Event Handling"
-Cohesion: 0.08
-Nodes (25): Entity, AffixInstance, AttributeTooltipContext, BlockPos, BlockState, DamageSource, DynamicHolder, Entity (+17 more)
+Cohesion: 0.05
+Nodes (41): ClientTooltipComponent, AffixInstance, AttributeTooltipContext, BlockPos, BlockState, Component, DamageSource, DynamicHolder (+33 more)
 
 ### Community 5 - "Server Startup"
-Cohesion: 0.19
-Nodes (12): ILuckyWeighted, Builder, BlockPos, Codec, CompoundTag, LootTable, RandomSource, ResourceKey (+4 more)
+Cohesion: 0.09
+Nodes (23): ILuckyWeighted, SpawnerStat, SpawnerTile, BaseSpawnerAccessor, BlockPos, Invoker, Level, Mixin (+15 more)
 
 ### Community 6 - "Creative Mode Tab"
 Cohesion: 0.06
-Nodes (30): AffixBuilder, CategorizedAffixBuilder, Builder, StepFunction, SimpleAffixBuilder, ValuedAffixBuilder, AffixDefinition, Codec (+22 more)
+Nodes (31): AffixBuilder, CategorizedAffixBuilder, StepFunction, SimpleAffixBuilder, ValuedAffixBuilder, AffixDefinition, Builder, AttributeTooltipContext (+23 more)
 
 ### Community 7 - "Common Setup"
-Cohesion: 0.08
-Nodes (21): App, BlockPos, BlockState, DamageSource, GetEnchantmentLevelEvent, HitResult, Identifier, InteractionResult (+13 more)
+Cohesion: 0.15
+Nodes (13): CodecProvider, DataComponentPatch, AffixLootRule, ChancedLootRule, CombinedLootRule, ComponentLootRule, DurabilityLootRule, Codec (+5 more)
 
 ### Community 11 - "AscEq.java"
 Cohesion: 0.05
-Nodes (41): AttachmentType, DataMapType, DimensionType, Registry, SmithingTemplateItem, AscEq, Attachments, Blocks (+33 more)
+Nodes (45): AttachmentType, DataMapType, DimensionType, Registry, SmithingTemplateItem, Advancements, AscEq, Attachments (+37 more)
 
 ### Community 12 - "GemCaseBlock.java"
 Cohesion: 0.07
 Nodes (40): BlockEntitySupplier, DecimalFormat, HorizontalDirectionalBlock, GemCuttingBlock, Block, BlockGetter, BlockHitResult, BlockPlaceContext (+32 more)
 
 ### Community 13 - "GemItem.java"
-Cohesion: 0.15
-Nodes (12): GemItem, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, DamageSource, DynamicHolder, ItemStack, Nullable (+4 more)
+Cohesion: 0.14
+Nodes (13): ITabFiller, GemItem, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, DamageSource, DynamicHolder, ItemStack (+5 more)
 
 ### Community 14 - ".getRarity"
 Cohesion: 0.07
@@ -336,16 +331,16 @@ Cohesion: 0.17
 Nodes (15): CrossbowAttackMob, MeleeAttackGoal, Monster, RangedBowAttackGoal, RangedCrossbowAttackGoal, AbstractSkeletonMixin, AbstractSkeleton, CallbackInfo (+7 more)
 
 ### Community 16 - "Affix"
-Cohesion: 0.11
-Nodes (12): Object2FloatOpenHashMap, ObjectSet, Affix, Override, Builder, ItemAffixes, ByteBuf, Codec (+4 more)
+Cohesion: 0.05
+Nodes (36): Object2FloatOpenHashMap, ObjectSet, Affix, App, AttributeTooltipContext, BlockPos, BlockState, Component (+28 more)
 
 ### Community 17 - "EquipmentEvents.java"
-Cohesion: 0.09
-Nodes (20): AnvilLandEvent, Clone, ItemStackedOnOtherEvent, LivingEquipmentChangeEvent, LivingIncomingDamageEvent, LivingShieldBlockEvent, MobDespawnEvent, OnDatapackSyncEvent (+12 more)
+Cohesion: 0.06
+Nodes (29): AnvilLandEvent, AttributesCommandEvent, Clone, ItemStackedOnOtherEvent, LivingEquipmentChangeEvent, LivingIncomingDamageEvent, LivingShieldBlockEvent, MobDespawnEvent (+21 more)
 
 ### Community 18 - "AffixItemIngredient.java"
-Cohesion: 0.10
-Nodes (22): ICustomIngredient, AffixItemIngredient, ByteBuf, DynamicHolder, Holder, IngredientType, Item, ItemStack (+14 more)
+Cohesion: 0.06
+Nodes (40): ICustomIngredient, SlotDisplay, AffixItemIngredient, ByteBuf, DynamicHolder, Holder, IngredientType, Item (+32 more)
 
 ### Community 19 - "Builder"
 Cohesion: 0.17
@@ -356,16 +351,16 @@ Cohesion: 0.07
 Nodes (37): Criterion, DataResult, EquipmentSlotGroup, SimpleCriterionTrigger, SimpleInstance, EquippedItemTrigger, Builder, Codec (+29 more)
 
 ### Community 21 - "TrueRandomInvaderWaveEntity.java"
-Cohesion: 0.14
-Nodes (12): DataComponentPredicate, Codec, DataComponentType, ItemContainerContents, Override, Type, SocketItemPredicate, Type (+4 more)
+Cohesion: 0.10
+Nodes (17): DataComponentPredicate, SingleComponentItemPredicate, AffixItemPredicate, Codec, DataComponentType, Override, Type, Codec (+9 more)
 
 ### Community 22 - "AdventureModuleClient.java"
 Cohesion: 0.08
 Nodes (28): AddAttributeTooltipsEvent, BlockStateModel, GatherComponents, GatherSkippedAttributeTooltipsEvent, ItemTooltipEvent, LoggingIn, PipelineModifier, RegisterClientTooltipComponentFactoriesEvent (+20 more)
 
 ### Community 23 - "ReforgingTableTile"
-Cohesion: 0.15
-Nodes (14): AnimationStage, FALLING, HIDING, RISING, SPINNING, AugmentingTableTile, BlockPos, BlockState (+6 more)
+Cohesion: 0.20
+Nodes (10): BossSpawnerBlock, BossSpawnerTile, BlockEntity, BlockPos, BlockState, DynamicHolder, Level, ValueInput (+2 more)
 
 ### Community 24 - "MobEffectBonus.java"
 Cohesion: 0.11
@@ -373,7 +368,7 @@ Nodes (20): Builder, EffectData, AttributeTooltipContext, BlockPos, BlockState, 
 
 ### Community 25 - "SizedUpgradeRecipe"
 Cohesion: 0.10
-Nodes (20): ISmithingCategoryExtension, SmithingRecipe, SizedUpgradeRecipeExtension, Container, Ingredient, ItemStack, ItemStackTemplate, Level (+12 more)
+Nodes (18): SizedUpgradeRecipeExtension, Container, Ingredient, ItemStack, ItemStackTemplate, Level, MapCodec, Override (+10 more)
 
 ### Community 26 - "GemCaseTile"
 Cohesion: 0.08
@@ -385,70 +380,70 @@ Nodes (19): AttributeProvidingAffix, AttributeTooltipContext, Component, Identif
 
 ### Community 28 - "PotionCharmItem.java"
 Cohesion: 0.11
-Nodes (22): InteractionHand, ITabFiller, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, Enchantment, Entity, EquipmentSlot (+14 more)
+Nodes (21): InteractionHand, BuildCreativeModeTabContentsEvent, Component, CreativeModeTab, Enchantment, Entity, EquipmentSlot, Holder (+13 more)
 
 ### Community 29 - "GemBonus.java"
 Cohesion: 0.06
-Nodes (26): Builder, GemBonus, App, AttributeTooltipContext, BlockPos, BlockState, Codec, Component (+18 more)
+Nodes (26): GemBonus, App, AttributeTooltipContext, BlockPos, BlockState, Codec, Component, DamageSource (+18 more)
 
 ### Community 30 - "GemCaseScreen"
 Cohesion: 0.11
 Nodes (16): EditBox, KeyEvent, Rect2i, GemCaseScreen, Component, DynamicHolder, GuiGraphicsExtractor, Identifier (+8 more)
 
 ### Community 31 - "GenContext"
-Cohesion: 0.11
-Nodes (14): DynamicRegistry, RegistrySerializer, AffixLootRegistry, Nullable, AugmentRegistry, InvaderRegistry, Nullable, random() (+6 more)
+Cohesion: 0.06
+Nodes (26): DynamicRegistry, RegistrySerializer, Identifier, GemCommand, CommandSourceStack, LiteralArgumentBuilder, SuggestionProvider, AffixLootRegistry (+18 more)
 
 ### Community 32 - "LootRarity"
-Cohesion: 0.18
-Nodes (11): DataListBuilder, AttributeTooltipContext, BreakBlockEvent, Codec, Component, Identifier, ItemStack, MutableComponent (+3 more)
+Cohesion: 0.24
+Nodes (11): AugmentingTableBlock, BlockEntity, BlockGetter, BlockHitResult, BlockPos, BlockState, CollisionContext, InteractionResult (+3 more)
 
 ### Community 33 - "GemInstance"
-Cohesion: 0.09
-Nodes (22): GemInstance, AttributeTooltipContext, BlockPos, BlockState, Component, DamageSource, DynamicHolder, Entity (+14 more)
+Cohesion: 0.06
+Nodes (26): HarvestCheck, GemInstance, AttributeTooltipContext, BlockPos, BlockState, Component, DamageSource, DynamicHolder (+18 more)
 
 ### Community 34 - "Purity"
-Cohesion: 0.15
-Nodes (16): AttributeModifier, EffectModifier, EntityModifier, GearSetModifier, ChancedEffectInstance, Codec, Deprecated, DynamicHolder (+8 more)
+Cohesion: 0.25
+Nodes (11): Block, EntityBlock, BlockEntity, BlockHitResult, BlockPos, BlockState, InteractionResult, Level (+3 more)
 
 ### Community 35 - "BasicBossData"
-Cohesion: 0.11
-Nodes (15): BasicBossData, Builder, AABB, BlockPos, Codec, Component, CompoundTag, DynamicHolderSet (+7 more)
+Cohesion: 0.06
+Nodes (29): BonusLootTables, Codec, DamageSource, LootTable, Mob, ResourceKey, BasicBossData, Builder (+21 more)
 
 ### Community 36 - "GemView"
 Cohesion: 0.12
 Nodes (14): Builder, Attribute, AttributeTooltipContext, Codec, Component, Holder, Identifier, Operation (+6 more)
 
 ### Community 37 - "SpectralShotAffix.java"
-Cohesion: 0.15
-Nodes (7): Component, AffixDropList, FatTexButton, Component, GuiGraphicsExtractor, OnPress, Override
+Cohesion: 0.20
+Nodes (7): Component, GuiGraphicsExtractor, Identifier, Inventory, MouseButtonEvent, Slot, ReforgingScreen
 
 ### Community 38 - "ItemAffixes"
-Cohesion: 0.08
-Nodes (29): Codec, DataComponentType, Override, Type, PurityItemPredicate, Builder, AttributeTooltipContext, BreakSpeed (+21 more)
+Cohesion: 0.14
+Nodes (16): Builder, AttributeTooltipContext, Codec, Component, Override, OmneticBonus, BlockPos, BlockState (+8 more)
 
 ### Community 39 - ".lang"
-Cohesion: 0.13
-Nodes (11): AdvancementHolder, Screen, MutableComponent, AnimationData, Component, GuiGraphicsExtractor, Identifier, Nullable (+3 more)
+Cohesion: 0.15
+Nodes (9): AdvancementHolder, AnimationData, Component, GuiGraphicsExtractor, Identifier, Nullable, OnPress, Override (+1 more)
 
 ### Community 40 - "ReforgingTableBlockItem.java"
-Cohesion: 0.18
-Nodes (13): AttributeTooltipContext, Block, Codec, Component, HolderSet, InteractionResult, ItemStack, LootContext (+5 more)
+Cohesion: 0.08
+Nodes (27): AttributeTooltipContext, Block, Codec, Component, HolderSet, InteractionResult, ItemStack, LootContext (+19 more)
 
 ### Community 41 - "SalvagingRecipe"
 Cohesion: 0.12
 Nodes (18): SingleRecipeInput, Codec, Deprecated, Ingredient, Item, ItemStack, ItemStackTemplate, Level (+10 more)
 
 ### Community 42 - "EntityModifier.java"
-Cohesion: 0.18
-Nodes (11): DamageReductionAffix, AttributeTooltipContext, Codec, Component, DamageSource, ItemStack, LivingEntity, MutableComponent (+3 more)
+Cohesion: 0.14
+Nodes (12): Builder, DamageReductionAffix, AttributeTooltipContext, Codec, Component, DamageSource, ItemStack, LivingEntity (+4 more)
 
 ### Community 43 - "LootRule.java"
 Cohesion: 0.20
 Nodes (11): AbstractArrow, AttributeTooltipContext, Codec, Component, ItemStack, LivingEntity, MutableComponent, Override (+3 more)
 
 ### Community 44 - "AffixHelper.java"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (11): AffixHelper, ClientAccess, Component, DynamicHolder, Entity, Identifier, ItemStack, Nullable (+3 more)
 
 ### Community 45 - "RadialUtil.java"
@@ -456,40 +451,40 @@ Cohesion: 0.05
 Nodes (51): MultiPlayerGameMode, CacheKey, BlockPos, Direction, EventBusSubscriber, ItemStack, Level, Minecraft (+43 more)
 
 ### Community 46 - "OmneticBonus.java"
-Cohesion: 0.13
-Nodes (13): Reference, isUnlocked(), ApothMiscUtil, ClientInternal, Component, Identifier, KeyMapping, MutableComponent (+5 more)
+Cohesion: 0.14
+Nodes (12): Reference, ApothMiscUtil, ClientInternal, Component, Identifier, KeyMapping, MutableComponent, Nullable (+4 more)
 
 ### Community 47 - "GemInstance.java"
-Cohesion: 0.17
-Nodes (10): BlockEntityMenu, AugmentingMenu, BlockPos, DynamicHolder, InternalItemHandler, Inventory, ItemStack, Player (+2 more)
+Cohesion: 0.24
+Nodes (7): AugmentingMenu, BlockPos, DynamicHolder, InternalItemHandler, Inventory, ItemStack, Player
 
 ### Community 48 - "Incidencias registradas"
 Cohesion: 0.07
 Nodes (29): Cómo se declaran en el proyecto, Dependencias de Apotheosis — mapa de sustitución (control), Fase 10 (2026-08-05) — datos de worldgen (no código Java), Fase 11 (2026-08-05) — client/ (20 archivos), Fase 12 (2026-08-05) — commands/ y net/ (15 archivos), Fase 13 (2026-08-05) — compat/ (19 archivos), Fase 14 (2026-08-05) — mixin/ (25 archivos, la fase más delicada), Fase 15a (2026-08-05) — advancements/ (9 archivos) (+21 more)
 
 ### Community 49 - "AscEqMobEvents.java"
-Cohesion: 0.16
+Cohesion: 0.18
 Nodes (15): FinalizeSpawnEvent, Marker, AscEqMobEvents, Component, DynamicHolder, Entity, EntityJoinLevelEvent, EntitySpawnReason (+7 more)
 
 ### Community 50 - "SocketedGems.java"
-Cohesion: 0.08
-Nodes (20): ImmutableList, BlockPos, BlockState, DamageSource, Deprecated, Entity, GetEnchantmentLevelEvent, InteractionResult (+12 more)
+Cohesion: 0.11
+Nodes (17): ImmutableList, BlockPos, BlockState, DamageSource, Entity, GetEnchantmentLevelEvent, InteractionResult, ItemStack (+9 more)
 
 ### Community 51 - "SimpleTexButton"
 Cohesion: 0.14
 Nodes (11): ActiveTextCollector, Button, CreateNarration, Builder, Component, Either, GuiGraphicsExtractor, Identifier (+3 more)
 
 ### Community 52 - "AffixItemPredicate"
-Cohesion: 0.13
-Nodes (18): LootModifier, ContextualLootModifier, ItemStack, LootContext, LootItemCondition, ObjectArrayList, GenContext, Biome (+10 more)
+Cohesion: 0.14
+Nodes (18): LootPoolSingletonContainer, ContextualLootPoolEntry, ItemStack, LootContext, LootItemCondition, LootItemFunction, GenContext, Biome (+10 more)
 
 ### Community 53 - ".fmt"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (12): Builder, FestiveAffix, FestiveData, AttributeTooltipContext, Codec, Component, ItemStack, LivingDeathEvent (+4 more)
 
 ### Community 54 - "BossDungeonFeature2.java"
-Cohesion: 0.13
-Nodes (15): Feature, FeatureConfiguration, RuleTest, BlockPos, WorldGenLevel, BossDungeonFeature2, FeaturePlaceContext, Identifier (+7 more)
+Cohesion: 0.14
+Nodes (14): Feature, FeatureConfiguration, RuleTest, WorldGenLevel, BossDungeonFeature2, FeaturePlaceContext, Identifier, BossDungeonFeature (+6 more)
 
 ### Community 55 - "SalvagingCategory.java"
 Cohesion: 0.12
@@ -504,8 +499,8 @@ Cohesion: 0.13
 Nodes (17): Recipe, Block, Deprecated, DynamicHolder, HolderSet, ItemStack, Level, MapCodec (+9 more)
 
 ### Community 58 - "SpawnCondition"
-Cohesion: 0.07
-Nodes (32): CodecMap, CodecProvider, DataComponentPatch, AffixLootRule, ChancedLootRule, CombinedLootRule, ComponentLootRule, DurabilityLootRule (+24 more)
+Cohesion: 0.05
+Nodes (41): CodecMap, Augmentation, Builder, Codec, EntitySpawnReason, Mob, ServerLevelAccessor, AttributeModifier (+33 more)
 
 ### Community 59 - "BloodyArrowBonus.java"
 Cohesion: 0.13
@@ -533,7 +528,7 @@ Nodes (16): Builder, EnchantmentAffix, AttributeTooltipContext, Codec, Component
 
 ### Community 65 - "RadialAffix.java"
 Cohesion: 0.19
-Nodes (9): ApothSmithingRecipe, Ingredient, ItemStack, Level, Override, PlacementInfo, RecipeBookCategory, RecipeDisplay (+1 more)
+Nodes (10): SmithingRecipe, ApothSmithingRecipe, Ingredient, ItemStack, Level, Override, PlacementInfo, RecipeBookCategory (+2 more)
 
 ### Community 66 - "ItemStackMixin.java"
 Cohesion: 0.14
@@ -544,28 +539,28 @@ Cohesion: 0.15
 Nodes (13): AllStatsBonus, Builder, Attribute, AttributeTooltipContext, Codec, Component, Holder, HolderSet (+5 more)
 
 ### Community 68 - "GemCaseMenu"
-Cohesion: 0.14
-Nodes (9): IButtonContainer, GemCaseMenu, BlockPos, DynamicHolder, Inventory, ItemStack, Nullable, Player (+1 more)
+Cohesion: 0.15
+Nodes (10): IButtonContainer, SimpleContainer, GemCaseMenu, BlockPos, DynamicHolder, Inventory, ItemStack, Nullable (+2 more)
 
 ### Community 69 - "AdventureJEIPlugin.java"
 Cohesion: 0.14
 Nodes (16): IGuiHandlerRegistration, IModPlugin, IRecipeCatalystRegistration, IRecipeCategoryRegistration, IRecipeRegistration, ISubtypeRegistration, IVanillaCategoryExtensionRegistration, JeiPlugin (+8 more)
 
 ### Community 70 - "CharmInfusionRecipe"
-Cohesion: 0.12
-Nodes (18): InfusionRecipe, IRecipeSlotBuilder, Advancements, Identifier, Stats, CharmInfusionExtension, IFocusGroup, IRecipeLayoutBuilder (+10 more)
+Cohesion: 0.14
+Nodes (16): InfusionRecipe, IRecipeSlotBuilder, Stats, CharmInfusionExtension, IFocusGroup, IRecipeLayoutBuilder, CharmInfusionRecipe, Ingredient (+8 more)
 
 ### Community 71 - "LinkItemToChatPayload.java"
-Cohesion: 0.15
-Nodes (13): CustomPacketPayload, Object2LongMap, ConnectionProtocol, IPayloadContext, Item, PacketFlow, RegistryFriendlyByteBuf, StreamCodec (+5 more)
+Cohesion: 0.14
+Nodes (13): Object2LongMap, PayloadProvider, ConnectionProtocol, IPayloadContext, Item, PacketFlow, RegistryFriendlyByteBuf, StreamCodec (+5 more)
 
 ### Community 72 - "CleavingAffix.java"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (12): Builder, CleaveValues, CleavingAffix, AttributeTooltipContext, Codec, Component, Entity, ItemStack (+4 more)
 
 ### Community 73 - "GuiGraphicsExtractorMixin.java"
-Cohesion: 0.06
-Nodes (34): Component, GuiGraphicsExtractor, Identifier, Inventory, MouseButtonEvent, Slot, ReforgingScreen, AscEqRenderStateHolder (+26 more)
+Cohesion: 0.21
+Nodes (10): GuiGraphicsExtractor, ItemStack, PipelinedRenderer, GuiItemAtlasMixin, ItemStackRenderState, Mixin, Operation, PoseStack (+2 more)
 
 ### Community 74 - "AddSocketsRecipe"
 Cohesion: 0.15
@@ -576,20 +571,20 @@ Cohesion: 0.15
 Nodes (14): Builder, DropTransformBonus, AttributeTooltipContext, Codec, Component, ContextAwarePredicate, Ingredient, ItemLike (+6 more)
 
 ### Community 76 - "CanSocketGemEvent"
-Cohesion: 0.19
-Nodes (7): Event, ICancellableEvent, CanSocketGemEvent, ItemStack, Override, GetItemSocketsEvent, ItemStack
+Cohesion: 0.14
+Nodes (9): Event, ICancellableEvent, CanSocketGemEvent, ItemStack, Override, GetItemSocketsEvent, ItemStack, ItemSocketingEvent (+1 more)
 
 ### Community 77 - "TieredGateway.java"
 Cohesion: 0.14
 Nodes (15): Gateway, Codec, Component, GatewayEntity, Holder, Level, Nullable, Player (+7 more)
 
 ### Community 78 - "Invader.java"
-Cohesion: 0.13
-Nodes (18): Goal, RegistryAccess, EntityInvoker, Invoker, Mixin, ValueInput, Builder, Invader (+10 more)
+Cohesion: 0.17
+Nodes (14): Goal, RegistryAccess, Builder, Invader, AABB, BlockPos, Codec, Component (+6 more)
 
 ### Community 79 - "WithdrawalRecipe"
-Cohesion: 0.16
-Nodes (11): ItemStack, WithdrawalExtension, Container, ItemStack, Level, Override, RecipeSerializer, ServerPlayer (+3 more)
+Cohesion: 0.15
+Nodes (12): ISmithingCategoryExtension, ItemStack, WithdrawalExtension, Container, ItemStack, Level, Override, RecipeSerializer (+4 more)
 
 ### Community 80 - "ApothMiscUtil.java"
 Cohesion: 0.20
@@ -600,20 +595,20 @@ Cohesion: 0.17
 Nodes (12): LootItemConditionalFunction, AutomaticAffixTrade, DynamicHolder, ItemStack, LootContext, LootItemCondition, MapCodec, Nullable (+4 more)
 
 ### Community 82 - "MaliceRecipe"
-Cohesion: 0.12
-Nodes (16): Item, ItemStack, MaliceExtension, Container, ItemStack, Level, Override, RecipeSerializer (+8 more)
+Cohesion: 0.15
+Nodes (12): Item, ItemStack, MaliceExtension, Container, ItemStack, Level, Override, RecipeSerializer (+4 more)
 
 ### Community 83 - "SupremacyRecipe"
 Cohesion: 0.15
 Nodes (12): Item, ItemStack, SupremacyExtension, Container, ItemStack, Level, Override, RecipeSerializer (+4 more)
 
 ### Community 84 - "AffixLootEntry"
-Cohesion: 0.12
-Nodes (20): LootPoolSingletonContainer, AffixLootEntry, Codec, ItemStack, ItemStackTemplate, AffixLootPoolEntry, Builder, DynamicHolder (+12 more)
+Cohesion: 0.17
+Nodes (14): AffixLootEntry, Codec, ItemStack, ItemStackTemplate, AffixLootPoolEntry, Builder, DynamicHolder, EntryConstructor (+6 more)
 
 ### Community 85 - "TieredWeights"
-Cohesion: 0.11
-Nodes (20): Override, weights(), Codec, Identifier, ReloadType, PurityWeights, PurityWeightsRegistry, Builder (+12 more)
+Cohesion: 0.16
+Nodes (10): random(), Builder, ByteBuf, DynamicHolder, Either, MapCodec, StreamCodec, TieredWeights (+2 more)
 
 ### Community 86 - "EnchantmentBonus"
 Cohesion: 0.16
@@ -632,16 +627,16 @@ Cohesion: 0.15
 Nodes (12): IRecipeCategory, GemCuttingCategory, GemCuttingExtension, Component, GuiGraphicsExtractor, Identifier, IDrawable, IFocusGroup (+4 more)
 
 ### Community 90 - "TierAugment"
-Cohesion: 0.10
-Nodes (17): ModifierSource, ModifierSourceType, Font, GuiGraphicsExtractor, TierAugmentModifierSource, AttributeTooltipContext, Component, LivingEntity (+9 more)
+Cohesion: 0.16
+Nodes (10): ModifierSource, ModifierSourceType, Font, GuiGraphicsExtractor, TierAugmentModifierSource, AttributeTooltipContext, Component, LivingEntity (+2 more)
 
 ### Community 91 - "Constraints"
-Cohesion: 0.10
-Nodes (17): RegistryLookup, Augmentation, Builder, Codec, EntitySpawnReason, Mob, ServerLevelAccessor, Builder (+9 more)
+Cohesion: 0.17
+Nodes (11): RegistryLookup, Builder, Constrained, Constraints, Biome, Codec, HolderSet, Level (+3 more)
 
 ### Community 92 - "ApothSmithingRecipe"
-Cohesion: 0.07
-Nodes (24): EliteWaveEntity, Codec, DynamicHolder, GatewayEntity, LivingEntity, MutableComponent, ServerLevel, InvaderWaveEntity (+16 more)
+Cohesion: 0.19
+Nodes (8): InvaderWaveEntity, Codec, DynamicHolder, GatewayEntity, LivingEntity, MutableComponent, Nullable, ServerLevel
 
 ### Community 93 - "SalvagingTableTile"
 Cohesion: 0.16
@@ -652,8 +647,8 @@ Cohesion: 0.18
 Nodes (13): ConfigPayload, EquipmentConfig, Configuration, ConnectionProtocol, Identifier, IPayloadContext, Item, Override (+5 more)
 
 ### Community 95 - "RadialBonus.java"
-Cohesion: 0.15
-Nodes (9): RecipeInput, GemCuttingRecipe, Level, Nullable, PlacementInfo, RecipeBookCategory, RecipeDisplay, RecipeType (+1 more)
+Cohesion: 0.13
+Nodes (10): RecipeInput, GemCuttingRecipe, InternalItemHandler, Level, Nullable, PlacementInfo, RecipeBookCategory, RecipeDisplay (+2 more)
 
 ### Community 96 - "DropDownList"
 Cohesion: 0.16
@@ -668,48 +663,48 @@ Cohesion: 0.20
 Nodes (10): CommonToolkitContainerMenu, GemCuttingMenu, Container, ContainerLevelAccess, InternalItemHandler, Inventory, ItemStack, Level (+2 more)
 
 ### Community 99 - "AbstractSkeletonMixin.java"
-Cohesion: 0.13
-Nodes (12): Builder, DamageReductionBonus, AttributeTooltipContext, Codec, Component, DamageSource, LivingEntity, Override (+4 more)
+Cohesion: 0.20
+Nodes (9): AscEqRenderStateHolder, Nullable, ItemStackRenderStateMixin, CallbackInfo, Inject, Mixin, Nullable, Override (+1 more)
 
 ### Community 100 - "TieredDynamicRegistry"
-Cohesion: 0.14
-Nodes (17): Builder, DamageType, EXPLOSION, FALL, FIRE, LIGHTNING, MAGIC, PHYSICAL (+9 more)
+Cohesion: 0.09
+Nodes (24): DamageType, EXPLOSION, FALL, FIRE, LIGHTNING, MAGIC, PHYSICAL, PROJECTILE (+16 more)
 
 ### Community 101 - "SupportingEntity"
-Cohesion: 0.19
-Nodes (8): Builder, Codec, CompoundTag, EntityType, Level, Mob, Nullable, SupportingEntity
+Cohesion: 0.21
+Nodes (8): Codec, DynamicRegistry, GatewayEntity, LivingEntity, MutableComponent, Nullable, ServerLevel, TrueRandomInvaderWaveEntity
 
 ### Community 102 - "RadialProgressTracker.java"
-Cohesion: 0.13
-Nodes (14): BreakSpeed, HarvestCheck, BreakSpeed, HarvestCheck, BlockPos, BlockState, BreakSpeed, Codec (+6 more)
+Cohesion: 0.16
+Nodes (11): getColor(), isAtLeast(), Codec, MutableComponent, Override, TextColor, mapCodec(), max() (+3 more)
 
 ### Community 103 - "LootController.java"
-Cohesion: 0.05
-Nodes (25): ItemStack, Override, AttributeTooltipContext, BlockDropsEvent, Codec, ItemStack, LivingDropsEvent, MutableComponent (+17 more)
+Cohesion: 0.10
+Nodes (15): Codec, EntityInvulnerabilityCheckEvent, ItemStack, Override, MagicalArrowAffix, AttributeTooltipContext, BlockDropsEvent, Codec (+7 more)
 
 ### Community 104 - "Elite"
-Cohesion: 0.10
-Nodes (22): EliteRegistry, IEntityMatch, Entity, EntityType, HolderSet, Nullable, Builder, Elite (+14 more)
+Cohesion: 0.11
+Nodes (16): EliteRegistry, IEntityMatch, Entity, EntityType, HolderSet, Nullable, Builder, Elite (+8 more)
 
 ### Community 105 - "GemModel.java"
-Cohesion: 0.18
-Nodes (15): BakingContext, ItemDisplayContext, ItemModel, ItemOwner, Matrix4fc, Resolver, GemModel, ClientLevel (+7 more)
+Cohesion: 0.05
+Nodes (47): BakingContext, BlockEntityRenderer, BlockEntityRenderState, ItemDisplayContext, ItemModel, ItemOwner, Matrix4fc, Resolver (+39 more)
 
 ### Community 106 - "SpawnCondition.java"
 Cohesion: 0.22
 Nodes (10): GemLootPoolEntry, Builder, DynamicHolder, EntryConstructor, ItemStack, LootContext, LootItemCondition, LootItemFunction (+2 more)
 
 ### Community 107 - "GemCaseSlot"
-Cohesion: 0.16
-Nodes (6): SimpleContainer, Slot, GemCaseSlot, Container, ItemStack, Player
+Cohesion: 0.11
+Nodes (12): Slot, Purity, CHIPPED, CRACKED, FLAWED, FLAWLESS, NORMAL, PERFECT (+4 more)
 
 ### Community 108 - "ReforgingTableBlock.java"
-Cohesion: 0.06
-Nodes (46): Block, EntityBlock, AugmentingTableBlock, BlockEntity, BlockGetter, BlockHitResult, BlockPos, BlockState (+38 more)
+Cohesion: 0.20
+Nodes (14): BlockEntity, BlockGetter, BlockHitResult, BlockPos, BlockState, CollisionContext, Component, InteractionResult (+6 more)
 
 ### Community 109 - "SalvagingMenu"
-Cohesion: 0.23
-Nodes (9): BlockPos, InternalItemHandler, Inventory, ItemStack, Level, Player, RandomSource, RecipeHolder (+1 more)
+Cohesion: 0.22
+Nodes (10): BlockEntityMenu, BlockPos, InternalItemHandler, Inventory, ItemStack, Level, Player, RandomSource (+2 more)
 
 ### Community 110 - "UnnamingRecipe"
 Cohesion: 0.17
@@ -732,8 +727,8 @@ Cohesion: 0.28
 Nodes (9): Reward, Codec, GatewayEntity, ItemStack, MutableComponent, Player, ServerLevel, TooltipContext (+1 more)
 
 ### Community 115 - "CuttingRecipeInput"
-Cohesion: 0.24
-Nodes (5): Level, CuttingRecipeInput, InternalItemHandler, ItemStack, Level
+Cohesion: 0.27
+Nodes (4): Level, CuttingRecipeInput, ItemStack, Level
 
 ### Community 116 - "AugmentingMenu.java"
 Cohesion: 0.22
@@ -765,7 +760,7 @@ Nodes (5): AffixItemEffectRenderer, EventBusSubscriber, Post, SubmitCustomGeomet
 
 ### Community 123 - "CustomPacketPayload"
 Cohesion: 0.20
-Nodes (11): PayloadProvider, ByteBuf, ConnectionProtocol, DynamicHolder, IPayloadContext, PacketFlow, RegistryFriendlyByteBuf, StreamCodec (+3 more)
+Nodes (11): CustomPacketPayload, ByteBuf, ConnectionProtocol, DynamicHolder, IPayloadContext, PacketFlow, RegistryFriendlyByteBuf, StreamCodec (+3 more)
 
 ### Community 124 - "PotionCharmExtension.java"
 Cohesion: 0.22
@@ -784,16 +779,16 @@ Cohesion: 0.22
 Nodes (10): ExecutingAffix, AttributeTooltipContext, Codec, Component, Entity, ItemStack, LivingEntity, MutableComponent (+2 more)
 
 ### Community 128 - "PsychicAffix.java"
-Cohesion: 0.13
-Nodes (13): AttributeTooltipContext, Component, MutableComponent, AttributeTooltipContext, Codec, Component, DamageSource, ItemStack (+5 more)
+Cohesion: 0.22
+Nodes (10): AttributeTooltipContext, Codec, Component, DamageSource, ItemStack, LivingEntity, MutableComponent, Override (+2 more)
 
 ### Community 129 - "ThunderstruckAffix.java"
 Cohesion: 0.22
 Nodes (10): AttributeTooltipContext, Codec, Component, Entity, ItemStack, LivingEntity, MutableComponent, Override (+2 more)
 
 ### Community 130 - "BossSpawnerBlock.java"
-Cohesion: 0.25
-Nodes (7): Builder, ExtraGemBonus, ExtraGemBonusRegistry, Codec, DynamicHolder, Multimap, ReloadType
+Cohesion: 0.24
+Nodes (8): EliteWaveEntity, Codec, DynamicHolder, GatewayEntity, LivingEntity, MutableComponent, ServerLevel, WaveEntity
 
 ### Community 131 - "GemCaseSelectPayload.java"
 Cohesion: 0.20
@@ -808,8 +803,8 @@ Cohesion: 0.18
 Nodes (9): AbstractTickableSoundInstance, GemCuttingScreen, GemUpgradeSound, BlockPos, Button, Component, GuiGraphicsExtractor, Identifier (+1 more)
 
 ### Community 134 - ".cmds"
-Cohesion: 0.11
-Nodes (16): AttributesCommandEvent, BakeCallback, Internal, CategoryCheckCommand, CommandSourceStack, LiteralArgumentBuilder, CommandSourceStack, LiteralArgumentBuilder (+8 more)
+Cohesion: 0.15
+Nodes (12): BakeCallback, Internal, CommandSourceStack, LiteralArgumentBuilder, SocketCommand, Inner, Codec, Identifier (+4 more)
 
 ### Community 135 - "Builder"
 Cohesion: 0.16
@@ -832,20 +827,20 @@ Cohesion: 0.21
 Nodes (8): GatewayEntity, DynamicHolder, EntityType, Gateway, Level, Player, Wave, TieredGatewayEntity
 
 ### Community 141 - ".tryRenderComparison"
-Cohesion: 0.21
+Cohesion: 0.22
 Nodes (7): Pre, ItemStack, Minecraft, EquipmentComparePositioner, Rect, Vector2i, Vector2ic
 
 ### Community 142 - "AugmentingTableBlock.java"
-Cohesion: 0.17
-Nodes (8): Builder, Codec, DynamicHolder, AffixType, ABILITY, BASIC_EFFECT, STAT, StringRepresentable
+Cohesion: 0.16
+Nodes (9): Builder, Builder, Codec, DynamicHolder, AffixType, ABILITY, BASIC_EFFECT, STAT (+1 more)
 
 ### Community 143 - "TutorialStage"
 Cohesion: 0.14
 Nodes (13): Component, GuiGraphicsExtractor, Nullable, next(), prev(), TutorialStage, ACTIVATE, DETAILED_INFO (+5 more)
 
 ### Community 144 - "AffixItemReward.java"
-Cohesion: 0.27
-Nodes (5): AffixItemReward, Codec, DynamicHolder, SafeVarargs, SafeVarargs
+Cohesion: 0.21
+Nodes (10): AffixItemReward, Codec, DynamicHolder, GatewayEntity, ItemStack, MutableComponent, Player, SafeVarargs (+2 more)
 
 ### Community 145 - "ItemFrameGemsProcessor.java"
 Cohesion: 0.23
@@ -864,16 +859,16 @@ Cohesion: 0.39
 Nodes (5): BasicGemCuttingExtension, IFocusGroup, IRecipeLayoutBuilder, ItemStack, SizedIngredient
 
 ### Community 149 - "NameHelper.java"
-Cohesion: 0.14
-Nodes (14): GatewayEntity, ItemStack, MutableComponent, Player, ServerLevel, TooltipContext, Component, Configuration (+6 more)
+Cohesion: 0.23
+Nodes (8): Component, Configuration, Item, ItemStack, Mob, MutableComponent, RandomSource, NameHelper
 
 ### Community 150 - "Block"
-Cohesion: 0.21
-Nodes (9): AugmentingScreen, FakeWidthComponent, AttributeTooltipContext, DynamicHolder, Font, FormattedText, Identifier, Inventory (+1 more)
+Cohesion: 0.27
+Nodes (7): Target, MONSTERS, PLAYERS, ReloadType, SubtypedSerializer, Key, TierAugmentRegistry
 
 ### Community 151 - "ReforgingScreen.java"
-Cohesion: 0.23
-Nodes (6): Builder, DurabilityBonus, AttributeTooltipContext, Codec, Component, Override
+Cohesion: 0.13
+Nodes (11): Builder, DurabilityBonus, AttributeTooltipContext, Codec, Component, Override, Builder, GemClass (+3 more)
 
 ### Community 153 - "FrozenDropsBonus.java"
 Cohesion: 0.23
@@ -884,8 +879,8 @@ Cohesion: 0.30
 Nodes (9): GemSlotDisplay, ContextMap, DisplayContentsFactory, DynamicHolderSet, MapCodec, Override, RegistryFriendlyByteBuf, StreamCodec (+1 more)
 
 ### Community 155 - "AugmentingTableTileRenderer.java"
-Cohesion: 0.15
-Nodes (11): AffixRegistry, DynamicHolder, Multimap, ReloadType, SubtypedSerializer, Codec, DamageSource, ItemStack (+3 more)
+Cohesion: 0.07
+Nodes (23): Codec, DamageSource, ItemStack, LivingEntity, Override, RetreatingAffix, Builder, Codec (+15 more)
 
 ### Community 156 - "StoneformingTooltipRenderer.java"
 Cohesion: 0.31
@@ -900,15 +895,15 @@ Cohesion: 0.22
 Nodes (10): IEntityComponentProvider, IPluginConfig, ITooltip, AdventureClientProvider, EntityAccessor, Identifier, CommonTooltipUtil, Component (+2 more)
 
 ### Community 159 - "Augmentation"
-Cohesion: 0.27
-Nodes (8): ClientTooltipComponent, Component, Font, GuiGraphicsExtractor, Identifier, StoneformingComponent, StoneformingTooltipRenderer, TooltipComponent
+Cohesion: 0.31
+Nodes (7): DynamicHolder, ItemStack, LootContext, LootItemCondition, MapCodec, Override, ReforgeItemFunction
 
 ### Community 160 - "PassengerWaveModifier.java"
 Cohesion: 0.24
 Nodes (9): Builder, Codec, EntityType, GatewayEntity, LivingEntity, MutableComponent, TooltipContext, WaveEntity (+1 more)
 
 ### Community 161 - "Builder"
-Cohesion: 0.28
+Cohesion: 0.30
 Nodes (8): Builder, Codec, Holder, Size, SoundEvent, SpawnAlgorithm, TextColor, TieredGateSettings
 
 ### Community 162 - "AffixConvertLootModifier.java"
@@ -920,7 +915,7 @@ Cohesion: 0.34
 Nodes (10): EnchantmentHelperMixin, CallbackInfo, CallbackInfoReturnable, DamageSource, Entity, Inject, ItemStack, LivingEntity (+2 more)
 
 ### Community 164 - ".getGems"
-Cohesion: 0.32
+Cohesion: 0.34
 Nodes (4): Identifier, ItemStack, Projectile, SocketHelper
 
 ### Community 165 - "PresetSpawnerStats"
@@ -932,8 +927,8 @@ Cohesion: 0.25
 Nodes (11): ItemCombinerMenu, ItemCombinerMenuSlotDefinition, CallbackInfo, ContainerLevelAccess, Inject, Inventory, ItemStack, MenuType (+3 more)
 
 ### Community 167 - "WorldTier.java"
-Cohesion: 0.24
-Nodes (11): ClientAccess, getTier(), getUnlockAdvancement(), isTutorialActive(), Codec, Identifier, MutableComponent, Player (+3 more)
+Cohesion: 0.21
+Nodes (12): ClientAccess, getTier(), getUnlockAdvancement(), isTutorialActive(), isUnlocked(), Codec, Identifier, MutableComponent (+4 more)
 
 ### Community 168 - "GemCaseSelectButton.java"
 Cohesion: 0.24
@@ -948,32 +943,32 @@ Cohesion: 0.15
 Nodes (12): Buenas prácticas, Commits (Conventional Commits), Convenciones de nomenclatura, Específico del mod, Estructura del proyecto, Flujo de trabajo — Ascendant Equipment (NeoForge), Flujo por tarea, Idioma (+4 more)
 
 ### Community 171 - "TrueRandomGemReward.java"
-Cohesion: 0.23
-Nodes (5): SpawnerStat, SpawnerTile, Builder, Codec, PresetSpawnerStats
+Cohesion: 0.33
+Nodes (6): Codec, DataComponentType, ItemContainerContents, Override, Type, SocketItemPredicate
 
 ### Community 172 - "CatalyzingAffix.java"
-Cohesion: 0.27
-Nodes (7): CatalyzingAffix, Codec, DamageSource, ItemStack, LivingEntity, Override, StepFunction
+Cohesion: 0.14
+Nodes (12): AffixRegistry, DynamicHolder, Multimap, ReloadType, SubtypedSerializer, CatalyzingAffix, Codec, DamageSource (+4 more)
 
 ### Community 173 - "WandererSpawnerMixin.java"
 Cohesion: 0.27
 Nodes (8): BlockPos, CallbackInfoReturnable, Inject, LevelReader, Mixin, ModifyConstant, RandomSource, WandererSpawnerMixin
 
 ### Community 174 - "SocketingRecipe.java"
-Cohesion: 0.15
-Nodes (14): BlockEntity, Clearable, BlockPos, BlockState, InternalItemHandler, ItemResource, ItemStack, Level (+6 more)
+Cohesion: 0.08
+Nodes (28): BlockEntity, Clearable, AnimationStage, FALLING, HIDING, RISING, SPINNING, AugmentingTableTile (+20 more)
 
 ### Community 175 - "AttributeAugment"
 Cohesion: 0.29
 Nodes (8): AttributeAugment, AttributeTooltipContext, Codec, Component, LivingEntity, Override, RandomAttributeModifier, ServerLevelAccessor
 
 ### Community 176 - "TierAugmentRegistry.java"
-Cohesion: 0.14
-Nodes (11): DynamicHolder, ItemStack, LootContext, LootItemCondition, MapCodec, Override, ReforgeItemFunction, DynamicHolder (+3 more)
+Cohesion: 0.15
+Nodes (7): CategoryCheckCommand, CommandSourceStack, LiteralArgumentBuilder, DynamicHolder, ItemStack, Player, LootController
 
 ### Community 177 - "RarityRegistry.java"
-Cohesion: 0.06
-Nodes (41): BlockItem, SlotDisplay, Block, Component, ItemStack, TooltipContext, TooltipDisplay, TooltipFlag (+33 more)
+Cohesion: 0.11
+Nodes (22): BlockItem, Block, Component, ItemStack, TooltipContext, TooltipDisplay, TooltipFlag, ReforgingTableBlockItem (+14 more)
 
 ### Community 178 - "BlacklistModifier.java"
 Cohesion: 0.35
@@ -988,16 +983,16 @@ Cohesion: 0.33
 Nodes (6): Codec, DataComponentType, DynamicHolder, Override, Type, RarityItemPredicate
 
 ### Community 181 - "WorldTierDetailScreen.java"
-Cohesion: 0.44
-Nodes (5): Component, Font, GuiGraphicsExtractor, Identifier, WorldTierDetailScreen
+Cohesion: 0.31
+Nodes (6): Screen, Component, Font, GuiGraphicsExtractor, Identifier, WorldTierDetailScreen
 
 ### Community 182 - "SpawnEggSlotDisplay"
 Cohesion: 0.33
 Nodes (9): ChunkAccess, BlockPos, Entity, LevelReader, Pose, PoseStack, SubmitNodeCollector, VertexConsumer (+1 more)
 
 ### Community 183 - "RetreatingAffix.java"
-Cohesion: 0.15
-Nodes (10): GemCommand, CommandSourceStack, LiteralArgumentBuilder, SuggestionProvider, GemRegistry, Deprecated, Identifier, ItemStack (+2 more)
+Cohesion: 0.29
+Nodes (4): Identifier, Nullable, ReloadType, RarityOverrideRegistry
 
 ### Community 184 - "AffixCommand.java"
 Cohesion: 0.45
@@ -1020,24 +1015,24 @@ Cohesion: 0.27
 Nodes (5): Builder, ContextKey, LootContext, MapCodec, KilledByRealPlayerCondition
 
 ### Community 189 - "GemCaseAnimationState"
-Cohesion: 0.31
-Nodes (6): BonusLootTables, Codec, DamageSource, LootTable, Mob, ResourceKey
+Cohesion: 0.36
+Nodes (8): GuiGraphicsExtractorMixin, CallbackInfo, Inject, ItemStack, Level, LivingEntity, Mixin, TrackingItemStackRenderState
 
 ### Community 190 - "LootConditions"
-Cohesion: 0.43
-Nodes (5): IFocusGroup, IRecipeLayoutBuilder, ItemStack, SizedIngredient, PurityUpgradeExtension
+Cohesion: 0.23
+Nodes (11): IFocusGroup, IRecipeLayoutBuilder, ItemStack, SizedIngredient, PurityUpgradeExtension, MapCodec, RecipeSerializer, RegistryFriendlyByteBuf (+3 more)
 
 ### Community 191 - "TierGatedTrade"
-Cohesion: 0.36
-Nodes (5): ItemStack, LootContext, LootItemCondition, MapCodec, TierGatedTrade
+Cohesion: 0.14
+Nodes (13): ItemStack, LootContext, LootItemCondition, MapCodec, TierGatedTrade, Codec, UnlockedTiers, WorldTier (+5 more)
 
 ### Community 192 - "GoldToolsHaveFortuneModuleMixin.java"
 Cohesion: 0.35
 Nodes (8): Pseudo, GoldToolsHaveFortuneModuleMixin, CallbackInfo, CallbackInfoReturnable, Component, Inject, ItemStack, Mixin
 
 ### Community 193 - "AffixRegistry.java"
-Cohesion: 0.29
-Nodes (6): SingleComponentItemPredicate, AffixItemPredicate, Codec, DataComponentType, Override, Type
+Cohesion: 0.36
+Nodes (6): LootModifier, ContextualLootModifier, ItemStack, LootContext, LootItemCondition, ObjectArrayList
 
 ### Community 194 - "SalvageItem.java"
 Cohesion: 0.35
@@ -1048,24 +1043,24 @@ Cohesion: 0.31
 Nodes (5): Component, GuiGraphicsExtractor, Identifier, Inventory, SalvagingScreen
 
 ### Community 196 - "BaseSpawnerAccessor.java"
-Cohesion: 0.25
-Nodes (10): GemCaseTileRenderer, CameraRenderState, Context, CrumblingOverlay, ItemModelResolver, ItemStackRenderState, PoseStack, SubmitNodeCollector (+2 more)
+Cohesion: 0.42
+Nodes (6): AffixData, Codec, EquipmentSlot, Mob, Nullable, RandomSource
 
 ### Community 197 - "CharmInfusionExtension.java"
-Cohesion: 0.25
-Nodes (10): BlockEntityRenderer, BlockEntityRenderState, AugmentingTableTileRenderer, CameraRenderState, Context, CrumblingOverlay, PoseStack, SubmitNodeCollector (+2 more)
+Cohesion: 0.36
+Nodes (5): Codec, Identifier, ReloadType, PurityWeights, PurityWeightsRegistry
 
 ### Community 198 - "AffixHookLootModifier.java"
 Cohesion: 0.31
 Nodes (7): AffixHookLootModifier, IGlobalLootModifier, ItemStack, LootContext, LootItemCondition, MapCodec, ObjectArrayList
 
 ### Community 199 - "RarityCommand.java"
-Cohesion: 0.30
-Nodes (7): Component, Font, GuiGraphicsExtractor, Identifier, ItemStack, SocketComponent, SocketTooltipRenderer
+Cohesion: 0.53
+Nodes (4): EntityInvoker, Invoker, Mixin, ValueInput
 
 ### Community 200 - "GemRegistry.java"
-Cohesion: 0.16
-Nodes (9): Gem, AttributeTooltipContext, Codec, Component, Deprecated, Identifier, ItemStack, Nullable (+1 more)
+Cohesion: 0.12
+Nodes (15): Builder, ExtraGemBonus, ExtraGemBonusRegistry, Codec, DynamicHolder, Multimap, ReloadType, Gem (+7 more)
 
 ### Community 201 - "CuriosCompat.java"
 Cohesion: 0.36
@@ -1084,12 +1079,12 @@ Cohesion: 0.36
 Nodes (8): SkullBlockEntity, BlockPos, CallbackInfo, Inject, Level, Mixin, WitherSkullBlockMixin, WitherBoss
 
 ### Community 206 - "RarityItemPredicate"
-Cohesion: 0.13
-Nodes (15): ItemStack, MapCodec, Override, RecipeSerializer, RegistryFriendlyByteBuf, SizedIngredient, StreamCodec, PurityUpgradeRecipe (+7 more)
+Cohesion: 0.16
+Nodes (9): ItemStack, Override, TransactionContext, AttributeTooltipContext, Component, DynamicHolder, ItemStack, Override (+1 more)
 
 ### Community 208 - "SalvagingRecipeCache"
-Cohesion: 0.17
-Nodes (7): Features, Feature, MapCodec, LootConditions, LootFunctions, LootModifiers, LootPoolEntries
+Cohesion: 0.22
+Nodes (5): MapCodec, LootConditions, LootFunctions, LootModifiers, LootPoolEntries
 
 ### Community 209 - "BaseSpawnerAccessor.java"
 Cohesion: 0.36
@@ -1104,8 +1099,12 @@ Cohesion: 0.28
 Nodes (5): ItemAttributeModifiers, EntitySlotGroup, EquipmentSlot, ItemStack, LootCategories
 
 ### Community 214 - "ReforgingRecipeCache"
-Cohesion: 0.27
+Cohesion: 0.31
 Nodes (4): RecipesReceivedEvent, GemCuttingRecipeCache, RecipeHolder, RecipeMap
+
+### Community 215 - "ReactiveSmithingRecipe"
+Cohesion: 0.53
+Nodes (4): Container, ItemStack, ServerPlayer, ReactiveSmithingRecipe
 
 ### Community 216 - "TieredGateClient.java"
 Cohesion: 0.36
@@ -1147,14 +1146,6 @@ Nodes (4): CallbackInfo, Inject, Mixin, LivingEntityMixin
 Cohesion: 0.48
 Nodes (5): EnderDragon, EnderDragonFightMixin, CallbackInfoReturnable, Inject, Mixin
 
-### Community 232 - "ReforgingTableTileRenderer.java"
-Cohesion: 0.28
-Nodes (8): CameraRenderState, Context, CrumblingOverlay, PoseStack, SubmitNodeCollector, Vec3, ReforgingTableTileRenderer, State
-
-### Community 233 - "EntityInvoker.java"
-Cohesion: 0.43
-Nodes (6): BaseSpawnerAccessor, BlockPos, Invoker, Level, Mixin, SpawnData
-
 ### Community 234 - ".isValid"
 Cohesion: 0.57
 Nodes (3): RenderType, AscEqRenderTypes, Identifier
@@ -1172,8 +1163,8 @@ Cohesion: 0.70
 Nodes (4): GLMProviderMixin, IGlobalLootModifier, Mixin, WithConditions
 
 ### Community 239 - "Changelog — Ascendant Equipment"
-Cohesion: 0.07
-Nodes (28): [0.0.0-beta.12] - 2026-07-XX, [0.0.0-beta.13] - 2026-08-07, [0.0.0-beta.14] - 2026-08-08, [0.0.0-beta.15] - 2026-08-08, [0.0.0-beta.18] - 2026-08-08, [0.0.0-beta.19] - 2026-08-08, [1.0.0] - 2026-08-10, [1.0.1] - 2026-08-11 (+20 more)
+Cohesion: 0.06
+Nodes (30): [0.0.0-beta.12] - 2026-07-XX, [0.0.0-beta.13] - 2026-08-07, [0.0.0-beta.14] - 2026-08-08, [0.0.0-beta.15] - 2026-08-08, [0.0.0-beta.18] - 2026-08-08, [0.0.0-beta.19] - 2026-08-08, [1.0.0] - 2026-08-10, [1.0.1] - 2026-08-11 (+22 more)
 
 ### Community 240 - "CLAUDE.md — ascendant_equipment (26.2)"
 Cohesion: 0.50
@@ -1183,45 +1174,37 @@ Nodes (3): CLAUDE.md — ascendant_equipment (26.2), Prioridad de instrucciones,
 Cohesion: 0.30
 Nodes (7): DamageSource, Entity, Invoker, Mixin, MobEffectInstance, SoundEvent, LivingEntityInvoker
 
-### Community 243 - "GemCaseAnimationState"
-Cohesion: 0.30
-Nodes (3): GemCaseAnimationState, RandomSource, PositionInfo
-
 ### Community 256 - "GemUpgradeMatch.java"
 Cohesion: 0.43
 Nodes (5): GemUpgradeMatch, Container, Level, Nullable, SizedIngredient
 
 ### Community 257 - "ReforgingRecipeCache"
-Cohesion: 0.24
+Cohesion: 0.21
 Nodes (4): LoggingOut, RecipeHolder, RecipeMap, ReforgingRecipeCache
 
 ### Community 261 - "RarityCommand.java"
 Cohesion: 0.60
 Nodes (4): CommandSourceStack, LiteralArgumentBuilder, SuggestionProvider, RarityCommand
 
-### Community 263 - "WorldTierCommand.java"
-Cohesion: 0.60
-Nodes (4): CommandSourceStack, LiteralArgumentBuilder, SuggestionProvider, WorldTierCommand
-
 ## Knowledge Gaps
-- **129 isolated node(s):** `STAT`, `BASIC_EFFECT`, `ABILITY`, `HIDING`, `RISING` (+124 more)
+- **130 isolated node(s):** `STAT`, `BASIC_EFFECT`, `ABILITY`, `HIDING`, `RISING` (+125 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `LootRarity` connect `Creative Mode Tab` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `Event Handling`, `Common Setup`, `AscEq.java`, `.getRarity`, `AffixItemReward.java`, `AffixItemIngredient.java`, `Builder`, `AffixLootModifier.java`, `NameHelper.java`, `AdventureModuleClient.java`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `LootRarity`, `AffixConvertLootModifier.java`, `Purity`, `ReforgingTableBlockItem.java`, `EntityModifier.java`, `LootRule.java`, `AffixHelper.java`, `CatalyzingAffix.java`, `SocketingRecipe.java`, `GemInstance.java`, `TierAugmentRegistry.java`, `RarityRegistry.java`, `AscEqMobEvents.java`, `GemCuttingRecipeCache`, `.fmt`, `ReforgingRecipe`, `SpawnCondition`, `ReforgingMenu`, `AttributeAffix`, `EnchantmentAffix.java`, `SalvageItem.java`, `CleavingAffix.java`, `Invader.java`, `ApothMiscUtil.java`, `StoneformingAffix`, `AffixLootEntry`, `TieredWeights`, `BossSpawnPayload.java`, `LootController.java`, `Elite`, `AffixData`, `BossStats.java`, `OmneticAffix.java`, `ExecutingAffix.java`?**
+- **Why does `LootRarity` connect `AugmentingTableTileRenderer.java` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `Event Handling`, `Creative Mode Tab`, `Common Setup`, `AscEq.java`, `.getRarity`, `Affix`, `AffixItemReward.java`, `AffixItemIngredient.java`, `Builder`, `AffixLootModifier.java`, `AdventureModuleClient.java`, `MultiAttrAffix.java`, `Augmentation`, `AffixConvertLootModifier.java`, `ReforgingTableBlockItem.java`, `EntityModifier.java`, `LootRule.java`, `AffixHelper.java`, `CatalyzingAffix.java`, `SocketingRecipe.java`, `TierAugmentRegistry.java`, `RarityRegistry.java`, `AscEqMobEvents.java`, `GemCuttingRecipeCache`, `.fmt`, `WorldTierDetailScreen.java`, `ReforgingRecipe`, `SpawnCondition`, `ReforgingMenu`, `AttributeAffix`, `EnchantmentAffix.java`, `SalvageItem.java`, `BaseSpawnerAccessor.java`, `CleavingAffix.java`, `Invader.java`, `ApothMiscUtil.java`, `StoneformingAffix`, `AffixLootEntry`, `TieredWeights`, `BossSpawnPayload.java`, `LootController.java`, `Elite`, `AffixData`, `BossStats.java`, `OmneticAffix.java`, `ExecutingAffix.java`?**
   _High betweenness centrality (0.101) - this node is a cross-community bridge._
-- **Why does `Purity` connect `ItemAffixes` to `GemUpgradeMatch.java`, `AscEq.java`, `GemItem.java`, `AugmentingTableBlock.java`, `ItemFrameGemsProcessor.java`, `EquippedItemTrigger.java`, `ReforgingScreen.java`, `MobEffectBonus.java`, `FrozenDropsBonus.java`, `GemCaseTile`, `GemCaseTileRenderer.java`, `GemBonus.java`, `GemCaseScreen`, `GenContext`, `GemInstance`, `GemView`, `RadialUtil.java`, `GemInstance.java`, `RetreatingAffix.java`, `BloodyArrowBonus.java`, `AllStatsBonus.java`, `GemCaseMenu`, `GemRegistry.java`, `DropTransformBonus.java`, `RarityItemPredicate`, `TieredWeights`, `EnchantmentBonus`, `Builder`, `ResourceKey`, `GemCuttingMenu`, `AbstractSkeletonMixin.java`, `SpawnCondition.java`, `GemCaseSlot`, `PurityUpgradeRecipe`, `SupportingEntity`, `AugmentingMenu.java`, `AutomaticAffixTrade.java`?**
+- **Why does `Purity` connect `GemCaseSlot` to `GemUpgradeMatch.java`, `AscEq.java`, `GemItem.java`, `AugmentingTableBlock.java`, `ItemFrameGemsProcessor.java`, `EquippedItemTrigger.java`, `TrueRandomInvaderWaveEntity.java`, `ReforgingScreen.java`, `MobEffectBonus.java`, `FrozenDropsBonus.java`, `GemCaseTile`, `GemCaseTileRenderer.java`, `GemBonus.java`, `GemCaseScreen`, `GenContext`, `GemInstance`, `GemView`, `ItemAffixes`, `RadialUtil.java`, `BloodyArrowBonus.java`, `LootConditions`, `AllStatsBonus.java`, `GemCaseMenu`, `CharmInfusionExtension.java`, `GemRegistry.java`, `DropTransformBonus.java`, `RarityItemPredicate`, `TieredWeights`, `EnchantmentBonus`, `Builder`, `ResourceKey`, `GemCuttingMenu`, `TieredDynamicRegistry`, `RadialProgressTracker.java`, `SpawnCondition.java`, `PurityUpgradeRecipe`, `SupportingEntity`, `AugmentingMenu.java`, `AutomaticAffixTrade.java`?**
   _High betweenness centrality (0.078) - this node is a cross-community bridge._
-- **Why does `LootCategory` connect `LootController.java` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `BossSpawnerBlock.java`, `Event Handling`, `Creative Mode Tab`, `Common Setup`, `.cmds`, `AscEq.java`, `.getRarity`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `GemBonus.java`, `LootRarity`, `GemInstance`, `.getGems`, `ReforgingTableBlockItem.java`, `EntityModifier.java`, `LootRule.java`, `CatalyzingAffix.java`, `TierAugmentRegistry.java`, `.fmt`, `AttributeAffix`, `EnchantmentAffix.java`, `CleavingAffix.java`, `CuriosCompat.java`, `GemRegistry.java`, `ApothMiscUtil.java`, `LootCategories`, `AbstractSkeletonMixin.java`, `TieredDynamicRegistry`, `ExecutingAffix.java`?**
+- **Why does `LootCategory` connect `Creative Mode Tab` to `PsychicAffix.java`, `ThunderstruckAffix.java`, `Event Handling`, `.cmds`, `AscEq.java`, `GemItem.java`, `.getRarity`, `Affix`, `ReforgingScreen.java`, `AugmentingTableTileRenderer.java`, `MultiAttrAffix.java`, `GemBonus.java`, `GemInstance`, `ReforgingTableBlockItem.java`, `EntityModifier.java`, `LootRule.java`, `CatalyzingAffix.java`, `TierAugmentRegistry.java`, `.fmt`, `RetreatingAffix.java`, `AttributeAffix`, `EnchantmentAffix.java`, `CleavingAffix.java`, `CuriosCompat.java`, `GemRegistry.java`, `ApothMiscUtil.java`, `LootCategories`, `LootController.java`, `ExecutingAffix.java`?**
   _High betweenness centrality (0.062) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `AffixInstance` (e.g. with `.applyAffix()` and `.listAlternatives()`) actually correct?**
   _`AffixInstance` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `STAT`, `BASIC_EFFECT`, `ABILITY` to the rest of the system?**
-  _129 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Ascendant Equipment` be split into smaller, more focused modules?**
-  _Cohesion score 0.14736842105263157 - nodes in this community are weakly interconnected._
+  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Event Handling` be split into smaller, more focused modules?**
-  _Cohesion score 0.07764876632801161 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.051201671891327065 - nodes in this community are weakly interconnected._
+- **Should `Server Startup` be split into smaller, more focused modules?**
+  _Cohesion score 0.0898989898989899 - nodes in this community are weakly interconnected._

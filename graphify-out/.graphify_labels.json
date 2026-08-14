@@ -242,13 +242,10 @@
   "240": "CLAUDE.md — ascendant_equipment (26.2)",
   "241": "LivingEntityInvoker.java",
   "242": "AffixTrade",
-  "243": "GemCaseAnimationState",
-  "244": "TierAugmentRegistry.java",
   "245": "TierCondition.java",
   "246": "project_description.md",
   "247": "0.0.0-beta.1.md",
   "248": "0.0.0-beta.2.md",
-  "249": "SocketItemPredicate",
   "250": ".streamAffixes",
   "252": "0.0.0-beta.14.md",
   "253": "0.0.0-beta.15.md",
@@ -258,7 +255,6 @@
   "257": "ReforgingRecipeCache",
   "261": "RarityCommand.java",
   "262": "0.0.0-beta.5.md",
-  "263": "WorldTierCommand.java",
   "264": "1.0.3.md",
   "265": "1.0.4.md"
 }
