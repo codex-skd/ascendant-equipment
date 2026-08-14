@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2026-08-14
+
+### Fixed
+- `button.ascendant_equipment.activate_tier` (the "Activate" button's tooltip on the World Tier map) lost the `": %s"` tier-name placeholder from the original Apotheosis template, so it showed a static "Activate Tier" instead of "Activate World Tier: Frontier". Found during a follow-up audit of the same lang file after the v1.0.5 fix
+
 ## [1.0.5] - 2026-08-14
 
 ### Fixed
