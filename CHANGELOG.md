@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2026-08-14
+
+### Fixed
+- World Tier map lock tooltip: `button.tier_locked`, `button.tier_advancement` and `info.criteria_{done,unfinished,unknown}` were translated as static generic strings with no `%s`, so the tier name, advancement title, and per-criterion text passed by `WorldTierSelectScreen#tierLocked` were silently dropped — every locked tier showed the same generic "Tier Locked" / "Incomplete x5" instead of "Frontier (Locked)" / "Equip a Common Chestplate". Restored the original Apotheosis `%s` + checkbox-glyph templates
+- Added the missing `button.ascendant_equipment.{frontier,ascent,summit,pinnacle}` tier-name keys — only `haven` existed, so those 4 tiers had nothing to substitute into the fixed `%s` templates
+
 ## [1.0.4] - 2026-08-13
 
 ### Fixed
