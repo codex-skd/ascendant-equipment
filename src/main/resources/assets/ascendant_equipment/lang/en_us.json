@@ -151,7 +151,7 @@
   "title.ascendant_equipment.world_tier_details": "World Tier Details",
   "title.ascendant_equipment.world_tier_tutorial": "World Tier Tutorial",
   "button.ascendant_equipment.activate": "Activate",
-  "button.ascendant_equipment.activate_tier": "Activate Tier",
+  "button.ascendant_equipment.activate_tier": "Activate World Tier: %s",
   "button.ascendant_equipment.activated": "Activated",
   "button.ascendant_equipment.already_activated": "Already Activated",
   "button.ascendant_equipment.augmenting.upgrade": "Upgrade",

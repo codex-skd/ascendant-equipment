@@ -151,7 +151,7 @@
   "title.ascendant_equipment.world_tier_details": "Detalles del Nivel",
   "title.ascendant_equipment.world_tier_tutorial": "Tutorial del Nivel del Mundo",
   "button.ascendant_equipment.activate": "Activar",
-  "button.ascendant_equipment.activate_tier": "Activar Nivel",
+  "button.ascendant_equipment.activate_tier": "Activar Nivel de Mundo: %s",
   "button.ascendant_equipment.activated": "Activado",
   "button.ascendant_equipment.already_activated": "Ya Activado",
   "button.ascendant_equipment.augmenting.upgrade": "Mejorar",
