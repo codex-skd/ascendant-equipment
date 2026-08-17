@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2026-08-17
+
+### Fixed
+- Curios compatibility registration: Added missing `CuriosCompat.register()` call in commonSetup to prevent "Unknown registry key: ascendant_equipment:charm" server crash
+
 ## [1.0.6] - 2026-08-14
 
 ### Fixed
