@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.skd.ascendantequipment.affix.AffixRegistry;
 import com.skd.ascendantequipment.compat.VellumliCompat;
+import com.skd.ascendantequipment.compat.curios.CuriosCompat;
 import com.skd.ascendantequipment.loot.AffixLootRegistry;
 import com.skd.ascendantequipment.loot.LootRule;
 import com.skd.ascendantequipment.loot.RarityOverrideRegistry;
@@ -59,9 +60,12 @@ public class AscendantEquipment {
     public static final boolean DEBUG_MOBS = "on".equalsIgnoreCase(System.getenv("APOTH_DEBUG_MOBS"));
     public static final boolean DEBUG_WORLDGEN = "on".equalsIgnoreCase(System.getenv("APOTH_DEBUG_WORLDGEN"));
     public static final boolean STAGES_LOADED = ModList.get().isLoaded("gamestages");
+    // Store the mod event bus for use in commonSetup
+    private static IEventBus modEventBus;
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public AscendantEquipment(IEventBus modEventBus, ModContainer modContainer) {
+        AscendantEquipment.modEventBus = modEventBus;
         // Wire the ported AscEq content (registry stages, biome modifier serializers, datamaps,
         // etc.). Without this the whole ported module is never registered (the class above is the
         // scaffolded shell) and any data referencing its registries fails to load.
@@ -141,6 +145,9 @@ public class AscendantEquipment {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        // Register Curios compatibility
+        CuriosCompat.register(modEventBus);
+
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (AscendantEquipment) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -163,6 +170,7 @@ public class AscendantEquipment {
             Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
 
             VellumliCompat.register();
+            CuriosCompat.register(modEventBus);
         });
 
         PayloadHelper.registerPayload(new BossSpawnPayload.Provider());
