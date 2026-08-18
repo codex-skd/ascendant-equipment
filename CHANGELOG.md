@@ -1,5 +1,14 @@
 # Changelog — Ascendant Equipment
 
+
+## [1.0.10] - 2026-08-18
+
+### Change
+
+- **Actualización de NeoForge**: actualizado de 26.2.0.37-beta a 26.2.0.45-beta.
+- **Nombre de JAR con versión del cargador**: el artefacto ahora se compila como `ascendant_equipment-26.2-neoforge-26.2.0.45-beta-1.0.10.jar`.
+- **Documentación del workflow**: actualizada `docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md` para reflejar la nueva rama de trabajo.
+
 All notable changes to this project will be documented in this file.
 
 ## [1.0.9] - 2026-08-18
