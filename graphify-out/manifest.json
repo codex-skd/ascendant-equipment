@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipment.java": {
-    "mtime": 1786154773.7673855,
-    "ast_hash": "8ceff151f68a455647e96b69a38bc8ef",
+    "mtime": 1786967585.6933906,
+    "ast_hash": "93c50f76f090a9471f422075415420a2",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipmentClient.java": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscEq.java": {
-    "mtime": 1786146338.3464916,
-    "ast_hash": "58f764abad0ab6abce6c0b16b4994057",
+    "mtime": 1787008256.6869192,
+    "ast_hash": "bf14d7e0d43a83dcdf3556dd0e9c6eec",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/EquipmentConfig.java": {
@@ -1430,7 +1430,7 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/util/BlockUtil.java": {
-    "mtime": 1786146338.5319028,
+    "mtime": 1787008246.6577084,
     "ast_hash": "d394a54aa6c79fe37fdb2cd209c8f569",
     "semantic_hash": ""
   },
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786704710.9299543,
-    "ast_hash": "714db52d66288c994044d7f7a90593f5",
+    "mtime": 1787039281.501251,
+    "ast_hash": "415c1a687dbb036fca03d59541f58007",
     "semantic_hash": ""
   },
   "README.md": {
@@ -10182,6 +10182,16 @@
   "docs/curseforge/versions/1.0.6.md": {
     "mtime": 1786704716.1885407,
     "ast_hash": "b30b96e7b4178bf082784a3b9896ba19",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.7.md": {
+    "mtime": 1786967950.1939921,
+    "ast_hash": "b954ae5f626bced57001a4d36a7886cf",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.8.md": {
+    "mtime": 1787039286.3443618,
+    "ast_hash": "105fa3bbea491d44e1f7a4681c803b2d",
     "semantic_hash": ""
   }
 }
