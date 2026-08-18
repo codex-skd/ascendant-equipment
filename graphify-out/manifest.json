@@ -30,8 +30,8 @@
     "semantic_hash": "1b840cab6c097143438c396fa218e3af"
   },
   "src/main/resources/assets/ascendant_equipment/lang/en_us.json": {
-    "mtime": 1786704654.8640757,
-    "ast_hash": "3c075c7f79ed07cf69b8b11177fe1f48",
+    "mtime": 1787039706.0658574,
+    "ast_hash": "64cabc01000044930038232f4c9a1146",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscEq.java": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787039281.501251,
-    "ast_hash": "415c1a687dbb036fca03d59541f58007",
+    "mtime": 1787039928.4817088,
+    "ast_hash": "03a244bf991c2b2293cb755ebf016db1",
     "semantic_hash": ""
   },
   "README.md": {
@@ -6015,8 +6015,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/lang/es_es.json": {
-    "mtime": 1786704661.083114,
-    "ast_hash": "eb615834c70b464057ece8378a1d85c5",
+    "mtime": 1787039717.7557697,
+    "ast_hash": "a83e3e6aca4ff7483532816f3d57e2de",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.5.md": {
@@ -10192,6 +10192,11 @@
   "docs/curseforge/versions/1.0.8.md": {
     "mtime": 1787039286.3443618,
     "ast_hash": "105fa3bbea491d44e1f7a4681c803b2d",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.9.md": {
+    "mtime": 1787039934.3489194,
+    "ast_hash": "d3cd9d032dc158c5d2d3dbd3aa9ebb61",
     "semantic_hash": ""
   }
 }
