@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9] - 2026-08-18
+
+### Fixed
+- `bonus.ascendant_equipment:enchantment.desc` (and its `.global`/`.mustExist` variants), used by `EnchantmentBonus` and `EnchantmentAffix`, was missing from both lang files -- any gem or affix that grants or boosts an enchantment showed the raw translation key instead of its description
+- `misc.ascendant_equipment.{iron,diamond,netherite}` were also missing: `OmneticBonus`/`OmneticAffix` build this key at runtime from the `"name"` field in the gem/affix data JSON (e.g. `gems/the_nether/molten_breach.json`, `affixes/breaker/effect/omnetic.json`), so the raw tier name leaked into the "effectiveness against all blocks" tooltip line
+
 ## [1.0.8] - 2026-08-18
 
 ### Fixed
