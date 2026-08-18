@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2026-08-18
+
+### Fixed
+- Gem Case / Ender Gem Case: both blocks were registered with `requiresCorrectToolForDrops()`, so breaking one with the wrong tool (or by hand) removed the block with zero drops -- the exact vanilla behavior for ores mined without a pickaxe. `GemCaseBlock.getDrops()` only embeds the stored gems into the dropped item when drops are actually generated, so every gem inside was permanently lost with nothing on the ground. Removed the tool requirement to match vanilla chests/barrels, which never gate their drops on tool choice
+
 ## [1.0.7] - 2026-08-17
 
 ### Fixed
