@@ -236,13 +236,13 @@ public class AscEq {
          .block(
             "gem_case",
             p -> new GemCaseBlock(GemCaseTile.BasicGemCaseTile::new, p, 32767),
-            p -> p.requiresCorrectToolForDrops().strength(5.0F, 1200.0F).sound(SoundType.GLASS).noOcclusion().lightLevel(s -> 2)
+            p -> p.strength(5.0F, 1200.0F).sound(SoundType.GLASS).noOcclusion().lightLevel(s -> 2)
          );
       public static final Holder<Block> ENDER_GEM_CASE = AscEq.R
          .block(
             "ender_gem_case",
             p -> new GemCaseBlock(GemCaseTile.EnderGemCaseTile::new, p, Integer.MAX_VALUE),
-            p -> p.requiresCorrectToolForDrops().strength(5.0F, 1200.0F).sound(SoundType.GLASS).noOcclusion().lightLevel(s -> 2)
+            p -> p.strength(5.0F, 1200.0F).sound(SoundType.GLASS).noOcclusion().lightLevel(s -> 2)
          );
 
       private static void bootstrap() {
