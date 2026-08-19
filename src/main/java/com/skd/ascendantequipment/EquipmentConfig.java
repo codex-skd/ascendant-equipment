@@ -96,6 +96,10 @@ public class EquipmentConfig {
         enableEquipmentCompare = c.getBoolean("Enable Equipment Comparisons", "quality_of_life", enableEquipmentCompare, "If equipment comparison popups are enabled when the hotkey is held.\nClientside.");
         enableAffixItemEffects = c.getBoolean("Enable Affix Item Effects", "flair", enableAffixItemEffects, "If affix item effects (custom shadows, beams, particles, etc) are enabled.\nClientside.");
         enableManualWorldTierChanges = c.getBoolean("Enable Manual World Tier Changes", "world_tiers", enableManualWorldTierChanges, "If players can change their world tier manually in the World Tier Selection Screen.\nNote: Disabling this does NOT automatically change world tiers when unlocked. You will need to set that up yourself.\nServer-Authoritative.");
+
+        if (c.hasChanged()) {
+            c.save();
+        }
     }
 
     public static boolean canGenerateIn(WorldGenLevel world) {
