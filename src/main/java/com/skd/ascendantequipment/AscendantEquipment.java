@@ -1,5 +1,7 @@
 package com.skd.ascendantequipment;
 
+import java.io.File;
+
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,6 +30,7 @@ import com.skd.ascendantequipment.socket.gem.PurityWeightsRegistry;
 import com.skd.ascendantequipment.socket.gem.bonus.GemBonus;
 import com.skd.ascendantequipment.spawner.RogueSpawnerRegistry;
 import com.skd.ascendantequipment.tiers.augments.TierAugmentRegistry;
+import com.skd.commontoolkit.config.Configuration;
 import com.skd.commontoolkit.network.PayloadHelper;
 import com.skd.commontoolkit.tabs.TabFillingRegistry;
 
@@ -47,6 +50,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
@@ -155,6 +159,10 @@ public class AscendantEquipment {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Load the real Ascendant Equipment adventure module config (bosses, augmenting, spawners, etc).
+        File configDir = new File(new File(FMLPaths.CONFIGDIR.get().toFile(), "ascendant"), "equipment");
+        EquipmentConfig.load(new Configuration(new File(configDir, "ascendant_equipment.cfg")));
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

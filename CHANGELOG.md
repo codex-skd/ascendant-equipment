@@ -1,6 +1,14 @@
 # Changelog — Ascendant Equipment
 
 
+## [1.1.0] - 2026-08-20
+
+### Change
+
+- **Actualización de NeoForge**: actualizado de 26.2.0.45-beta a 26.2.0.57.
+- **Configuración unificada**: el módulo de config real (`EquipmentConfig`, bosses/augmenting/spawners/curios/etc) ahora se carga y persiste de verdad en `config/ascendant/equipment/ascendant_equipment.cfg`. Antes su carga nunca se invocaba, así que el archivo nunca se generaba y solo se usaban los valores por defecto en memoria.
+- **Curios → Regalia Slots API**: la condición de datos que habilita el slot "charm" ahora depende de nuestro propio mod `regalia_slots_api` (fork compatible de Curios) en vez de `curios`.
+
 ## [1.0.10] - 2026-08-18
 
 ### Change
