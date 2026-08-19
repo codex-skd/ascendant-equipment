@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipment.java": {
-    "mtime": 1786967585.6933906,
-    "ast_hash": "93c50f76f090a9471f422075415420a2",
+    "mtime": 1787179938.264411,
+    "ast_hash": "540d9d5c1f5d870e93ba8fa40af765a5",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/AscendantEquipmentClient.java": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/EquipmentConfig.java": {
-    "mtime": 1786146338.3475072,
-    "ast_hash": "020fb2036b7b8d4dbe2bd6ebb64a0422",
+    "mtime": 1787179938.265416,
+    "ast_hash": "87dd21b9de3c2eeb9461346b1304ceb7",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/ascendantequipment/EquipmentEvents.java": {
@@ -4245,8 +4245,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/curios/entities/player_charm.json": {
-    "mtime": 1786146339.622693,
-    "ast_hash": "09d2302c4b8bf82f04130b4632debd91",
+    "mtime": 1787179938.265956,
+    "ast_hash": "c5b38901843122d4e1cee8670d2a79e1",
     "semantic_hash": ""
   },
   "src/main/resources/data/ascendant_equipment/damage_type/execute.json": {
@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787039928.4817088,
-    "ast_hash": "03a244bf991c2b2293cb755ebf016db1",
+    "mtime": 1787179938.2634118,
+    "ast_hash": "f0458099e28b90eb636aea5999a90b94",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5635,8 +5635,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
-    "mtime": 1786569058.4336605,
-    "ast_hash": "0e5e090f21707c40b86e5c4637b947e5",
+    "mtime": 1787179972.9095185,
+    "ast_hash": "917251e846e913a6680303e6a296ec99",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -10197,6 +10197,16 @@
   "docs/curseforge/versions/1.0.9.md": {
     "mtime": 1787039934.3489194,
     "ast_hash": "d3cd9d032dc158c5d2d3dbd3aa9ebb61",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.10.md": {
+    "mtime": 1787066692.6361098,
+    "ast_hash": "0ae22131eb02cb3d33df919c06877246",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.1.0.md": {
+    "mtime": 1787179962.1148994,
+    "ast_hash": "f2b3ee790dd941ee6d03842e5e652bec",
     "semantic_hash": ""
   }
 }
