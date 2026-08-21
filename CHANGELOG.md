@@ -1,6 +1,12 @@
 # Changelog — Ascendant Equipment
 
 
+## [1.1.1] - 2026-08-21
+
+### Fixed
+
+- **Cofres de torre generándose vacíos**: las 4 variantes de estructura de torre (`tower_leaf`, `tower_main`, `tower_sand`, `tower_spruce`) tenían el tag `LootTable` del cofre apuntando a `apotheosis:chests/tome_tower`, un resto de cuando la estructura se exportó desde Apotheosis original sin renombrar el namespace. Como este mod no depende de Apotheosis, la loot table nunca se resolvía y el servidor registraba `does not exist or could not be loaded`, dejando el cofre vacío. Redirigido a la loot table propia `ascendant_equipment:chests/tome_tower`, que ya existía pero nunca estaba referenciada por las estructuras construidas. Solo afecta a torres generadas después de esta actualización; las ya existentes en un mundo mantienen el dato roto grabado en su chunk.
+
 ## [1.1.0] - 2026-08-20
 
 ### Change
