@@ -5615,8 +5615,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787179938.2634118,
-    "ast_hash": "f0458099e28b90eb636aea5999a90b94",
+    "mtime": 1787331517.0810633,
+    "ast_hash": "9cb50571ccff09158d87715f41dde115",
     "semantic_hash": ""
   },
   "README.md": {
@@ -5635,8 +5635,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md": {
-    "mtime": 1787179972.9095185,
-    "ast_hash": "917251e846e913a6680303e6a296ec99",
+    "mtime": 1787331559.376614,
+    "ast_hash": "acade9be622ad291199325dea55fbd3b",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -10207,6 +10207,11 @@
   "docs/curseforge/versions/1.1.0.md": {
     "mtime": 1787179962.1148994,
     "ast_hash": "f2b3ee790dd941ee6d03842e5e652bec",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.1.1.md": {
+    "mtime": 1787331511.6948197,
+    "ast_hash": "af5893ba5660a54a18514d429e99b39a",
     "semantic_hash": ""
   }
 }
