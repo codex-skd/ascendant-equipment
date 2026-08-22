@@ -1,0 +1,28 @@
+{
+  "name": "Invasores apóticos",
+  "icon": "minecraft:beacon",
+  "category": "ascendant_equipment:adventure/mobs",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Un ruido extraño, un mensaje peculiar y un rayo de luz gigante desde el cielo...$(p)¡Todas las señales apuntan a una incursión de un invasor apótico!"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "mecanica de generacion",
+      "text": "Es posible que los invasores apóticos rara vez aparezcan en la superficie donde normalmente pueden aparecer mobs.$(p)Su llegada estará marcada por un ruido fuerte, un mensaje de estado y un rayo de luz.$(p)Los invasores pueden volverse más o menos comunes dependiendo del nivel y la dimensión del mundo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Rarezas invasoras",
+      "text": "Cada invasor tiene una rareza, que se indica por su nombre y color de contorno.$(p)Los invasores de mayor rareza serán más fuertes, pero como resultado obtendrán un mejor botón."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Botín",
+      "text": "Se garantiza que los invasores soltarán un objeto con afijo especial $(l:ascendant_equipment:adventure/mobs/invader_items)$(), y pueden tener tablas de botón de recaudación adicionales además de sus homólogos mafiosos normales.$(p)También tienen una mayor probabilidad de soltar gemas."
+    }
+  ]
+}

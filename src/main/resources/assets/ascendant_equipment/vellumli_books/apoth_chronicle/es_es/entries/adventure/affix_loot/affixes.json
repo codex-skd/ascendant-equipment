@@ -1,0 +1,38 @@
+{
+  "name": "Afijos",
+  "icon": "minecraft:experience_bottle",
+  "category": "ascendant_equipment:adventure/affix_loot",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Un $(6)Affix$() es la fuerza impulsora detrás de Affix Items. Cada afijo es muy similar a un encantamiento, proporcionando una específica al elemento al que está adjunto.$(p)Este libro no enumerará todos los afijos, ya que usted debe descubrirlos, pero ayudará a explicarlos."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Tipos de afijos",
+      "text": "Hay algunos tipos diferentes de afijos, cada tipo tiene un conjunto específico de funcionalidades que puede proporcionar.$(p)Los tipos de afijos que se aplican a un artículo dependen de la rareza$() del artículo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Afijos de estadísticas",
+      "text": "El tipo más común de afijos son los afijos de estadísticas. Estos afijos proporcionan un pago simple para un atributo específico y están disponibles en todas las rarezas.  Las rarezas más altas reciben afijos de estadísticas adicionales."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Afijos de efectos",
+      "text": "Los afijos de efectos son el tipo de afijo más interesante. Tienen libertad de acción para agregar todo tipo de funcionalidades adicionales a tus artículos, desde simples bonificaciones de utilidad hasta potentes efectos de combate.$(p)Estos solo se pueden encontrar en artículos Rare+."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Enchufes",
+      "text": "Un Socket es un tipo especial de afijo que simplemente proporciona un recipiente para una $(l:ascendant_equipment:adventure/affix_loot/gems)Gem$().$(p)Las gemas pueden otorgar grandes bonificaciones, pero pueden ser difíciles de encontrar."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "El afijo de durabilidad",
+      "text": "El Afijo de Durabilidad hace que un objeto sea más resistente al daño y está presente en todos los objetos Raros+.$(p)Se aplica después de todas las demás resistencias al daño, lo que lo hace multiplicativo con Irrompible."
+    }
+  ]
+}

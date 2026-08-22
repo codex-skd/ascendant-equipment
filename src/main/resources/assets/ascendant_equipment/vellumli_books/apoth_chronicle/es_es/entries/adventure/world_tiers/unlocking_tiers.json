@@ -1,0 +1,42 @@
+{
+  "name": "Desbloqueo de niveles",
+  "icon": "ascendant_equipment:textures/gui/book/frontier_icon.png",
+  "category": "ascendant_equipment:adventure/world_tiers",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Cada $(6)Nivel mundial$() debe desbloquearse antes de poder habilitarlo (excepto Haven, que está habilitado de forma predeterminada).$(p)El desbloqueo de niveles mundiales se realiza completando Avances específicos.$(p)Una vez que un nivel esté desbloqueado, debe activarlo en la pantalla de selección $(l:ascendant_equipment:adventure/world_tiers/select_screen)$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Prefacio",
+      "text": "Esta sección cubrirá los requisitos predeterminados para desbloquear niveles mundiales.$(p)Tenga en cuenta que los modpacks pueden cambiar estos requisitos, así que asegúrese de consultar la pestaña de avances \"Niveles Mundiales Apothic\" para obtener información completa."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "refugio",
+      "text": "$(9)Haven$() está desbloqueado de forma predeterminada, aunque no podrás verlo hasta que hayas recogido tu primer artículo Affix."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "frontera",
+      "text": "$(9)Frontier$() se desbloquea equipando un objeto de afijo en cada ranura de armadura y sosteniendo un arma fijada en cada mano."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Ascenso",
+      "text": "Desbloquear $(9)Ascent$() requiere que equipes un conjunto completo de $(#33FF33)Uncommon$() Elementos de fijación, incluido un arma.$(p)También necesitarás matar a un invasor apótico."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "cumbre",
+      "text": "Llegar a $(9)Summit$() es un poco más difícil.$(p)Necesitarás adquirir un conjunto completo de $(#5555FF)Rare$() Affix Items y haber matado a Wither."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Pináculo",
+      "text": "El nivel final, $(9)Pinnacle$(), requiere que no solo obtengas un conjunto completo de artículos $(#BB00BB)Epic$(), sino que también liberas The End.$(p)Eso significa matar al Ender Dragon."
+    }
+  ]
+}

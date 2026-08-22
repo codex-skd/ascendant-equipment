@@ -16,7 +16,7 @@
 
 <h2>🧩 Required Dependencies</h2>
 
-<p>All of the following are in-house replacements for Apotheosis's original dependencies (Placebo, Apothic Attributes, Apothic Spawners, Apothic Enchanting and Patchouli), published separately:</p>
+<p>All of the following are in-house replacements for Apotheosis's original dependencies (Placebo, Apothic Attributes, Apothic Spawners, Apothic Enchanting and Vellumli), published separately:</p>
 
 <ul>
 <li><strong>Common Toolkit</strong> — registry/utility library.</li>

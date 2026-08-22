@@ -1,0 +1,17 @@
+{
+  "name": "Sangría",
+  "icon": "ascendant_attributes:textures/mob_effect/bleeding.png",
+  "category": "ascendant_equipment:potion/effects",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(c)Bleeding$() es un efecto negativo aplicado por $(l:ascendant_equipment:village/fletching#broadhead)Broadhead Arrows$().$(p)Hace que recibas daño cada dos segundos."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El daño aumenta con el nivel de $(c)Bleeding$().$(p)El daño de $(c)Bleeding$() pasa por alto la armadura."
+    }
+  ]
+}

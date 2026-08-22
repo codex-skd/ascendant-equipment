@@ -1,0 +1,13 @@
+{
+  "name": "pesca submarina",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Pesca submarina$() es un encantamiento de tridente.$(p)Otorga a las muertes con un tridente lanzado un 3,5% de probabilidad por nivel de soltar algunos peces al azar."
+    }
+  ]
+}

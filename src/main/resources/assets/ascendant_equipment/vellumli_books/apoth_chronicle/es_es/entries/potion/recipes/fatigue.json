@@ -1,0 +1,19 @@
+{
+  "name": "Fatiga Minera",
+  "icon": "minecraft:textures/mob_effect/mining_fatigue.png",
+  "category": "ascendant_equipment:potion/recipes",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(c)Fatiga minera$() es un efecto negativo que normalmente solo aplican los Guardianes.$(p)Mientras está activo, tu velocidad de minería se reduce en un 20 % por nivel.$(p)Es lo opuesto directo a $(9)Prisa$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Receta de elaboración de cerveza",
+      "item": "minecraft:fermented_spider_eye",
+      "text": "Esta poción se puede elaborar con una $(9)Poción de celeridad$() y un Ojo de araña fermentado.$(p)Se puede ampliar, fortalecer o convertir en una poción de salpicadura con los ingredientes habituales."
+    }
+  ]
+}

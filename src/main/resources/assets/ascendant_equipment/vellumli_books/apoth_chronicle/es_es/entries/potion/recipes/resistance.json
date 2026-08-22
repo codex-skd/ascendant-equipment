@@ -1,0 +1,19 @@
+{
+  "name": "Resistencia",
+  "icon": "minecraft:textures/mob_effect/resistance.png",
+  "category": "ascendant_equipment:potion/recipes",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Resistance$() es un efecto bastante útil que no tiene receta básica.$(p)Cada nivel proporciona +20% de reducción de daño contra todas las fuentes.$(p)También lo necesitarás para crear pociones $(l:ascendant_equipment:potion/effects/sundering)Sundering$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Receta de elaboración de cerveza",
+      "item": "minecraft:shulker_shell",
+      "text": "Esta poción se puede elaborar con una poción incómoda y un caparazón Shulker.$(p)Se puede ampliar, fortalecer o convertir en una poción de salpicadura con los ingredientes habituales."
+    }
+  ]
+}

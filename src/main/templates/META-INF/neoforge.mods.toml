@@ -119,7 +119,7 @@ config="${mod_id}.mixins.json"
     ordering="AFTER"
     side="BOTH"
 
-# Vellumli (in-house replacement for Patchouli, powers the guide book) is a required dependency.
+# Vellumli (in-house replacement, powers the guide book) is a required dependency.
 [[dependencies.${mod_id}]]
     modId="vellumli"
     type="required"

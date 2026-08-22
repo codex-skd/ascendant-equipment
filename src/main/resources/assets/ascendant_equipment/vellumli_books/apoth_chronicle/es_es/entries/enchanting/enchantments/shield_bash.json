@@ -1,0 +1,13 @@
+{
+  "name": "Golpe de escudo",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Shield Bash$() es un encantamiento de escudo.$(p)Hace que los ataques cuerpo a cuerpo con ese escudo causen daño adicional.$(p)Sin embargo, atacar con $(9)Shield Bash$() causa daño de durabilidad adicional."
+    }
+  ]
+}

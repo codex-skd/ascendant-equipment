@@ -1,0 +1,37 @@
+{
+  "name": "Modificadores de generación",
+  "icon": "minecraft:clock",
+  "category": "ascendant_equipment:spawner/spawner",
+  "flag": "ascendant_equipment:spawner",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Después de leer acerca de $(l:ascendant_equipment:spawner/stats)Estadísticas de generadores$(), quizás te preguntes cómo cambiarlas.$(p)Ingresa $(9)Modificadores de generadores$(), un sistema para editar generadores.$(p)Un modificador consta de hasta dos elementos y produce un cierto cambio en las estadísticas de un generador."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Visualización de modificadores",
+      "text": "Cada modificador es visible en JEI.$(p)Se puede acceder a ellos mirando los usos y recetas de $(9)Mob Spawners$(), o los usos de los elementos modificadores.$(p)Hay muchas sugerencias allí, así que mire a su alrededor."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Notación",
+      "text": "En JEI, los cambios de estadísticas se indican como $(br)$(9)+/- X Stat$().$(p)Algunas estadísticas no tienen valores numéricos, por lo que se mostrarán como $(9)+/- Stat$().$(p)En la información sobre herramientas, las estadísticas no numéricas no se muestran a menos que estén habilitadas."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Tapas modificadoras",
+      "text": "Ciertos modificadores no pueden reducir o aumentar las estadísticas más allá de un cierto valor.$(p)Estos se anotarán en la información sobre herramientas para esa estadística en particular en JEI.$(p)Estos límites son específicos del modificador, por lo que un modificador puede tener un límite diferente a otro para la misma estadística."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Aplicar modificadores",
+      "text": "Para aplicar un modificador, simplemente sostenga los elementos respectivos en sus manos y haga clic derecho en $(9)Mob Spawner$().$(p)Si la modificación es exitosa, los elementos se consumirán.$(p)El elemento principal siempre se consume, pero el elemento secundario puede no serlo."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Aunque JEI establece que los objetos deben sostenerse en manos específicas, eso no es obligatorio.$(p)Puedes aplicar un modificador siempre que tengas los objetos en tus manos, sin importar en qué mano."
+    }
+  ]
+}

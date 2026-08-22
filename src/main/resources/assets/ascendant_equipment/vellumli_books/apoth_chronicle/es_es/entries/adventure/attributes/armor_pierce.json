@@ -1,0 +1,13 @@
+{
+  "name": "Perforación de armadura",
+  "icon": "ascendant_attributes:textures/mob_effect/sundering.png",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Armor Pierce$() te permite ignorar una cantidad fija de la armadura de tu objetivo al atacar.$(p)Extra Armor Pierce puede hacer que tu objetivo tenga armadura negativa."
+    }
+  ]
+}

@@ -1,9 +1,20 @@
 package com.skd.ascendantequipment.compat;
 
 import com.skd.vellumli.api.VellumliAPI;
+import com.skd.vellumli.common.item.VellumliDataComponents;
+import com.skd.vellumli.common.item.VellumliItems;
+
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.fml.ModList;
 
 public class VellumliCompat {
+   public static ItemStack createGuideBookStack() {
+      ItemStack stack = new ItemStack(VellumliItems.BOOK.value());
+      stack.set(VellumliDataComponents.BOOK, Identifier.fromNamespaceAndPath("ascendant_equipment", "apoth_chronicle"));
+      return stack;
+   }
+
    public static void register() {
       VellumliAPI.IVellumliAPI api = VellumliAPI.get();
       if (!api.isStub()) {

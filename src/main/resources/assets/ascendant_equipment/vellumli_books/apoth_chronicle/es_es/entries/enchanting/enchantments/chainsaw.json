@@ -1,0 +1,13 @@
+{
+  "name": "motosierra",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(2)Motosierra$() es un encantamiento de obra maestra que se puede aplicar a las hachas.$(p)Al romper un árbol, se cosechará todo el árbol.$(p)Esto usa la durabilidad de la hacha."
+    }
+  ]
+}

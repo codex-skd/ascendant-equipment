@@ -1,0 +1,21 @@
+{
+    "name": "Пил самоцвіту",
+    "icon": "ascendant_equipment:gem_dust",
+    "category": "ascendant_equipment:adventure/gems",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 2,
+    "pages": [
+		{
+            "type": "vellumli:spotlight",
+			"item": "ascendant_equipment:gem_dust",
+			"link_recipe": true,
+            "text": "Усі апофеотчині самоцвіти можна роздрібнити на $(br)$(9)пил самоцвітів$().$(p)Початковий спосіб - це розчавлення їх падучим ковадлом."
+        },
+		{
+            "type": "vellumli:crafting",
+			"recipe": "ascendant_equipment:salvaging_table",
+			"title": "Перероблення самоцвітів",
+            "text": "Роздрібнивши кілька самоцвітів ковадлом, для подальшого перероблення ви можете створити $(9)стіл перероблення$()."
+        }
+	]
+}

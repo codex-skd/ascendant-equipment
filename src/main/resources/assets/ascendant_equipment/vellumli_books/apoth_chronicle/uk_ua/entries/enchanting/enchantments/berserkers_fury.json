@@ -1,0 +1,17 @@
+{
+    "name": "Лють берсерка",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(4)Лють берсерка$() – це прокляті чари, які можна застосувати до нагрудників.$(p)Під час активації цих чарів, якщо ви отримуєте шкоду, ви отримаєте додаткову шкоду, але також Стійкість, Швидкість та Силу."
+        },
+		{
+			"type": "vellumli:text",
+			"text": "Отримувана шкода та сила ефектів залежать від рівня чар."
+		}
+	]
+}

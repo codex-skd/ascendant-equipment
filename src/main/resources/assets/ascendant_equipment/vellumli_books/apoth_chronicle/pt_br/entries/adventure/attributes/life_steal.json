@@ -1,0 +1,13 @@
+{
+    "name": "Roubo de vida",
+    "icon": "apothic_attributes:textures/mob_effect/bleeding.png",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Seu $(9)roubo de vida$() é a porcentagem de seu dano físico causado que é adicionado diretamente à sua saúde.$(p)Geralmente, apenas armas fornecem este atributo."
+        }
+	]
+}

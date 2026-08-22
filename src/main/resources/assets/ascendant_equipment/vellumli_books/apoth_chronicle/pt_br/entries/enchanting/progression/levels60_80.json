@@ -1,0 +1,43 @@
+{
+    "name": "Níveis 60 - 80",
+    "icon": "ascendant_equipment:dormant_deepshelf",
+    "category": "ascendant_equipment:enchanting/progression",
+	"flag": "ascendant_equipment:enchanting",
+    "pages": [
+		{
+            "type": "vellumli:crafting",
+			"title": "Alcançando o nível 70",
+			"recipe": "ascendant_equipment:dormant_deepshelf",
+			"text": "Alcançar o nível 70 requer uma mesa de encantamentos de nível 60 e acesso a ardósia."
+		},
+		{
+            "type": "vellumli:text",
+			"title": "Alcançando o nível 70",
+			"text": "Depois de criar uma $(9)estante das profundezas dormente$(), você precisa infundi-la.$(p)Esta receita de infusão exigirá alguns blocos extras para atingir o limite de status.$(p)Concluir a infusão produzirá uma $(9)estante das profundezas$(), que pode levar você ao nível 70."
+		},
+		{
+            "type": "vellumli:text",
+			"title": "Alcançando o nível 75",
+			"text": "Para atingir o nível 75, você precisará melhorar suas estantes das profundezas.$(p)Para fazer isso, são necessários materiais encontrados apenas nas $(9)profundezas sombrias$().$(p)$(9)Fragmentos de eco$() podem ser saqueados de cidades ancestrais, e $(9)sculk$() podem ser coletados com toque suave."
+		},
+		{
+            "type": "vellumli:crafting",
+			"title": "Alcançando o nível 75",
+			"recipe": "ascendant_equipment:echoing_deepshelf",
+			"recipe2": "ascendant_equipment:soul_touched_deepshelf"
+		},
+		{
+            "type": "vellumli:entity",
+			"entity": "minecraft:warden",
+			"title": "Alcançando o nível 80",
+			"scale": 0.95,
+			"text": "A última etapa para o nível 80 requer matar o $(9)guardião$(), que permite criar $(9)estante sculk$()."
+		},
+		{
+            "type": "vellumli:crafting",
+			"title": "Alcançando o nível 80",
+			"recipe": "ascendant_equipment:echoing_sculkshelf",
+			"recipe2": "ascendant_equipment:soul_touched_sculkshelf"
+		}
+	]
+}

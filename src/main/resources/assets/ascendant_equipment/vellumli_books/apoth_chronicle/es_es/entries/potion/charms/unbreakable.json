@@ -1,0 +1,17 @@
+{
+  "name": "Encantos irrompibles",
+  "icon": "minecraft:enchanting_table",
+  "category": "ascendant_equipment:potion/charms",
+  "flag": "&ascendant_equipment:potion,ascendant_equipment:enchanting",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "A través de $(l:ascendant_equipment:enchanting/table/infusion)Encantamiento de infusión$(), los amuletos pueden volverse irrompibles.$(p)A través de esto, puedes tener una duración ilimitada de cualquier efecto de poción."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "La receta de infusión de encantamientos irrompibles es bastante difícil.$(p)Necesitarás un conocimiento firme de $(l:ascendant_equipment:enchanting/table/stats)Enchanting Stats$() para poder completarla."
+    }
+  ]
+}

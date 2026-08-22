@@ -1,0 +1,17 @@
+{
+  "name": "Telarañas",
+  "icon": "ascendant_enchanting:prismatic_web",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Las telarañas prismáticas se pueden combinar con un elemento en un yunque para eliminar todas las maldiciones."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:prismatic_web"
+    }
+  ]
+}

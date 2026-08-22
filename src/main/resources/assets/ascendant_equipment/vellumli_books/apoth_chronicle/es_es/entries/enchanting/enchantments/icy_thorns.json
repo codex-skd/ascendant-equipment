@@ -1,0 +1,13 @@
+{
+  "name": "Espinas heladas",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Icy Thorns$() es un encantamiento de pechera.$(p)Aplica lentitud a los atacantes. La duración y fuerza escalan con el nivel de encantamiento.$(p)Es exclusivo de $(9)Espinas$()."
+    }
+  ]
+}

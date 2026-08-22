@@ -1,0 +1,8 @@
+{
+  "name": "La mesa encantadora",
+  "description": "Esta sección repasa los cambios en la Mesa de encantamientos.",
+  "icon": "minecraft:enchanting_table",
+  "flag": "ascendant_equipment:enchanting",
+  "parent": "ascendant_equipment:enchanting/enchanting",
+  "sortnum": -2
+}

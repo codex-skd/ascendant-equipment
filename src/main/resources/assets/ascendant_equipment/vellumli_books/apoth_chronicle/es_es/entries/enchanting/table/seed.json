@@ -1,0 +1,16 @@
+{
+  "name": "Semilla encantadora",
+  "icon": "minecraft:wheat_seeds",
+  "category": "ascendant_equipment:enchanting/table",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Todo lo relacionado con el encantamiento (y algunas otras mecánicas) se basa en tu $(9)Semilla de encantamiento$().$(p)La semilla cambia cada vez que encantas un objeto en una mesa de encantamiento."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "A menos que su semilla cambie, todos los resultados aleatorios basados ​​en semillas seguirán siendo los mismos.$(p)Por ejemplo, los encantamientos que se seleccionan para una ranura en particular son un resultado aleatorio basado en semillas."
+    }
+  ]
+}

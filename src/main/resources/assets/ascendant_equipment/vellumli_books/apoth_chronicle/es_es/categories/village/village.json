@@ -1,0 +1,6 @@
+{
+  "name": "Módulo de Pueblo",
+  "description": "El módulo Village agrega varias cosas relacionadas con la aldea y los aldeanos.",
+  "icon": "minecraft:textures/mob_effect/hero_of_the_village.png",
+  "flag": "ascendant_equipment:village"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Максимальне здоров'я",
+    "icon": "minecraft:apple",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Максимальне здоров'я$() визначає кількість очок здоров'я (HP), яку ви можете мати. Одне очко дорівнює половині серця смужки здоров'я.$(p)Зазвичай забезпечується обладунками та щитами."
+        }
+	]
+}

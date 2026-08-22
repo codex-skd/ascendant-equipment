@@ -1,0 +1,17 @@
+{
+  "name": "Reparación de vida",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(4)Life Mending$() es un encantamiento corrupto aplicable a todos los elementos que se pueden dañar.$(p)Mientras que $(9)Mending$() convierte la experiencia recibida en durabilidad, $(4)Life Mending$() convierte la curación recibida en durabilidad.$(p)La durabilidad por punto de vida aumenta con el nivel."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Además, este encantamiento se puede encontrar en la Mesa de encantamientos."
+    }
+  ]
+}

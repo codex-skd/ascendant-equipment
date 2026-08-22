@@ -1,0 +1,27 @@
+{
+  "name": "Filtrado de encantamientos",
+  "icon": "ascendant_enchanting:filtering_shelf",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "A veces, es deseable evitar ciertos encantamientos por completo durante el proceso de encantamiento.$(p)El $(9)Seashelf de filtración acuática$() te permite hacer precisamente eso."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:filtering_shelf",
+      "title": "Filtración acuática",
+      "text": "El estante te permite insertar hasta seis libros de un solo encantamiento, evitando que esos encantamientos aparezcan."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Para usarlo, simplemente inserte un libro de encantamiento único de un encantamiento que desea incluir en la lista negra.$(p)El encantamiento ya no estará disponible en la Mesa de encantamientos.$(p)El estante también ganará $(eterna) y $(arcano) según la cantidad de libros insertados."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Nota: los libros se pueden insertar de la misma manera que se usa una estantería cincelada, y la estantería debe estar en una ranura de estantería válida para funcionar.$(p)Los encantamientos incluidos en la lista negra se reflejarán en la $(l:ascendant_equipment:enchanting/table/info)Pantalla de información de encantamientos$()."
+    }
+  ]
+}

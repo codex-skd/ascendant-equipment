@@ -1,0 +1,7 @@
+{
+  "name": "Engendros rebeldes",
+  "description": "Se encuentran escasamente en las cuevas reproductores individuales, rematados en un bloque resistente y escondiendo un cofre debajo.$(p)Como no tienen origen, propósito o propietario conocidos, nos referimos a ellos como $(9)generadores rebeldes$().",
+  "icon": "minecraft:spawner",
+  "flag": "ascendant_equipment:adventure",
+  "parent": "ascendant_equipment:adventure/adventure"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Стабільна опора",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Стабільна опора$() – це чари для чобіт.$(p)Вони скасовують штраф на швидкість добування поки ви не стоїте на землі."
+        },
+		{
+			"type": "vellumli:text",
+			"text": "У поєднанні з $(9)Рідністю води$() ви матимете повну швидкість добування й під водою."
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Cambios de vainilla",
+  "description": "Esta sección cubre nuevos elementos encantadores y cambios mecánicos.$(p)Si se produce algún cambio menor en el contenido, se anotará aquí.",
+  "icon": "minecraft:trident",
+  "flag": "ascendant_equipment:enchanting",
+  "parent": "ascendant_equipment:enchanting/enchanting"
+}

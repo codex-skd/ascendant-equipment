@@ -1,0 +1,13 @@
+{
+    "name": "Durabilidade",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/anvil",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Durabilidade$() agora pode ser aplicado a bigornas.$(p)Cada nível de durabilidade reduz a chance da bigorna ser danificada quando usada (ou derrubada)."
+        }
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Crescendo de tornillos",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(2)Crescendo of Bolts$() es un encantamiento de obra maestra para ballestas.$(p)Por cada nivel de este encantamiento, obtienes un disparo adicional por recarga.$(p)Los disparos adicionales no cuestan munición."
+    }
+  ]
+}

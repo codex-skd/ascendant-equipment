@@ -1,0 +1,27 @@
+{
+  "name": "Selección de niveles",
+  "icon": "ascendant_equipment:textures/gui/book/haven_icon.png",
+  "category": "ascendant_equipment:adventure/world_tiers",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La pantalla de selección de nivel mundial $(9)$() es su página con todo incluido para aprender y administrar los niveles mundiales $(6)$().$(p)Se puede abrir usando la combinación de teclas \"Selección de nivel mundial abierto\", cuyo valor predeterminado es CTRL+T."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Activando niveles",
+      "text": "Los niveles no se activan automáticamente. Cuando desbloqueas un nuevo nivel, primero debes usar el botón \"Activar\" para habilitarlo.$(p)Puedes seleccionar un nivel haciendo clic en el símbolo del nivel en la pantalla y luego activarlo usando el botón."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Información de nivel",
+      "text": "Para ver información sobre un nivel, seleccione el nivel, luego presione el botón \"Información detallada\".$(p)Esto le mostrará los pesos de rareza y pureza para ese nivel, así como cualquier aumento de nivel que se aplique."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Notas",
+      "text": "Puedes cambiar entre niveles en cualquier momento.$(p)En el modo multijugador, varios jugadores pueden tener diferentes niveles sin afectarse entre sí. La mayor parte del contenido resolverá el nivel del jugador más cercano."
+    }
+  ]
+}

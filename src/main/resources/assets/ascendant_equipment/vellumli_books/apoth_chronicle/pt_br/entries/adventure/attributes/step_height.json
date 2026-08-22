@@ -1,0 +1,13 @@
+{
+    "name": "Altura do passo",
+    "icon": "minecraft:iron_boots",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Altura do passo$() altera o quão alto você pode automaticamente andar nos blocos.$(p)Encontrado apenas em botas."
+        }
+	]
+}

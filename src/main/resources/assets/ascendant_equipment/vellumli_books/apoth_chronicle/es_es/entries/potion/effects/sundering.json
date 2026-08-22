@@ -1,0 +1,17 @@
+{
+  "name": "ruptura",
+  "icon": "ascendant_attributes:textures/mob_effect/sundering.png",
+  "category": "ascendant_equipment:potion/effects",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La poción de $(c)Sundering$() es un efecto negativo.$(p)Mientras esté bajo sus efectos, todo el daño recibido aumenta en un 20% por nivel."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Sirve como un contraataque directo a la resistencia y se suma a la resistencia.$(p)Si tuvieras Sundering II y Resistance II, recibirías daño normal."
+    }
+  ]
+}

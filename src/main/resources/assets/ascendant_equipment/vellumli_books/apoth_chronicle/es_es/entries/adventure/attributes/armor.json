@@ -1,0 +1,25 @@
+{
+  "name": "Armadura",
+  "icon": "minecraft:iron_chestplate",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Armadura$() es una medida de qué tan resistente al daño físico.$(p)Generalmente proporcionada por elementos de armadura y escudos.$(p)La cantidad de daño que recibes depende del daño recibido y de tu armadura."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El primer componente de la fórmula es el valor $(br)A, igual a $(9)10 + (daño - 20) / 2$(), con un valor mínimo de $(9)10$().$(p)Luego reduce el daño igual a $(br)$(9)A / (A + armadura)$().$(p)La fórmula antes mencionada no es la que usa Vanilla Minecraft, ya que Apoteosis la reemplaza."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Para valores de armadura y daño básico, recibirás un daño ligeramente menor.$(p)Para valores de armadura y daño alto, la armadura será significativamente menos efectiva."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El objetivo de este cambio es reducir la invulnerabilidad en niveles altos y hacer que $(9)Protección$() y $(9)Resistencia$() sean más impactantes.$(p)También hace que las peleas en las que ambas partes están fuertemente ciegas sean significativamente más activas."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Aberração cromática",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Aberração cromática$() é um encantamento para tesouras.$(p)Faz com que qualquer lã que seja tosquiada fique com uma cor aleatória."
+        }
+	]
+}

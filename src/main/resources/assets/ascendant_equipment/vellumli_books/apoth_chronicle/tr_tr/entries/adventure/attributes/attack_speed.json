@@ -1,0 +1,13 @@
+{
+    "name": "Saldırı Hızı",
+    "icon": "minecraft:golden_sword",
+    "category": "ascendant_equipment:adventure/attributes",
+    "flag": "ascendant_equipment:adventure",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Saldırı Hızı$(), ne kadar sıklıkla saldırabileceğinizi kontrol eder. Eğer saldırı hızınız 2 ise, saniyede iki kez saldırabilirsiniz.$(p)Çeşitli eşyalar saldırı hızınızı artırabilir."
+        }
+    ]
+}

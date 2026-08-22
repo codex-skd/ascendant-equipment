@@ -1,7 +1,0 @@
-{
-    "name": "Utility Items",
-    "description": "This section details all the random tools used to make enchanting easier.",
-    "icon": "apothic_enchanting:library",
-	"flag": "ascendant_equipment:enchanting",
-	"parent": "ascendant_equipment:enchanting/enchanting"
-}

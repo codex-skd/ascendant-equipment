@@ -1,0 +1,13 @@
+{
+    "name": "Пробиття обладунків",
+    "icon": "apothic_attributes:textures/mob_effect/sundering.png",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Пробиття обладунків$() дає можливість ігнорувати фіксовану кількість очок захисту цілі під час атаки.$(p)Перевищення цієї характеристики над бронею цілі зробить її захист від'ємним."
+        }
+	]
+}

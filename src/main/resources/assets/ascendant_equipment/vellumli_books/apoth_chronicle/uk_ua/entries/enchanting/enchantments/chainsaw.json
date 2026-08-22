@@ -1,0 +1,13 @@
+{
+    "name": "Ланцюгова пила",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(2)Ланцюгова пила$() – це майстерні чари для сокир.$(p)Під час рубання дерева буде зрубано все дерево.$(p)Кожний добутий таким чином блок впливає на міцність сокири."
+        }
+	]
+}
