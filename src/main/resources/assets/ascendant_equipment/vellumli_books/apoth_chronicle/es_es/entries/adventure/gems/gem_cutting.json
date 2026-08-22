@@ -1,0 +1,19 @@
+{
+  "name": "corte de gemas",
+  "icon": "ascendant_equipment:gem_cutting_table",
+  "category": "ascendant_equipment:adventure/gems",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:gem_cutting_table",
+      "text": "La $(9)Mesa de corte de gemas$() se usa para actualizar $(l:ascendant_equipment:adventure/gems/gems)Gemas$(). $(p)Actualizar una gema cuesta generalmente $(9)Polvo de gemas$(), $(9)Materiales raros$() y una segunda gema de la misma pureza."
+    },
+    {
+      "title": "Costos de actualización",
+      "type": "vellumli:text",
+      "text": "El costo de mejorar una gema aumenta con su pureza.$(p)Las gemas más fuertes requieren más $(9)Polvo de gemas$() y $(9)Materiales raros de nivel superior$().$(p)El costo exacto para mejorar una gema se puede ver en JEI."
+    }
+  ]
+}

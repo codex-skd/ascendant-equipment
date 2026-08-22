@@ -1,0 +1,12 @@
+{
+    "name": "Encantabilidade do item",
+    "icon": "minecraft:golden_sword",
+    "category": "ascendant_equipment:enchanting/table",
+	"flag": "ascendant_equipment:enchanting",
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "No vanilla, a encantabilidade de um item contribui para seu $(poderf).$(p)O Apotheosis altera para fornecer um aumento direto de $(arcana).$(p)$(arcana) aumenta em 50% a encantabilidade de um item."
+        }
+	]
+}

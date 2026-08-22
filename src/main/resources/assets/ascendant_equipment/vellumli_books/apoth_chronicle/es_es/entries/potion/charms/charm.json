@@ -1,0 +1,28 @@
+{
+  "name": "Encantos de pociones",
+  "icon": "ascendant_equipment:potion_charm",
+  "category": "ascendant_equipment:potion/charms",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Un $(9)Amuleto de poción$() es un elemento completamente nuevo que te ayuda a aprovechar al máximo tus pociones.$(p)Mira, mientras que una poción normal requiere que la bebas y uses todo el efecto de una vez, el $(9)Amuleto de poción$() te permite escalonarlo."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:potion_charm",
+      "title": "Elaboración de amuletos de pociones",
+      "text": "Un amuleto está hecho de tres pociones del mismo tipo y un poco de polvo ardiente.$(p)Un solo amuleto dura más que las tres pociones combinadas."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Usar amuletos de pociones",
+      "text": "Un $(9)Amuleto de poción$() solo está activo cuando está habilitado.$(p)Para habilitar un amuleto, simplemente haga clic derecho con él en la mano.$(p)Un amuleto habilitado comenzará a brillar."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Mientras el amuleto esté activo y en tu inventario, te aplicará la poción, consumiendo durabilidad.$(p)El amuleto solo aplicará un par de segundos de poción a la vez.$(p)Cuando el amuleto se quede sin durabilidad, se romperá."
+    }
+  ]
+}

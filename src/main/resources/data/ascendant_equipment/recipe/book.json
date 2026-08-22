@@ -2,7 +2,7 @@
 	"type": "minecraft:crafting_shapeless",
 	"neoforge:conditions": [{
 		"type": "neoforge:mod_loaded",
-		"modid": "patchouli"
+		"modid": "vellumli"
 	}],
 	"group": "something",
 	"ingredients": [
@@ -10,10 +10,10 @@
 		"#c:ingots/gold"
 	],
 	"result": {
-        "id": "patchouli:guide_book",
+        "id": "vellumli:guide_book",
         "count": 1,
         "components": {
-            "patchouli:book": "ascendant_equipment:apoth_chronicle"
+            "vellumli:book": "ascendant_equipment:apoth_chronicle"
         }
 	}
 }

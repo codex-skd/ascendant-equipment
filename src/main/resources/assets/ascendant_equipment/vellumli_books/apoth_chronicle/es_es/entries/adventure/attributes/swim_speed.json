@@ -1,0 +1,13 @@
+{
+  "name": "Velocidad de natación",
+  "icon": "minecraft:kelp",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Velocidad de natación$() es un modificador de tu velocidad de natación real. Si tu velocidad de nado fuera del 200%, nadarías el doble de rápido.$(p)Solo se encuentra en botas."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Kritik Hasar",
+    "icon": "minecraft:netherite_axe",
+    "category": "ascendant_equipment:adventure/attributes",
+    "flag": "ascendant_equipment:adventure",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Kritik Hasar$(), kritik vuruşlarınızın hasar çarpanıdır.$(p)Zıplama kritik vuruşları da, alışılmış 1.5x çarpanı yerine Kritik Hasar değerinizden yararlanır.$(p)Silahlarda bulunur."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sobrecurar",
+  "icon": "minecraft:experience_bottle",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Tener $(9)Overheal$() significa que parte del daño físico infligido se obtendrá como escudo de absorción. A diferencia del robo de vida, Overheal funciona cuando tienes la salud completa.$(p)Esta estadística solo se encuentra en armas pesadas."
+    }
+  ]
+}

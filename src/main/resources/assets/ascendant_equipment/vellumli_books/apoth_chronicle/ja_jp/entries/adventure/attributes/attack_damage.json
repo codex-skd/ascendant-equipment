@@ -1,0 +1,13 @@
+{
+    "name": "攻撃力",
+    "icon": "minecraft:diamond_sword",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)攻撃力$()は、攻撃がどれだけのダメージを与えるかを制御する属性である。$(p)通常、武器がこのステータスを提供する。"
+        }
+	]
+}

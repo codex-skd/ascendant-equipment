@@ -1,0 +1,17 @@
+{
+    "name": "Teias de aranha",
+    "icon": "apothic_enchanting:prismatic_web",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Teias de aranha podem ser combinadas com um item em uma bigorna para remover todos os encantamentos.$(p)Teias de aranha prismáticas podem ser combinadas com um item em uma bigorna para remover todas as maldições."
+        },
+		{
+            "type": "vellumli:crafting",
+			"recipe": "ascendant_equipment:cobweb",
+			"recipe2": "ascendant_equipment:prismatic_web"
+		}
+	]
+}

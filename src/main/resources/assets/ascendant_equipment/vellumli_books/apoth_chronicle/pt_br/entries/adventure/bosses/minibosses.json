@@ -1,0 +1,17 @@
+{
+    "name": "Minichefes",
+    "icon": "minecraft:skeleton_skull",
+    "category": "ascendant_equipment:adventure/bosses",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Ocasionalmente, você pode ver criaturas nomeadas ou com poderes em todo o seu mundo.$(p)Elas são provavelmente $(9)minichefes apoteóticos$()."
+        },
+		{
+			"type": "vellumli:text",
+			"text": "Essas criaturas aparecerão aleatoriamente no lugar de suas contrapartes normais.$(p)Fique atento."
+		}
+	]
+}

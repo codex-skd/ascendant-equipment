@@ -1,0 +1,13 @@
+{
+  "name": "Bendición de la Tierra",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(2) Bendición de la Tierra$() es un encantamiento de obra maestra para picos.$(p)Al extraer piedras simples, existe la posibilidad de que caiga un bloque de mineral."
+    }
+  ]
+}

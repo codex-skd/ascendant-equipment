@@ -1,0 +1,8 @@
+{
+  "name": "Progresión de nivel",
+  "description": "Esta sección ofrece una descripción general de cómo actualizar su mesa de encantamiento.",
+  "icon": "ascendant_enchanting:dormant_deepshelf",
+  "flag": "ascendant_equipment:enchanting",
+  "parent": "ascendant_equipment:enchanting/enchanting",
+  "sortnum": -1
+}

@@ -1,0 +1,17 @@
+{
+    "name": "ボスアイテム",
+    "icon": "minecraft:ender_chest",
+    "category": "ascendant_equipment:adventure/bosses",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "すべてのボスには、完全にエンチャントされた装備とともに、１つの称号付きアイテムが与えられる。$(p)この称号付きアイテムは死亡時にドロップすることが確定しており、他の称号付きの戦利品よりも良いレアリティである確率が高い。"
+        },
+		{
+			"type": "vellumli:text",
+			"text": "このアイテムだけでもボスを倒したときに獲得できるトロフィーとなり、価値あるものとなるだろう。$(p)元の所有者の印として、すべてのボスアイテムにはアイテム名の前にボスの名前が付けられている。"
+		}
+	]
+}

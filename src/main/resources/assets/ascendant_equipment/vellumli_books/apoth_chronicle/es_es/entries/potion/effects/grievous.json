@@ -1,0 +1,17 @@
+{
+  "name": "Heridas graves",
+  "icon": "ascendant_attributes:textures/mob_effect/grievous.png",
+  "category": "ascendant_equipment:potion/effects",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La Poción de $(c)Heridas Graves$() es un efecto negativo.$(p)Mientras esté bajo sus efectos, toda la curación recibida se reduce."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "La reducción de curación es igual al 40% por nivel.$(p)Mientras estás en el nivel III o superior, se evita toda curación."
+    }
+  ]
+}

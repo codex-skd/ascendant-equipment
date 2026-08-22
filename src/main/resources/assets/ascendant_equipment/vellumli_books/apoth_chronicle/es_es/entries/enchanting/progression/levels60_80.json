@@ -1,0 +1,43 @@
+{
+  "name": "Niveles 60 - 80",
+  "icon": "ascendant_enchanting:dormant_deepshelf",
+  "category": "ascendant_equipment:enchanting/progression",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 70",
+      "recipe": "ascendant_enchanting:dormant_deepshelf",
+      "text": "Alcanzar el nivel 70 requiere una mesa de encantamiento de nivel 60 y acceso a Deepslate."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Alcanzando el nivel 70",
+      "text": "Una vez que hayas creado un $(9)Durmant Deepshelf$(), debes infundirlo.$(p)Esta receta de infusión requerirá algunos bloques adicionales para alcanzar el umbral de estadísticas.$(p)Completar la infusión producirá un $(9)Deepshelf$(), que puede llevarte al nivel 70."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Alcanzando el nivel 75",
+      "text": "Para alcanzar el nivel 75, necesitarás actualizar tus Deepshelves.$(p)Hacer esto requiere materiales que solo se encuentran en $(9)Deep Dark$().$(p)$(9)Echo Shards$() se pueden saquear de la Ciudad Antigua, y $(9)Sculk$() se puede recolectar con Silk Touch."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 75",
+      "recipe": "ascendant_enchanting:echoing_deepshelf",
+      "recipe2": "ascendant_enchanting:soul_touched_deepshelf"
+    },
+    {
+      "type": "vellumli:entity",
+      "entity": "minecraft:warden",
+      "title": "Alcanzando el nivel 80",
+      "scale": 0.95,
+      "text": "El último paso para llegar al nivel 80 requiere matar al $(9)Warden$(), lo que permite crear $(9)Sculkshelves$()."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 80",
+      "recipe": "ascendant_enchanting:echoing_sculkshelf",
+      "recipe2": "ascendant_enchanting:soul_touched_sculkshelf"
+    }
+  ]
+}

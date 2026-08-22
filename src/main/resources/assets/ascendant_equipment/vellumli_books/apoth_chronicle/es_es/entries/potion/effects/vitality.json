@@ -1,0 +1,17 @@
+{
+  "name": "Vitalidad explosiva",
+  "icon": "ascendant_attributes:textures/mob_effect/vitality.png",
+  "category": "ascendant_equipment:potion/effects",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La poción de $(9)Bursting Vitality$() tiene un efecto beneficioso.$(p)Mientras esté bajo sus efectos, toda la curación recibida aumenta."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El aumento de curación es igual al 20% por nivel."
+    }
+  ]
+}

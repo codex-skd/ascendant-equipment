@@ -1,0 +1,20 @@
+{
+  "name": "Niveles 1 - 30",
+  "icon": "minecraft:bookshelf",
+  "category": "ascendant_equipment:enchanting/progression",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 30",
+      "recipe": "minecraft:bookshelf",
+      "text": "Llegar al nivel 30 se realiza de la forma habitual, con quince estanterías."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Otras estadísticas",
+      "item": "minecraft:skeleton_skull",
+      "text": "En esta etapa, hay algunas opciones básicas para aumentar otras estadísticas.$(p)Puedes usar Velas para aumentar $(arcanos) y Calaveras para aumentar $(quanta)."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "niveles mundiales",
+  "icon": "ascendant_equipment:textures/gui/book/summit_icon.png",
+  "category": "ascendant_equipment:adventure/world_tiers",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Un $(6)World Tier$() es un modificador de fuerza por jugador para el mundo. Cada nivel controla el tipo de contenido que aparecerá, qué tan fuertes serán los enemigos, qué tipo de bonificaciones puedes recibir y más."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Los niveles",
+      "text": "Hay cinco niveles, cada uno de los cuales aumenta la dificultad mundial y las recompensas disponibles más que el anterior.$(p)Los niveles son $(9)Haven$(), $(9)Frontier$(), $(9)Ascent$(), $(9)Summit$() y $(9)Pinnacle$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Aumentos de nivel",
+      "text": "Cada nivel tiene sus propios aumentos, modificadores que se aplican a los jugadores en el nivel, así como mobs que se han generado en ese nivel.$(p)Puedes ver todos los aumentos de nivel para cada nivel en la $(l:ascendant_equipment:adventure/world_tiers/select_screen)Pantalla de selección de nivel mundial$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Probabilidades de caída de rarezas",
+      "text": "Los niveles mundiales también controlan los pesos de cada rareza.$(p)A medida que progresa, los elementos de mayor rareza (e invasores) se volverán más comunes.$(p)Las posibilidades exactas de obtención se muestran en la $(l:ascendant_equipment:adventure/world_tiers/select_screen)Pantalla de selección de niveles mundiales$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "gemas",
+      "text": "Los niveles mundiales también ajustan qué gemas pueden generarse, así como con qué purezas pueden generarse.$(p)Como antes, las posibilidades de pureza detalladas se pueden encontrar en la pantalla de selección."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Otras notas",
+      "text": "Los niveles mundiales también pueden ajustar las tasas de generación de otros objetos, como afijos, entradas de botón de afijos y élites.$(p)Estas tasas no se muestran en ninguna parte, pero es posible que encuentres contenido diferente según el nivel."
+    }
+  ]
+}

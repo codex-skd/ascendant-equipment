@@ -1,0 +1,13 @@
+{
+  "name": "Resistencia al retroceso",
+  "icon": "minecraft:shulker_shell",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Resistencia al retroceso$() es qué tan resistente eres a ser derribado por los ataques. En el valor máximo, eres inmune al retroceso.$(p)Generalmente proporcionado por armaduras o escudos."
+    }
+  ]
+}

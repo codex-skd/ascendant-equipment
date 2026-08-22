@@ -1,0 +1,13 @@
+{
+  "name": "Velocidad de ataque",
+  "icon": "minecraft:golden_sword",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Velocidad de ataque$() controla la frecuencia con la que puedes atacar. Si tu velocidad de ataque es 2, puedes atacar dos veces por segundo.$(p)Varios elementos pueden aumentar tu velocidad de ataque."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "La furia del berserker",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(4)Furia del berserker$() es un encantamiento corrupto que se puede aplicar a las placas de pecho.$(p)Mientras usas este encantamiento, si recibes daño, recibirás daño adicional y recibirás resistencia, velocidad y fuerza."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El daño recibido y la fuerza de la poción se basan en el nivel de encantamiento."
+    }
+  ]
+}

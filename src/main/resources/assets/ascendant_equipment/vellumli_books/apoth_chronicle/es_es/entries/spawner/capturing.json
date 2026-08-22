@@ -1,0 +1,19 @@
+{
+  "name": "Capturando",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:spawner/spawner",
+  "flag": "ascendant_equipment:spawner",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Los Mob Spawners pueden cambiar su entidad usando un $(9)Spawn Egg$().$(p)Por lo general, estos no se pueden obtener. Para remediar esto, Apoteosis agrega el encantamiento $(9)Capturing$() para espadas."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "minecraft:cow_spawn_egg",
+      "title": "Generar huevos",
+      "text": "Cada nivel del encantamiento $(9)Capturing$() te da un 0,4 % de probabilidad de que las entidades dejen caer su huevo de generación al morir. $(p)Las entidades sin un elemento de huevo de generación (como se ve en JEI) no pueden soltar uno."
+    }
+  ]
+}

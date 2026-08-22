@@ -1,0 +1,44 @@
+{
+  "name": "Niveles 30 - 60",
+  "icon": "ascendant_enchanting:hellshelf",
+  "category": "ascendant_equipment:enchanting/progression",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 45",
+      "recipe": "ascendant_enchanting:hellshelf",
+      "text": "Para alcanzar el nivel 45, querrás crear algunos $(9)Hellshelves$() y agregarlos a tus estanterías existentes."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 45",
+      "recipe": "ascendant_enchanting:seashelf",
+      "text": "Si no te gusta el Nether, también puedes aventurarte al Océano y crear $(9)Seashelves$() en su lugar."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Alcanzando el nivel 60",
+      "item": "ascendant_enchanting:infused_hellshelf",
+      "text": "Una vez que alcances el nivel 45, necesitarás explorar $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$() para mejorar tus estantes."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Alcanzando el nivel 60",
+      "item": "ascendant_enchanting:infused_seashelf",
+      "text": "Crea algunos estantes más del tipo que estabas usando, infúndelos y actualízalos.$(p)Estos nuevos estantes, además de los antiguos, te permitirán alcanzar el nivel 60."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Pistas encantadoras",
+      "item": "ascendant_enchanting:sightshelf",
+      "text": "Ahora tienes acceso a mejores opciones para aumentar otras estadísticas.$(p)Además de las bonificaciones de Hellshelves y Seashelves, ahora también puedes crear $(9)Sightshelves$() para aumentar tus $(pistas)."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Estabilidad cuántica",
+      "recipe": "ascendant_enchanting:geode_shelf",
+      "text": "Al realizar la infusión para crear una amatista en ciernes, puedes crear una $(9)estantería de estabilidad$().$(p)Esto evitará que recibas tiradas de Quanta negativas."
+    }
+  ]
+}

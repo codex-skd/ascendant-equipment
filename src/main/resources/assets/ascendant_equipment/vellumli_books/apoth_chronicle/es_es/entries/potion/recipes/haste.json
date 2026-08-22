@@ -1,0 +1,19 @@
+{
+  "name": "Prisa",
+  "icon": "minecraft:textures/mob_effect/haste.png",
+  "category": "ascendant_equipment:potion/recipes",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Haste$() es otro efecto útil que no tiene receta básica.$(p)Cada nivel proporciona +20% de velocidad de minería."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Receta de elaboración de cerveza",
+      "item": "minecraft:mushroom_stew",
+      "text": "Esta poción se puede elaborar con una poción incómoda y un poco de estofado de champiñones.$(p)Se puede ampliar, fortalecer o convertir en una poción para salpicar con los ingredientes habituales."
+    }
+  ]
+}

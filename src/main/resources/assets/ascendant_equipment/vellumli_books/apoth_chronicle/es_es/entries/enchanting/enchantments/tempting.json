@@ -1,0 +1,13 @@
+{
+  "name": "Tentador",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Tempting$() es un encantamiento de azada.$(p)Al sostener una azada con este encantamiento, todos los animales te seguirán como si tuvieran su objeto de reproducción."
+    }
+  ]
+}

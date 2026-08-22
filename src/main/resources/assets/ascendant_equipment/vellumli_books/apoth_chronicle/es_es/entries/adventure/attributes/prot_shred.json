@@ -1,0 +1,13 @@
+{
+  "name": "Prot triturar",
+  "icon": "ascendant_attributes:textures/mob_effect/sundering.png",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Prot Shred$() te permite ignorar un porcentaje de los puntos de protección de tu objetivo al atacar.$(p)$(9)Prot Shred$() se aplica antes de $(9)Prot Pierce$()."
+    }
+  ]
+}

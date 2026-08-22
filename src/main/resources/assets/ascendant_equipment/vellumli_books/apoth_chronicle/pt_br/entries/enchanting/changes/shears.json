@@ -1,0 +1,13 @@
+{
+    "name": "Tesoura",
+    "icon": "minecraft:shears",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Juntamente com os novos encantamentos, tesouras agora também podem receber $(9)durabilidade$(), $(9)eficiência$() e $(9)fortuna$()."
+        }
+	]
+}

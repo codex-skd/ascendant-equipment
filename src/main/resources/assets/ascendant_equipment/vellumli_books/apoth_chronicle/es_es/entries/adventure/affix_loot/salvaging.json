@@ -1,0 +1,44 @@
+{
+  "name": "salvar",
+  "icon": "ascendant_equipment:salvaging_table",
+  "category": "ascendant_equipment:adventure/affix_loot",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:salvaging_table",
+      "text": "La $(9)Tabla de recuperación$() se utiliza para dividir los elementos con afijos en sus correspondientes $(9)Materiales raros$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:mysterious_scrap_metal",
+      "link_recipe": true,
+      "text": "Una pieza de forma extraña de un metal no identificable.$(p)Este material se obtiene al rescatar artículos comunes."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:timeworn_fabric",
+      "link_recipe": true,
+      "text": "Un tejido increíblemente duradero, desgastado por innumerables años. No presenta ni una sola lágrima.$(p)Encontrado al rescatar artículos poco comunes."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:luminous_crystal_shard",
+      "link_recipe": true,
+      "text": "Un trozo del cristal más brillante que jamás haya existido. Aunque no es más que un fragmento, contiene un fuerte poder mágico.$(p)Se adquiere al recuperar objetos raros."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:arcane_sands",
+      "link_recipe": true,
+      "text": "Granos de arena de un reino mágico, donde la magia arcana deforma toda la vida.$(p)Recuperar un objeto épico los reduce a esta forma."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:godforged_pearl",
+      "link_recipe": true,
+      "text": "Una perla de energía divina purificada. El inmenso poder sellado en su interior lo hace bastante volátil.$(p)Estas creaciones extraordinarias solo se pueden obtener recuperando objetos míticos."
+    }
+  ]
+}

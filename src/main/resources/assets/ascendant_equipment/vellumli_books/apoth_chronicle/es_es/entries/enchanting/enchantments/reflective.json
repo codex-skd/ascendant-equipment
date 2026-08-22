@@ -1,0 +1,17 @@
+{
+  "name": "Defensas reflectantes",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Defensas reflectantes$() es un encantamiento de escudo.$(p)Hace que todos los ataques bloqueados inflijan una parte del daño al atacante.$(p)Más específicamente, el 15% del daño bloqueado se refleja."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El daño reflejado se transforma en daño mágico.$(p)Niveles suficientemente altos de $(9)Defensas Reflectantes$() infligirán más daño que el original."
+    }
+  ]
+}

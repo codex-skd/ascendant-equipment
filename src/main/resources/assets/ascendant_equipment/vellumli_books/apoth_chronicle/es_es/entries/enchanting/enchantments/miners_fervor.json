@@ -1,0 +1,17 @@
+{
+  "name": "El fervor minero",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(5)Fervor del minero$() es un encantamiento retorcido que se puede aplicar a todas las herramientas.$(p)Hace que rompas bloques muy rápidamente, pero nunca instantáneamente.$(p)Es exclusivo de $(9)Eficiencia$()."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "A pesar de tener un límite de velocidad, el aumento por nivel es mucho mayor que $(9)Eficiencia$().$(p)Esto lo convierte en una opción ideal para herramientas con una velocidad base lenta."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Ножиці",
+    "icon": "minecraft:shears",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Крім нових чар, ножиці тепер також можуть мати $(9)Незламність$(), $(9)Ефективність$() та $(9)Удачу$()."
+        }
+	]
+}

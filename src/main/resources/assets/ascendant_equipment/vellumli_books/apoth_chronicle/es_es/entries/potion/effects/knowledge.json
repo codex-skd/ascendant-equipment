@@ -1,0 +1,17 @@
+{
+  "name": "Conocimiento antiguo",
+  "icon": "minecraft:experience_bottle",
+  "category": "ascendant_equipment:potion/effects",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La poción de $(9)Conocimiento antiguo$() es un efecto beneficioso.$(p)Mientras estés bajo sus efectos, cualquier experiencia generada por los mobs que mates se multiplica."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "En el Nivel I, cuadruplica las pérdidas de experiencia.$(p)En el Nivel II, las multiplica por 8."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "polvo de gemas",
+  "icon": "ascendant_equipment:gem_dust",
+  "category": "ascendant_equipment:adventure/gems",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:gem_dust",
+      "link_recipe": true,
+      "text": "Todas las gemas apóticas se pueden reducir a $(br)$(9)Polvo de gemas$() mediante trituración.$(p)Un método es aplastarlas con un yunque $(br)en el mundo."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:salvaging_table",
+      "title": "Recuperando gemas",
+      "text": "Una vez que hayas aplastado algunas gemas con un yunque, puedes crear y usar la $(9)Tabla de recuperación$() en su lugar."
+    }
+  ]
+}

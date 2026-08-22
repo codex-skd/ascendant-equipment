@@ -1,8 +1,0 @@
-{
-    "name": "Level Progression",
-    "description": "This section gives an overview of how to upgrade your Enchanting Table.",
-    "icon": "apothic_enchanting:dormant_deepshelf",
-	"flag": "ascendant_equipment:enchanting",
-	"parent": "ascendant_equipment:enchanting/enchanting",
-	"sortnum": -1
-}

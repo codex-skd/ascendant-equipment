@@ -1,0 +1,39 @@
+{
+  "name": "aumentando",
+  "icon": "ascendant_equipment:augmenting_table",
+  "category": "ascendant_equipment:adventure/affix_loot",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La $(9)Tabla de aumento$() es una estación de creación de final de juego que se utiliza para aumentar los afijos individuales de un elemento.$(p)A través de ella, puedes actualizar o volver a utilizar afijos individuales, dejando el resto intacto."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:augmenting_table",
+      "text": "Crear una Mesa de Aumento requiere enfocar la energía de una $(9)Estrella Abisal$() a través de dos $(9)Perlas Forjadas por Dios$(), usando una $(9)Mesa Encantadora$() como base."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Ranuras de entrada",
+      "text": "La tabla de aumento tiene dos ranuras de entrada.$(p)La ranura superior contiene el elemento que desea aumentar, que debe ser un elemento con afijo.$(p)Por lo general, solo debe aumentar elementos de al menos $(#ED7014)Mythic$() rareza, aunque podría considerar aumentar los $(#BB00BB)Epic$() también."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:sigil_of_enhancement",
+      "title": "Ranuras de entrada",
+      "text": "La ranura inferior contiene $(9)Sigilos de mejora$(), el elemento de combustible utilizado para aumentar.$(p)Finalmente, deberás seleccionar el afijo deseado en el menú desplegable."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Actualización",
+      "text": "La primera operación que se puede realizar en la tabla de aumento es actualizar un afijo.$(p)Esto cuesta dos $(9)Sigilos de mejora$() y mejorará la fuerza interna del afijo actual en un 25%.$(p)La cantidad de impulso que esto proporciona varía según el afijo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Rerolling",
+      "text": "La segunda operación de la tabla de aumento es volver a lanzar un afijo.$(p)Esto cuesta un $(9)Sigilo de mejora$() y cambia el afijo seleccionado por otro del mismo tipo.$(p)Las opciones alternativas se mostrarán a la izquierda."
+    }
+  ]
+}

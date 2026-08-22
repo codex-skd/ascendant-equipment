@@ -1,6 +1,6 @@
 {
-  "book.ascendant_equipment.name": "Crónica de las Sombras",
-  "book.ascendant_equipment.subtitle": "Guía del Equipo Ascendente",
+  "book.ascendant_equipment.name": "Crónica Oscura",
+  "book.ascendant_equipment.subtitle": "Guía Ascendente",
   "book.ascendant_equipment.landing": "Bienvenido al mundo del Equipo Ascendente.$(br2)El Equipo Ascendente está organizado en $(#8080FF)Módulos$(), y este libro también.$(br2)Los módulos deshabilitados están ocultos.",
   "itemGroup.ascendant_equipment": "Equipo Ascendente",
   "itemGroup.ascendant_equipment.adventure": "Equipo Ascendente - Aventura",

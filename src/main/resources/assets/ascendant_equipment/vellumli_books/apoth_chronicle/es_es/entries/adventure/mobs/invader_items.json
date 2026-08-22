@@ -1,0 +1,17 @@
+{
+  "name": "Artículos de invasor",
+  "icon": "minecraft:ender_chest",
+  "category": "ascendant_equipment:adventure/mobs",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Cada invasor tiene exactamente un elemento de afijo, junto con el resto de su equipo completamente encantado.$(p)Se garantiza que este elemento de afijo se dejará caer al morir y tendrá la misma rareza que el invasor.$(p)Los afijos que contiene tienden a ser más fuertes de lo habitual."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Este artículo por sí solo es el trofeo que obtendrás al matar a un invasor, y es probable que valga la pena.$(p)Como recuerdo del propietario original, cada artículo tendrá el nombre del invasor antepuesto al nombre del artículo."
+    }
+  ]
+}

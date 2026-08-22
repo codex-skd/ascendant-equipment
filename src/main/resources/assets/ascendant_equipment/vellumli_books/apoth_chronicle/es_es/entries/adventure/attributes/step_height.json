@@ -1,0 +1,13 @@
+{
+  "name": "Altura del escalan",
+  "icon": "minecraft:iron_boots",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Step Height$() cambia la altura a la que puedes subir automáticamente los bloques.$(p)Solo se encuentra en las botas."
+    }
+  ]
+}

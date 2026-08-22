@@ -1,6 +1,18 @@
 # Changelog — Ascendant Equipment
 
 
+## [1.2.0] - 2026-08-22
+
+### Feature
+
+- **Migración completa del libro guía de Patchouli a Vellumli**: el libro "Crónica de las Sombras" dependía por completo del mod Patchouli real, que ni siquiera es una dependencia declarada de este mod (solo "funcionaba" en packs de prueba porque casualmente tenían Patchouli instalado por otro motivo). Portados los 5 idiomas que faltaban (ja_jp, pt_br, tr_tr, uk_ua, zh_cn) al nuevo sistema Vellumli, eliminado por completo el contenido antiguo de Patchouli, y corregida la receta para depender de Vellumli en su lugar.
+- **Traducción al español del libro guía**: los 126 archivos de contenido del libro, más las claves de nombre/subtítulo/bienvenida.
+- **Entrega automática del libro guía**: cada jugador lo recibe la primera vez que se conecta (persiste a la muerte/reconexión); si lo pierde después, debe craftearlo de nuevo (libro + lingote de oro).
+
+### Fix
+
+- **El libro guía no aparecía en la pestaña creativa ni en JEI**: el campo `creative_tab` del libro apuntaba a una pestaña vanilla inexistente (`tools_and_utilities`, que no existe en esta versión de Minecraft — la real es simplemente `tools`). Corregido, y además se registra explícitamente en la propia pestaña de Aventura del mod para garantizar su aparición.
+
 ## [1.1.1] - 2026-08-21
 
 ### Fixed

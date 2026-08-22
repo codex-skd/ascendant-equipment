@@ -1,0 +1,13 @@
+{
+  "name": "Daño por frío",
+  "icon": "minecraft:blue_ice",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Daño por frío$() es daño mágico adicional que se aplica a los ataques cuerpo a cuerpo. También aplica una ralentización que depende de la fuerza del daño.$(p)Se encuentra en armas cuerpo a cuerpo."
+    }
+  ]
+}

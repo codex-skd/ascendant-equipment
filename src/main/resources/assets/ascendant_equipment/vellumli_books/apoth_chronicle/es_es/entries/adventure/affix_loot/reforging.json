@@ -1,0 +1,49 @@
+{
+  "name": "Reforzar",
+  "icon": "ascendant_equipment:reforging_table",
+  "category": "ascendant_equipment:adventure/affix_loot",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Gracias al potencial bruto de $(9)Materiales raros$() y la versatilidad de $(9)Polvo de gemas$(), ahora es posible reforjar un artículo con afijos completamente nuevos.$(p)La reforja no se limita a artículos que ya tienen afijos y se puede realizar con cualquier artículo válido."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:simple_reforging_table",
+      "text": "Para comenzar a reforjar, crea una $(#5555FF)Mesa de reforjado simple$(), que te permite volver a forjar objetos de hasta rareza $(#5555FF)Rare$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Ranuras de entrada",
+      "text": "La mesa de reforja tiene tres ranuras de entrada.$(p)La ranura central contiene el objeto que deseas reforjar.$(p)La ranura superior izquierda contiene $(9)Materiales raros$() para la rareza con la que te gustaría reforjar."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:sigil_of_rebirth",
+      "title": "Ranuras de entrada",
+      "text": "La ranura inferior derecha contiene $(9)Sigilos de Renacimiento$(), un elemento de combustible único utilizado durante el proceso de Reforja."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Reforzar",
+      "text": "De manera similar a una Mesa de Encantamiento, al reforjar, se ofrecen tres opciones.$(p)Cada elección representa una nueva forma potencial del objeto que se está reforjando.$(p)Ninguna elección es inherentemente más fuerte que las demás."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Reforzar",
+      "text": "Para cada rareza, hay un costo base de experiencia, sellos y materiales. Los espacios de elección adicionales cobran el doble y el triple del costo base.$(p)Para volver a forjar tu artículo, simplemente haz clic en la opción deseada."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:reforging_table",
+      "text": "Para reformar objetos de rareza $(#BB00BB)Epic$() o superiores, necesitarás actualizar tu $(#5555FF)Mesa de reforja simple$() a una $(#BB00BB)Mesa de reforja$()."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Notas",
+      "text": "Los elementos que aún no están colocados se pueden reforjar.$(p)Los elementos se pueden reforjar varias veces.$(p)Los modpacks pueden cambiar los costos o evitar la reforja en ciertas rarezas."
+    }
+  ]
+}

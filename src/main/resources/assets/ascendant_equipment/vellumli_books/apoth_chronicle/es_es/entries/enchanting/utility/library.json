@@ -1,0 +1,36 @@
+{
+  "name": "Biblioteca de encantamientos",
+  "icon": "ascendant_enchanting:library",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Una biblioteca de encantamientos es un sistema de almacenamiento de encantamientos.$(p)Simplemente inserte libros encantados y cada encantamiento del libro se almacenará como puntos."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Cada biblioteca tiene una capacidad de nivel $(6)$(), que representa el nivel más alto de encantamiento que puede almacenar.$(p)El exceso de encantamientos se anula."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Al hacer clic en un encantamiento almacenado se extraerá un nivel de ese encantamiento.$(p)Al hacer clic con la tecla Mayús y hacer clic en un encantamiento almacenado se extraerán tantos niveles como sea posible.$(p)Los libros se generan en la ranura de salida según sea necesario."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "También puedes colocar un libro en la ranura de salida para agregarle encantamientos.$(p)La biblioteca registra el nivel máximo que se ha insertado para cada encantamiento y solo puede extraer hasta ese nivel."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:library",
+      "text": "La $(9)Biblioteca de encantamientos$() estándar tiene una $(6)Capacidad de nivel$() de dieciséis (XVI)."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_enchanting:ender_library",
+      "link_recipe": true,
+      "text": "La $(9)Biblioteca de Alejandría$() tiene una $(6)Capacidad de nivel$() de treinta y uno (XXXI).$(p)No se puede crear directamente y debe crearse usando $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$()."
+    }
+  ]
+}

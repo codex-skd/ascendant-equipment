@@ -1,0 +1,13 @@
+{
+  "name": "Trituración de armadura",
+  "icon": "ascendant_attributes:textures/mob_effect/sundering.png",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Armor Shred$() te permite ignorar un porcentaje de la armadura de tu objetivo al atacar.$(p)$(9)Armor Shred$() se aplica antes de $(9)Armor Pierce$()."
+    }
+  ]
+}

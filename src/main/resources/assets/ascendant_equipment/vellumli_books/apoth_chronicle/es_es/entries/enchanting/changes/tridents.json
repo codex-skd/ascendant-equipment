@@ -1,0 +1,20 @@
+{
+  "name": "tridentes",
+  "icon": "minecraft:trident",
+  "category": "ascendant_equipment:enchanting/changes",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Además de los nuevos encantamientos, los tridentes ahora también pueden recibir $(9)Nitidez$(), $(9)Saqueo$() y $(9)Piercing$().$(p)La nitidez y el saqueo funcionan como lo hacen en las espadas.$(p)La perforación hace que los tridentes lanzados puedan golpear enemigos adicionales."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "hacer tridentes",
+      "item": "ascendant_enchanting:inert_trident",
+      "link_recipe": true,
+      "text": "Apoteosis también agrega un método para crear tridentes.$(p)Simplemente cree un $(9)Tridente inerte$() y actualícelo a través de $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$()."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Encantabilidad",
+  "icon": "minecraft:golden_sword",
+  "category": "ascendant_equipment:enchanting/changes",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "En Vanilla, todos los elementos sin una $(l:ascendant_equipment:enchanting/table/enchantability)Item Enchantability$() específico tienen un valor predeterminado de cero.$(p)Apotheosis cambia el valor predeterminado a uno.$(p)Esto tiene el efecto secundario de hacer que algunos elementos se puedan encantar involuntariamente."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Este ajuste no cambia la capacidad de encantamiento de los elementos que tienen un valor explícito.$(p)Los elementos con una capacidad de encantamiento de cero nunca se pueden encantar."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nitídez",
+  "icon": "minecraft:netherite_sword",
+  "category": "ascendant_equipment:enchanting/changes",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Nitidez$() ya no es exclusivo de otros encantamientos de daño.$(p)Esto significa que ahora puedes tener $(9)Nitidez$() y otro encantamiento de daño que normalmente es exclusivo."
+    }
+  ]
+}

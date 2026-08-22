@@ -5,7 +5,7 @@
 	"book_texture": "vellumli:textures/gui/book_blue.png",
 	"model": "ascendant_equipment:book",
 	"show_progress": false,
-	"creative_tab": "tools_and_utilities",
+	"creative_tab": "minecraft:tools",
 	"use_blocky_font": true,
     "use_resource_pack": true,
 	"macros": {

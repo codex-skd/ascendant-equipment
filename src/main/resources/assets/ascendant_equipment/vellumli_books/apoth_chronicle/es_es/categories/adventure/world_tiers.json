@@ -1,0 +1,7 @@
+{
+  "name": "niveles mundiales",
+  "description": "A medida que te vuelves más fuerte, también lo hace el mundo que te rodea.$(p)Esta sección cubre los niveles del mundo apótico: qué cambian, cómo desbloquearlos y cómo cambiar el actual.",
+  "icon": "ascendant_equipment:textures/gui/book/summit_icon.png",
+  "flag": "ascendant_equipment:adventure",
+  "parent": "ascendant_equipment:adventure/adventure"
+}

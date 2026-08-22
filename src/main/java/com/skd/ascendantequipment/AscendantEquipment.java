@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 import com.skd.ascendantequipment.affix.AffixRegistry;
+import com.skd.ascendantequipment.compat.GuideBookGrantHandler;
 import com.skd.ascendantequipment.compat.VellumliCompat;
 import com.skd.ascendantequipment.compat.curios.CuriosCompat;
 import com.skd.ascendantequipment.loot.AffixLootRegistry;
@@ -146,6 +147,17 @@ public class AscendantEquipment {
             AscEq.Items.IGNORE_PLAYERS_SPAWNER_RUNE,
             AscEq.Items.ECHOING_SPAWNER_RUNE);
 
+        // Explicitly add the Vellumli guide book to our own creative tab. Vellumli's own
+        // BuildCreativeModeTabContentsEvent listener (which normally handles this via book.json's
+        // "creative_tab" field, and separately adds every book to the vanilla search tab) does not
+        // reliably pick this book up for reasons not fully root-caused — this direct registration
+        // through our own TabFillingRegistry, the same mechanism every other item in this mod uses,
+        // guarantees the book actually shows up regardless of that.
+        if (ModList.get().isLoaded("vellumli")) {
+            TabFillingRegistry.register(adventureTab,
+                    (tab, event) -> event.accept(VellumliCompat.createGuideBookStack()));
+        }
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -191,6 +203,7 @@ public class AscendantEquipment {
 
         NeoForge.EVENT_BUS.register(new EquipmentEvents());
         NeoForge.EVENT_BUS.register(new AscEqMobEvents());
+        NeoForge.EVENT_BUS.register(new GuideBookGrantHandler());
 
         RarityRegistry.INSTANCE.registerToBus();
         RarityOverrideRegistry.INSTANCE.registerToBus();

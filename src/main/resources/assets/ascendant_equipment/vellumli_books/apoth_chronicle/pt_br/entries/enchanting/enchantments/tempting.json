@@ -1,0 +1,13 @@
+{
+    "name": "Tentação",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Tentação$() é um encantamento de enxada.$(p)Ao segurar uma enxada com este encantamento, todos os animais o seguirão como se estivessem segurando seu item de reprodução."
+        }
+	]
+}
