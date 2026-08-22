@@ -168,8 +168,16 @@ public class GemCaseScreen extends AdventureContainerScreen<GemCaseMenu> impleme
 
    public void renderSlotContents(GuiGraphicsExtractor gfx, ItemStack stack, Slot slot, @Nullable String stackCount) {
       if (slot instanceof GemCaseSlot gss) {
-         gfx.fakeItem(stack, slot.x, slot.y);
-         int count = ((GemCaseMenu)this.menu).getGemCount(((GemCaseMenu)this.menu).selectedGem, gss.purity);
+         Gem gem = ((GemCaseMenu)this.menu).selectedGem;
+         int count = 0;
+         if (gem != null) {
+            count = ((GemCaseMenu)this.menu).getGemCount(gem, gss.purity);
+         }
+         if (count > 0) {
+            gfx.fakeItem(stack, slot.x, slot.y);
+         } else {
+            PipelinedRenderer.ghostFakeItem(gfx, stack, slot.x, slot.y);
+         }
          if (count > 1) {
             String countStr = GemCaseBlock.format(count);
             float scale = 1.0F;
