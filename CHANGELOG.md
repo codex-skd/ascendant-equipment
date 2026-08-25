@@ -5,182 +5,182 @@
 
 ### Change
 
-- **Transparent gems for unowned items**: gems in the Gem Case that the player does not own now render partially transparent to distinguish them from owned gems, improving the visual experience when opening the gem chest.
+- **Gemas transparentes para items no poseídos**: las gemas del Gem Case que el jugador no posee ahora se renderizan parcialmente transparentes para distinguirlas de las gemas poseídas, mejorando la experiencia visual al abrir el cofre de gemas.
 
 ## [1.2.0] - 2026-08-22
 
 ### Feature
 
-- **Full migration of Patchouli guidebook to Vellumli**: the "Shadows Chronicle" guidebook previously depended entirely on the real Patchouli mod, which was not even a declared dependency of this mod (it only "worked" in test packs because they happened to have Patchouli installed for another reason). Ported the 5 remaining languages (ja_jp, pt_br, tr_tr, uk_ua, zh_cn) to the new Vellumli system, completely removed old Patchouli content, and fixed the recipe to depend on Vellumli instead.
-- **Spanish translation of the guidebook**: 126 content files plus name/subtitle/welcome keys.
-- **Automatic guidebook delivery**: each player receives it on first connection (persists through death/reconnection); if lost, it can be crafted again (book + gold ingot).
+- **Migración completa del guidebook de Patchouli a Vellumli**: el guidebook "Shadows Chronicle" dependía por completo del mod real Patchouli, que ni siquiera era una dependencia declarada de este mod (solo "funcionaba" en modpacks de prueba porque tenían Patchouli instalado por otro motivo). Portados los 5 idiomas restantes (ja_jp, pt_br, tr_tr, uk_ua, zh_cn) al nuevo sistema Vellumli, eliminado por completo el contenido antiguo de Patchouli y corregida la receta para depender de Vellumli.
+- **Traducción española del guidebook**: 126 ficheros de contenido más claves de nombre/subtítulo/bienvenida.
+- **Entrega automática del guidebook**: cada jugador lo recibe en la primera conexión (persiste tras muerte/reconexión); si se pierde, puede fabricarse de nuevo (libro + lingote de oro).
 
 ### Fix
 
-- **Guidebook not appearing in creative tab or JEI**: the `creative_tab` field of the book pointed to a non-existent vanilla tab (`tools_and_utilities`, which does not exist in this Minecraft version — the actual tab is simply `tools`). Fixed, and additionally registered explicitly in the mod's own Adventure tab to guarantee appearance.
+- **El guidebook no aparecía en la pestaña creativa ni en JEI**: el campo `creative_tab` del libro apuntaba a una pestaña vanilla inexistente (`tools_and_utilities`, que no existe en esta versión de Minecraft — la pestaña real es simplemente `tools`). Corregido, y además registrado explícitamente en la pestaña Adventure propia del mod para garantizar su aparición.
 
 ## [1.1.1] - 2026-08-21
 
 ### Fixed
 
-- **Tower chests generating empty**: the 4 tower structure variants (`tower_leaf`, `tower_main`, `tower_sand`, `tower_spruce`) had their chest `LootTable` tag pointing to `apotheosis:chests/tome_tower`, a leftover from when the structure was exported from the original Apotheosis without renaming the namespace. Since this mod does not depend on Apotheosis, the loot table never resolved and the server logged `does not exist or could not be loaded`, leaving the chest empty. Redirected to the mod's own loot table `ascendant_equipment:chests/tome_tower`, which already existed but was never referenced by the built structures. Only affects towers generated after this update; existing worlds with broken data remain in their chunks.
+- **Cofres de las torres se generaban vacíos**: las 4 variantes de estructura de torre (`tower_leaf`, `tower_main`, `tower_sand`, `tower_spruce`) tenían el tag `LootTable` del cofre apuntando a `apotheosis:chests/tome_tower`, residuo de cuando la estructura se exportó del Apotheosis original sin renombrar el namespace. Como este mod no depende de Apotheosis, la loot table nunca se resolvía y el servidor logueaba `does not exist or could not be loaded`, dejando el cofre vacío. Redirigido a la loot table propia del mod `ascendant_equipment:chests/tome_tower`, que ya existía pero ninguna estructura construida referenciaba. Solo afecta a torres generadas tras esta actualización; los mundos existentes con datos rotos permanecen así en sus chunks.
 
 ## [1.1.0] - 2026-08-20
 
 ### Change
 
-- **NeoForge update**: updated from 26.2.0.45-beta to 26.2.0.57.
-- **Unified configuration**: the actual config module (`EquipmentConfig`, bosses/augmenting/spawners/curios/etc) now loads and persists properly in `config/ascendant/equipment/ascendant_equipment.cfg`. Before, its load was never invoked, so the file was never generated and only default in-memory values were used.
-- **Curios → Regalia Slots API**: the data condition enabling the "charm" slot now depends on our own `regalia_slots_api` mod (fork-compatible Curios) instead of `curios`.
+- **Actualización de NeoForge**: actualizado de 26.2.0.45-beta a 26.2.0.57.
+- **Configuración unificada**: el módulo de configuración real (`EquipmentConfig`, bosses/augmenting/spawners/curios/etc) ahora carga y persiste correctamente en `config/ascendant/equipment/ascendant_equipment.cfg`. Antes su carga nunca se invocaba, así que el fichero nunca se generaba y solo se usaban valores por defecto en memoria.
+- **Curios → Regalia Slots API**: la condición de datos que habilita el slot "charm" ahora depende de nuestro propio mod `regalia_slots_api` (fork compatible con Curios) en vez de `curios`.
 
 ## [1.0.10] - 2026-08-18
 
 ### Change
 
-- **JAR version with loader version**: the artifact now compiles as `ascendant_equipment-26.2-neoforge-26.2.0.45-beta-1.0.10.jar`.
-- **Workflow documentation updated**: `docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md` updated to reflect the new working branch.
+- **Nombre de JAR con versión del cargador**: el artefacto ahora se compila como `ascendant_equipment-26.2-neoforge-26.2.0.45-beta-1.0.10.jar`.
+- **Documentación del workflow**: actualizada `docs/WORKFLOW_ASCENDANT_EQUIPMENT_26-2.md` para reflejar la nueva rama de trabajo.
 
 ## [1.0.9] - 2026-08-18
 
 ### Fixed
 
-- `bonus.ascendant_equipment:enchantment.desc` (and its `.global`/`.mustExist` variants), used by `EnchantmentBonus` and `EnchantmentAffix`, was missing from both lang files — any gem or affix that grants or boosts an enchantment showed the raw translation key instead of its description
-- `misc.ascendant_equipment.{iron,diamond,netherite}` were also missing: `OmneticBonus`/`OmneticAffix` build this key at runtime from the `"name"` field in the gem/affix data JSON (e.g. `gems/the_nether/molten_breach.json`, `affixes/breaker/effect/omnetic.json`), so the raw tier name leaked into the "effectiveness against all blocks" tooltip line
+- `bonus.ascendant_equipment:enchantment.desc` (y sus variantes `.global`/`.mustExist`), usado por `EnchantmentBonus` y `EnchantmentAffix`, no existía en ninguno de los dos ficheros lang — cualquier gema o afijo que otorgara o mejorara un encantamiento mostraba la clave de traducción cruda en vez de su descripción
+- `misc.ascendant_equipment.{iron,diamond,netherite}` también faltaban: `OmneticBonus`/`OmneticAffix` construyen esta clave en runtime desde el campo `"name"` del JSON de datos de gema/afijo (p. ej. `gems/the_nether/molten_breach.json`, `affixes/breaker/effect/omnetic.json`), así que el nombre crudo del tier se colaba en la línea del tooltip de "efectividad contra todos los bloques"
 
 ## [1.0.8] - 2026-08-18
 
 ### Fixed
 
-- **Gem Case / Ender Gem Case**: both blocks were registered with `requiresCorrectToolForDrops()`, so breaking one with the wrong tool (or by hand) removed the block with zero drops -- the exact vanilla behavior for ores mined without a pickaxe. `GemCaseBlock.getDrops()` only embeds the stored gems into the dropped item when drops are actually generated, so every gem inside was permanently lost with nothing on the ground. Removed the tool requirement to match vanilla chests/barrels, which never gate their drops on tool choice
+- **Gem Case / Ender Gem Case**: ambos bloques se registraban con `requiresCorrectToolForDrops()`, así que romperlos con la herramienta incorrecta (o a mano) eliminaba el bloque sin drop alguno — exactamente el comportamiento vanilla de los minerales minados sin pico. `GemCaseBlock.getDrops()` solo incrusta las gemas almacenadas en el item dropeado cuando los drops se generan realmente, así que cada gema dentro se perdía permanentemente sin dejar nada en el suelo. Eliminado el requisito de herramienta para igualar los cofres/barriles vanilla, que nunca condicionan sus drops a la herramienta
 
 ## [1.0.7] - 2026-08-17
 
 ### Fixed
 
-- **Curios compatibility registration**: Added missing `CuriosCompat.register()` call in commonSetup to prevent "Unknown registry key: ascendant_equipment:charm" server crash
+- **Registro de compatibilidad con Curios**: añadida la llamada `CuriosCompat.register()` que faltaba en commonSetup para evitar el crash del servidor "Unknown registry key: ascendant_equipment:charm"
 
 ## [1.0.6] - 2026-08-14
 
 ### Fixed
 
-- `button.ascendant_equipment.activate_tier` (the "Activate" button's tooltip on the World Tier map) lost the `": %s"` tier-name placeholder from the original Apotheosis template, so it showed a static "Activate Tier" instead of "Activate World Tier: Frontier". Found during a follow-up audit of the same lang file after the v1.0.5 fix
-- Added the missing `button.ascendant_equipment.{frontier,ascent,summit,pinnacle}` tier-name keys — only `haven` existed, so those 4 tiers had nothing to substitute into the fixed `%s` templates
+- `button.ascendant_equipment.activate_tier` (el tooltip del botón "Activate" en el mapa de World Tier) perdió el placeholder `": %s"` del nombre de tier de la plantilla original de Apotheosis, así que mostraba un estático "Activate Tier" en vez de "Activate World Tier: Frontier". Detectado en una auditoría de seguimiento del mismo fichero lang tras el fix de la v1.0.5
+- Añadidas las claves de nombre de tier que faltaban, `button.ascendant_equipment.{frontier,ascent,summit,pinnacle}` — solo existía `haven`, así que esos 4 tiers no tenían nada que sustituir en las plantillas `%s` corregidas
 
 ## [1.0.5] - 2026-08-14
 
 ### Fixed
 
-- **World Tier map lock tooltip**: `button.tier_locked`, `button.tier_advancement` and `info.criteria_{done,unfinished,unknown}` were translated as static generic strings with no `%s`, so the tier name, advancement title, and per-criterion text passed by `WorldTierSelectScreen#tierLocked` were silently dropped — every locked tier showed the same generic "Tier Locked" / "Incomplete x5" instead of "Frontier (Locked)" / "Equip a Common Chestplate". Restored the original Apotheosis `%s` + checkbox-glyph templates
-- Added the missing `button.ascendant_equipment.{frontier,ascent,summit,pinnacle}` tier-name keys — only `haven` existed, so those 4 tiers had nothing to substitute into the fixed `%s` templates
+- **Tooltip de bloqueo del mapa de World Tier**: `button.tier_locked`, `button.tier_advancement` e `info.criteria_{done,unfinished,unknown}` estaban traducidos como cadenas genéricas estáticas sin `%s`, así que el nombre del tier, el título del avance y el texto por criterio que pasaba `WorldTierSelectScreen#tierLocked` se descartaban silenciosamente — cada tier bloqueado mostraba el mismo genérico "Tier Locked" / "Incomplete x5" en vez de "Frontier (Locked)" / "Equip a Common Chestplate". Restauradas las plantillas originales de Apotheosis con `%s` + glifo de checkbox
+- Añadidas las claves de nombre de tier que faltaban, `button.ascendant_equipment.{frontier,ascent,summit,pinnacle}` — solo existía `haven`, así que esos 4 tiers no tenían nada que sustituir en las plantillas `%s` corregidas
 
 ## [1.0.4] - 2026-08-13
 
 ### Fixed
 
-- **World Tier map**: hovering a tier icon (Haven, Frontier, Ascent, Summit, Pinnacle) never showed its tooltip. `init()` recreated all buttons on every call instead of only the first time, leaving stale/duplicate widgets after a resize; and the tooltip queue for the tier buttons wasn't being honored by the screen's split render pipeline (`extractBackground`/`extractRenderState`/`extractContents`)
+- **Mapa de World Tier**: pasar el cursor por un icono de tier (Haven, Frontier, Ascent, Summit, Pinnacle) nunca mostraba su tooltip. `init()` recreaba todos los botones en cada llamada en vez de solo la primera vez, dejando widgets obsoletos/duplicados tras un resize; y la cola de tooltips de los botones de tier no era atendida por el pipeline de render dividido de la pantalla (`extractBackground`/`extractRenderState`/`extractContents`)
 
 ## [1.0.2] - 2026-08-12
 
 ### Fixed
 
-- **Attribute modifier tooltips (regression, all items)**: `neoforge.modifier.plus`/`neoforge.modifier.take` were overridden with a one-argument `"+%d"`/`"-%d"` template, but NeoForge's `IAttributeExtension#toComponent()` calls these keys with two arguments (value, attribute name) to build every attribute-modifier tooltip line in the game. The broken override silently dropped the attribute name from every affixed item's stat lines, leaving only an icon and a bracketed value. Restored NeoForge's own `"+%s %s"` / `"%s %s"` templates
-- `LootRarity#toComponent` built its translation key with a colon instead of a dot, never matching any lang entry and leaking the raw truncated key (`_equipment:common: 60%`) into drop-probability tooltips
-- Added the missing `rarity.ascendant_equipment.*` (common/uncommon/rare/epic/mythic) and `purity.ascendant_equipment.*` (cracked/chipped/flawed/normal/flawless/perfect) keys — existed in code, never in lang
-- Added `button.ascendant_equipment.haven`, missing unlike every other world tier button key
-- Added the 5 missing damage-type labels (fire/fall/explosion/projectile/lightning) used by damage-reduction affix descriptions; only physical/magic existed, so e.g. fall-damage-reduction gear showed the raw key `misc.ascendant_equipment.fall`
-- Dropped the unsubstituted `%s` from the World Tier difficulty label (never received an argument; difficulty is shown via the sword icons instead)
-- es_es: fixed the typo "Raridad" → "Rareza"
+- **Tooltips de modificadores de atributos (regresión, todos los items)**: `neoforge.modifier.plus`/`neoforge.modifier.take` fueron sobrescritos con una plantilla de un argumento `"+%d"`/`"-%d"`, pero el `IAttributeExtension#toComponent()` de NeoForge llama a estas claves con dos argumentos (valor, nombre del atributo) para construir cada línea de tooltip de modificador de atributo del juego. La sobrescritura rota descartaba silenciosamente el nombre del atributo de todas las líneas de estadísticas de items con afijos, dejando solo un icono y un valor entre corchetes. Restauradas las plantillas propias de NeoForge `"+%s %s"` / `"%s %s"`
+- `LootRarity#toComponent` construía su clave de traducción con dos puntos en vez de un punto, nunca coincidía con ninguna entrada lang y colaba la clave cruda truncada (`_equipment:common: 60%`) en los tooltips de probabilidad de drop
+- Añadidas las claves que faltaban `rarity.ascendant_equipment.*` (common/uncommon/rare/epic/mythic) y `purity.ascendant_equipment.*` (cracked/chipped/flawed/normal/flawless/perfect) — existían en código, nunca en lang
+- Añadido `button.ascendant_equipment.haven`, ausente a diferencia de todas las demás claves de botón de world tier
+- Añadidas las 5 etiquetas de tipo de daño que faltaban (fire/fall/explosion/projectile/lightning) usadas por las descripciones de afijos de reducción de daño; solo existían physical/magic, así que p. ej. un equipo de reducción de daño de caída mostraba la clave cruda `misc.ascendant_equipment.fall`
+- Eliminado el `%s` sin sustituir de la etiqueta de dificultad de World Tier (nunca recibía argumento; la dificultad se muestra vía los iconos de espada)
+- es_es: corregida la errata "Raridad" → "Rareza"
 
 ## [1.0.1] - 2026-08-11
 
 ### Fixed
 
-- Advancement `translate` keys (progression + challenge gates: Haven, Frontier, Ascent, Summit, Pinnacle and their gateways) pointed at the origin mod's namespace instead of `ascendant_equipment`, falling back to raw untranslated text
-- Added the missing title/desc/criteria text for all 6 progression advancements and 5 challenge gates — these keys had never been written, not just misnamed
-- Added the missing world tier name/description keys (`text.ascendant_equipment.world_tier.<tier>[.desc]`) and the 6 World Tier tutorial stage title/desc keys, previously showing raw lang keys on screen
+- Las claves `translate` de los advancements (puertas de progresión + challenge: Haven, Frontier, Ascent, Summit, Pinnacle y sus gateways) apuntaban al namespace del mod origin en vez de `ascendant_equipment`, con fallback a texto crudo sin traducir
+- Añadido el texto title/desc/criteria que faltaba para los 6 advancements de progresión y las 5 challenge gates — estas claves nunca se habían escrito, no solo mal nombradas
+- Añadidas las claves de nombre/descripción de world tier que faltaban (`text.ascendant_equipment.world_tier.<tier>[.desc]`) y las 6 claves title/desc de etapas del tutorial de World Tier, que antes mostraban claves lang crudas en pantalla
 
 ### Project
 
-- Reduced shipped locales to en_us and es_es; the other 10 never had the keys above translated either and are deferred to a future localization pass
+- Reducidos los locales enviados a en_us y es_es; los otros 10 tampoco tenían traducidas las claves anteriores y quedan aplazados a una pasada de localización futura
 
 ## [1.0.0] - 2026-08-10
 
-First stable release.
+Primera versión estable.
 
 ### Fixed
 
-- Gem tooltips: added the 21 missing gem name translations, all `gem_class.*` and `loot_category.*` category labels, and every `bonus.ascendant_equipment:*.desc` gem bonus description (durability, bloody arrow, leech block, all stats, mageslayer, multi-attribute) — previously shown as raw untranslated keys
-- Potion Charm: item name now includes the potion effect (`Charm of %s`), and the missing `.desc`, `.desc3`, `.enabled`, `.disabled`, `.curios_only` tooltip lines were added
-- `misc.ascendant_equipment.right_click_to_socket` now carries the gem/item name placeholders in both en_us and es_es (the message was silently dropping them)
-- Removed two leftover placeholder lang keys (`gem_class.ascendant_equipment.`, `bonus.ascendant_equipment.`) that matched no real lookup
-- es_es terminology: "Empotrar/Empotramiento" → "Acoplar/Acoplamiento" to match the established Apotheosis Spanish translation
-- Normalized texture asset paths (`textures/blocks/` → `textures/block/`, `textures/items/` → `textures/item/`) and the model references pointing at them
-- Removed stray build artifacts (`nul` files, misplaced root `assets/`/`com/` directories) that had leaked into the working tree
+- Tooltips de gemas: añadidas las 21 traducciones de nombres de gemas que faltaban, todas las etiquetas de categoría `gem_class.*` y `loot_category.*`, y todas las descripciones de bonus de gema `bonus.ascendant_equipment:*.desc` (durabilidad, flecha sangrienta, bloqueo de leech, todas las estadísticas, mageslayer, multi-atributo) — antes se mostraban como claves crudas sin traducir
+- Potion Charm: el nombre del item ahora incluye el efecto de poción (`Charm of %s`), y se añadieron las líneas de tooltip que faltaban `.desc`, `.desc3`, `.enabled`, `.disabled`, `.curios_only`
+- `misc.ascendant_equipment.right_click_to_socket` ahora lleva los placeholders de nombre de gema/item tanto en en_us como en es_es (el mensaje los descartaba silenciosamente)
+- Eliminadas dos claves lang placeholder residuales (`gem_class.ascendant_equipment.`, `bonus.ascendant_equipment.`) que no coincidían con ninguna búsqueda real
+- Terminología es_es: "Empotrar/Empotramiento" → "Acoplar/Acoplamiento" para coincidir con la traducción española establecida de Apotheosis
+- Normalizadas las rutas de assets de texturas (`textures/blocks/` → `textures/block/`, `textures/items/` → `textures/item/`) y las referencias de modelos que apuntaban a ellas
+- Eliminados artefactos de build residuales (ficheros `nul`, directorios `assets/`/`com/` sueltos en raíz) que se habían colado en el working tree
 
 ### Project
 
-- Roadmap phases 16 (remaining art) and 17 (dedicated QA pass) closed as out of scope for this release — ships with the current placeholder art and without a dedicated parity QA phase
+- Fases 16 (arte restante) y 17 (pasada de QA dedicada) del roadmap cerradas como fuera de alcance para esta release — sale con el arte placeholder actual y sin una fase de QA de paridad dedicada
 
 ## [0.0.0-beta.19] - 2026-08-08
 
 ### Fixed
 
-- Redeploy after verification of codec and registry initialization fixes
+- Redespliegue tras la verificación de los fixes de inicialización de codecs y registros
 
 ## [0.0.0-beta.18] - 2026-08-08
 
 ### Fixed
 
-- **Critical**: `initCodecs()` calls were missing, causing all dynamic registry codec dispatchers (LootRule, SpawnCondition, EntityModifier, GemBonus) to be empty
-- Rarities now load correctly (5/5: common, uncommon, rare, epic, mythic)
-- Gems now load correctly (21/21 gems across all dimensions)
-- Affixes now load correctly (93/93 with all categories: melee, ranged, armor, breaker, shield, generic)
-- Invaders now load correctly (23/23 across overworld, nether, end)
-- Elites and Augments now load and register properly
-- Added missing `ConfigPayload` registration preventing config sync crash
+- **Crítico**: faltaban las llamadas `initCodecs()`, causando que todos los dispatchers de codec de registros dinámicos (LootRule, SpawnCondition, EntityModifier, GemBonus) estuvieran vacíos
+- Las rarezas ahora cargan correctamente (5/5: common, uncommon, rare, epic, mythic)
+- Las gemas ahora cargan correctamente (21/21 gemas en todas las dimensiones)
+- Los afijos ahora cargan correctamente (93/93 con todas las categorías: melee, ranged, armor, breaker, shield, generic)
+- Los invaders ahora cargan correctamente (23/23 entre overworld, nether y end)
+- Elites y Augments ahora cargan y registran correctamente
+- Añadido el registro de `ConfigPayload` que faltaba, previniendo el crash de sincronización de config
 
 ### Known Issues
 
-- `extra_gem_bonuses` registry empty (no data files shipped)
-- `loot_category:charm` not recognized (deprecated category from upstream)
+- Registro `extra_gem_bonuses` vacío (sin ficheros de datos incluidos)
+- `loot_category:charm` no reconocido (categoría deprecada del upstream)
 
 ## [0.0.0-beta.15] - 2026-08-08
 
 ### Fixed
 
-- **Critical**: Dynamic registries (RarityRegistry, GemRegistry, AffixRegistry, etc.) never received data from datapacks because `registerToBus()` calls were missing in `FMLCommonSetupEvent`
-- JEI recipe extensions (Malice, Supremacy, Unnaming) no longer crash with `NoSuchElementException` on empty rarities list
-- Added defensive empty-list checks in JEI extensions as secondary safeguard
-- Registered `EquipmentEvents` and `AscEqMobEvents` on `NeoForge.EVENT_BUS` (event handlers were never active)
-- Registered all network payloads (BossSpawn, RerollResult, RadialState, WorldTier, LinkItemToChat, GemCaseSelect)
-- Added Mixin annotation processor for refmap generation in build output
+- **Crítico**: los registros dinámicos (RarityRegistry, GemRegistry, AffixRegistry, etc.) nunca recibían datos de los datapacks porque faltaban las llamadas `registerToBus()` en `FMLCommonSetupEvent`
+- Las extensiones de receta de JEI (Malice, Supremacy, Unnaming) ya no crashean con `NoSuchElementException` con listas de rarezas vacías
+- Añadidas comprobaciones defensivas de lista vacía en las extensiones JEI como salvaguarda secundaria
+- Registrados `EquipmentEvents` y `AscEqMobEvents` en `NeoForge.EVENT_BUS` (los handlers nunca estaban activos)
+- Registrados todos los payloads de red (BossSpawn, RerollResult, RadialState, WorldTier, LinkItemToChat, GemCaseSelect)
+- Añadido el procesador de anotaciones Mixin para generación de refmap en la salida de build
 
 ## [0.0.0-beta.14] - 2026-08-08
 
 ### Fixed
 
-- **Critical**: Item textures failed to load due to missing `src/main/resources` in Gradle build configuration
-- Updated sourceSets.main.resources to explicitly include manual asset sources alongside generated resources
-- All item textures now render correctly (gem_dust, materials, sigils, runes, etc.)
-- Proper asset pipeline processing for models, textures, and blockstates
+- **Crítico**: las texturas de items no cargaban debido a que faltaba `src/main/resources` en la configuración de build de Gradle
+- Actualizado sourceSets.main.resources para incluir explícitamente las fuentes de assets manuales junto a las generadas
+- Todas las texturas de items ahora renderizan correctamente (gem_dust, materials, sigils, runes, etc.)
+- Procesamiento correcto del pipeline de assets para modelos, texturas y blockstates
 
 ## [0.0.0-beta.13] - 2026-08-07
 
 ### Fixed
 
-- **Critical**: Creative Mode tab was empty despite items being registered
-- Implemented `TabFillingRegistry` to populate the Ascendant: Adventure tab with all mod items
-- All 49 items from `AscEq.Items` now appear in creative mode (materials, gems, sigils, tables, etc.)
-- Items now display with correct textures (no more magenta missing textures)
+- **Crítico**: la pestaña de modo creativo estaba vacía pese a tener items registrados
+- Implementado `TabFillingRegistry` para poblar la pestaña Ascendant: Adventure con todos los items del mod
+- Los 49 items de `AscEq.Items` aparecen ahora en modo creativo (materiales, gemas, sigils, mesas, etc.)
+- Los items se muestran con sus texturas correctas (se acabaron las texturas magenta de textura ausente)
 
 ## [0.0.0-beta.12] - 2026-07-XX
 
 ### Added
 
-- Initial port of Apotheosis 26.1 to NeoForge 26.2
-- Core equipment and affix systems
-- Gem socket system
-- Spawner system
-- World tier progression
+- Port inicial de Apotheosis 26.1 a NeoForge 26.2
+- Sistemas core de equipo y afijos
+- Sistema de engaste de gemas
+- Sistema de spawners
+- Progresión de world tiers
 
 ---
