@@ -1,6 +1,12 @@
 # Changelog — Ascendant Equipment
 
 
+## [1.2.2] - 2026-08-28
+
+### Fix
+
+- **Los amuletos de poción no encajaban en el slot "charm" de Regalia Slots API**: el port trajo el fichero de entidad (`data/ascendant_equipment/curios/entities/player_charm.json`, que crea el slot "charm" en el jugador) pero se dejó fuera el fichero de tag de ítem que el Apotheosis original sí incluye (`data/curios/tags/item/charm.json` con `apotheosis:potion_charm`). El validador `regalia_slots_api:tag` del slot "charm" solo acepta ítems presentes en `#regalia_slots_api:charm`, `#regalia_slots_api:curio`, `#curios:charm` o `#curios:curio`; `ascendant_equipment:potion_charm` no estaba en ninguno, así que el slot aparecía pero rechazaba el amuleto. Añadido `data/curios/tags/item/charm.json` con `ascendant_equipment:potion_charm` (formato idéntico al upstream).
+
 ## [1.2.1] - 2026-08-23
 
 ### Change
