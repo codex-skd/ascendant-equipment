@@ -1,11 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": {
-            "sprite": "ascendant_equipment:item/godforged_pearl",
-            "neoforge_data": {
-                "light_emission": 15
-            }
-        }
+        "layer0": "ascendant_equipment:item/godforged_pearl"
     }
 }
