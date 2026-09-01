@@ -4,9 +4,16 @@ Copyright (c) 2018-2025 Stormraven Studios, LLC (Apotheosis)
 Copyright (c) 2026 Stalking Dragons (Ascendant Equipment port)
 
 This mod is a port of Apotheosis (https://www.curseforge.com/minecraft/mc-mods/apotheosis)
-by Shadows_of_Fire, ported from NeoForge 26.1.2 to NeoForge 26.2 with all
-identifiers renamed to this project's convention. The original Apotheosis
-code is MIT licensed. Not affiliated with or endorsed by the original author.
+by Shadows_of_Fire, with all identifiers renamed to this project's convention.
+This 1.21.1 build is a re-fork from the upstream Apotheosis 1.21 sources (v8.7.0).
+The original Apotheosis code is MIT licensed. Not affiliated with or endorsed by
+the original author.
+
+Required dependencies keep their own licenses (depended on, not bundled):
+Common Toolkit (fork of Placebo) LGPL-2.1-or-later; Ascendant Attributes,
+Ascendant Spawners and Ascendant Enchanting (forks of Apothic Attributes /
+Spawners / Enchanting) MIT; Vellumli (fork of Patchouli) CC BY-NC-SA 3.0;
+Regalia Slots API (fork of Curios API, optional) LGPL-3.0-or-later.
 
 All in-game assets (textures, models, sounds, guidebook content) are original
 to this project and are NOT copied from Apotheosis, whose assets remain
