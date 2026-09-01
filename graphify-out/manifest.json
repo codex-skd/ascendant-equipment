@@ -1975,8 +1975,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/gem_dust.json": {
-    "mtime": 1788246788.9102664,
-    "ast_hash": "ab8d1b658fa5da30200c5c6b1f6be9ca",
+    "mtime": 1788255311.5017767,
+    "ast_hash": "6956cb31f4e6b05a78ea405713770aa6",
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/gem_fused_slate.json": {
@@ -2100,8 +2100,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/godforged_pearl.json": {
-    "mtime": 1788246788.9253528,
-    "ast_hash": "f9b2d199dd1ecf833fa894b612384820",
+    "mtime": 1788255314.0949826,
+    "ast_hash": "d074f79f8b4df7a640704b66888f13af",
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/models/item/gold_upgrade_smithing_template.json": {
@@ -9325,8 +9325,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1788247870.8547637,
-    "ast_hash": "9227ff56050ddc03ab22df9789562e39",
+    "mtime": 1788255718.780992,
+    "ast_hash": "1586bd6128c2e4301a71693975d6d6ee",
     "semantic_hash": ""
   },
   "README.md": {
@@ -9374,154 +9374,9 @@
     "ast_hash": "d450898d9afdb4630f16f06253f8388e",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/0.0.0-beta.10.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "b5a53e7c77bbe758648b51b791284dcd",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.11.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "887dd931259cb7926f10afbd2587dbd7",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.12.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "d8e71e2bb0d44a87c1ce7d1259d88728",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.13.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "74d900e2529e70ef299ed2a007ee4c0b",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.14.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "362bd21bcf5c29812ab5891eb6c18f0f",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.15.md": {
-    "mtime": 1786153878.0,
-    "ast_hash": "ae629c7c9b47ed069d94bff323b4b364",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.18.md": {
-    "mtime": 1786155558.0,
-    "ast_hash": "411c7035fa1b05d9622297299ea53165",
-    "semantic_hash": ""
-  },
   "docs/curseforge/versions/0.0.0-beta.2.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "c2ce73e8948e8b2100523ff8979cf634",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.3.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "d48a16ede69abdd98e299d7440a4e0b8",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.4.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "46050f793f5c266c4348f5d740198e20",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.5.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "7bcc96787d3d3e4121ccd4bc7be4b8fc",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.6.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "f6611fb9c32b4467cb75d9b0b60c5b1b",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.7.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "273839b5ec6498026b060342e5001ccf",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.9.md": {
-    "mtime": 1786146349.0,
-    "ast_hash": "4f7bba8c11b1b6dc3ee3d818c9a4f686",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.0.md": {
-    "mtime": 1786377548.0,
-    "ast_hash": "86d3e0e9409bbe7d975b52ec3016c61a",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.1.md": {
-    "mtime": 1786472070.0,
-    "ast_hash": "f0b62920612194e756f2eb6de9625251",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.10.md": {
-    "mtime": 1787066692.0,
-    "ast_hash": "0ae22131eb02cb3d33df919c06877246",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.2.md": {
-    "mtime": 1786494682.0,
-    "ast_hash": "f6aedd961604e0b92b9c6bc42f829e02",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.3.md": {
-    "mtime": 1786569058.0,
-    "ast_hash": "89c363547dc5727781b6717e2b854344",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.4.md": {
-    "mtime": 1786605853.0,
-    "ast_hash": "d8041df79255f78f4be3b1ea038bb011",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.5.md": {
-    "mtime": 1786704235.0,
-    "ast_hash": "9fb351afdab187421b4d7f624ad2c9a1",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.6.md": {
-    "mtime": 1786704716.0,
-    "ast_hash": "b30b96e7b4178bf082784a3b9896ba19",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.7.md": {
-    "mtime": 1786967950.0,
-    "ast_hash": "b954ae5f626bced57001a4d36a7886cf",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.8.md": {
-    "mtime": 1787039286.0,
-    "ast_hash": "105fa3bbea491d44e1f7a4681c803b2d",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.0.9.md": {
-    "mtime": 1787039934.0,
-    "ast_hash": "d3cd9d032dc158c5d2d3dbd3aa9ebb61",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.1.0.md": {
-    "mtime": 1787179962.0,
-    "ast_hash": "f2b3ee790dd941ee6d03842e5e652bec",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.1.1.md": {
-    "mtime": 1787331511.0,
-    "ast_hash": "af5893ba5660a54a18514d429e99b39a",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.0.md": {
-    "mtime": 1787360407.0,
-    "ast_hash": "6ec6def7dce1098c116375424454ceae",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.1.md": {
-    "mtime": 1787436761.0,
-    "ast_hash": "4d8de9587100f6ba22a23c9fdfef9594",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.2.md": {
-    "mtime": 1787909874.0,
-    "ast_hash": "ce5d537bbacb90731e8ecfc595a21dd4",
+    "mtime": 1788255708.9759455,
+    "ast_hash": "c7a50dd55b533d3d24ce84f7d68f8b03",
     "semantic_hash": ""
   },
   "src/main/resources/assets/ascendant_equipment/icon.png": {
@@ -10337,6 +10192,16 @@
   "src/main/resources/assets/ascendant_equipment/sounds/reforge_item_reforged.ogg": {
     "mtime": 1786146339.0,
     "ast_hash": "8d4cf1f966cc9cffdc2bc3b63c82f0a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/models/item/god_fused_pearl.json": {
+    "mtime": 1788255316.451439,
+    "ast_hash": "4b5470229be09dd30b290a6ae1ccd341",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/ascendant_equipment/shaders/core/gray.json": {
+    "mtime": 1788255297.9374459,
+    "ast_hash": "b58616953ef240ae7382fd8caa210fb8",
     "semantic_hash": ""
   }
 }
