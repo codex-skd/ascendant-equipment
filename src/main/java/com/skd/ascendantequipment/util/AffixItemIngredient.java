@@ -43,6 +43,7 @@ public class AffixItemIngredient implements ICustomIngredient {
 
     @Override
     public Stream<ItemStack> getItems() {
+        if (!this.rarity.isBound()) return Stream.empty();
         return createFakeDisplayItems(this.getRarity());
     }
 

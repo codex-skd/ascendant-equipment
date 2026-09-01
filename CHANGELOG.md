@@ -2,6 +2,16 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.3] - 2026-09-01
+
+### Fixed
+
+- **`NullPointerException: Trying to access unbound value: empty:empty`** in JEI when displaying
+  the `ascendant_equipment:socketing` recipe. `AffixItemIngredient.getItems()` called
+  `getRarity()` unconditionally, which throws when the underlying `DynamicHolder<LootRarity>` is
+  the unbound `empty:empty` sentinel. Guarded with `rarity.isBound()`, returning `Stream.empty()`
+  when unbound (`AffixItemIngredient.java`).
+
 ## [0.0.0-beta.2] - 2026-09-01
 
 ### Fixed
