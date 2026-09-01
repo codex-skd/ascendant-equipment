@@ -2,6 +2,29 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.2] - 2026-09-01
+
+### Fixed
+
+- **Hard client crash on resource load**: `RegisterShadersEvent` (`AdventureModuleClient.shaderRegistry`)
+  threw `FileNotFoundException: ascendant_equipment:shaders/core/gray.json`. The 26.2 → 1.21.1
+  asset port carried only `shaders/core/gray.fsh`, in the post-1.21.1 GLSL dialect
+  (`#moj_import <minecraft:dynamictransforms.glsl>`, `sphericalVertexDistance`, `apply_fog(...)`).
+  Restored the full `gray.json` / `gray.vsh` / `gray.fsh` triplet verbatim from upstream
+  Apotheosis `1.21` (`#version 150`, `linear_fog`), namespace remapped to `ascendant_equipment`.
+- **Item models `gem_dust` and `godforged_pearl`**: `"layer0"` used the 1.21.4+ texture-object
+  syntax (`{ "sprite": ..., "neoforge_data": { "light_emission": 15 } }`), unparseable on 1.21.1
+  → items rendered as the missing-model placeholder. Converted to plain-string `layer0` (the
+  per-texture `light_emission` hint is dropped; `.mcmeta` animations kept).
+- **Item `god_fused_pearl`**: no `models/item/god_fused_pearl.json` existed (only a 1.21.4-style
+  `assets/ascendant_equipment/items/` definition, which 1.21.1 ignores). Added
+  `{ "parent": "ascendant_equipment:item/godforged_pearl" }`, matching the 26.2 definition's intent.
+
+### Notes
+
+- Verified: `./gradlew build` OK. Shader GLSL compilation is only checkable in-client (GL context);
+  sources are an as-is port of upstream Apotheosis 1.21 for the same Minecraft version.
+
 ## [0.0.0-beta.1] - 2026-09-01
 
 ### Added
