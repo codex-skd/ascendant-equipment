@@ -1,0 +1,17 @@
+{
+    "type": "ascendant_equipment:salvaging",
+    "input": {
+        "type": "ascendant_equipment:gem",
+        "purity": "flawless"
+    },
+    "outputs": [
+        {
+            "max_count": 7,
+            "min_count": 4,
+            "stack": {
+                "count": 1,
+                "id": "ascendant_equipment:gem_dust"
+            }
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "ポーションのレシピ",
+	"parent": "ascendant_equipment:potion/potion",
+    "description": "このセクションでは、新しく追加されたバニラポーションのレシピを詳しく説明します。",
+    "icon": "minecraft:nether_wart",
+	"flag": "ascendant_equipment:potion"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Itens utilitários",
+    "description": "Esta seção detalha todas as ferramentas usadas para tornar o encantamento mais fácil.",
+    "icon": "ascendant_equipment:library",
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting"
+}

@@ -1,0 +1,7 @@
+{
+    "type": "ascendant_equipment:add_sockets",
+    "input": {
+        "item": "ascendant_equipment:sigil_of_socketing"
+    },
+    "max_sockets": 2
+}

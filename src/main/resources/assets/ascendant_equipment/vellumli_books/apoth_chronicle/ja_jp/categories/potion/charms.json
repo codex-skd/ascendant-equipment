@@ -1,0 +1,8 @@
+{
+    "name": "ポーションチャーム",
+	"parent": "ascendant_equipment:potion/potion",
+    "description": "このセクションでは、$(9)ポーションチャーム$()と、その使い方や細かな違いについて詳しく説明する。$(p)他のモジュールが無効化されていたり、一部のMODがインストールされていない場合、この項目は少々役に立たないかもしれない。",
+    "icon": "ascendant_equipment:potion_charm",
+	"flag": "ascendant_equipment:potion",
+	"sortnum": 1
+}

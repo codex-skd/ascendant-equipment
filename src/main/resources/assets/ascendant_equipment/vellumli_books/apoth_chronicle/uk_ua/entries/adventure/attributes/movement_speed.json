@@ -1,0 +1,13 @@
+{
+    "name": "Швидкість пересування",
+    "icon": "minecraft:leather_boots",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Швидкість пересування$() визначає швидкість вашого руху, відносно до базової швидкости ходьби гравця.$(p)Ця характеристика забезпечується майже чим завгодно."
+        }
+	]
+}

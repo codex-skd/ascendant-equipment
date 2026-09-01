@@ -1,0 +1,38 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "gateways"
+        }
+    ],
+    "parent": "ascendant_equipment:progression/frontier",
+    "criteria": {
+        "complete_frontier_gate": {
+            "conditions": {
+                "gateway": "ascendant_equipment:tiered/frontier"
+            },
+            "trigger": "gateways:finish_gateway"
+        }
+    },
+    "display": {
+        "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
+        "description": {
+            "translate": "advancements.ascendant_equipment.challenge_gates.frontier.desc"
+        },
+        "icon": {
+            "components": {
+                "gateways:gateway": "ascendant_equipment:tiered/frontier"
+            },
+            "id": "gateways:gate_pearl"
+        },
+        "title": {
+            "translate": "advancements.ascendant_equipment.challenge_gates.frontier.title"
+        }
+    },
+    "requirements": [
+        [
+            "complete_frontier_gate"
+        ]
+    ],
+    "sends_telemetry_event": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Encantabilidad del artículo",
+  "icon": "minecraft:golden_sword",
+  "category": "ascendant_equipment:enchanting/table",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "En vainilla, la encantabilidad de un objeto contribuye a tu $(fpower).$(p)Apotheosis lo cambia para proporcionar un impulso directo de $(arcanos). $(p)$(arcanos) aumenta en un 50% de la encantabilidad de un objeto."
+    }
+  ]
+}

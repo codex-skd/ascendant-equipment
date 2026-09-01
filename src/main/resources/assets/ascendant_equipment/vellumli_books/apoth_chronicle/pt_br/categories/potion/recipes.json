@@ -1,0 +1,7 @@
+{
+    "name": "Receitas de poções",
+	"parent": "ascendant_equipment:potion/potion",
+    "description": "Esta seção detalha todas as novas receitas de poções do vanilla que foram adicionadas.",
+    "icon": "minecraft:nether_wart",
+	"flag": "ascendant_equipment:potion"
+}

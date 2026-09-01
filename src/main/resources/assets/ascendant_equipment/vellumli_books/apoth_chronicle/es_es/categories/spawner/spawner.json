@@ -1,0 +1,6 @@
+{
+  "name": "módulo generador",
+  "description": "El módulo Spawner le permite mover y modificar $(9)Mob Spawners$().",
+  "icon": "minecraft:spawner",
+  "flag": "ascendant_equipment:spawner"
+}

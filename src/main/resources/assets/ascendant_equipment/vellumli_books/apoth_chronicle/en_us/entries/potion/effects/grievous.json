@@ -1,0 +1,17 @@
+{
+    "name": "Grievous Wounds",
+    "icon": "ascendant_attributes:textures/mob_effect/grievous.png",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "The Potion of $(c)Grievous Wounds$() is a negative effect.$(p)While under its effects, all healing received is reduced."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "The healing reduction is equal to 40% per level.$(p)While at level III or above, all healing is prevented."
+        }
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Marchitar",
+  "icon": "minecraft:textures/mob_effect/wither.png",
+  "category": "ascendant_equipment:potion/recipes",
+  "flag": "&ascendant_equipment:potion,ascendant_equipment:wstloaded",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(c)Marchar$() es un efecto hostil que normalmente no se puede crear.$(p)Mientras lo apliques, recibirás daño en cada tic.$(p)A diferencia del Veneno, este daño es letal."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Receta de elaboración de cerveza",
+      "item": "wstweaks:fragment",
+      "text": "Esta poción se puede elaborar con una poción incómoda y un fragmento de calavera marchita.$(p)Se puede ampliar, fortalecer o convertir en una poción de salpicadura con los ingredientes habituales."
+    }
+  ]
+}

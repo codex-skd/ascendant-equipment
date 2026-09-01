@@ -1,0 +1,17 @@
+{
+  "name": "Generadores de mafias",
+  "icon": "minecraft:spawner",
+  "category": "ascendant_equipment:spawner/spawner",
+  "flag": "ascendant_equipment:spawner",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Un $(9)Mob Spawner$() es un bloque mágico que puede canalizar entidades desde el vacío.$(p)Pero eso ya lo sabías, así que pasemos a lo nuevo.$(p)En Apoteosis, los engendros se pueden recoger con $(9)Silk Touch$()."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Cosechar un generador de esa manera incurrirá en un costo de durabilidad adicional.$(p)Los generadores de Mob tienen una serie de $(l:ascendant_equipment:spawner/stats)Estadísticas de generador$() que controlan su funcionalidad.$(p)Estas estadísticas se pueden cambiar usando $(l:ascendant_equipment:spawner/modifiers)Modificadores de generador$()."
+    }
+  ]
+}

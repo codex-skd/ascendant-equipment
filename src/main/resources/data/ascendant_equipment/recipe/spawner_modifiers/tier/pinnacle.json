@@ -1,0 +1,39 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "ascendant_spawners:spawner_modifier",
+    "mainhand": {
+        "item": "ascendant_equipment:pinnacle_spawner_upgrade_rune"
+    },
+    "stat_changes": [
+        {
+            "type": "ascendant_spawners:min_delay",
+            "mode": "set",
+            "value": 20
+        },
+        {
+            "type": "ascendant_spawners:max_delay",
+            "mode": "set",
+            "value": 20
+        },
+        {
+            "type": "ascendant_spawners:spawn_count",
+            "mode": "set",
+            "value": 16
+        },
+        {
+            "type": "ascendant_spawners:max_nearby_entities",
+            "mode": "set",
+            "value": 32
+        },
+        {
+            "type": "ascendant_spawners:req_player_range",
+            "mode": "set",
+            "value": 48
+        }
+    ]
+}

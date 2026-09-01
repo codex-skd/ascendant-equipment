@@ -1,0 +1,41 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        },
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_enchanting"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "A": {
+            "item": "ascendant_equipment:arcane_sands"
+        },
+        "I": {
+            "item": "ascendant_equipment:infused_spawner_rune"
+        },
+        "P": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "S": {
+            "item": "ascendant_equipment:sigil_of_malice"
+        },
+        "W": {
+            "item": "ascendant_enchanting:warden_tendril"
+        }
+    },
+    "pattern": [
+        "AWA",
+        "PIP",
+        "ASA"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:summit_spawner_upgrade_rune"
+    }
+}

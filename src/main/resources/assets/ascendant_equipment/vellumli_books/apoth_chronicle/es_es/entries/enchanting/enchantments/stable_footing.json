@@ -1,0 +1,17 @@
+{
+  "name": "Pie estable",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Pie estable$() es un encantamiento para botas.$(p)Hace que la penalización de velocidad de frenado por volar se revierta.$(p)Esto incluye todas las penalizaciones por no pararse en el suelo."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Cuando se combina con $(9)Aqua Affinity$(), puedes tener una velocidad de descanso total al nadar."
+    }
+  ]
+}

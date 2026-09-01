@@ -1,0 +1,13 @@
+{
+  "name": "Daño crítico",
+  "icon": "minecraft:netherite_axe",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Daño crítico$() es el modificador de daño para tus golpes críticos.$(p)Los críticos de salto también usan tu valor de daño crítico, en lugar del multiplicador habitual de 1,5x.$(p)Se encuentra en las armas."
+    }
+  ]
+}

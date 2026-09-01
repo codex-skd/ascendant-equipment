@@ -1,0 +1,90 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_enchanting"
+        }
+    ],
+    "type": "ascendant_equipment:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:the_nether"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "ascent": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "ascendant_equipment:mob_effect",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "ascendant_equipment:melee_weapon",
+                    "ascendant_equipment:trident"
+                ]
+            },
+            "mob_effect": "ascendant_attributes:detonation",
+            "target": "attack_target",
+            "values": {
+                "flawless": {
+                    "duration": 80,
+                    "amplifier": 0,
+                    "cooldown": 1200
+                },
+                "perfect": {
+                    "duration": 80,
+                    "amplifier": 1,
+                    "cooldown": 1200
+                }
+            }
+        },
+        {
+            "type": "ascendant_equipment:enchantment",
+            "enchantment": "ascendant_enchanting:berserkers_fury",
+            "gem_class": "ascendant_equipment:chestplate",
+            "values": {
+                "flawed": 1,
+                "normal": 1,
+                "flawless": 2,
+                "perfect": 2
+            }
+        },
+        {
+            "type": "ascendant_equipment:enchantment",
+            "enchantment": "minecraft:efficiency",
+            "gem_class": "ascendant_equipment:breaker",
+            "values": {
+                "flawed": 1,
+                "normal": 2,
+                "flawless": 3,
+                "perfect": 4
+            }
+        },
+        {
+            "type": "ascendant_equipment:attribute",
+            "attribute": "ascendant_attributes:fire_damage",
+            "gem_class": "ascendant_equipment:helmet",
+            "operation": "add_multiplied_total",
+            "values": {
+                "flawed": 0.5,
+                "normal": 0.625,
+                "flawless": 0.75,
+                "perfect": 0.9
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": {
+            "sprite": "ascendant_equipment:item/gem_dust",
+            "neoforge_data": {
+                "light_emission": 15
+            }
+        }
+    }
+}

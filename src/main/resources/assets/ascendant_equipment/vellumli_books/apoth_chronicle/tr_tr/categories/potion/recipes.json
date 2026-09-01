@@ -1,0 +1,7 @@
+{
+    "name": "İksir Tarifleri",
+	"parent": "ascendant_equipment:potion/potion",
+    "description": "Bu bölüm, eklenen tüm yeni vanilla iksir tariflerini detaylandırır.",
+    "icon": "minecraft:nether_wart",
+	"flag": "ascendant_equipment:potion"
+}

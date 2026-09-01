@@ -1,0 +1,12 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.armor",
+        "operation": "add_value",
+        "value": 8.0
+    },
+    "modifier_id": "ascendant_equipment:ascent/armor",
+    "sort_index": 100,
+    "target": "monsters",
+    "tier": "ascent"
+}

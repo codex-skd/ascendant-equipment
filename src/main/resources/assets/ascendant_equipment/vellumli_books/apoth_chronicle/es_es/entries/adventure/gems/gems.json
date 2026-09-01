@@ -1,0 +1,39 @@
+{
+  "name": "gemas",
+  "icon": "ascendant_equipment:gem",
+  "category": "ascendant_equipment:adventure/gems",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Una $(9)Gema$() es un cristal de fuerza condensada.$(p)Cuando se inserta en un elemento con afijo, una gema proporcionará una poderosa calificación.$(p)Las gemas pueden otorgar diferentes bonificaciones en diferentes elementos y se pueden actualizar."
+    },
+    {
+      "title": "Pureza",
+      "type": "vellumli:text",
+      "text": "Cada gema tiene una pureza, que va desde $(#808080)agrietada$() hasta $(6)perfecta$().$(p)La pureza por sí sola determina la fuerza de la gema, y ​​​​las gemas de mayor pureza son más caras de actualizar.$(p)Una gema $(6)Perfect$() ya no se puede actualizar."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Obteniendo Gemas",
+      "text": "Las gemas se pueden encontrar en el botón del cofre y rara vez se pueden encontrar al matar mobs. Las caídas de gemas son más comunes para los jugadores reales, pero tienen una probabilidad muy pequeña de caer desde máquinas u otras fuentes de automatización.$(p)Es más probable que las gemas caigan de los jefes."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "gemas engarzadas",
+      "text": "Para engarzar una gema en un artículo, combine las dos en una mesa de herrería.$(p)Cada gema indica en qué artículos puede encajar.$(p)Algunas gemas son $(#C73912)Únicas$(), lo que significa que solo se puede engarzar una copia de esa gema en un artículo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Quitar gemas",
+      "text": "Quitar gemas de un objeto era un proceso difícil, pero algunos alquimistas inteligentes descubrieron cómo hacerlo.$(p)Sus notas se detallan en la página siguiente."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:sigil_of_withdrawal",
+      "title": "Sello de retirada",
+      "text": "Combina un objeto engarzado con un $(9)Sigilo de retirada$() en una mesa de herrería para quitar las gemas engarzadas de un objeto. Se devolverán el artículo y todas las gemas."
+    }
+  ]
+}

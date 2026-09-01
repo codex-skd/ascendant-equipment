@@ -1,0 +1,17 @@
+{
+    "name": "Aljava infinda",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(2)Aljava infinda$() é um encantamento de obra-prima para arcos.$(p)Ao disparar um arco, as flechas não são consumidas, não importa o tipo.$(p)É considerado uma melhoria direta de $(9)infinidade$()."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "Esse encantamento deve até tornar as flechas de outros mods infinitas."
+        }
+	]
+}

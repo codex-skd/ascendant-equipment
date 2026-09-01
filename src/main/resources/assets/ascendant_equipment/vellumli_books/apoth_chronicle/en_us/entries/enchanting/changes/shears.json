@@ -1,0 +1,13 @@
+{
+    "name": "Shears",
+    "icon": "minecraft:shears",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Alongside the new enchantments, Shears may now also receive $(9)Unbreaking$(), $(9)Efficiency$(), and $(9)Fortune$()."
+        }
+	]
+}

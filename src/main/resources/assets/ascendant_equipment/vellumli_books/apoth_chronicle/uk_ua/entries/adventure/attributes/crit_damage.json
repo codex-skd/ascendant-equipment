@@ -1,0 +1,13 @@
+{
+    "name": "Критична шкода",
+    "icon": "minecraft:netherite_axe",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Шкода від критичних атак$() - це модифікатор шкоди для ваших критичних атак.$(p)Критичні атаки у стрибку також застосовують цю характеристику замість звичайного множника 1.5.$(p)Притаманне зброї."
+        }
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "velocidad de dibujo",
+  "icon": "minecraft:bow",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Draw Speed$() es la rapidez con la que puedes dibujar un arma a distancia, en relación con la velocidad original. 1 = 100%, 2 = 200%, etc.$(p)Se encuentra en armas a distancia."
+    }
+  ]
+}

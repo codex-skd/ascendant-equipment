@@ -1,0 +1,29 @@
+{
+  "name": "Tomo de desguace",
+  "icon": "ascendant_enchanting:scrap_tome",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "El Tomo de desguace es una forma de recuperar encantamientos de un objeto.$(p)Combinar uno con otro objeto en un yunque destruirá el otro objeto y creará un libro con algunos de los encantamientos al azar."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:scrap_tome",
+      "text": "Siempre recibirás la mitad de los encantamientos (redondeados hacia arriba).$(p)Los encantamientos seleccionados se basan en tu $(l:ascendant_equipment:enchanting/table/seed)Semilla encantadora$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Desguace Superior",
+      "item": "ascendant_enchanting:improved_scrap_tome",
+      "text": "El $(9)Tomo de desguace superior$() es una versión mejorada del Tomo de desguace.$(p)Extrae todos los encantamientos del objeto, en lugar de la mitad de ellos."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_enchanting:extraction_tome",
+      "text": "El $(9)Tomo de Extracción$() es una versión perfeccionada del Tomo de Desguace.$(p)Extrae todos los encantamientos de un objeto y no destruye el objeto en el proceso."
+    }
+  ]
+}

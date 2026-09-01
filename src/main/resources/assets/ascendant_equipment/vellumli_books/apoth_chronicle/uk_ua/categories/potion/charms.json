@@ -1,0 +1,8 @@
+{
+    "name": "Зіллєві амулети",
+	"parent": "ascendant_equipment:potion/potion",
+    "description": "У цьому розділі детально описані $(9)зіллєві амулети$() та всі їхні застосування і нюанси.$(p)Якщо інші модулі вимкнені або деякі моди не встановлені, цей розділ може бути трохи порожнім.",
+    "icon": "ascendant_equipment:potion_charm",
+	"flag": "ascendant_equipment:potion",
+	"sortnum": 1
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "D": {
+            "item": "minecraft:deepslate"
+        },
+        "G": {
+            "item": "ascendant_equipment:gem_dust"
+        }
+    },
+    "pattern": [
+        "DDD",
+        "DGD",
+        "DDD"
+    ],
+    "result": {
+        "count": 8,
+        "id": "ascendant_equipment:gem_fused_slate"
+    }
+}

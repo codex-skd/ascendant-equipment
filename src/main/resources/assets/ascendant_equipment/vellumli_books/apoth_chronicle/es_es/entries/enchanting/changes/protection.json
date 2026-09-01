@@ -1,0 +1,25 @@
+{
+  "name": "Protección",
+  "icon": "minecraft:netherite_chestplate",
+  "category": "ascendant_equipment:enchanting/changes",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Protection$() ya no es exclusivo de los subtipos de protección.$(p)Esto significa que ahora puedes tener $(9)Protection$() y otro encantamiento defensivo que normalmente es exclusivo."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Para tener en cuenta esto, la efectividad de los encantamientos de protección se modifica ligeramente.$(p)Entender cómo significa aprender un poco sobre cómo funciona la protección y algo de matemáticas.$(p)Para comenzar, introducimos el concepto de punto de Reducción de Daño (DR), que es la estadística que beneficia a todos los encantamientos defensivos."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El encantamiento $(9)Protección$() proporciona 1 punto contra todo tipo de daño.$(p)Los encantamientos especializados proporcionan 2 puntos contra un tipo específico.$(p)$(9)Feather Falling$() proporciona 3 puntos contra daño por caída."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "En Apoteosis, cada punto de Protección proporciona una reducción de daño del 2,5%, hasta un 85%.$(p)En vainilla, cada punto proporciona una reducción de daño del 4%, hasta un 80%."
+    }
+  ]
+}

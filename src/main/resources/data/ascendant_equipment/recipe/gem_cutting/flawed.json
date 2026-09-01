@@ -1,0 +1,28 @@
+{
+    "type": "ascendant_equipment:purity_upgrade",
+    "left": [
+        {
+            "count": 5,
+            "item": "ascendant_equipment:gem_dust"
+        }
+    ],
+    "purity": "flawed",
+    "right": [
+        {
+            "count": 27,
+            "item": "ascendant_equipment:mysterious_scrap_metal"
+        },
+        {
+            "count": 9,
+            "item": "ascendant_equipment:timeworn_fabric"
+        },
+        {
+            "count": 3,
+            "item": "ascendant_equipment:luminous_crystal_shard"
+        },
+        {
+            "count": 1,
+            "item": "ascendant_equipment:arcane_sands"
+        }
+    ]
+}

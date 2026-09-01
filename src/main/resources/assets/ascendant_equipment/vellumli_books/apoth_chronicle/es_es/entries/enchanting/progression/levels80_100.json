@@ -1,0 +1,32 @@
+{
+  "name": "Niveles 80 - 100",
+  "icon": "ascendant_enchanting:endshelf",
+  "category": "ascendant_equipment:enchanting/progression",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:spotlight",
+      "title": "Alcanzando el nivel 90",
+      "item": "ascendant_enchanting:infused_breath",
+      "text": "Acceder al penúltimo nivel requiere una tabla de nivel 80 y acceso a $(9)Dragon's Breath$().$(p)Con estos, puedes crear $(9)Infused Dragon's Breath$(), un componente central de $(9)Endshelves$()."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 90",
+      "recipe": "ascendant_enchanting:endshelf",
+      "recipe2": "ascendant_enchanting:pearl_endshelf"
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Alcanzando el nivel 100",
+      "item": "minecraft:dragon_head",
+      "text": "El nivel más alto que puede alcanzar una Mesa de Encantamiento es el Nivel 100, pero solo un estante puede proporcionar tanto poder.$(p)Crear un estante de este tipo requiere aventurarse en el extremo exterior para recuperar una $(9)Cabeza de Dragón$()."
+    },
+    {
+      "type": "vellumli:crafting",
+      "title": "Alcanzando el nivel 100",
+      "recipe": "ascendant_enchanting:draconic_endshelf",
+      "text": "Un solo $(9)Draconic Endshelf$() proporciona suficiente fuerza bruta para impulsar una mesa del nivel 90 al nivel 100.$(p)Sin embargo, no proporciona otras bonificaciones de estadísticas."
+    }
+  ]
+}

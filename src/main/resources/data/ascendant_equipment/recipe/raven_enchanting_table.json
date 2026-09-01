@@ -1,0 +1,38 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_enchanting"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "A": {
+            "type": "ascendant_equipment:gem",
+            "gems": [
+                "ascendant_equipment:overworld/royalty"
+            ],
+            "purity": "perfect"
+        },
+        "G": {
+            "item": "ascendant_equipment:god_fused_pearl"
+        },
+        "O": {
+            "tag": "c:obsidians"
+        },
+        "P": {
+            "item": "ascendant_enchanting:ascendant_enchanting_table"
+        }
+    },
+    "pattern": [
+        " A ",
+        "GPG",
+        "OOO"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_enchanting:raven_enchanting_table"
+    }
+}

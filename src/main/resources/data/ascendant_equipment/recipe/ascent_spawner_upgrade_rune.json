@@ -1,0 +1,37 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "A": {
+            "type": "ascendant_equipment:spawn_egg"
+        },
+        "G": {
+            "tag": "c:gems/quartz"
+        },
+        "I": {
+            "item": "ascendant_equipment:sigil_of_socketing"
+        },
+        "L": {
+            "item": "ascendant_equipment:luminous_crystal_shard"
+        },
+        "S": {
+            "item": "ascendant_equipment:spawner_rune"
+        }
+    },
+    "pattern": [
+        "LAL",
+        "GSG",
+        "LIL"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:ascent_spawner_upgrade_rune"
+    }
+}

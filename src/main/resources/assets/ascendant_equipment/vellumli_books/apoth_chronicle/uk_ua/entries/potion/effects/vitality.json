@@ -1,0 +1,17 @@
+{
+    "name": "Спалах життєвої сили",
+    "icon": "apothic_attributes:textures/mob_effect/vitality.png",
+    "category": "ascendant_equipment:potion/effects",
+	"flag": "ascendant_equipment:potion",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Спалах життєвої сили$() – це корисний ефект.$(p)Під його впливом усе зцілення посилюється."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "Посилення зцілення дорівнює 20% на рівень."
+        }
+	]
+}

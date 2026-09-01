@@ -1,0 +1,7 @@
+{
+  "name": "Artículos de utilidad",
+  "description": "Esta sección detalla todas las herramientas aleatorias utilizadas para facilitar el encantamiento.",
+  "icon": "ascendant_enchanting:library",
+  "flag": "ascendant_equipment:enchanting",
+  "parent": "ascendant_equipment:enchanting/enchanting"
+}

@@ -1,0 +1,57 @@
+{
+	"reforge_item_placed": {
+		"subtitle": "apotheosis.subtitle.reforge_item_placed",
+		"sounds": ["ascendant_equipment:reforge_item_placed"]
+	},
+    "reforge_item_reforged": {
+        "subtitle": "apotheosis.subtitle.reforge_item_reforged",
+        "sounds": ["ascendant_equipment:reforge_item_reforged"]
+    },
+    "malice": {
+        "subtitle": "apotheosis.subtitle.malice",
+        "sounds": ["ascendant_equipment:malice"]
+    },
+    "music_disc_flash": {
+        "subtitle": "subtitle.apotheosis.music_disc.flash",
+        "sounds": [
+            {
+                "name": "ascendant_equipment:music/flash",
+                "stream": true
+            }
+        ]
+    },
+    "music_disc_glimmer": {
+        "subtitle": "subtitle.apotheosis.music_disc.glimmer",
+        "sounds": [
+            {
+                "name": "ascendant_equipment:music/glimmer",
+                "stream": true
+            }
+        ]
+    },
+    "music_disc_shimmer": {
+        "subtitle": "subtitle.apotheosis.music_disc.shimmer",
+        "sounds": [
+            {
+                "name": "ascendant_equipment:music/shimmer",
+                "stream": true
+            }
+        ]
+    },
+    "invader_uncommon": {
+        "subtitle": "apotheosis.subtitle.invader_uncommon",
+        "sounds": ["ascendant_equipment:invader_uncommon"]
+    },
+    "invader_rare": {
+        "subtitle": "apotheosis.subtitle.invader_rare",
+        "sounds": ["ascendant_equipment:invader_rare"]
+    },
+    "invader_epic": {
+        "subtitle": "apotheosis.subtitle.invader_epic",
+        "sounds": ["ascendant_equipment:invader_epic"]
+    },
+    "invader_mythic": {
+        "subtitle": "apotheosis.subtitle.invader_mythic",
+        "sounds": ["ascendant_equipment:invader_mythic"]
+    }
+}

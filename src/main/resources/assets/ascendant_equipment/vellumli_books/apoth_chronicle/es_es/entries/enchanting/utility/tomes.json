@@ -1,0 +1,42 @@
+{
+  "name": "tomos",
+  "icon": "ascendant_enchanting:other_tome",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Los tomos son un tipo especial de libro.$(p)Un tomo se puede encantar como un libro, pero solo puede recibir encantamientos específicos.$(p)La excepción es el $(l:ascendant_equipment:enchanting/utility/scrapping)Tomo de desguace$(), que tiene otro propósito."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:other_tome",
+      "text": "Una vez que encantas un tomo, se transformará en un libro encantado."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:helmet_tome",
+      "recipe2": "ascendant_enchanting:chestplate_tome",
+      "text": ""
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:leggings_tome",
+      "recipe2": "ascendant_enchanting:boots_tome",
+      "text": ""
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:weapon_tome",
+      "recipe2": "ascendant_enchanting:pickaxe_tome",
+      "text": ""
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:fishing_tome",
+      "recipe2": "ascendant_enchanting:bow_tome",
+      "text": ""
+    }
+  ]
+}

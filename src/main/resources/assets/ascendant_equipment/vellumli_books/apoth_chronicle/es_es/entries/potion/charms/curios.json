@@ -1,0 +1,13 @@
+{
+  "name": "Curiosidades",
+  "icon": "curios:textures/slot/empty_charm_slot.png",
+  "category": "ascendant_equipment:potion/charms",
+  "flag": "&ascendant_equipment:potion,ascendant_equipment:curiosloaded",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Cuando tengas $(9)Curios$() instalado, puedes equipar amuletos de poción en la ranura $(9)Charm$().$(p)Funcionarán de la misma manera que lo hacen en el inventario."
+    }
+  ]
+}

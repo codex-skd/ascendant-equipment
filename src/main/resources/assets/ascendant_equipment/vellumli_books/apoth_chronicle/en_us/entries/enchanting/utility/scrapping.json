@@ -1,0 +1,29 @@
+{
+    "name": "Tome of Scrapping",
+    "icon": "ascendant_enchanting:scrap_tome",
+    "category": "ascendant_equipment:enchanting/utility",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "The Tome of Scrapping is a way of retrieving enchantments from an item.$(p)Combining one with another item in an anvil will destroy the other item, and make a book with some of the enchantments at random."
+        },
+		{
+            "type": "vellumli:crafting",
+			"recipe": "ascendant_enchanting:scrap_tome",
+			"text": "You will always receive half of the enchantments (rounded up).$(p)The enchantments selected are based on your $(l:ascendant_equipment:enchanting/table/seed)Enchanting Seed$()."
+		},
+		{
+            "type": "vellumli:spotlight",
+			"title": "Superior Scrapping",
+			"item": "ascendant_enchanting:improved_scrap_tome",
+			"text": "The $(9)Tome of Superior Scrapping$() is an upgraded version of the Tome of Scrapping.$(p)It extracts all of the enchantments on the item, instead of half of them."
+		},
+		{
+            "type": "vellumli:spotlight",
+			"item": "ascendant_enchanting:extraction_tome",
+			"text": "The $(9)Tome of Extraction$() is a perfected version of the Tome of Scrapping.$(p)It extracts all the enchantments from an item, and does not destroy the item in the process."
+		}
+	]
+}

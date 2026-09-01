@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
+        "description": {
+            "translate": "advancements.ascendant_equipment.progression.root.desc"
+        },
+        "icon": {
+            "id": "ascendant_equipment:boss_summoner"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "advancements.ascendant_equipment.progression.root.title"
+        }
+    },
+    "requirements": [
+        [
+            "tick"
+        ]
+    ],
+    "sends_telemetry_event": true
+}

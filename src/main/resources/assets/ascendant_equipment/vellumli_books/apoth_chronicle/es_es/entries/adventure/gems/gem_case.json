@@ -1,0 +1,31 @@
+{
+  "name": "caja de gemas",
+  "icon": "ascendant_equipment:gem_case",
+  "category": "ascendant_equipment:adventure/gems",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_equipment:gem_case",
+      "text": "El $(9)Gem Case$() es un dispositivo de almacenamiento para $(l:ascendant_equipment:adventure/gems/gems)Gems$().$(p)Puede contener hasta treinta y dos mil gemas de cada tipo y pureza, y se puede actualizar para contener más."
+    },
+    {
+      "title": "Filtración",
+      "type": "vellumli:text",
+      "text": "El estuche de gemas tiene dos filtros: un filtro de nombre y un filtro de elemento.$(p)El filtro de nombre le permite buscar una gema por nombre, mientras que el filtro de elemento le permite buscar gemas que encajan en un elemento específico."
+    },
+    {
+      "title": "corte de gemas",
+      "type": "vellumli:text",
+      "text": "La caja de gemas también tiene seis ranuras auxiliares que se pueden usar para guardar materiales de mejora.$(p)Si hay suficientes materiales y gemas presentes, siguiendo las recetas de mejora de pureza, puedes actualizar las gemas directamente en la caja.$(p)Esto efectivamente deja obsoleta la $(l:ascendant_equipment:adventure/gems/gem_cutting)Mesa de corte de gemas$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "item": "ascendant_equipment:ender_gem_case",
+      "title": "Un caso de joya suprema",
+      "link_recipe": true,
+      "text": "La $(9)Caja de gemas de la Casa Fabergé$() tiene una $(6)Capacidad de almacenamiento$() de dos mil millones.$(p)No se puede crear directamente y debe crearse usando $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$()."
+    }
+  ]
+}

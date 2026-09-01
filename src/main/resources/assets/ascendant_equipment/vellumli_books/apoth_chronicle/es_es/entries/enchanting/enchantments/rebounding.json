@@ -1,0 +1,13 @@
+{
+  "name": "Rebotando",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Rebote$() es un encantamiento para petos y calzas.$(p)Hace que todos los atacantes cuerpo a cuerpo sean lanzados lejos del usuario.$(p)Los niveles más altos aumentan la distancia."
+    }
+  ]
+}

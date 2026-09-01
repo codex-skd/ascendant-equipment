@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "ascendant_equipment:item/ignore_conditions_spawner_rune"
+    }
+}

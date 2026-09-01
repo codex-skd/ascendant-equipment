@@ -1,0 +1,19 @@
+{
+  "name": "Absorción",
+  "icon": "minecraft:textures/mob_effect/absorption.png",
+  "category": "ascendant_equipment:potion/recipes",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)La absorción$() es un efecto interesante.$(p)Cada nivel otorga 2 corazones temporales adicionales.$(p)Sin embargo, estos corazones no se actualizan durante la duración, por lo que es preferible un $(l:ascendant_equipment:potion/charms/charm)Potion Charm$()."
+    },
+    {
+      "type": "vellumli:spotlight",
+      "title": "Receta de elaboración de cerveza",
+      "item": "minecraft:golden_apple",
+      "text": "Esta poción se puede elaborar con una poción incómoda y una manzana dorada.$(p)Se puede ampliar, fortalecer o convertir en una poción de salpicadura con los ingredientes habituales."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ataque de retroceso",
+  "icon": "minecraft:piston",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Attack Knockback$() es la distancia a la que derribas a los enemigos cuando los atacas.$(p)Cada punto hará que los enemigos golpeados sean empujados a media cuadra de distancia.$(p)Las armas y escudos pueden proporcionar esta estadística."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "El encantamiento Knockback proporciona un beneficio equivalente a esta estadística, pero no cuenta para el límite de valor máximo."
+    }
+  ]
+}

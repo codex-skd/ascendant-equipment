@@ -1,0 +1,19 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "ascendant_spawners:spawner_modifier",
+    "mainhand": {
+        "item": "ascendant_equipment:ignore_light_spawner_rune"
+    },
+    "stat_changes": [
+        {
+            "type": "ascendant_spawners:ignore_light",
+            "mode": "set",
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "type": "ascendant_equipment:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:overworld"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "frontier": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "ascent": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "ascendant_equipment:enchantment",
+            "enchantment": "minecraft:sharpness",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "ascendant_equipment:melee_weapon",
+                    "ascendant_equipment:trident"
+                ]
+            },
+            "mode": "existing",
+            "values": {
+                "flawed": 1,
+                "normal": 2,
+                "flawless": 3,
+                "perfect": 4
+            }
+        },
+        {
+            "type": "ascendant_equipment:enchantment",
+            "enchantment": "minecraft:protection",
+            "gem_class": {
+                "key": "core_armor",
+                "types": [
+                    "ascendant_equipment:chestplate",
+                    "ascendant_equipment:leggings"
+                ]
+            },
+            "mode": "existing",
+            "values": {
+                "flawed": 1,
+                "normal": 2,
+                "flawless": 3,
+                "perfect": 4
+            }
+        },
+        {
+            "type": "ascendant_equipment:enchantment",
+            "enchantment": "minecraft:fortune",
+            "gem_class": {
+                "key": "tools",
+                "types": [
+                    "ascendant_equipment:breaker",
+                    "ascendant_equipment:shears"
+                ]
+            },
+            "mode": "existing",
+            "values": {
+                "flawed": 1,
+                "normal": 2,
+                "flawless": 3,
+                "perfect": 4
+            }
+        }
+    ]
+}

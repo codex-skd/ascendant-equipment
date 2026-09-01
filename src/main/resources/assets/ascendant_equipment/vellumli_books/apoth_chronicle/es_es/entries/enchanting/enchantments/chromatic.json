@@ -1,0 +1,13 @@
+{
+  "name": "aberración cromática",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Aberración cromática$() es un encantamiento para tijeras.$(p)Hace que cualquier lana que se corta adquiera un color aleatorio."
+    }
+  ]
+}

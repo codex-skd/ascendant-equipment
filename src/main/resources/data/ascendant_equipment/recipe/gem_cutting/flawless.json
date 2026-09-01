@@ -1,0 +1,24 @@
+{
+    "type": "ascendant_equipment:purity_upgrade",
+    "left": [
+        {
+            "count": 9,
+            "item": "ascendant_equipment:gem_dust"
+        }
+    ],
+    "purity": "flawless",
+    "right": [
+        {
+            "count": 27,
+            "item": "ascendant_equipment:luminous_crystal_shard"
+        },
+        {
+            "count": 9,
+            "item": "ascendant_equipment:arcane_sands"
+        },
+        {
+            "count": 3,
+            "item": "ascendant_equipment:godforged_pearl"
+        }
+    ]
+}

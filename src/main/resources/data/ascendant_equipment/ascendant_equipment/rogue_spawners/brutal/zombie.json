@@ -1,0 +1,67 @@
+{
+    "loot_table": "ascendant_equipment:chests/spawner_brutal",
+    "spawn_potentials": [
+        {
+            "data": {
+                "entity": {
+                    "Health": 30.0,
+                    "active_effects": [
+                        {
+                            "duration": 10000000,
+                            "amplifier": 0,
+                            "id": "minecraft:fire_resistance",
+                            "show_particles": 0,
+                            "visible": 0
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "base": 0.23,
+                            "id": "minecraft:generic.movement_speed",
+                            "modifiers": [
+                                {
+                                    "amount": 0.15,
+                                    "id": "common_toolkit:brutal_max_spd",
+                                    "operation": "add_multiplied_total"
+                                }
+                            ]
+                        },
+                        {
+                            "base": 3.0,
+                            "id": "minecraft:generic.attack_damage",
+                            "modifiers": [
+                                {
+                                    "amount": 0.5,
+                                    "id": "common_toolkit:brutal_max_dmg",
+                                    "operation": "add_multiplied_total"
+                                }
+                            ]
+                        },
+                        {
+                            "base": 20.0,
+                            "id": "minecraft:generic.max_health",
+                            "modifiers": [
+                                {
+                                    "amount": 0.5,
+                                    "id": "common_toolkit:brutal_max_hp",
+                                    "operation": "add_multiplied_total"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "minecraft:zombie"
+                }
+            },
+            "weight": 10
+        }
+    ],
+    "stats": {
+        "ascendant_spawners:max_delay": 400,
+        "ascendant_spawners:max_nearby_entities": 6,
+        "ascendant_spawners:min_delay": 200,
+        "ascendant_spawners:req_player_range": 12,
+        "ascendant_spawners:spawn_count": 3,
+        "ascendant_spawners:spawn_range": 5
+    },
+    "weight": 30
+}

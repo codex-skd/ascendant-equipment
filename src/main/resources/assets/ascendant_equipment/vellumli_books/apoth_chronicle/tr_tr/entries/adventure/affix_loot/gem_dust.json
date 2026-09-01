@@ -1,0 +1,21 @@
+{
+    "name": "Değerli Taş Tozu",
+    "icon": "ascendant_equipment:gem_dust",
+    "category": "ascendant_equipment:adventure/affix_loot",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 2,
+    "pages": [
+		{
+            "type": "vellumli:spotlight",
+			"item": "ascendant_equipment:gem_dust",
+			"link_recipe": true,
+            "text": "Tüm Apotheosis Değerli Taşları, $(br)$(9)Değerli Taş Tozu$()'na dönüştürülebilir.$(p)Bir yöntem, onları oyun içinde örs ile ezmektir."
+        },
+		{
+            "type": "vellumli:crafting",
+			"recipe": "ascendant_equipment:salvaging_table",
+			"title": "Değerli Taş Geri Dönüşümü",
+            "text": "Birkaç Değerli Taşı örs ile ezdikten sonra, $(9)Kurtarma Masası$() yapabilir ve kullanabilirsin."
+        }
+	]
+}

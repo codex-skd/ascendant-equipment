@@ -1,0 +1,56 @@
+{
+  "name": "Estadísticas encantadoras",
+  "icon": "minecraft:bookshelf",
+  "category": "ascendant_equipment:enchanting/table",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Con Apoteosis, el encantamiento depende de algo más que niveles.$(p)Actualmente hay cinco nuevas estadísticas de encantamiento.$(p)Los bloques que proporcionan estadísticas de encantamiento las tendrán en su descripción emergente."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "eterna",
+      "text": "$(eterna) es la estadística principal de encantamiento.$(p)Cada punto de $(eterna) aumenta el nivel máximo de encantamiento en dos.$(p)Algunos bloques solo pueden proporcionar $(eterna) hasta un cierto valor máximo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "cuantos",
+      "anchor": "quanta",
+      "text": "$(quanta) es una estadística secundaria. Controla la variación del encantamiento.$(p)Durante el encantamiento, tienes un $(bpower), que es el nivel que gastaste para encantar, y luego un $(fpower), después de todas las modificaciones.$(p)$(quanta) es uno de los factores en el proceso de modificación."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Se selecciona un valor, entre $(4)1 - Quanta$() y $(9)1 + Quanta$().$(p)Tu $(fpower) es igual a ese valor multiplicado por tu $(bpower).$(p)Los valores de $(quanta) más altos aumentan el rango de potencia, lo que significa que tus encantamientos son menos consistentes en su $(fpower)."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Arcanos",
+      "text": "$(arcano) es una estadística secundaria. Controla los pesos de rareza y, en ciertos umbrales, te garantizará la obtención de encantamientos adicionales.$(p)Al 25 % de $(arcanos), siempre recibirás al menos dos encantamientos. Al 75%, siempre recibirás tres."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "De forma predeterminada, las rarezas tienen los siguientes pesos:$(p)Común: 10$(br)Poco común: 5$(br)Raro: 3$(br)Muy raro: 1$(p)Cada 10 % de $(arcanos) cambia los pesos, y eventualmente se invierte por completo.$(p)Al pasar el cursor sobre la barra $(arcanos) se mostrarán los pesos actuales."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Estabilidad cuántica",
+      "anchor": "rectification",
+      "text": "La estabilidad cuántica es una estadística terciaria. Afecta directamente el límite inferior de las modificaciones de $(cuantos).$(p)Cuando estén presentes, ya no puedes generar modificadores $(cuantos) negativos."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Matemáticas Cuánticas",
+      "text": "Si no te gustan las matemáticas, puedes pasar a la página siguiente.$(p)Normalmente, los rollos de $(quanta) usan una distribución normal en todo el rango, pero una vez estabilizados, esto cambia a una distribución uniforme en el lado positivo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Pistas",
+      "text": "Las pistas son otra estadística terciaria.$(p)Cada pista te permite ver un elemento adicional en la ventana de vista previa.$(p)Cuando puedas ver todos los encantamientos disponibles, el texto cambiará ligeramente."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "También puedes reducir a cero pistas y no poder ver nada."
+    }
+  ]
+}

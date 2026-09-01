@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "regalia_slots_api"
+    }
+  ],
+  "entities": [
+    "#regalia_slots_api:player_like"
+  ],
+  "slots": [
+    "charm"
+  ]
+}

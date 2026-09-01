@@ -1,0 +1,7 @@
+{
+  "name": "Gemas y enchufes",
+  "description": "Siempre es probable que una piedra brillante llame la atención.$(p)Esté atento a las gemas apóticas, elementos que pueden proporcionar bonificaciones cuando se insertan en elementos Affix.",
+  "icon": "ascendant_equipment:gem",
+  "flag": "ascendant_equipment:adventure",
+  "parent": "ascendant_equipment:adventure/adventure"
+}

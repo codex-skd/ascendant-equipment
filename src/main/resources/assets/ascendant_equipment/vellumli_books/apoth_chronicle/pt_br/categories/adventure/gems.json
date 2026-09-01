@@ -1,0 +1,7 @@
+{
+    "name": "Gemas & Encaixes",
+    "description": "Uma pedra brilhante sempre chama a atenção.$(p)Fique atento às Gemas Apóticas, itens que podem fornecer bônus quando encaixados em Itens de Afixo.",
+    "icon": "ascendant_equipment:gem",
+    "flag": "ascendant_equipment:adventure",
+    "parent": "ascendant_equipment:adventure/adventure"
+}

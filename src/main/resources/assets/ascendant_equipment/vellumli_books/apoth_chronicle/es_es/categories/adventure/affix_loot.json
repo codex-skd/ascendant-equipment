@@ -1,0 +1,7 @@
+{
+  "name": "fijar botín",
+  "description": "Mientras de aventuras, puedes encontrar objetos con varias bonificaciones.$(p)Estos son objetos Affix, reliquias del pasado con distintos grados de poder.",
+  "icon": "minecraft:chest",
+  "flag": "ascendant_equipment:adventure",
+  "parent": "ascendant_equipment:adventure/adventure"
+}

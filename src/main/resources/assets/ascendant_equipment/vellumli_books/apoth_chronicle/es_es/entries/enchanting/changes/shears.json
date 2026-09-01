@@ -1,0 +1,13 @@
+{
+  "name": "Tijeras",
+  "icon": "minecraft:shears",
+  "category": "ascendant_equipment:enchanting/changes",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Además de los nuevos encantos, Shears ahora también puede recibir $(9)Unbreaking$(), $(9)Efficiency$() y $(9)Fortune$()."
+    }
+  ]
+}

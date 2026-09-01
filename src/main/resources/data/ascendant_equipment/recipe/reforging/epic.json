@@ -1,0 +1,8 @@
+{
+    "type": "ascendant_equipment:reforging",
+    "level_cost": 30,
+    "material_cost": 2,
+    "rarity": "ascendant_equipment:epic",
+    "sigil_cost": 4,
+    "tables": "ascendant_equipment:reforging_table"
+}

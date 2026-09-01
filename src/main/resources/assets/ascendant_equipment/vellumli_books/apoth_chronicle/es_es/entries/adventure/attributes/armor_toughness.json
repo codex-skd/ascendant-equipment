@@ -1,0 +1,17 @@
+{
+  "name": "Dureza de la armadura",
+  "icon": "minecraft:netherite_chestplate",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Resistencia de la armadura$() es una estadística que reduce la efectividad de la reducción de armadura entrante.$(p)Generalmente proporcionada por elementos de armadura o escudos."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Cada punto de Armor Toughness reduce la efectividad de Armor Pierce y Armor Shred en un 2%, hasta un 60%.$(p)Esta función es exclusiva de Apotheosis. En Vanilla Minecraft, Armor Toughness contribuye a la reducción de daños."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"neoforge:conditions": [{
+		"type": "neoforge:mod_loaded",
+		"modid": "vellumli"
+	}],
+	"group": "something",
+	"ingredients": [{
+			"item": "minecraft:book"
+		},
+		{
+			"tag": "c:ingots/gold"
+		}
+	],
+	"result": {
+        "id": "vellumli:guide_book",
+        "count": 1,
+        "components": {
+            "vellumli:book": "ascendant_equipment:apoth_chronicle"
+        }
+	}
+}

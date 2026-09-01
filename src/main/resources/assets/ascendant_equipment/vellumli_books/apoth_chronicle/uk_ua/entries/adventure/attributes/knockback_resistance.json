@@ -1,0 +1,13 @@
+{
+    "name": "Стійкість до відкидання",
+    "icon": "minecraft:shulker_shell",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Стійкість до відкидання$() визначає наскільки ефективно ви ігноруєте відкидання від вхідних атак. При максимальному значенні ви стаєте невразливим до відкидань.$(p)Зазвичай притаманне обладункам та щитам."
+        }
+	]
+}

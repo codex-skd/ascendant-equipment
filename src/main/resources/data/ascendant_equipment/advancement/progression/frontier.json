@@ -1,0 +1,130 @@
+{
+    "parent": "ascendant_equipment:progression/haven",
+    "criteria": {
+        "common_chest": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "ascendant_equipment:item_with_rarity": {
+                            "rarities": [
+                                "ascendant_equipment:common",
+                                "ascendant_equipment:uncommon",
+                                "ascendant_equipment:rare",
+                                "ascendant_equipment:epic",
+                                "ascendant_equipment:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "chest"
+            },
+            "trigger": "ascendant_equipment:equipped_item"
+        },
+        "common_feet": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "ascendant_equipment:item_with_rarity": {
+                            "rarities": [
+                                "ascendant_equipment:common",
+                                "ascendant_equipment:uncommon",
+                                "ascendant_equipment:rare",
+                                "ascendant_equipment:epic",
+                                "ascendant_equipment:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "feet"
+            },
+            "trigger": "ascendant_equipment:equipped_item"
+        },
+        "common_hand": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "ascendant_equipment:item_with_rarity": {
+                            "rarities": [
+                                "ascendant_equipment:common",
+                                "ascendant_equipment:uncommon",
+                                "ascendant_equipment:rare",
+                                "ascendant_equipment:epic",
+                                "ascendant_equipment:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "hand"
+            },
+            "trigger": "ascendant_equipment:equipped_item"
+        },
+        "common_helm": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "ascendant_equipment:item_with_rarity": {
+                            "rarities": [
+                                "ascendant_equipment:common",
+                                "ascendant_equipment:uncommon",
+                                "ascendant_equipment:rare",
+                                "ascendant_equipment:epic",
+                                "ascendant_equipment:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "head"
+            },
+            "trigger": "ascendant_equipment:equipped_item"
+        },
+        "common_legs": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "ascendant_equipment:item_with_rarity": {
+                            "rarities": [
+                                "ascendant_equipment:common",
+                                "ascendant_equipment:uncommon",
+                                "ascendant_equipment:rare",
+                                "ascendant_equipment:epic",
+                                "ascendant_equipment:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "legs"
+            },
+            "trigger": "ascendant_equipment:equipped_item"
+        }
+    },
+    "display": {
+        "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
+        "description": {
+            "translate": "advancements.ascendant_equipment.progression.frontier.desc"
+        },
+        "icon": {
+            "id": "minecraft:iron_sword"
+        },
+        "title": {
+            "translate": "advancements.ascendant_equipment.progression.frontier.title"
+        }
+    },
+    "requirements": [
+        [
+            "common_helm"
+        ],
+        [
+            "common_chest"
+        ],
+        [
+            "common_legs"
+        ],
+        [
+            "common_feet"
+        ],
+        [
+            "common_hand"
+        ]
+    ],
+    "sends_telemetry_event": true
+}

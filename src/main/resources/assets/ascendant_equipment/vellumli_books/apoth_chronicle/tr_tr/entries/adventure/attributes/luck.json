@@ -1,0 +1,17 @@
+{
+    "name": "Şans",
+    "icon": "minecraft:rabbit_foot",
+    "category": "ascendant_equipment:adventure/attributes",
+    "flag": "ascendant_equipment:adventure",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Şans$(), sizi şanslı yapar! Daha doğrusu, daha iyi ganimet düşüşleri alma olasılığınızı artırır.$(p)Her şey şans sağlayabilir."
+        },
+        {
+            "type": "vellumli:text",
+            "text": "Negatif şansa sahip olabilirsiniz, bu da daha iyi ganimet düşüşlerini elde etmeyi zorlaştırır."
+        }
+    ]
+}

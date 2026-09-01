@@ -1,0 +1,13 @@
+{
+  "name": "Daño de HP actual",
+  "icon": "minecraft:dragon_head",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Daño de HP actual$() es un tipo de daño por impacto. Cada golpe, causarás un porcentaje de la salud actual del objetivo como daño físico adicional.$(p)Esta estadística solo se encuentra en armas pesadas."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Encantamiento de infusión",
+  "icon": "ascendant_enchanting:infused_hellshelf",
+  "category": "ascendant_equipment:enchanting/table",
+  "flag": "ascendant_equipment:enchanting",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Encantamiento de infusión$() es un nuevo método de elaboración a través de la Tabla de encantamientos.$(p)Cada receta de infusión tiene un único elemento de entrada y tres requisitos de estadísticas."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Cada requisito de estadística normalmente requerirá al menos algún valor y, opcionalmente, tendrá un valor máximo.$(p)Los encantamientos de infusión solo usan el tercer espacio y te permitirán gastar más de experiencia."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Para realizar un encantamiento de infusión, simplemente coloca el objeto en la ranura.$(p)Si tienes las estadísticas correctas, la tercera ranura se iluminará y al hacer clic en ella se realizará la infusión."
+    }
+  ]
+}

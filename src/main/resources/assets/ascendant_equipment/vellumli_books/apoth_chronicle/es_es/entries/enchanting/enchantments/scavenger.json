@@ -1,0 +1,17 @@
+{
+  "name": "Basurero",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(2) Carroñero$() es un encantamiento de obra maestra para espadas.$(p)Ofrece un 2,5% de probabilidad por nivel de obtener botín dos veces cuando matas a una mafia.$(p)Cuando tengas éxito, será como si acabaras de matar a dos de la misma entidad."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Este encantamiento funciona en todas las entidades, incluidos jefes como $(8)Withers$().$(p)También se acumula con $(9)Looting$()."
+    }
+  ]
+}

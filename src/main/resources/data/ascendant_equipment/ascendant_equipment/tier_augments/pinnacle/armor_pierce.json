@@ -1,0 +1,12 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "modifier": {
+        "attribute": "ascendant_attributes:armor_pierce",
+        "operation": "add_value",
+        "value": 25.0
+    },
+    "modifier_id": "ascendant_equipment:pinnacle/armor_pierce",
+    "sort_index": 200,
+    "target": "monsters",
+    "tier": "pinnacle"
+}

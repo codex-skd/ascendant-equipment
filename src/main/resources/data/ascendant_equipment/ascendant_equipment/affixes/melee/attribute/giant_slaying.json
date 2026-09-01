@@ -1,0 +1,28 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "ascendant_attributes:current_hp_damage",
+    "categories": [
+        "ascendant_equipment:melee_weapon"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "pinnacle": {
+                "quality": 0.75,
+                "weight": 15
+            }
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:epic": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.1,
+            "max": 0.25
+        }
+    }
+}

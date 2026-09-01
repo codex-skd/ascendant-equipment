@@ -1,0 +1,20 @@
+{
+    "type": "ascendant_equipment:purity_upgrade",
+    "left": [
+        {
+            "count": 1,
+            "item": "ascendant_equipment:gem_dust"
+        }
+    ],
+    "purity": "cracked",
+    "right": [
+        {
+            "count": 3,
+            "item": "ascendant_equipment:mysterious_scrap_metal"
+        },
+        {
+            "count": 1,
+            "item": "ascendant_equipment:timeworn_fabric"
+        }
+    ]
+}

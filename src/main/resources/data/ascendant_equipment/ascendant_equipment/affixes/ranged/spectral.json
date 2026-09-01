@@ -1,0 +1,21 @@
+{
+    "type": "ascendant_equipment:spectral",
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "values": {
+        "ascendant_equipment:epic": {
+            "min": 0.2,
+            "max": 0.5
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.3,
+            "max": 0.7
+        }
+    }
+}

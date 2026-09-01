@@ -1,0 +1,40 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "gateways"
+        }
+    ],
+    "parent": "ascendant_equipment:gateways/pinnacle",
+    "criteria": {
+        "obtain_sigil_of_supremacy": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "ascendant_equipment:sigil_of_supremacy"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "background": "ascendant_equipment:gui/advancements/backgrounds/apoth",
+        "description": {
+            "translate": "advancements.ascendant_equipment.challenge_gates.sigil_of_supremacy.desc"
+        },
+        "frame": "challenge",
+        "icon": {
+            "id": "ascendant_equipment:sigil_of_supremacy"
+        },
+        "title": {
+            "translate": "advancements.ascendant_equipment.challenge_gates.sigil_of_supremacy.title"
+        }
+    },
+    "requirements": [
+        [
+            "obtain_sigil_of_supremacy"
+        ]
+    ],
+    "sends_telemetry_event": true
+}

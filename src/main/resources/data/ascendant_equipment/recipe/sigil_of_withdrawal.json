@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "B": {
+            "item": "minecraft:blaze_rod"
+        },
+        "E": {
+            "tag": "c:ender_pearls"
+        },
+        "G": {
+            "item": "ascendant_equipment:gem_fused_slate"
+        },
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "M": {
+            "item": "ascendant_equipment:gem_dust"
+        }
+    },
+    "pattern": [
+        "GBG",
+        "ELE",
+        "GMG"
+    ],
+    "result": {
+        "count": 4,
+        "id": "ascendant_equipment:sigil_of_withdrawal"
+    }
+}

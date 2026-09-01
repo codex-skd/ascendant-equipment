@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+	{
+		"id": "ascendant_equipment:potion_charm",
+		"required": false
+	}
+	]
+}

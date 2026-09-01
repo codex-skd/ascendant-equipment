@@ -1,0 +1,13 @@
+{
+    "name": "Soğuk Hasarı",
+    "icon": "minecraft:blue_ice",
+    "category": "ascendant_equipment:adventure/attributes",
+    "flag": "ascendant_equipment:adventure",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Soğuk Hasarı$(), yakın dövüş saldırılarına uygulanan ek büyü hasarıdır. Ayrıca, hasarın gücüne bağlı olarak bir yavaşlatma etkisi uygular.$(p)Yakın dövüş silahlarında bulunur."
+        }
+    ]
+}

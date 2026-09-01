@@ -1,0 +1,7 @@
+{
+  "name": "Mobs apóticos",
+  "description": "Apoteosis presenta varios subtipos de Mobs que aparecerán en tu mundo.$(p)Esta sección analiza qué tipos de mobs hay y dónde los encontrarás.",
+  "icon": "ascendant_equipment:boss_summoner",
+  "flag": "ascendant_equipment:adventure",
+  "parent": "ascendant_equipment:adventure/adventure"
+}

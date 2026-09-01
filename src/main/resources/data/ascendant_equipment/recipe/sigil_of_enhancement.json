@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "E": {
+            "item": "ascendant_equipment:gem_fused_slate"
+        },
+        "G": {
+            "item": "ascendant_equipment:gem_dust"
+        },
+        "O": {
+            "item": "ascendant_equipment:godforged_pearl"
+        }
+    },
+    "pattern": [
+        "GEG",
+        "EOE",
+        "GEG"
+    ],
+    "result": {
+        "count": 4,
+        "id": "ascendant_equipment:sigil_of_enhancement"
+    }
+}

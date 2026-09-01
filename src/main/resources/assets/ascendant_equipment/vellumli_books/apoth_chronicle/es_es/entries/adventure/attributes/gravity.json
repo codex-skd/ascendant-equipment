@@ -1,0 +1,13 @@
+{
+  "name": "tumba",
+  "icon": "minecraft:elytra",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)La gravedad$() es la rapidez con la que cae, en bloques por segundo al cuadrado.$(p)Se puede encontrar en cualquier cosa o en nada, quién sabe.$(p)Nota: La gravedad puede volverse negativa. Con gravedad negativa, flota hacia arriba."
+    }
+  ]
+}

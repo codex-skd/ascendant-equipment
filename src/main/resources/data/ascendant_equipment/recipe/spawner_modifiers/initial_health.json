@@ -1,0 +1,19 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "ascendant_spawners:spawner_modifier",
+    "mainhand": {
+        "item": "ascendant_equipment:initial_health_spawner_rune"
+    },
+    "stat_changes": [
+        {
+            "type": "ascendant_spawners:initial_health",
+            "min": 0.2,
+            "value": -0.05
+        }
+    ]
+}

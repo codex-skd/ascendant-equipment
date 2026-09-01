@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "E": {
+            "item": "ascendant_equipment:gem_dust"
+        },
+        "G": {
+            "item": "ascendant_equipment:gem_fused_slate"
+        }
+    },
+    "pattern": [
+        "GGG",
+        "EEE",
+        "GGG"
+    ],
+    "result": {
+        "count": 6,
+        "id": "ascendant_equipment:sigil_of_rebirth"
+    }
+}

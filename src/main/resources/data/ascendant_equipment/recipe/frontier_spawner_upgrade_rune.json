@@ -1,0 +1,34 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "C": {
+            "item": "minecraft:clock"
+        },
+        "F": {
+            "item": "minecraft:flint"
+        },
+        "S": {
+            "item": "ascendant_equipment:spawner_rune"
+        },
+        "T": {
+            "item": "ascendant_equipment:timeworn_fabric"
+        }
+    },
+    "pattern": [
+        "TCT",
+        "FSF",
+        "TCT"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:frontier_spawner_upgrade_rune"
+    }
+}

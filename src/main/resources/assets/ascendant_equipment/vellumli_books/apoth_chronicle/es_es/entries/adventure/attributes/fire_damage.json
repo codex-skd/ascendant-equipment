@@ -1,0 +1,13 @@
+{
+  "name": "Daños por incendio",
+  "icon": "minecraft:blaze_powder",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Daño de fuego$() es daño mágico adicional aplicado a ataques cuerpo a cuerpo. También prende fuego al objetivo durante un breve período de tiempo. Un daño mayor aumenta la duración del fuego.$(p)Se encuentra en armas cuerpo a cuerpo."
+    }
+  ]
+}

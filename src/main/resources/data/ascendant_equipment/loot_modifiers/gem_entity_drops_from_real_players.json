@@ -1,0 +1,24 @@
+{
+    "type": "ascendant_equipment:gems",
+    "conditions": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "ascendant_equipment:is_monster": {}
+            }
+        },
+        {
+            "condition": "ascendant_equipment:killed_by_real_player"
+        }
+    ],
+    "entries": [
+        {
+            "chance": 0.04,
+            "pattern": {
+                "path_regex": ".*"
+            }
+        }
+    ],
+    "priority": 1050
+}

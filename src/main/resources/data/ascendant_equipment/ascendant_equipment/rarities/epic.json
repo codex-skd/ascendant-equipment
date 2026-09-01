@@ -1,0 +1,83 @@
+{
+    "color": "#BB00BB",
+    "invader_sound": "ascendant_equipment:invader_epic",
+    "material": "ascendant_equipment:arcane_sands",
+    "render_data": {
+        "beam_height": 3.0,
+        "beam_radius": 0.035,
+        "beam_texture": "ascendant_equipment:textures/rarity/beam.png",
+        "glow_radius": 0.065,
+        "glow_texture": "ascendant_equipment:textures/rarity/glow.png",
+        "particle": {
+            "enabled": true
+        },
+        "shadow": {
+            "alpha": 255,
+            "frame_time": 1.5,
+            "frames": 20,
+            "size": 0.4,
+            "texture": "ascendant_equipment:textures/rarity/shadow_t3.png"
+        }
+    },
+    "rules": [
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "stat"
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "basic_effect"
+        },
+        {
+            "type": "ascendant_equipment:chanced",
+            "chance": 0.25,
+            "rule": {
+                "type": "ascendant_equipment:affix",
+                "affix_type": "basic_effect"
+            }
+        },
+        {
+            "type": "ascendant_equipment:affix",
+            "affix_type": "ability"
+        },
+        {
+            "type": "ascendant_equipment:socket",
+            "min": 1,
+            "max": 3
+        },
+        {
+            "type": "ascendant_equipment:durability",
+            "min": 0.25,
+            "max": 0.55
+        }
+    ],
+    "sort_index": 600,
+    "weights": {
+        "haven": {
+            "weight": 0
+        },
+        "frontier": {
+            "weight": 10
+        },
+        "ascent": {
+            "quality": 5.0,
+            "weight": 100
+        },
+        "summit": {
+            "quality": 5.0,
+            "weight": 540
+        },
+        "pinnacle": {
+            "quality": 2.5,
+            "weight": 650
+        }
+    }
+}

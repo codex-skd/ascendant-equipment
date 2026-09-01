@@ -1,0 +1,23 @@
+{
+    "application_chance": 0.12,
+    "conditions": [
+        {
+            "type": "ascendant_equipment:not",
+            "spawn_condition": {
+                "type": "ascendant_equipment:spawn_type",
+                "spawn_types": [
+                    "spawner",
+                    "trial_spawner"
+                ]
+            }
+        },
+        {
+            "type": "ascendant_equipment:is_monster"
+        }
+    ],
+    "modifiers": [
+        {
+            "type": "ascendant_equipment:random_affix_item"
+        }
+    ]
+}

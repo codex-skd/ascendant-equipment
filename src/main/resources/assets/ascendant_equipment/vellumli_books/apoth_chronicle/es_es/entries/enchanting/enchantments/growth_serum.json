@@ -1,0 +1,13 @@
+{
+  "name": "Suero de crecimiento",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(2)Suero de crecimiento$() es un encantamiento de obra maestra para tijeras.$(p)Hace que las ovejas tengan un 50% de probabilidad de que les vuelva a crecer la lana inmediatamente."
+    }
+  ]
+}

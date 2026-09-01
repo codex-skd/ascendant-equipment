@@ -1,0 +1,20 @@
+{
+    "name": "Tridents",
+    "icon": "minecraft:trident",
+    "category": "ascendant_equipment:enchanting/changes",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Alongside the new enchantments, Tridents may now also receive $(9)Sharpness$(), $(9)Looting$(), and $(9)Piercing$().$(p)Sharpness and Looting function as they do on swords.$(p)Piercing causes thrown tridents to be able to hit additional enemies."
+        },
+		{
+            "type": "vellumli:spotlight",
+			"title": "Making Tridents",
+			"item": "ascendant_enchanting:inert_trident",
+			"link_recipe": true,
+            "text": "Apotheosis also adds a method of creating tridents.$(p)Simply create an $(9)Inert Trident$() and upgrade it through $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$()."
+        }
+	]
+}

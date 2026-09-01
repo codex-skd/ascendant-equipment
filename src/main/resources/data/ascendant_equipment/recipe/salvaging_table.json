@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "G": {
+            "item": "ascendant_equipment:gem_dust"
+        },
+        "I": {
+            "tag": "c:ingots/copper"
+        },
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "O": {
+            "item": "minecraft:iron_axe"
+        },
+        "R": {
+            "item": "minecraft:iron_pickaxe"
+        },
+        "S": {
+            "item": "minecraft:smithing_table"
+        }
+    },
+    "pattern": [
+        "III",
+        "RSO",
+        "GLG"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:salvaging_table"
+    }
+}

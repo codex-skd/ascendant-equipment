@@ -1,0 +1,8 @@
+{
+  "name": "Encantos de pociones",
+  "parent": "ascendant_equipment:potion/potion",
+  "description": "Esta sección detalla $(9)Encantos de pociones$() y todos sus usos y matices.$(p)Si otros módulos están deshabilitados o algunas modificaciones no están instaladas, esta sección puede estar un poco vacía.",
+  "icon": "ascendant_equipment:potion_charm",
+  "flag": "ascendant_equipment:potion",
+  "sortnum": 1
+}

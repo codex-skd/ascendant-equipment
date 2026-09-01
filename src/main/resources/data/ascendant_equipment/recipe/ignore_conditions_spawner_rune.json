@@ -1,0 +1,31 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "C": {
+            "item": "minecraft:conduit"
+        },
+        "E": {
+            "tag": "c:ender_pearls"
+        },
+        "I": {
+            "item": "ascendant_equipment:infused_spawner_rune"
+        }
+    },
+    "pattern": [
+        " C ",
+        "EIE",
+        " E "
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:ignore_conditions_spawner_rune"
+    }
+}

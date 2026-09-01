@@ -1,0 +1,6 @@
+{
+    "type": "ascendant_equipment:boss_dungeon_2",
+    "config": {
+        "success_chance": 1.0
+    }
+}

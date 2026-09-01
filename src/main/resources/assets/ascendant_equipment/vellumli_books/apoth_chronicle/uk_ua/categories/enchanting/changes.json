@@ -1,0 +1,7 @@
+{
+    "name": "Зміни ванільних механік",
+    "description": "Цей розділ охоплює нові предмети, які можна зачарувати, та механічні зміни.$(p)Якщо відбудуться незначні зміни вмісту, вони будуть зазначені тут.",
+    "icon": "minecraft:trident",
+	"flag": "ascendant_equipment:enchanting",
+	"parent": "ascendant_equipment:enchanting/enchanting"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Encantamientos del tesoro",
+  "icon": "ascendant_enchanting:treasure_shelf",
+  "category": "ascendant_equipment:enchanting/utility",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Los encantamientos del tesoro son encantamientos especiales que normalmente no están disponibles en la Mesa de encantamientos.$(p)Sin embargo, esto se puede remediar con un $(9)Estante profundo de tesoros arcanos$()."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "ascendant_enchanting:treasure_shelf",
+      "title": "Tesoros arcanos",
+      "text": "Colocar esta estantería en un espacio válido hará que aparezcan encantamientos de tesoro mientras se encanta.$(p)Ten en cuenta que la mayoría de las $(4)Maldiciones$() son encantamientos de tesoro."
+    }
+  ]
+}

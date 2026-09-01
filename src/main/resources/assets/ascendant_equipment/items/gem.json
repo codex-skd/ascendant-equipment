@@ -1,0 +1,9 @@
+{
+    "model": {
+        "type": "ascendant_equipment:gem_dispatch",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "ascendant_equipment:item/gem"
+        }
+    }
+}

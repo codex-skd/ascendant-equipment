@@ -1,0 +1,21 @@
+{
+    "type": "ascendant_equipment:psychic",
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "values": {
+        "ascendant_equipment:epic": {
+            "min": 0.5,
+            "max": 0.9
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.6,
+            "max": 1.2
+        }
+    }
+}

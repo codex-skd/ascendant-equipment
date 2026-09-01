@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "E": {
+            "item": "ascendant_equipment:gem_fused_slate"
+        },
+        "G": {
+            "item": "ascendant_equipment:gem_dust"
+        },
+        "U": {
+            "item": "minecraft:gunpowder"
+        }
+    },
+    "pattern": [
+        "GUG",
+        "EEE",
+        "GAG"
+    ],
+    "result": {
+        "count": 3,
+        "id": "ascendant_equipment:sigil_of_socketing"
+    }
+}

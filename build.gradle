@@ -1,0 +1,173 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.142'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/main/resources')
+    srcDir('src/generated/resources')
+    exclude("**/*.bbmodel")
+    exclude("**/nul")
+    exclude("src/generated/**/.cache")
+}
+
+tasks.named('processResources', Copy).configure {
+    duplicatesStrategy = 'include'
+}
+
+sourceSets.main.java {
+    // Gateways has no build we depend on — its optional-compat package does not compile without it,
+    // exactly as on the 26.2 line. Kept in the tree for a future Gateways port.
+    exclude("com/skd/ascendantequipment/compat/gateways/**")
+}
+
+repositories {
+    mavenCentral()
+    // JEI (optional compat)
+    maven {
+        name = "JEI"
+        url = "https://maven.blamejared.com"
+    }
+    // Jade (optional compat)
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+base {
+    archivesName = "${mod_id}-${minecraft_version}-neoforge-${neo_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        data {
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+dependencies {
+    // JSpecify nullness annotations — upstream Apotheosis 1.21 uses them in a few files.
+    compileOnly "org.jspecify:jspecify:1.0.0"
+
+    // Common Toolkit (fork of Placebo) — required.
+    compileOnly files("libs/common_toolkit-1.21.1-neoforge-21.1.249-0.0.0-beta.3.jar")
+    localRuntime files("libs/common_toolkit-1.21.1-neoforge-21.1.249-0.0.0-beta.3.jar")
+
+    // Ascendant Attributes (fork of Apothic Attributes) — required.
+    compileOnly files("libs/ascendant_attributes-1.21.1-neoforge-21.1.249-0.0.0-beta.2.jar")
+    localRuntime files("libs/ascendant_attributes-1.21.1-neoforge-21.1.249-0.0.0-beta.2.jar")
+
+    // Ascendant Spawners (fork of Apothic Spawners) — required.
+    compileOnly files("libs/ascendant_spawners-1.21.1-neoforge-21.1.249-0.0.0-beta.1.jar")
+    localRuntime files("libs/ascendant_spawners-1.21.1-neoforge-21.1.249-0.0.0-beta.1.jar")
+
+    // Ascendant Enchanting (fork of Apothic Enchanting) — required.
+    compileOnly files("libs/ascendant_enchanting-1.21.1-neoforge-21.1.249-0.0.0-beta.2.jar")
+    localRuntime files("libs/ascendant_enchanting-1.21.1-neoforge-21.1.249-0.0.0-beta.2.jar")
+
+    // Vellumli (fork of Patchouli, powers the guide book) — required.
+    compileOnly files("libs/vellumli-1.21.1-neoforge-21.1.249-0.0.0-beta.1.jar")
+    localRuntime files("libs/vellumli-1.21.1-neoforge-21.1.249-0.0.0-beta.1.jar")
+
+    // Regalia Slots API (fork of Curios API) — same optional role Curios had upstream.
+    compileOnly files("libs/regalia_slots_api-1.21.1-neoforge-21.1.249-0.0.0-beta.5.jar")
+    localRuntime files("libs/regalia_slots_api-1.21.1-neoforge-21.1.249-0.0.0-beta.5.jar")
+
+    // JEI — soft/optional integration, same as upstream Apotheosis (not declared in neoforge.mods.toml).
+    compileOnly "mezz.jei:jei-1.21.1-common-api:19.21.2.313"
+    compileOnly "mezz.jei:jei-1.21.1-neoforge-api:19.21.2.313"
+    localRuntime "mezz.jei:jei-1.21.1-neoforge:19.21.2.313"
+
+    // Jade — soft/optional integration, same as upstream Apotheosis.
+    compileOnly "maven.modrinth:jade:15.10.6+neoforge"
+    localRuntime "maven.modrinth:jade:15.10.6+neoforge"
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            loader_version_range   : loader_version_range,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}

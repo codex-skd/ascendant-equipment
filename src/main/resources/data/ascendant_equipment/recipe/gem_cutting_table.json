@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "ascendant_equipment",
+    "key": {
+        "G": {
+            "item": "ascendant_equipment:gem_dust"
+        },
+        "H": {
+            "item": "minecraft:shears"
+        },
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "S": {
+            "item": "minecraft:smooth_stone"
+        }
+    },
+    "pattern": [
+        "SHS",
+        "PGP",
+        "P P"
+    ],
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:gem_cutting_table"
+    }
+}

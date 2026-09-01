@@ -1,0 +1,27 @@
+{
+    "type": "ascendant_equipment:thunderstruck",
+    "categories": [
+        "ascendant_equipment:melee_weapon",
+        "ascendant_equipment:trident"
+    ],
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "values": {
+        "ascendant_equipment:epic": {
+            "min": 3.0,
+            "max": 6.0,
+            "step": 1.0
+        },
+        "ascendant_equipment:mythic": {
+            "min": 4.0,
+            "max": 8.0,
+            "step": 1.0
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Attack Range",
+    "icon": "minecraft:skeleton_skull",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Your $(9)Attack Range$() is the maximum distance at which you may attack targets with a melee weapon.$(p)Generally found on weapons."
+        }
+	]
+}

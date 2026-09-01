@@ -1,0 +1,13 @@
+{
+    "name": "Icy Thorns",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+	"flag": "ascendant_equipment:enchanting",
+	"sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(9)Icy Thorns$() is a chestplate enchantment.$(p)It applies slowness to attackers. The duration and strength scale with the enchantment level.$(p)It is exclusive with $(9)Thorns$()."
+        }
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Élites",
+  "icon": "minecraft:skeleton_skull",
+  "category": "ascendant_equipment:adventure/mobs",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Ocasionalmente, es posible que veas mobs con nombres o poderes en todo el mundo.$(p)Es probable que sean $(9)Élites apóticas$()."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Estos mobs aparecerán aleatoriamente en lugar de sus contrapartes normales.$(p)No tienen entradas llamativas como las de los Invaders, así que mantente en guardia.$(p)También pueden soltar elementos Affix."
+    }
+  ]
+}

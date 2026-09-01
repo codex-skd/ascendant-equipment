@@ -1,0 +1,17 @@
+{
+  "name": "Suerte",
+  "icon": "minecraft:rabbit_foot",
+  "category": "ascendant_equipment:adventure/attributes",
+  "flag": "ascendant_equipment:adventure",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "¡$(9)Suerte$() te hace afortunado!  Bueno, es decir, aumenta la probabilidad de que recibas mejores botines.$(p)Todo puede dar suerte."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Puedes tener suerte negativa, lo que hace que conseguir mejores botines sea aún más difícil de conseguir."
+    }
+  ]
+}

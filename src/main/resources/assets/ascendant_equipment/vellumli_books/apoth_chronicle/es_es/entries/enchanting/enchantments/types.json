@@ -1,0 +1,28 @@
+{
+  "name": "Tipos de encantamientos",
+  "icon": "minecraft:emerald",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": -1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Puedes notar que algunos encantamientos tienen nombres de diferentes colores.$(p)Esto se debe a que Apoteosis introduce tres nuevas subcategorías de encantamientos.$(p)Cada subcategoría tiene algunas reglas impuestas."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Obra maestra",
+      "text": "Los encantamientos $(2)Masterwork$() representan los encantamientos más fuertes y raros.$(p)Siempre requieren al menos 55 $(fpower) para recibirlos."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Retorcido",
+      "text": "Los encantamientos $(5)Twisted$() siempre tienen un efecto bueno y otro malo.$(p)Siempre requieren al menos 45 $(fpower) para recibirlos."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "corrupto",
+      "text": "$(4)Los encantamientos$() corruptos tienen un costo de salud asociado con su efecto.$(p)Siempre requieren al menos 65 $(fpower) para recibirlos.$(p)Se consideran $(c)maldiciones$()."
+    }
+  ]
+}

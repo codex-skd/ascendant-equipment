@@ -1,0 +1,13 @@
+{
+    "name": "Velocidade de movimento",
+    "icon": "minecraft:leather_boots",
+    "category": "ascendant_equipment:adventure/attributes",
+	"flag": "ascendant_equipment:adventure",
+	"sortnum": 0,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Sua $(9)velocidade de movimento$() é o quão rápido você se move, em relação à velocidade normal de movimento de um jogador.$(p)Este atributo pode ser fornecido por quase qualquer item."
+        }
+	]
+}

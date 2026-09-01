@@ -1,0 +1,13 @@
+{
+  "name": "La bendición de la naturaleza",
+  "icon": "minecraft:enchanted_book",
+  "category": "ascendant_equipment:enchanting/enchantments",
+  "flag": "ascendant_equipment:enchanting",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "$(9)Bendición de la naturaleza$() es un encantamiento de azada.$(p)Permite usar una azada como harina de huesos, por un costo de durabilidad.$(p)Los niveles de encantamiento más altos reducen el costo de durabilidad."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Unbreakable Charms",
+    "icon": "minecraft:enchanting_table",
+    "category": "ascendant_equipment:potion/charms",
+	"flag": "&ascendant_equipment:potion,ascendant_equipment:enchanting",
+	"sortnum": -1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Through $(l:ascendant_equipment:enchanting/table/infusion)Infusion Enchanting$(), charms can be made Unbreakable.$(p)Through this, you can have unlimited duration of any potion effect."
+        },
+		{
+            "type": "vellumli:text",
+            "text": "The infusion recipe for Unbreakable charms is rather difficult.$(p)You'll need a firm understanding of $(l:ascendant_equipment:enchanting/table/stats)Enchanting Stats$() to be able to complete it."
+        }
+	]
+}

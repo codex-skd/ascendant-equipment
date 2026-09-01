@@ -1,0 +1,13 @@
+{
+	"name": "ascendant_equipment:tower_leaf",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "ascendant_equipment:tower_leaf",
+			"projection": "rigid",
+			"processors": "ascendant_equipment:item_frame_gems"
+		}
+	}]
+}

@@ -1,0 +1,25 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_spawners"
+        },
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "ascendant_enchanting"
+        }
+    ],
+    "type": "ascendant_enchanting:infusion",
+    "input": {
+        "item": "ascendant_equipment:spawner_rune"
+    },
+    "requirements": {
+        "arcana": 50.0,
+        "eterna": 70.0,
+        "quanta": 30.0
+    },
+    "result": {
+        "count": 1,
+        "id": "ascendant_equipment:infused_spawner_rune"
+    }
+}

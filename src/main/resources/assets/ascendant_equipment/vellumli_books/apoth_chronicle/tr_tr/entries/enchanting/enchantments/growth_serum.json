@@ -1,0 +1,13 @@
+{
+    "name": "Büyüme Serumu",
+    "icon": "minecraft:enchanted_book",
+    "category": "ascendant_equipment:enchanting/enchantments",
+    "flag": "ascendant_equipment:enchanting",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "$(2)Büyüme Serumu$(), makaslar için bir Usta işi büyüdür.$(p)Koyunların yünlerini hemen yeniden büyütme şansı %50 olur."
+        }
+    ]
+}

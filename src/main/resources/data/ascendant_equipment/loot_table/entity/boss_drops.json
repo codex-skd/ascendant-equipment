@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "ascendant_equipment:random_gem",
+                    "quality": 1,
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ascendant_equipment:sigil_of_malice",
+                    "quality": 1,
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 45
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "ascendant_equipment:entity/boss_drops"
+}

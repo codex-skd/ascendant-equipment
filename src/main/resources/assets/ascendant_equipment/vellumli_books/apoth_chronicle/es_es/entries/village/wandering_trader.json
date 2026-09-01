@@ -1,0 +1,21 @@
+{
+  "name": "Comerciante errante",
+  "icon": "minecraft:emerald",
+  "category": "ascendant_equipment:village/village",
+  "flag": "ascendant_equipment:village",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "¿Alguna vez has conocido a uno de esos comerciantes turbios que aparecen en tu jardín?$(p)Esos se llaman $(9)Comerciantes errantes$().$(p)Por lo general, solo venden basura caliente."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "Sin embargo, Apotheosis agrega un montón de nuevos intercambios a sus tablas, por lo que realmente vale la pena interactuar con ellos.$(p)Estos intercambios incluyen elementos como $(9)Beacons$() o $(9)Totems of Undying$(), y equipo de diamantes fuertemente encantado."
+    },
+    {
+      "type": "vellumli:text",
+      "text": "La apoteosis también mejora las tasas de generación de comerciantes errantes y les permite aparecer bajo tierra, en lugar de solo en la superficie."
+    }
+  ]
+}

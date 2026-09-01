@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "ascendant_equipment:item/potion_charm_static",
+        "layer1": "ascendant_equipment:item/potion_charm"
+    }
+}

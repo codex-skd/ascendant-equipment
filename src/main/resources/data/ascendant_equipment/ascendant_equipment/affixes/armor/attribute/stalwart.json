@@ -1,0 +1,37 @@
+{
+    "type": "ascendant_equipment:attribute",
+    "attribute": "minecraft:generic.knockback_resistance",
+    "categories": [
+        "ascendant_equipment:helmet",
+        "ascendant_equipment:chestplate",
+        "ascendant_equipment:leggings",
+        "ascendant_equipment:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "ascendant_equipment:uncommon": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:rare": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "ascendant_equipment:epic": {
+            "min": 0.15,
+            "max": 0.2
+        },
+        "ascendant_equipment:mythic": {
+            "min": 0.25,
+            "max": 0.35
+        }
+    }
+}
